@@ -5,4 +5,70 @@
 	(uuid "f194d5da-fd8d-4aa7-96f3-295d70bb8ae2")
 	(paper "A4")
 	(lib_symbols)
+	(hierarchical_label "+3V3"
+		(shape input)
+		(at 139.7 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "00bee0b8-cb81-486b-a1da-8a23943a169d")
+	)
+	(hierarchical_label "D"
+		(shape output)
+		(at 176.53 95.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "07e6769a-1ec1-496f-9d11-a73bd9ec24b7")
+	)
+	(hierarchical_label "Shutdown"
+		(shape output)
+		(at 176.53 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2a2733fc-ee4c-4fba-92de-d6540ecb43f3")
+	)
+	(hierarchical_label "SCL_{IN}"
+		(shape input)
+		(at 125.73 82.55 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "72988738-f9a7-4034-b12e-6977fc8f2b8e")
+	)
+	(hierarchical_label "SDA_{IN}"
+		(shape bidirectional)
+		(at 125.73 85.09 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a45460d0-939f-41a6-acdf-65968a9519b2")
+	)
+	(hierarchical_label "D'"
+		(shape output)
+		(at 176.53 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e8ff6f48-81bc-463a-982b-cd82496a2e51")
+	)
 )

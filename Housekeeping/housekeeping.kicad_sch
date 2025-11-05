@@ -5,4 +5,37 @@
 	(uuid "54dd3bdb-fa85-45ef-ba5f-b0f6c4bf9e9e")
 	(paper "A4")
 	(lib_symbols)
+	(hierarchical_label "+5V"
+		(shape output)
+		(at 149.86 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3052feb4-ae94-4f2e-b1c1-9864b03ad1e2")
+	)
+	(hierarchical_label "MiniPC"
+		(shape input)
+		(at 95.25 110.49 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3e02a1da-607d-4d61-b892-95dc2d29930d")
+	)
+	(hierarchical_label "+3V3"
+		(shape output)
+		(at 149.86 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6070af41-5e47-4c1c-a2a9-7bba8579e0fb")
+	)
 )
