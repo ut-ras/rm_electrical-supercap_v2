@@ -12,185 +12,6 @@
 		(comment 1 "Robomaster")
 	)
 	(lib_symbols
-		(symbol "Amplifier_Operational:TLV9301xDBV"
-			(pin_names
-				(offset 0.127)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at -1.27 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "TLV9301xDBV"
-				(at -1.27 3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-				(at -2.54 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv9301.pdf"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "40-V, 1-MHz, RRO Operational Amplifiers for Cost-Sensitive Systems, SOT-23-5"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "single opamp 40V rail to rail output"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SOT?23*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "TLV9301xDBV_0_1"
-				(polyline
-					(pts
-						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin power_in line
-					(at -2.54 7.62 270)
-					(length 3.81)
-					(name "V+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -2.54 -7.62 90)
-					(length 3.81)
-					(name "V-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "TLV9301xDBV_1_1"
-				(pin input line
-					(at -7.62 2.54 0)
-					(length 2.54)
-					(name "+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 -2.54 0)
-					(length 2.54)
-					(name "-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -330,517 +151,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Transistor_BJT:Q_NPN_BCE"
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "Q"
-				(at 5.08 1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "Q_NPN_BCE"
-				(at 5.08 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "NPN transistor, base/collector/emitter"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "BJT"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Q_NPN_BCE_0_1"
-				(polyline
-					(pts
-						(xy -2.54 0) (xy 0.635 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 1.905) (xy 0.635 -1.905)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 1.27 0)
-					(radius 2.8194)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Q_NPN_BCE_1_1"
-				(polyline
-					(pts
-						(xy 0.635 0.635) (xy 2.54 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 -0.635) (xy 2.54 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(pin input line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "E"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Transistor_BJT:Q_PNP_BCE"
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "Q"
-				(at 5.08 1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "Q_PNP_BCE"
-				(at 5.08 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "PNP transistor, base/collector/emitter"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "BJT"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Q_PNP_BCE_0_1"
-				(polyline
-					(pts
-						(xy -2.54 0) (xy 0.635 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 1.905) (xy 0.635 -1.905)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 0.635) (xy 2.54 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 -0.635) (xy 2.54 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 1.27 0)
-					(radius 2.8194)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.286 -1.778) (xy 1.778 -2.286) (xy 1.27 -1.27) (xy 2.286 -1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(symbol "Q_PNP_BCE_1_1"
-				(pin input line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "E"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "power:GND1"
+		(symbol "power:GNDPWR"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -853,7 +164,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
+				(at 0 -5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -861,8 +172,8 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "GND1"
-				(at 0 -3.81 0)
+			(property "Value" "GNDPWR"
+				(at 0 -3.302 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -870,7 +181,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 0 0 0)
+				(at 0 -1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -879,6 +190,15 @@
 				)
 			)
 			(property "Datasheet" ""
+				(at 0 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
 				(at 0 0 0)
 				(effects
 					(font
@@ -887,7 +207,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
+			(property "ki_keywords" "global ground"
 				(at 0 0 0)
 				(effects
 					(font
@@ -896,19 +216,34 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "GND1_0_1"
+			(symbol "GNDPWR_0_1"
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+						(xy -1.016 -1.27) (xy -1.27 -2.032) (xy -1.27 -2.032)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 -1.27) (xy -0.762 -2.032) (xy -0.762 -2.032)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 0)
 					)
 					(stroke
 						(width 0)
@@ -918,8 +253,56 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy -0.254 -2.032) (xy -0.254 -2.032)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 -1.27) (xy 0.254 -2.032) (xy 0.254 -2.032)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -1.27) (xy -1.016 -1.27) (xy -1.016 -1.27)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -1.27) (xy 0.762 -2.032) (xy 0.762 -2.032) (xy 0.762 -2.032)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
-			(symbol "GND1_1_1"
+			(symbol "GNDPWR_1_1"
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
@@ -943,8 +326,8 @@
 		)
 	)
 	(rectangle
-		(start 17.78 20.32)
-		(end 187.96 93.98)
+		(start 71.12 49.53)
+		(end 143.51 78.74)
 		(stroke
 			(width 0.635)
 			(type dash)
@@ -954,32 +337,9 @@
 		)
 		(uuid 9b32ccd8-4fc6-49d2-811b-f5e0a043bd12)
 	)
-	(text "Filters & External Connectors"
+	(text "Parallel configuration"
 		(exclude_from_sim no)
-		(at 125.73 69.088 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(italic yes)
-			)
-			(justify left top)
-		)
-		(uuid "204315c0-166a-4878-a372-b290f640fca1")
-	)
-	(text "<= 3V"
-		(exclude_from_sim no)
-		(at 172.72 44.45 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "25404afd-e29e-4d12-9b12-035ab89fd1c8")
-	)
-	(text "2S2P configuration"
-		(exclude_from_sim no)
-		(at 155.194 29.718 0)
+		(at 122.174 55.118 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -988,21 +348,9 @@
 		)
 		(uuid "a721fdd8-a690-4ae3-a527-4a2dc98a5b32")
 	)
-	(text "Current balancer"
+	(text "<= 3V"
 		(exclude_from_sim no)
-		(at 19.558 22.352 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(italic yes)
-			)
-			(justify left top)
-		)
-		(uuid "b6d7f813-bcfd-4515-824b-e5a7c5c78dd9")
-	)
-	(text "<= 6V"
-		(exclude_from_sim no)
-		(at 172.72 31.75 0)
+		(at 133.858 57.15 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1011,20 +359,9 @@
 		)
 		(uuid "c03c95ee-695b-4f51-aad3-6be10b902889")
 	)
-	(text "Typ. +5V from GND1"
-		(exclude_from_sim no)
-		(at 135.89 84.074 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify bottom)
-		)
-		(uuid "d5dabfdf-be19-4cb7-b85d-2df5ba5c6395")
-	)
 	(text "Supercapacitors"
 		(exclude_from_sim no)
-		(at 125.73 22.86 0)
+		(at 125.222 73.914 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1035,126 +372,44 @@
 		(uuid "e7317cd8-d0b2-4a9b-bf4d-8846b252f7a0")
 	)
 	(junction
-		(at 105.41 54.61)
+		(at 104.14 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "20047da2-5966-4562-8c62-1d159c3920c3")
+		(uuid "168bf1dc-6f35-47a6-9920-634ef73b0799")
 	)
 	(junction
-		(at 85.09 53.34)
+		(at 88.9 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "326a9e64-4950-4ed1-bd8d-7653a5d0267d")
+		(uuid "3c9b1357-9fde-497f-a1e2-3b9841733e2f")
 	)
 	(junction
-		(at 144.78 44.45)
+		(at 88.9 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "334074d5-6b84-45a7-bf79-bdeffb40c6ba")
+		(uuid "7109cadb-14cc-4f0e-ac7d-71609aaa99c1")
 	)
 	(junction
-		(at 105.41 53.34)
+		(at 104.14 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3561b300-2ced-4131-a5ac-e8dad4754527")
+		(uuid "b460e289-1b59-48ed-8a6b-95abbf78def5")
 	)
 	(junction
-		(at 154.94 57.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "38165ac8-9036-47f2-be02-6df95e6a78aa")
-	)
-	(junction
-		(at 88.9 53.34)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "45351b83-f733-493a-8c7c-8553ce236996")
-	)
-	(junction
-		(at 165.1 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5e18d6bc-1b8d-4ae4-a8aa-df137daff16f")
-	)
-	(junction
-		(at 74.93 53.34)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6fd42cc5-e361-44e1-9a0c-73f862e85858")
-	)
-	(junction
-		(at 29.21 50.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "86cfd877-7b7a-4b80-aff6-316f4b80891d")
-	)
-	(junction
-		(at 29.21 64.77)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a529c2e8-b7c7-42b0-b78b-8a641b6cc49a")
-	)
-	(junction
-		(at 50.8 55.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c4b41d17-7eb7-4264-ae64-fc1777b7ef38")
-	)
-	(junction
-		(at 151.13 44.45)
+		(at 118.11 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c51b21c6-104b-463f-a4ed-cf75b62d0adf")
 	)
 	(junction
-		(at 151.13 31.75)
+		(at 118.11 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d687ba54-0711-4463-b72f-391499d83fa1")
 	)
 	(wire
 		(pts
-			(xy 133.35 74.93) (xy 138.43 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "04baa521-3813-4a9c-aa8b-49c8b066f034")
-	)
-	(wire
-		(pts
-			(xy 85.09 53.34) (xy 88.9 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0e5fba55-99b3-4f9d-8ac6-bddacdc556d4")
-	)
-	(wire
-		(pts
-			(xy 50.8 55.88) (xy 57.15 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "117717a1-97d1-4f6c-b634-da6496a46725")
-	)
-	(wire
-		(pts
-			(xy 74.93 53.34) (xy 74.93 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "11f31caa-ce66-4ba2-a964-5f53bbf694cc")
-	)
-	(wire
-		(pts
-			(xy 151.13 31.75) (xy 151.13 34.29)
+			(xy 118.11 57.15) (xy 118.11 59.69)
 		)
 		(stroke
 			(width 0)
@@ -1164,117 +419,47 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 54.61) (xy 105.41 57.15)
+			(xy 104.14 67.31) (xy 104.14 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1714329b-24a2-4924-b5dc-981dd19b80e6")
+		(uuid "1c9e57b2-6789-43fb-825a-833124f76a8a")
 	)
 	(wire
 		(pts
-			(xy 144.78 44.45) (xy 144.78 46.99)
+			(xy 88.9 69.85) (xy 104.14 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1714bcd3-6dc6-4b57-8210-0f83a66f353c")
+		(uuid "20d22d7e-9a7b-43ae-8296-2ffa684552da")
 	)
 	(wire
 		(pts
-			(xy 88.9 53.34) (xy 93.98 53.34)
+			(xy 81.28 57.15) (xy 88.9 57.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "19fe1a3e-1307-4a93-96b6-7cc50ea81a15")
+		(uuid "2a444c14-d8da-41a8-8206-2ea4d1ea94b0")
 	)
 	(wire
 		(pts
-			(xy 97.79 77.47) (xy 88.9 77.47)
+			(xy 88.9 57.15) (xy 88.9 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1fea748d-7dd9-46fb-8ca6-0d339dcab8f1")
+		(uuid "33db1fbd-2bad-4279-b3ed-b05a24f0e95e")
 	)
 	(wire
 		(pts
-			(xy 154.94 57.15) (xy 154.94 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "213cb094-bd70-452b-80ee-4ea6aa7feceb")
-	)
-	(wire
-		(pts
-			(xy 144.78 54.61) (xy 144.78 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "22f4296f-78c4-4d2a-b9d3-dfa91925f002")
-	)
-	(polyline
-		(pts
-			(xy 124.46 20.32) (xy 124.46 93.98)
-		)
-		(stroke
-			(width 0.635)
-			(type dash)
-		)
-		(uuid "258002f6-13be-4ab1-a27f-ec40bca15499")
-	)
-	(wire
-		(pts
-			(xy 105.41 49.53) (xy 105.41 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2919afad-b0b0-425a-9767-c4fd02c390e5")
-	)
-	(wire
-		(pts
-			(xy 105.41 25.4) (xy 105.41 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3000d991-1fed-46ec-a612-dfb276fca1a7")
-	)
-	(wire
-		(pts
-			(xy 62.23 64.77) (xy 29.21 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "333f82e4-c763-4393-9eda-e931f3df1fc8")
-	)
-	(polyline
-		(pts
-			(xy 124.46 67.31) (xy 187.96 67.31)
-		)
-		(stroke
-			(width 0.635)
-			(type dash)
-		)
-		(uuid "340dc9d0-7bce-4d30-b34a-d8d84a3f37ea")
-	)
-	(wire
-		(pts
-			(xy 171.45 44.45) (xy 171.45 41.91)
+			(xy 132.08 69.85) (xy 132.08 67.31)
 		)
 		(stroke
 			(width 0)
@@ -1284,227 +469,37 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 57.15) (xy 165.1 57.15)
+			(xy 81.28 69.85) (xy 81.28 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3b51e8f3-cb52-47cf-b229-2fff39f48639")
+		(uuid "82390a71-a1ef-4e62-b569-24dd2343d8ac")
 	)
 	(wire
 		(pts
-			(xy 74.93 53.34) (xy 72.39 53.34)
+			(xy 104.14 57.15) (xy 104.14 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3b78e68d-b7b5-41c6-ab88-b4ec94719be8")
+		(uuid "8b503228-7192-4a1f-b3c0-0e70415c0be5")
 	)
 	(wire
 		(pts
-			(xy 105.41 53.34) (xy 101.6 53.34)
+			(xy 104.14 69.85) (xy 118.11 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4c8b9b95-e633-4b1d-a581-36df7ada0a8a")
+		(uuid "90cbee5a-913f-414c-85b2-0a827f752ee8")
 	)
 	(wire
 		(pts
-			(xy 105.41 64.77) (xy 105.41 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5a01ce72-5094-4766-b8bd-e991408cbc94")
-	)
-	(wire
-		(pts
-			(xy 172.72 81.28) (xy 179.07 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5b37fc47-3885-47c9-9f23-684d11f4b360")
-	)
-	(wire
-		(pts
-			(xy 157.48 83.82) (xy 157.48 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "621f2088-1cd3-493d-a4eb-870d3187a155")
-	)
-	(wire
-		(pts
-			(xy 105.41 53.34) (xy 105.41 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "65c89c60-3cc7-4e90-a4c7-df0bd4458e03")
-	)
-	(wire
-		(pts
-			(xy 62.23 60.96) (xy 62.23 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "672a00e6-9924-49af-a53a-99570c54147c")
-	)
-	(wire
-		(pts
-			(xy 29.21 62.23) (xy 29.21 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "70a8951e-6e65-46df-9110-e143e85c5436")
-	)
-	(wire
-		(pts
-			(xy 62.23 44.45) (xy 62.23 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "78722956-388f-4981-b082-7a9c4a47d854")
-	)
-	(wire
-		(pts
-			(xy 105.41 82.55) (xy 105.41 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7c08f21b-c64c-41c0-875c-a5ef42419605")
-	)
-	(wire
-		(pts
-			(xy 88.9 77.47) (xy 88.9 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "86653ce9-06ff-4d44-b717-eff6e01e4530")
-	)
-	(wire
-		(pts
-			(xy 29.21 64.77) (xy 29.21 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "87323761-e664-4592-971c-17e0e5084e62")
-	)
-	(wire
-		(pts
-			(xy 172.72 87.63) (xy 179.07 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8750280f-9173-4cd0-bcc6-b31d9d261544")
-	)
-	(wire
-		(pts
-			(xy 140.97 44.45) (xy 144.78 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "879959a8-e021-4488-8bea-f55eca7268ae")
-	)
-	(wire
-		(pts
-			(xy 165.1 46.99) (xy 165.1 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8b3b28b3-b830-4083-94e2-c5df87727fb7")
-	)
-	(wire
-		(pts
-			(xy 29.21 46.99) (xy 29.21 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8e8fa322-a6ef-46fd-a64c-c5a510cbb37e")
-	)
-	(wire
-		(pts
-			(xy 140.97 31.75) (xy 151.13 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "90d74fe4-ffe8-43e6-b446-f1973024a4ff")
-	)
-	(wire
-		(pts
-			(xy 85.09 31.75) (xy 85.09 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9b0dbb0d-e605-4533-8ff0-180807f7cb57")
-	)
-	(wire
-		(pts
-			(xy 35.56 55.88) (xy 39.37 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d44eed3-3b92-4b1a-b556-8c86ae93fa87")
-	)
-	(wire
-		(pts
-			(xy 157.48 74.93) (xy 157.48 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a8bb8ae4-b7d5-40ec-9f95-2a2bd6f08ee4")
-	)
-	(wire
-		(pts
-			(xy 165.1 57.15) (xy 165.1 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b100b00f-25ce-4151-884e-28e6ce42d51b")
-	)
-	(wire
-		(pts
-			(xy 151.13 44.45) (xy 165.1 44.45)
+			(xy 118.11 69.85) (xy 132.08 69.85)
 		)
 		(stroke
 			(width 0)
@@ -1514,87 +509,27 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 74.93) (xy 179.07 74.93)
+			(xy 88.9 67.31) (xy 88.9 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bfe5b016-ca26-4fbc-8e5c-d2686352891d")
+		(uuid "c0d6616e-a361-4034-9f83-78172d66bd2f")
 	)
 	(wire
 		(pts
-			(xy 144.78 57.15) (xy 154.94 57.15)
+			(xy 104.14 57.15) (xy 118.11 57.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c060dd44-a7d0-4337-b253-389a232ed641")
+		(uuid "c404ac78-4097-4b42-b397-d3cc994cd5ae")
 	)
 	(wire
 		(pts
-			(xy 97.79 31.75) (xy 85.09 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c7d1f8dc-c369-4ca5-99ef-fe810f085a7e")
-	)
-	(wire
-		(pts
-			(xy 133.35 87.63) (xy 138.43 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ca464bef-a0f7-4e1d-9fba-8ec1e2542123")
-	)
-	(wire
-		(pts
-			(xy 29.21 50.8) (xy 57.15 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cca8bd0f-995f-4680-bfa1-b5600fef0c30")
-	)
-	(wire
-		(pts
-			(xy 144.78 44.45) (xy 151.13 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ce20817d-ab8b-45b8-95d3-3f1510f4f99d")
-	)
-	(wire
-		(pts
-			(xy 105.41 54.61) (xy 109.22 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d102cfc7-ddd9-4615-b765-4460b5441c90")
-	)
-	(wire
-		(pts
-			(xy 105.41 36.83) (xy 105.41 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d402e316-6336-4af3-9abc-2f7cfeca8efc")
-	)
-	(wire
-		(pts
-			(xy 171.45 34.29) (xy 171.45 31.75)
+			(xy 132.08 59.69) (xy 132.08 57.15)
 		)
 		(stroke
 			(width 0)
@@ -1604,87 +539,17 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 74.93) (xy 58.42 74.93)
+			(xy 88.9 57.15) (xy 104.14 57.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e3847c48-bcd7-49a4-9d9b-9c6b7d71b87a")
+		(uuid "ded763db-714b-4a43-975c-ba1804d68bc4")
 	)
 	(wire
 		(pts
-			(xy 50.8 55.88) (xy 50.8 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e69116d2-3f49-47dd-83c7-faeb7c3436d4")
-	)
-	(wire
-		(pts
-			(xy 66.04 74.93) (xy 74.93 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e6aa88b4-6aa0-49a1-b4d5-f3c4b3264d9b")
-	)
-	(wire
-		(pts
-			(xy 29.21 35.56) (xy 29.21 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e8aa31bb-1943-4b3c-b253-cc64865f026e")
-	)
-	(wire
-		(pts
-			(xy 29.21 50.8) (xy 29.21 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ec6ab2a2-e0b4-40ff-96a6-d6a1e7c473b7")
-	)
-	(wire
-		(pts
-			(xy 165.1 44.45) (xy 171.45 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef28beba-3bb2-4cad-b6d9-2a8b2b2b7258")
-	)
-	(wire
-		(pts
-			(xy 46.99 55.88) (xy 50.8 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f17d434c-65fd-4a9e-8d90-bb45c10f9b78")
-	)
-	(wire
-		(pts
-			(xy 74.93 53.34) (xy 85.09 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f57cd0b9-b048-441c-8572-450fa134d0a9")
-	)
-	(wire
-		(pts
-			(xy 151.13 31.75) (xy 171.45 31.75)
+			(xy 118.11 57.15) (xy 132.08 57.15)
 		)
 		(stroke
 			(width 0)
@@ -1694,7 +559,17 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 41.91) (xy 151.13 44.45)
+			(xy 81.28 69.85) (xy 88.9 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb191944-1f32-4dd5-bbcd-0c241e9d619b")
+	)
+	(wire
+		(pts
+			(xy 118.11 67.31) (xy 118.11 69.85)
 		)
 		(stroke
 			(width 0)
@@ -1702,260 +577,27 @@
 		)
 		(uuid "ff1c8bd8-4bd7-4862-904a-e118178d0d42")
 	)
-	(label "V-"
-		(at 55.88 55.88 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "04e60884-a0f1-44f4-86fa-9e00d0cb5e2b")
-	)
-	(label "LOWER_R"
-		(at 105.41 68.58 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0f49f671-8428-498e-8063-dbd18aa025b1")
-	)
-	(label "V_{CC}"
-		(at 138.43 87.63 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "112a7d47-ff55-4408-bdc6-0801b0adbcc6")
-	)
-	(label "V_{ref}"
-		(at 172.72 81.28 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "16b4046a-4b28-4ca0-ad71-e4cd856a5ddc")
-	)
-	(label "MID"
-		(at 172.72 74.93 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "25dea823-6378-42c8-9da1-ecae26635ad4")
-	)
-	(label "OP_OUT"
-		(at 83.82 53.34 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "2cef6a36-ca07-46f5-902a-ce33e3b1c89f")
-	)
-	(label "UPPER_R"
-		(at 105.41 40.64 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3b31e259-32a8-4056-9a0b-6311a36ecb52")
-	)
-	(label "MID"
-		(at 109.22 54.61 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "44ec7184-967f-4c99-bba4-362ac4f64fc0")
-	)
-	(label "V_{CAP}"
-		(at 140.97 31.75 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "48e34260-0888-4df6-8ed4-7d3525023093")
-	)
-	(label "MID"
-		(at 140.97 44.45 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "59b970a1-75bc-4363-8061-486a6268c276")
-	)
-	(label "MID"
-		(at 35.56 55.88 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "60627839-c5ed-4c00-86fd-0b5424999b03")
-	)
-	(label "V_{CAP}"
-		(at 29.21 35.56 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "72d43c1f-132b-4a90-959a-d0662d4ed55e")
-	)
-	(label "REF"
-		(at 55.88 50.8 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "83ec4fa8-0701-4655-a793-01653b2567fe")
-	)
-	(label "V_{CC}"
-		(at 157.48 74.93 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "9297c650-cc72-4a8e-8b96-a3aab5fc121c")
-	)
-	(label "V_{CAP}"
-		(at 138.43 74.93 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "983b8c0e-ba80-43a0-8074-cd245f4b4e29")
-	)
-	(label "V_{CC}"
-		(at 105.41 25.4 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a6afbbd9-6351-4fe5-a8cd-4377d3904224")
-	)
-	(label "OP_OUT"
-		(at 172.72 87.63 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "da50ebc4-1a86-4716-a755-1472e380e1f5")
-	)
-	(label "V_{CC}"
-		(at 62.23 44.45 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e1126f95-0fc8-4cf2-8961-915c89340832")
-	)
-	(hierarchical_label "V_{ref}"
-		(shape output)
-		(at 179.07 81.28 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "0a73ab6b-c1fd-4ad0-aaec-24852d4c4531")
-	)
-	(hierarchical_label "V_{mid}"
-		(shape output)
-		(at 179.07 74.93 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "21eeda07-f075-4e26-abfc-dc2addc043ff")
-	)
 	(hierarchical_label "V_{cap}"
-		(shape bidirectional)
-		(at 133.35 74.93 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8d231d6d-3853-409f-813a-dd45a4d8b2dc")
-	)
-	(hierarchical_label "V_{out}"
-		(shape output)
-		(at 179.07 87.63 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d464336f-c545-400d-b791-ace6b7261292")
-	)
-	(hierarchical_label "V_{CC}"
 		(shape input)
-		(at 133.35 87.63 180)
+		(at 81.28 57.15 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "ecbe9daa-7040-4469-bfa1-cc2194b66c86")
+		(uuid "6a461524-772b-43ed-a4d3-092c0e3e399f")
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 105.41 60.96 0)
+		(lib_id "Device:C")
+		(at 104.14 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "102a9e58-2968-48fb-99cb-460ad393a2c6")
-		(property "Reference" "R?"
-			(at 107.95 59.6899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1"
+		(uuid "0d5ddda2-4cd0-47bb-900f-fb6ba305672d")
+		(property "Reference" "C2"
 			(at 107.95 62.2299 0)
 			(effects
 				(font
@@ -1964,265 +606,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
-			(at 103.632 60.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.eaton.com/content/dam/eaton/products/electronic-components/resources/data-sheet/eaton-mfha-automotive-smd-current-sense-resistor-metal-film-data-sheet-elx1178.pdf"
-			(at 105.41 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 105.41 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "504-MFHA1206R1000FC"
-			(at 105.41 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "aebeb2d4-6843-45a2-bb2c-36991f39f374")
-		)
-		(pin "2"
-			(uuid "f4142f72-cf53-4a3b-9c1d-d24cf6484d08")
-		)
-		(instances
-			(project "SupercapHost 1B"
-				(path "/2a3f3601-51b7-41b9-b22b-93a593876f3f/2537d381-6dd1-4912-a8cc-ff3890783762"
-					(reference "R75")
-					(unit 1)
-				)
-			)
-			(project "Supercap"
-				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/79ba0ad0-1263-4d7e-82bc-d7cd5a71cdbf"
-					(reference "R?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:TLV9301xDBV")
-		(at 64.77 53.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1728925e-3987-4afb-bc54-48f64dd78d2f")
-		(property "Reference" "U?"
-			(at 77.47 46.9198 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TLV9301xDBV"
-			(at 77.47 49.4598 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5_HandSoldering"
-			(at 62.23 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv9301.pdf"
-			(at 64.77 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "40-V, 1-MHz, RRO Operational Amplifiers for Cost-Sensitive Systems, SOT-23-5"
-			(at 64.77 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "595-TLV9301IDBVR"
-			(at 64.77 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "8ddfc140-f39e-427b-a81e-e4a014932e4d")
-		)
-		(pin "3"
-			(uuid "d88d318f-dff7-472c-983f-044749d7f0e9")
-		)
-		(pin "2"
-			(uuid "8b971185-ac1c-4eef-86d9-da173c4a11ee")
-		)
-		(pin "5"
-			(uuid "27623678-ef97-453f-9da6-ad99e9e9c503")
-		)
-		(pin "1"
-			(uuid "f627e62d-0e74-4e56-81f6-489c42da9103")
-		)
-		(instances
-			(project "SupercapHost 1B"
-				(path "/2a3f3601-51b7-41b9-b22b-93a593876f3f/2537d381-6dd1-4912-a8cc-ff3890783762"
-					(reference "U18")
-					(unit 1)
-				)
-			)
-			(project "Supercap"
-				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/79ba0ad0-1263-4d7e-82bc-d7cd5a71cdbf"
-					(reference "U?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 62.23 74.93 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "20714e44-7504-42ae-bc4b-b18950c10ad9")
-		(property "Reference" "C?"
-			(at 62.23 79.248 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100p"
-			(at 62.23 81.788 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 66.04 73.9648 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 62.23 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 62.23 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "77-VJ0603A101KXACBC"
-			(at 62.23 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Voltage Rating" "50V"
-			(at 62.23 84.328 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e375c999-05a3-428c-b18c-02e067a570a9")
-		)
-		(pin "2"
-			(uuid "1b42090f-a016-4484-a09a-a77970d052ea")
-		)
-		(instances
-			(project "SupercapHost 1B"
-				(path "/2a3f3601-51b7-41b9-b22b-93a593876f3f/2537d381-6dd1-4912-a8cc-ff3890783762"
-					(reference "C78")
-					(unit 1)
-				)
-			)
-			(project "Supercap"
-				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/79ba0ad0-1263-4d7e-82bc-d7cd5a71cdbf"
-					(reference "C?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 144.78 50.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "20fb1f1d-f91a-4d67-90e9-6df429c6a6a8")
-		(property "Reference" "C?"
-			(at 148.59 49.5299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(property "Value" "110"
-			(at 148.59 52.0699 0)
+			(at 107.95 64.7699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2231,7 +616,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Radial_D18.0mm_H35.5mm_P7.50mm"
-			(at 145.7452 54.61 0)
+			(at 105.1052 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2240,7 +625,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.com/datasheet/2/40/AVX_SCC-3084824.pdf"
-			(at 144.78 50.8 0)
+			(at 104.14 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2249,7 +634,7 @@
 			)
 		)
 		(property "Description" "Supercapacitor"
-			(at 144.78 50.8 0)
+			(at 104.14 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2258,7 +643,7 @@
 			)
 		)
 		(property "Mouser Part Number" "598-DSF117Q3R0"
-			(at 144.78 50.8 0)
+			(at 104.14 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2267,7 +652,7 @@
 			)
 		)
 		(property "Voltage Rating" "3V"
-			(at 148.59 54.61 0)
+			(at 107.95 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2276,38 +661,49 @@
 			)
 		)
 		(pin "1"
-			(uuid "ff941733-c1f5-4fd0-be0e-3de9a168f373")
+			(uuid "41a52b2a-893a-409b-a41e-b276a5c9d8cc")
 		)
 		(pin "2"
-			(uuid "d082e3f7-c56d-407c-b4e8-dd543c570a3f")
+			(uuid "a439d0ee-4f76-4242-989d-f96f7b8773c6")
 		)
 		(instances
-			(project "SupercapHost 1B"
-				(path "/2a3f3601-51b7-41b9-b22b-93a593876f3f/2537d381-6dd1-4912-a8cc-ff3890783762"
-					(reference "C76")
-					(unit 1)
-				)
-			)
 			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/79ba0ad0-1263-4d7e-82bc-d7cd5a71cdbf"
-					(reference "C?")
+					(reference "C2")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GND1")
-		(at 29.21 66.04 0)
+		(lib_id "Device:C")
+		(at 88.9 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "279868bc-800e-4c45-b6ae-434324bcccbb")
-		(property "Reference" "#PWR?"
-			(at 29.21 72.39 0)
+		(uuid "27ab3653-2e47-4688-9d52-0367b3f51349")
+		(property "Reference" "C1"
+			(at 92.71 62.2299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "110"
+			(at 92.71 64.7699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Radial_D18.0mm_H35.5mm_P7.50mm"
+			(at 89.8652 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2315,8 +711,78 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND1"
-			(at 29.21 71.12 0)
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/40/AVX_SCC-3084824.pdf"
+			(at 88.9 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Supercapacitor"
+			(at 88.9 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "598-DSF117Q3R0"
+			(at 88.9 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating" "3V"
+			(at 92.71 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "ae174428-bb5e-4d5e-9db2-2f0fd614b2e3")
+		)
+		(pin "2"
+			(uuid "68554219-41f5-4600-9f92-56091c178257")
+		)
+		(instances
+			(project "Supercap"
+				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/79ba0ad0-1263-4d7e-82bc-d7cd5a71cdbf"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDPWR")
+		(at 81.28 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "511c47ce-1061-47bb-a111-f6e68906477b")
+		(property "Reference" "#PWR05"
+			(at 81.28 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDPWR"
+			(at 81.153 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2324,7 +790,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 29.21 66.04 0)
+			(at 81.28 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2333,7 +799,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 29.21 66.04 0)
+			(at 81.28 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2341,8 +807,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
-			(at 29.21 66.04 0)
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
+			(at 81.28 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2351,18 +817,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "292a095a-041a-412e-836a-ef7aa568bc0f")
+			(uuid "a497e5d3-b57d-4155-8874-0078c25ac6a7")
 		)
 		(instances
-			(project "SupercapHost 1B"
-				(path "/2a3f3601-51b7-41b9-b22b-93a593876f3f/2537d381-6dd1-4912-a8cc-ff3890783762"
-					(reference "#PWR0119")
-					(unit 1)
-				)
-			)
-			(project "Supercap"
+			(project ""
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/79ba0ad0-1263-4d7e-82bc-d7cd5a71cdbf"
-					(reference "#PWR?")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -2370,290 +830,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 157.48 80.01 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "45544ccc-0bcf-45be-b4a8-c17712841aa6")
-		(property "Reference" "C?"
-			(at 153.67 78.7399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1u"
-			(at 153.67 81.2799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 156.5148 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.com/datasheet/2/40/KGM_X7R-3223212.pdf"
-			(at 157.48 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 157.48 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" ""
-			(at 157.48 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 157.48 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 157.48 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 157.48 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mouser Part Number" "581-KGM15BR71H104JT"
-			(at 157.48 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Voltage Rating" "50V"
-			(at 153.67 84.074 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "2"
-			(uuid "16e78e04-de0b-4360-886c-ada989f28708")
-		)
-		(pin "1"
-			(uuid "f758cb1b-17e9-4a37-a64d-cb96842049e7")
-		)
-		(instances
-			(project "SupercapHost 1B"
-				(path "/2a3f3601-51b7-41b9-b22b-93a593876f3f/2537d381-6dd1-4912-a8cc-ff3890783762"
-					(reference "C79")
-					(unit 1)
-				)
-			)
-			(project "Supercap"
-				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/79ba0ad0-1263-4d7e-82bc-d7cd5a71cdbf"
-					(reference "C?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND1")
-		(at 154.94 58.42 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4e26ba3a-e78a-47ec-ab06-93de2594dd9d")
-		(property "Reference" "#PWR?"
-			(at 154.94 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND1"
-			(at 154.94 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 154.94 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 154.94 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
-			(at 154.94 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e87d11cd-12f0-4268-a164-ae67216d50ea")
-		)
-		(instances
-			(project "SupercapHost 1B"
-				(path "/2a3f3601-51b7-41b9-b22b-93a593876f3f/2537d381-6dd1-4912-a8cc-ff3890783762"
-					(reference "#PWR0118")
-					(unit 1)
-				)
-			)
-			(project "Supercap"
-				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/79ba0ad0-1263-4d7e-82bc-d7cd5a71cdbf"
-					(reference "#PWR?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 29.21 43.18 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "62e0d915-159a-4101-a0a5-12e0b4c46e82")
-		(property "Reference" "R?"
-			(at 26.67 41.9099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1Meg"
-			(at 26.67 44.4499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 30.988 43.18 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.com/datasheet/2/447/PYu_RC_Group_51_RoHS_L_11-1984063.pdf"
-			(at 29.21 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 29.21 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "603-RC0603FR-071MP"
-			(at 29.21 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "54a1b69b-5cc2-4f61-9724-ae9f0302d127")
-		)
-		(pin "2"
-			(uuid "7ee111bb-be73-4b7a-83f1-938804e37e1d")
-		)
-		(instances
-			(project "SupercapHost 1B"
-				(path "/2a3f3601-51b7-41b9-b22b-93a593876f3f/2537d381-6dd1-4912-a8cc-ff3890783762"
-					(reference "R70")
-					(unit 1)
-				)
-			)
-			(project "Supercap"
-				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/79ba0ad0-1263-4d7e-82bc-d7cd5a71cdbf"
-					(reference "R?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 151.13 38.1 0)
+		(at 118.11 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2661,7 +838,7 @@
 		(dnp no)
 		(uuid "64b57ede-0330-41f9-8293-8e29fad9890b")
 		(property "Reference" "C?"
-			(at 154.94 36.8299 0)
+			(at 121.92 62.2299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2670,7 +847,7 @@
 			)
 		)
 		(property "Value" "110"
-			(at 154.94 39.3699 0)
+			(at 121.92 64.7699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2679,7 +856,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Radial_D18.0mm_H35.5mm_P7.50mm"
-			(at 152.0952 41.91 0)
+			(at 119.0752 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2688,7 +865,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.com/datasheet/2/40/AVX_SCC-3084824.pdf"
-			(at 151.13 38.1 0)
+			(at 118.11 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2697,7 +874,7 @@
 			)
 		)
 		(property "Description" "Supercapacitor"
-			(at 151.13 38.1 0)
+			(at 118.11 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2706,7 +883,7 @@
 			)
 		)
 		(property "Mouser Part Number" "598-DSF117Q3R0"
-			(at 151.13 38.1 0)
+			(at 118.11 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2715,7 +892,7 @@
 			)
 		)
 		(property "Voltage Rating" "3V"
-			(at 154.94 41.91 0)
+			(at 121.92 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2745,168 +922,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND1")
-		(at 105.41 83.82 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "650bd0d1-2fd1-40a4-9153-d04cc4c0803f")
-		(property "Reference" "#PWR?"
-			(at 105.41 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND1"
-			(at 105.41 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 105.41 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 105.41 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
-			(at 105.41 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cc97ce25-981d-4484-98b4-0820093b870e")
-		)
-		(instances
-			(project "SupercapHost 1B"
-				(path "/2a3f3601-51b7-41b9-b22b-93a593876f3f/2537d381-6dd1-4912-a8cc-ff3890783762"
-					(reference "#PWR0121")
-					(unit 1)
-				)
-			)
-			(project "Supercap"
-				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/79ba0ad0-1263-4d7e-82bc-d7cd5a71cdbf"
-					(reference "#PWR?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:Q_NPN_BCE")
-		(at 102.87 31.75 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6bfe3821-5e8d-456b-a157-498c2bba0c78")
-		(property "Reference" "Q?"
-			(at 107.95 30.4799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2SCR587D3"
-			(at 107.95 33.0199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
-			(at 107.95 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://fscdn.rohm.com/en/products/databook/datasheet/discrete/transistor/bipolar/2scr587d3fratl-e.pdf"
-			(at 102.87 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "NPN transistor, base/collector/emitter"
-			(at 102.87 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "755-2SCR587D3FRATL"
-			(at 102.87 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "1485edca-451a-4f56-b5cc-cb04db766400")
-		)
-		(pin "2"
-			(uuid "9caccc6e-a126-457d-a158-a46febebbede")
-		)
-		(pin "1"
-			(uuid "8b15b792-29ed-4e0e-9510-efe0ffcb4e8c")
-		)
-		(instances
-			(project "SupercapHost 1B"
-				(path "/2a3f3601-51b7-41b9-b22b-93a593876f3f/2537d381-6dd1-4912-a8cc-ff3890783762"
-					(reference "Q10")
-					(unit 1)
-				)
-			)
-			(project "Supercap"
-				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/79ba0ad0-1263-4d7e-82bc-d7cd5a71cdbf"
-					(reference "Q?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
-		(at 171.45 38.1 0)
+		(at 132.08 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2914,7 +931,7 @@
 		(dnp no)
 		(uuid "765c13c9-9c38-4b40-a073-a35c902724c2")
 		(property "Reference" "C?"
-			(at 175.26 36.8299 0)
+			(at 135.89 62.2299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2923,7 +940,7 @@
 			)
 		)
 		(property "Value" "110"
-			(at 175.26 39.3699 0)
+			(at 135.89 64.7699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2932,7 +949,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Radial_D18.0mm_H35.5mm_P7.50mm"
-			(at 172.4152 41.91 0)
+			(at 133.0452 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2941,7 +958,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.com/datasheet/2/40/AVX_SCC-3084824.pdf"
-			(at 171.45 38.1 0)
+			(at 132.08 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2950,7 +967,7 @@
 			)
 		)
 		(property "Description" "Supercapacitor"
-			(at 171.45 38.1 0)
+			(at 132.08 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2959,7 +976,7 @@
 			)
 		)
 		(property "Mouser Part Number" "598-DSF117Q3R0"
-			(at 171.45 38.1 0)
+			(at 132.08 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2968,7 +985,7 @@
 			)
 		)
 		(property "Voltage Rating" "3V"
-			(at 175.26 41.91 0)
+			(at 135.89 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2986,592 +1003,6 @@
 			(project "SupercapHost 1B"
 				(path "/2a3f3601-51b7-41b9-b22b-93a593876f3f/2537d381-6dd1-4912-a8cc-ff3890783762"
 					(reference "C75")
-					(unit 1)
-				)
-			)
-			(project "Supercap"
-				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/79ba0ad0-1263-4d7e-82bc-d7cd5a71cdbf"
-					(reference "C?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 105.41 45.72 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "91666a88-4a83-4811-8a37-80a4b0f2997f")
-		(property "Reference" "R?"
-			(at 107.95 44.4499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1"
-			(at 107.95 46.9899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
-			(at 103.632 45.72 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.eaton.com/content/dam/eaton/products/electronic-components/resources/data-sheet/eaton-mfha-automotive-smd-current-sense-resistor-metal-film-data-sheet-elx1178.pdf"
-			(at 105.41 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 105.41 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "504-MFHA1206R1000FC"
-			(at 105.41 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a0ddf634-518f-4bc3-b838-32836d7a89d6")
-		)
-		(pin "2"
-			(uuid "9ea50683-de29-479a-9e09-d4751364f431")
-		)
-		(instances
-			(project "SupercapHost 1B"
-				(path "/2a3f3601-51b7-41b9-b22b-93a593876f3f/2537d381-6dd1-4912-a8cc-ff3890783762"
-					(reference "R71")
-					(unit 1)
-				)
-			)
-			(project "Supercap"
-				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/79ba0ad0-1263-4d7e-82bc-d7cd5a71cdbf"
-					(reference "R?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 29.21 58.42 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a50379c4-838f-43ad-a3b0-60f1ff89bcd2")
-		(property "Reference" "R?"
-			(at 26.67 57.1499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1Meg"
-			(at 26.67 59.6899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 30.988 58.42 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.com/datasheet/2/447/PYu_RC_Group_51_RoHS_L_11-1984063.pdf"
-			(at 29.21 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 29.21 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "603-RC0603FR-071MP"
-			(at 29.21 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "741e5c9b-879f-47e2-82c5-b979b3e23c5b")
-		)
-		(pin "2"
-			(uuid "df163d65-c06a-44a4-8786-fcebfd44cdcf")
-		)
-		(instances
-			(project "SupercapHost 1B"
-				(path "/2a3f3601-51b7-41b9-b22b-93a593876f3f/2537d381-6dd1-4912-a8cc-ff3890783762"
-					(reference "R74")
-					(unit 1)
-				)
-			)
-			(project "Supercap"
-				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/79ba0ad0-1263-4d7e-82bc-d7cd5a71cdbf"
-					(reference "R?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 43.18 55.88 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ad24de11-7d27-4b38-83ca-06c749fc27f3")
-		(property "Reference" "R?"
-			(at 38.354 54.61 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100"
-			(at 48.006 54.61 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 43.18 57.658 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 43.18 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 43.18 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "754-RG1608P-101DT5"
-			(at 43.18 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "e9a1a9b4-5e91-4646-a5b1-17cf7931c653")
-		)
-		(pin "1"
-			(uuid "2339c5ac-6854-456e-b1ea-cfda7c1dd415")
-		)
-		(instances
-			(project "SupercapHost 1B"
-				(path "/2a3f3601-51b7-41b9-b22b-93a593876f3f/2537d381-6dd1-4912-a8cc-ff3890783762"
-					(reference "R73")
-					(unit 1)
-				)
-			)
-			(project "Supercap"
-				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/79ba0ad0-1263-4d7e-82bc-d7cd5a71cdbf"
-					(reference "R?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND1")
-		(at 157.48 85.09 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c4650944-b465-4736-930a-ed43c1ef49a5")
-		(property "Reference" "#PWR?"
-			(at 157.48 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND1"
-			(at 157.48 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 157.48 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 157.48 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
-			(at 157.48 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "68b653bf-7c32-4cf8-91a6-c5626c538715")
-		)
-		(instances
-			(project "SupercapHost 1B"
-				(path "/2a3f3601-51b7-41b9-b22b-93a593876f3f/2537d381-6dd1-4912-a8cc-ff3890783762"
-					(reference "#PWR0120")
-					(unit 1)
-				)
-			)
-			(project "Supercap"
-				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/79ba0ad0-1263-4d7e-82bc-d7cd5a71cdbf"
-					(reference "#PWR?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 97.79 53.34 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "cf66e382-8430-4354-bdca-819930c037da")
-		(property "Reference" "R?"
-			(at 92.964 52.07 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100"
-			(at 102.616 52.07 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 97.79 55.118 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 97.79 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 97.79 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "754-RG1608P-101DT5"
-			(at 97.79 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "1d944c75-3aab-40ed-919b-b898a459247e")
-		)
-		(pin "1"
-			(uuid "fcb1ee2a-b241-4b5f-8967-2d338d4a8bb8")
-		)
-		(instances
-			(project "SupercapHost 1B"
-				(path "/2a3f3601-51b7-41b9-b22b-93a593876f3f/2537d381-6dd1-4912-a8cc-ff3890783762"
-					(reference "R72")
-					(unit 1)
-				)
-			)
-			(project "Supercap"
-				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/79ba0ad0-1263-4d7e-82bc-d7cd5a71cdbf"
-					(reference "R?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:Q_PNP_BCE")
-		(at 102.87 77.47 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d9656567-1275-4f3d-82ad-84e680fd8446")
-		(property "Reference" "Q?"
-			(at 107.95 78.7401 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2SAR587D3"
-			(at 107.95 76.2001 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
-			(at 107.95 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://fscdn.rohm.com/en/products/databook/datasheet/discrete/transistor/bipolar/2sar587d3fratl-e.pdf"
-			(at 102.87 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "PNP transistor, base/collector/emitter"
-			(at 102.87 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "755-2SAR587D3FRATL"
-			(at 102.87 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "0a5c7b52-6c86-4ab7-bde9-8e2beefb4ef0")
-		)
-		(pin "3"
-			(uuid "35e7065f-0ee2-49b0-bb8e-75661efe95a1")
-		)
-		(pin "1"
-			(uuid "c8df3647-2d9b-486c-943c-7395fb8a9978")
-		)
-		(instances
-			(project "SupercapHost 1B"
-				(path "/2a3f3601-51b7-41b9-b22b-93a593876f3f/2537d381-6dd1-4912-a8cc-ff3890783762"
-					(reference "Q11")
-					(unit 1)
-				)
-			)
-			(project "Supercap"
-				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/79ba0ad0-1263-4d7e-82bc-d7cd5a71cdbf"
-					(reference "Q?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 165.1 50.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f6a12143-1d94-4c41-87b0-ebee19ba906a")
-		(property "Reference" "C?"
-			(at 168.91 49.5299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "110"
-			(at 168.91 52.0699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:C_Radial_D18.0mm_H35.5mm_P7.50mm"
-			(at 166.0652 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.com/datasheet/2/40/AVX_SCC-3084824.pdf"
-			(at 165.1 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Supercapacitor"
-			(at 165.1 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "598-DSF117Q3R0"
-			(at 165.1 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Voltage Rating" "3V"
-			(at 168.91 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "1"
-			(uuid "9f837598-1499-4b6c-9a45-cda890875c27")
-		)
-		(pin "2"
-			(uuid "0ac0f64b-26de-417f-9abf-d93ace78970d")
-		)
-		(instances
-			(project "SupercapHost 1B"
-				(path "/2a3f3601-51b7-41b9-b22b-93a593876f3f/2537d381-6dd1-4912-a8cc-ff3890783762"
-					(reference "C77")
 					(unit 1)
 				)
 			)
