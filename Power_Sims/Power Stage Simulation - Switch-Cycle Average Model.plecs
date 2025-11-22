@@ -1,9 +1,9 @@
 Plecs {
-  Name          "Power Stage Simulation"
+  Name          "Power Stage Simulation - Switch-Cycle Average Model"
   Version       "4.9"
   CircuitModel  "ContStateSpace"
   StartTime     "0.0"
-  TimeSpan      "1"
+  TimeSpan      "150"
   Timeout       ""
   Solver        "auto"
   MaxStep       "max_step_size "
@@ -29,13 +29,14 @@ Plecs {
   AssertionAction "1"
   FixedPointDatatypeOverride "1"
   InitializationCommands "V_g = 24; % Input voltage\nf_s = 360 * 10^3; % Switc"
-"hing frequency\nT_dead = 100*10^-9; % Dead time\nL_blk = 40 * 10^-6; % Bulk i"
-"nductance\nC_sc = 110; % Supercap capacitance\nR_on = 0; % On-state MOSFET re"
-"sistance\nd = 0.5; % duty cycle\nR_big = 10^5; % Balancing resistance\nR_esr "
-"= 18*10^-3; \nR_sens = 10*10^-3\nL_esl = 1 * 10^-6;\nL_damp = 7.5 * 10^-5;\nC"
-"_d = 10^-6;\nN_burst = 10;\n\nTs = 1/f_s;\nnum_cycles = 500000;\t\t% number o"
-"f switch cycles to simulate\nmax_step_size = Ts*10^3;\t% maximum time step si"
-"ze [s]\nTstop = num_cycles*Ts;\t% stop time of simulation [s]"
+"hing frequency\nT_dead = 100*10^-9; % Dead time\nL_blk = 1 * 10^-5; % Bulk in"
+"ductance\nC_sc = 110; % Supercap capacitance\nR_on = 10^-1; % On-state MOSFET"
+" resistance\nd = 0.5; % duty cycle\nR_big = 10^5; % Balancing resistance\nR_e"
+"sr = 18*10^-3; \nR_sens = 10*10^-3\nL_esl = 1 * 10^-6;\nL_damp = 7.5 * 10^-5;"
+"\nC_d = 10^-6;\nN_burst = 10;\nV_sc0 = 0.6;\nV_c0 = V_sc0/4;\n\nTs = 1/f_s;\n"
+"num_cycles = 500000;\t\t% number of switch cycles to simulate\nmax_step_size "
+"= 10^-1;\t% maximum time step size [s]\nTstop = num_cycles*Ts;\t% stop time o"
+"f simulation [s]"
   InitialState  "1"
   SystemState   ""
   TaskingMode   "1"
@@ -60,8 +61,8 @@ Plecs {
   ScriptsDialogGeometry ""
   ScriptsDialogSplitterPos "0"
   Schematic {
-    Location      [0, 23; 1536, 773]
-    ZoomFactor    1.71498
+    Location      [0, 26; 1536, 776]
+    ZoomFactor    1.49863
     SliderPosition [0, 0]
     ShowBrowser   off
     BrowserWidth  100
@@ -69,7 +70,7 @@ Plecs {
       Type          DCVoltageSource
       Name          "V_g"
       Show          on
-      Position      [60, 240]
+      Position      [60, 275]
       Direction     down
       Flipped       on
       LabelPosition west
@@ -80,111 +81,10 @@ Plecs {
       }
     }
     Component {
-      Type          Mosfet
-      Name          "FET1"
-      Show          on
-      Position      [145, 210]
-      Direction     up
-      Flipped       off
-      LabelPosition east
-      Parameter {
-        Variable      "Ron"
-        Value         "R_on"
-        Show          off
-      }
-      Parameter {
-        Variable      "s_init"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "thermal"
-        Value         ""
-        Show          off
-      }
-      Parameter {
-        Variable      "Rth"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "T_init"
-        Value         ""
-        Show          off
-      }
-    }
-    Component {
-      Type          Mosfet
-      Name          "FET2"
-      Show          on
-      Position      [145, 270]
-      Direction     up
-      Flipped       off
-      LabelPosition east
-      Parameter {
-        Variable      "Ron"
-        Value         "R_on"
-        Show          off
-      }
-      Parameter {
-        Variable      "s_init"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "thermal"
-        Value         ""
-        Show          off
-      }
-      Parameter {
-        Variable      "Rth"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "T_init"
-        Value         ""
-        Show          off
-      }
-    }
-    Component {
-      Type          Ground
-      Name          "Ground"
-      Show          off
-      Position      [145, 300]
-      Direction     up
-      Flipped       off
-      LabelPosition east
-    }
-    Component {
-      Type          Label
-      Name          "Label"
-      Show          off
-      Position      [145, 180]
-      Direction     up
-      Flipped       off
-      LabelPosition east
-      Parameter {
-        Variable      "Tag"
-        Value         "V_g"
-        Show          off
-      }
-      Parameter {
-        Variable      "Visibility"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "2"
-        Show          off
-      }
-    }
-    Component {
       Type          Label
       Name          "Label1"
       Show          off
-      Position      [60, 200]
+      Position      [60, 235]
       Direction     up
       Flipped       off
       LabelPosition east
@@ -208,7 +108,7 @@ Plecs {
       Type          Ground
       Name          "Ground1"
       Show          off
-      Position      [60, 270]
+      Position      [60, 305]
       Direction     up
       Flipped       off
       LabelPosition east
@@ -217,7 +117,7 @@ Plecs {
       Type          Voltmeter
       Name          "V_c"
       Show          on
-      Position      [405, 85]
+      Position      [405, 120]
       Direction     up
       Flipped       off
       LabelPosition west
@@ -226,54 +126,35 @@ Plecs {
       Type          Ground
       Name          "Ground3"
       Show          off
-      Position      [405, 115]
+      Position      [405, 150]
       Direction     up
       Flipped       off
       LabelPosition east
     }
     Component {
-      Type          Inductor
-      Name          "L1"
-      Show          on
-      Position      [195, 240]
-      Direction     left
-      Flipped       off
-      LabelPosition north
-      Parameter {
-        Variable      "L"
-        Value         "L_blk"
-        Show          off
-      }
-      Parameter {
-        Variable      "i_init"
-        Value         "0"
-        Show          off
-      }
-    }
-    Component {
       Type          Scope
       Name          "Voltage"
       Show          on
-      Position      [680, 115]
+      Position      [680, 150]
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [769, 30; 1535, 812]
+      Location      [1, 30; 773, 812]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
-"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAAAv4AAALzAAAA"
+"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAMEAAAAYvw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAAwQAAABQAP///wAAAwQAAAKNAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
-      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":171,\"Labels\":[],"
-"\"VisualIdxs\":[]}"
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":171,\"Labels\":[\""
+"Delta\"],\"VisualIdxs\":[3]}"
       PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
       Axes          "1"
       TimeRange     "0.0"
       ScrollingMode "1"
       SingleTimeAxis "1"
-      Open          "0"
+      Open          "1"
       Ts            "-1"
       SampleLimit   "0"
       XAxisLabel    "Time / s"
@@ -308,38 +189,10 @@ Plecs {
       }
     }
     Component {
-      Type          Capacitor
-      Name          "C_d"
-      Show          on
-      Position      [260, 250]
-      Direction     down
-      Flipped       on
-      LabelPosition west
-      Parameter {
-        Variable      "C"
-        Value         "C_d"
-        Show          off
-      }
-      Parameter {
-        Variable      "v_init"
-        Value         "0"
-        Show          off
-      }
-    }
-    Component {
-      Type          Ground
-      Name          "Ground2"
-      Show          off
-      Position      [260, 270]
-      Direction     up
-      Flipped       off
-      LabelPosition east
-    }
-    Component {
       Type          Subsystem
       Name          "Supercap \nNetwork"
       Show          on
-      Position      [460, 240]
+      Position      [460, 275]
       Direction     up
       Flipped       off
       LabelPosition none
@@ -362,8 +215,8 @@ Plecs {
         Direction     down
       }
       Schematic {
-        Location      [448, 168; 725, 701]
-        ZoomFactor    1
+        Location      [0, 26; 1536, 776]
+        ZoomFactor    1.30957
         SliderPosition [0, 0]
         ShowBrowser   off
         BrowserWidth  100
@@ -382,7 +235,7 @@ Plecs {
           }
           Parameter {
             Variable      "v_init"
-            Value         "0"
+            Value         "V_c0"
             Show          off
           }
         }
@@ -448,7 +301,7 @@ Plecs {
           }
           Parameter {
             Variable      "v_init"
-            Value         "0"
+            Value         "V_c0"
             Show          off
           }
         }
@@ -514,7 +367,7 @@ Plecs {
           }
           Parameter {
             Variable      "v_init"
-            Value         "0"
+            Value         "V_c0"
             Show          off
           }
         }
@@ -580,7 +433,7 @@ Plecs {
           }
           Parameter {
             Variable      "v_init"
-            Value         "0"
+            Value         "V_c0"
             Show          off
           }
         }
@@ -822,7 +675,7 @@ Plecs {
       Type          Subsystem
       Name          "Gate Driver"
       Show          on
-      Position      [245, 100]
+      Position      [245, 135]
       Direction     up
       Flipped       off
       LabelPosition none
@@ -1090,7 +943,7 @@ Plecs {
       Type          Comparator
       Name          "Comparator"
       Show          on
-      Position      [135, 85]
+      Position      [135, 120]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -1099,7 +952,7 @@ Plecs {
       Type          TriangleGenerator
       Name          "Triangular Wave"
       Show          on
-      Position      [60, 105]
+      Position      [60, 140]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -1133,20 +986,20 @@ Plecs {
       Type          Scope
       Name          "Current"
       Show          on
-      Position      [680, 60]
+      Position      [680, 95]
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [769, 30; 1535, 803]
+      Location      [774, 30; 1535, 794]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
-"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAAAv4AAALqAAAA"
+"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAL5AAAAYvw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAAvkAAABQAP///wAAAvkAAAJ7AAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
-      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":145,\"Labels\":[],"
-"\"VisualIdxs\":[]}"
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":176,\"Labels\":[\""
+"Delta\"],\"VisualIdxs\":[3]}"
       PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
       Axes          "1"
       TimeRange     "0.0"
@@ -1187,58 +1040,10 @@ Plecs {
       }
     }
     Component {
-      Type          From
-      Name          "From"
-      Show          off
-      Position      [105, 270]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      Parameter {
-        Variable      "Tag"
-        Value         "D'"
-        Show          off
-      }
-      Parameter {
-        Variable      "Visibility"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "1"
-        Show          off
-      }
-    }
-    Component {
-      Type          From
-      Name          "From3"
-      Show          off
-      Position      [105, 210]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      Parameter {
-        Variable      "Tag"
-        Value         "D"
-        Show          off
-      }
-      Parameter {
-        Variable      "Visibility"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "1"
-        Show          off
-      }
-    }
-    Component {
       Type          Goto
       Name          "Goto"
       Show          off
-      Position      [320, 85]
+      Position      [320, 120]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -1262,7 +1067,7 @@ Plecs {
       Type          Goto
       Name          "Goto1"
       Show          off
-      Position      [320, 115]
+      Position      [320, 150]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -1286,7 +1091,7 @@ Plecs {
       Type          Goto
       Name          "Goto2"
       Show          off
-      Position      [435, 85]
+      Position      [435, 120]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -1308,33 +1113,9 @@ Plecs {
     }
     Component {
       Type          Label
-      Name          "Label2"
-      Show          off
-      Position      [290, 240]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      Parameter {
-        Variable      "Tag"
-        Value         "V_out"
-        Show          off
-      }
-      Parameter {
-        Variable      "Visibility"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "2"
-        Show          off
-      }
-    }
-    Component {
-      Type          Label
       Name          "Label3"
       Show          off
-      Position      [510, 50]
+      Position      [510, 85]
       Direction     up
       Flipped       off
       LabelPosition east
@@ -1358,7 +1139,7 @@ Plecs {
       Type          Ammeter
       Name          "Am1"
       Show          on
-      Position      [510, 85]
+      Position      [510, 120]
       Direction     up
       Flipped       off
       LabelPosition west
@@ -1367,7 +1148,7 @@ Plecs {
       Type          Label
       Name          "Label4"
       Show          off
-      Position      [510, 115]
+      Position      [510, 150]
       Direction     down
       Flipped       off
       LabelPosition west
@@ -1391,7 +1172,7 @@ Plecs {
       Type          Label
       Name          "Label5"
       Show          off
-      Position      [405, 50]
+      Position      [405, 85]
       Direction     up
       Flipped       off
       LabelPosition east
@@ -1412,34 +1193,10 @@ Plecs {
       }
     }
     Component {
-      Type          Label
-      Name          "Label6"
-      Show          off
-      Position      [405, 220]
-      Direction     left
-      Flipped       off
-      LabelPosition north
-      Parameter {
-        Variable      "Tag"
-        Value         "V_sc"
-        Show          off
-      }
-      Parameter {
-        Variable      "Visibility"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "2"
-        Show          off
-      }
-    }
-    Component {
       Type          Goto
       Name          "Goto3"
       Show          off
-      Position      [540, 85]
+      Position      [540, 120]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -1463,7 +1220,7 @@ Plecs {
       Type          Ground
       Name          "Ground4"
       Show          off
-      Position      [430, 280]
+      Position      [430, 315]
       Direction     up
       Flipped       off
       LabelPosition east
@@ -1472,7 +1229,7 @@ Plecs {
       Type          From
       Name          "From1"
       Show          off
-      Position      [640, 60]
+      Position      [640, 95]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -1496,7 +1253,7 @@ Plecs {
       Type          From
       Name          "From2"
       Show          off
-      Position      [640, 115]
+      Position      [640, 150]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -1520,19 +1277,19 @@ Plecs {
       Type          Scope
       Name          "Input Waveform"
       Show          on
-      Position      [680, 165]
+      Position      [680, 200]
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [1, 30; 767, 803]
+      Location      [0, 83; 1536, 873]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAAAv4AAALqAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAABgAAAAL7AAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
-      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":171,\"Labels\":[],"
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":115,\"Labels\":[],"
 "\"VisualIdxs\":[]}"
       PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
       Axes          "1"
@@ -1577,7 +1334,7 @@ Plecs {
       Type          Goto
       Name          "Goto4"
       Show          off
-      Position      [135, 45]
+      Position      [135, 80]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -1601,7 +1358,7 @@ Plecs {
       Type          From
       Name          "From4"
       Show          off
-      Position      [640, 165]
+      Position      [640, 200]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -1622,33 +1379,57 @@ Plecs {
       }
     }
     Component {
+      Type          Label
+      Name          "Label7"
+      Show          off
+      Position      [395, 255]
+      Direction     left
+      Flipped       off
+      LabelPosition north
+      Parameter {
+        Variable      "Tag"
+        Value         "V_sc"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "2"
+        Show          off
+      }
+    }
+    Component {
       Type          Reference
       SrcComponent  "Components/Control/Sources/Ramp"
       Name          "Ramp"
       Show          on
-      Position      [60, 45]
+      Position      [35, 80]
       Direction     up
       Flipped       off
       LabelPosition south
       Frame         [-15, -15; 15, 15]
       Parameter {
         Variable      "slope"
-        Value         "0.1"
+        Value         "0.0045"
         Show          off
       }
       Parameter {
         Variable      "start"
-        Value         "0.25"
-        Show          off
-      }
-      Parameter {
-        Variable      "X0"
         Value         "0"
         Show          off
       }
       Parameter {
+        Variable      "X0"
+        Value         "0.025"
+        Show          off
+      }
+      Parameter {
         Variable      "XFinal"
-        Value         "0.25"
+        Value         "0.5"
         Show          off
       }
       Terminal {
@@ -1657,19 +1438,682 @@ Plecs {
         Direction     right
       }
     }
-    Connection {
-      Type          Wire
-      SrcComponent  "Ground"
-      SrcTerminal   1
-      DstComponent  "FET2"
-      DstTerminal   2
+    Component {
+      Type          Saturation
+      Name          "Saturation"
+      Show          on
+      Position      [80, 80]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "UpperLimit"
+        Value         "0.975"
+        Show          off
+      }
+      Parameter {
+        Variable      "LowerLimit"
+        Value         "0.025"
+        Show          off
+      }
     }
-    Connection {
-      Type          Wire
-      SrcComponent  "Label"
-      SrcTerminal   1
-      DstComponent  "FET1"
-      DstTerminal   1
+    Component {
+      Type          Subsystem
+      Name          "Transformer"
+      Show          on
+      Position      [190, 260]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-30, -30; 30, 30]
+      SampleTime    "-1"
+      CodeGenDiscretizationMethod "2"
+      CodeGenTarget "Generic"
+      MaskDisplay   "local X0=35\n"
+"local Y0=20\n"
+"local Xdelt=20\n"
+"local Ydelt=6\n"
+"local R = 3.5\n"
+"\n"
+"if Dialog:get('ext')=='2' then\n"
+"    local Rg = 7.5\n"
+"    local Rk = 2/3\n"
+"    Xdelt = 15\n"
+" --   Icon:circle(0,0,Rg)\n"
+" --  Icon:line({-Rg*Rk, Rg*Rk},{ Rg*Rk,-Rg*Rk})\n"
+" --   Icon:line({-Rg*Rk, Rg*Rk},{-Rg*Rk, Rg*Rk})\n"
+"    \n"
+"    Icon:color(0,180,0)\n"
+"    Icon:line({0, 0},{-30, -Rg})\n"
+"    Icon:color(0,0,0)\n"
+"end\n"
+"\n"
+"\n"
+"\n"
+"Icon:line({-X0, -X0+Xdelt,-X0+Xdelt}, {Y0, Y0, Y0-Ydelt})\n"
+"Icon:line({-X0, -X0+Xdelt,-X0+Xdelt}, {-Y0, -Y0, -Y0+Ydelt})\n"
+"\n"
+"Icon:circle(-X0+Xdelt,  -4*2*R,2)\n"
+"Icon:arc(-X0+Xdelt,  1.5*2*R, R, R, 90, -180)\n"
+"Icon:arc(-X0+Xdelt,  0.5*2*R, R, R, 90, -180)\n"
+"Icon:arc(-X0+Xdelt, -0.5*2*R, R, R, 90, -180)\n"
+"Icon:arc(-X0+Xdelt, -1.5*2*R, R, R, 90, -180)\n"
+"\n"
+"\n"
+"Icon:line({ X0,  X0-Xdelt,X0-Xdelt}, {Y0, Y0, Y0-Ydelt})\n"
+"Icon:line({ X0,  X0-Xdelt,X0-Xdelt}, {-Y0, -Y0, -Y0+Ydelt})\n"
+"\n"
+"Icon:circle(X0-Xdelt,  -4*2*R,2)\n"
+"Icon:arc(X0-Xdelt,  1.5*2*R, R, R, 90, 180)\n"
+"Icon:arc(X0-Xdelt,  0.5*2*R, R, R, 90, 180)\n"
+"Icon:arc(X0-Xdelt, -0.5*2*R, R, R, 90, 180)\n"
+"Icon:arc(X0-Xdelt, -1.5*2*R, R, R, 90, 180)\n"
+"\n"
+"\n"
+"Icon:text('1:n(t)')\n"
+"\n"
+      MaskDisplayLang "2"
+      MaskIconFrame off
+      MaskIconOpaque off
+      MaskIconRotates on
+      MaskDialogCallback "Block:showTerminal('K', Dialog:get('ext')=='2')\n"
+"Dialog:set('K', 'Visible', Dialog:get('ext')=='1')"
+      Parameter {
+        Variable      "ext"
+        Prompt        "Gain source"
+        Type          FixedText
+        PossibleValues {"Internal gain", "External gain"}
+        Value         "2"
+        Show          off
+        Tunable       off
+        TabName       ""
+      }
+      Parameter {
+        Variable      "K"
+        Prompt        "Gain"
+        Type          FreeText
+        Value         "1"
+        Show          on
+        Tunable       off
+        TabName       ""
+      }
+      Terminal {
+        Type          Port
+        Position      [-35, -20]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [-35, 20]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [35, 20]
+        Direction     right
+      }
+      Terminal {
+        Type          Port
+        Position      [35, -20]
+        Direction     right
+      }
+      Terminal {
+        Type          Input
+        Position      [0, -30]
+        Direction     up
+      }
+      Schematic {
+        Location      [0, 27; 1280, 717]
+        ZoomFactor    2.57013
+        SliderPosition [0, 0]
+        ShowBrowser   off
+        BrowserWidth  100
+        Component {
+          Type          Port
+          Name          "+"
+          Show          off
+          Position      [30, 100]
+          Direction     right
+          Flipped       off
+          LabelPosition south
+          Parameter {
+            Variable      "Index"
+            Value         "1"
+            Show          on
+          }
+          Parameter {
+            Variable      "Width"
+            Value         "-1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Port
+          Name          "-"
+          Show          off
+          Position      [30, 215]
+          Direction     right
+          Flipped       off
+          LabelPosition south
+          Parameter {
+            Variable      "Index"
+            Value         "2"
+            Show          on
+          }
+          Parameter {
+            Variable      "Width"
+            Value         "-1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Port
+          Name          "-1"
+          Show          off
+          Position      [345, 215]
+          Direction     left
+          Flipped       off
+          LabelPosition north
+          Parameter {
+            Variable      "Index"
+            Value         "3"
+            Show          on
+          }
+          Parameter {
+            Variable      "Width"
+            Value         "-1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Port
+          Name          "+1"
+          Show          off
+          Position      [340, 95]
+          Direction     left
+          Flipped       off
+          LabelPosition north
+          Parameter {
+            Variable      "Index"
+            Value         "4"
+            Show          on
+          }
+          Parameter {
+            Variable      "Width"
+            Value         "-1"
+            Show          off
+          }
+        }
+        Component {
+          Type          VoltageSource
+          Name          "V4"
+          Show          on
+          Position      [270, 125]
+          Direction     down
+          Flipped       on
+          LabelPosition east
+          Parameter {
+            Variable      "DiscretizationBehavior"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "StateSpaceInlining"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Input
+          Name          "K"
+          Show          off
+          Position      [190, 30]
+          Direction     down
+          Flipped       off
+          LabelPosition west
+          Parameter {
+            Variable      "Index"
+            Value         "5"
+            Show          on
+          }
+          Parameter {
+            Variable      "Width"
+            Value         "-1"
+            Show          off
+          }
+        }
+        Component {
+          Type          ConfigurableSubsystem
+          Name          "Subsystem"
+          Show          off
+          Position      [190, 75]
+          Direction     right
+          Flipped       off
+          LabelPosition west
+          Frame         [-20, -15; 20, 15]
+          SampleTime    "-1"
+          CodeGenDiscretizationMethod "2"
+          CodeGenTarget "Generic"
+          MaskIconFrame on
+          MaskIconOpaque off
+          MaskIconRotates on
+          Terminal {
+            Type          Input
+            Position      [-15, 0]
+            Direction     left
+          }
+          Terminal {
+            Type          Output
+            Position      [19, 0]
+            Direction     right
+          }
+          TerminalNames { "In1", "Out1" }
+          Location      [415, 55; 698, 259]
+          ZoomFactor    1
+          SliderPosition [0, 0]
+          ShowBrowser   off
+          BrowserWidth  100
+          Configurations {
+            Name          "Internal"
+            Schematic {
+              Component {
+                Type          Input
+                Name          "In1"
+                Show          off
+                Position      [60, 80]
+                Direction     right
+                Flipped       off
+                LabelPosition south
+                Parameter {
+                  Variable      "Index"
+                  Value         "1"
+                  Show          on
+                }
+                Parameter {
+                  Variable      "Width"
+                  Value         "-1"
+                  Show          off
+                }
+              }
+              Component {
+                Type          Output
+                Name          "Out1"
+                Show          off
+                Position      [220, 80]
+                Direction     right
+                Flipped       off
+                LabelPosition south
+                Parameter {
+                  Variable      "Index"
+                  Value         "2"
+                  Show          on
+                }
+                Parameter {
+                  Variable      "Width"
+                  Value         "-1"
+                  Show          off
+                }
+              }
+              Component {
+                Type          Constant
+                Name          "Gain"
+                Show          on
+                Position      [150, 80]
+                Direction     right
+                Flipped       off
+                LabelPosition south
+                Frame         [-10, -10; 10, 10]
+                Parameter {
+                  Variable      "Value"
+                  Value         "K"
+                  Show          off
+                }
+                Parameter {
+                  Variable      "DataType"
+                  Value         "10"
+                  Show          off
+                }
+              }
+              Connection {
+                Type          Signal
+                SrcComponent  "Gain"
+                SrcTerminal   1
+                DstComponent  "Out1"
+                DstTerminal   1
+              }
+            }
+            Name          "External"
+            Schematic {
+              Component {
+                Type          Input
+                Name          "In1"
+                Show          off
+                Position      [60, 80]
+                Direction     right
+                Flipped       off
+                LabelPosition south
+                Parameter {
+                  Variable      "Index"
+                  Value         "1"
+                  Show          on
+                }
+                Parameter {
+                  Variable      "Width"
+                  Value         "-1"
+                  Show          off
+                }
+              }
+              Component {
+                Type          Output
+                Name          "Out1"
+                Show          off
+                Position      [220, 80]
+                Direction     right
+                Flipped       off
+                LabelPosition south
+                Parameter {
+                  Variable      "Index"
+                  Value         "2"
+                  Show          on
+                }
+                Parameter {
+                  Variable      "Width"
+                  Value         "-1"
+                  Show          off
+                }
+              }
+              Connection {
+                Type          Signal
+                SrcComponent  "In1"
+                SrcTerminal   1
+                DstComponent  "Out1"
+                DstTerminal   1
+              }
+            }
+          }
+          Parameter {
+            Variable      "Configuration"
+            Value         "ext"
+            Show          off
+          }
+        }
+        Component {
+          Type          Product
+          Name          "Product"
+          Show          off
+          Position      [230, 125]
+          Direction     up
+          Flipped       on
+          LabelPosition north
+          Parameter {
+            Variable      "IconShape"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "Inputs"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "DataType"
+            Value         "11"
+            Show          off
+          }
+          Parameter {
+            Variable      "DataTypeOverflowMode"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Product
+          Name          "Product1"
+          Show          off
+          Position      [160, 190]
+          Direction     down
+          Flipped       on
+          LabelPosition south
+          Parameter {
+            Variable      "IconShape"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "Inputs"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "DataType"
+            Value         "11"
+            Show          off
+          }
+          Parameter {
+            Variable      "DataTypeOverflowMode"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Ammeter
+          Name          "Am2"
+          Show          on
+          Position      [270, 195]
+          Direction     down
+          Flipped       off
+          LabelPosition east
+        }
+        Component {
+          Type          Voltmeter
+          Name          "Vm1"
+          Show          on
+          Position      [85, 130]
+          Direction     up
+          Flipped       off
+          LabelPosition west
+        }
+        Component {
+          Type          CurrentSource
+          Name          "I"
+          Show          on
+          Position      [120, 190]
+          Direction     up
+          Flipped       on
+          LabelPosition west
+          Parameter {
+            Variable      "DiscretizationBehavior"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "StateSpaceInlining"
+            Value         "1"
+            Show          off
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "V4"
+          SrcTerminal   1
+          Points        [270, 95]
+          DstComponent  "+1"
+          DstTerminal   1
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "K"
+          SrcTerminal   1
+          DstComponent  "Subsystem"
+          DstTerminal   1
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Product"
+          SrcTerminal   1
+          DstComponent  "V4"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Product1"
+          SrcTerminal   1
+          DstComponent  "I"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Subsystem"
+          SrcTerminal   2
+          Points        [190, 120]
+          Branch {
+            DstComponent  "Product1"
+            DstTerminal   2
+          }
+          Branch {
+            DstComponent  "Product"
+            DstTerminal   3
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "V4"
+          SrcTerminal   2
+          DstComponent  "Am2"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "-1"
+          SrcTerminal   1
+          DstComponent  "Am2"
+          DstTerminal   1
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Am2"
+          SrcTerminal   3
+          DstComponent  "Product1"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "I"
+          SrcTerminal   1
+          Points        [120, 100; 85, 100]
+          Branch {
+            DstComponent  "+"
+            DstTerminal   1
+          }
+          Branch {
+            DstComponent  "Vm1"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "-"
+          SrcTerminal   1
+          Points        [85, 215]
+          Branch {
+            Points        [120, 215]
+            DstComponent  "I"
+            DstTerminal   2
+          }
+          Branch {
+            DstComponent  "Vm1"
+            DstTerminal   2
+          }
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Vm1"
+          SrcTerminal   3
+          DstComponent  "Product"
+          DstTerminal   2
+        }
+      }
+    }
+    Component {
+      Type          Ground
+      Name          "Ground5"
+      Show          off
+      Position      [145, 320]
+      Direction     up
+      Flipped       off
+      LabelPosition east
+    }
+    Component {
+      Type          Label
+      Name          "Label6"
+      Show          off
+      Position      [245, 240]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Tag"
+        Value         "V_out"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "2"
+        Show          off
+      }
+    }
+    Component {
+      Type          Label
+      Name          "Label2"
+      Show          off
+      Position      [135, 240]
+      Direction     left
+      Flipped       off
+      LabelPosition north
+      Parameter {
+        Variable      "Tag"
+        Value         "V_g"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "2"
+        Show          off
+      }
+    }
+    Component {
+      Type          From
+      Name          "From"
+      Show          off
+      Position      [190, 215]
+      Direction     down
+      Flipped       off
+      LabelPosition west
+      Parameter {
+        Variable      "Tag"
+        Value         "X_in"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "1"
+        Show          off
+      }
     }
     Connection {
       Type          Wire
@@ -1679,31 +2123,10 @@ Plecs {
       DstTerminal   2
     }
     Connection {
-      Type          Wire
-      SrcComponent  "FET1"
-      SrcTerminal   2
-      Points        [145, 240]
-      Branch {
-        DstComponent  "FET2"
-        DstTerminal   1
-      }
-      Branch {
-        DstComponent  "L1"
-        DstTerminal   1
-      }
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "Ground2"
-      SrcTerminal   1
-      DstComponent  "C_d"
-      DstTerminal   2
-    }
-    Connection {
       Type          Signal
       SrcComponent  "Triangular Wave"
       SrcTerminal   1
-      Points        [95, 105; 95, 90]
+      Points        [95, 140; 95, 125]
       DstComponent  "Comparator"
       DstTerminal   2
     }
@@ -1737,20 +2160,6 @@ Plecs {
     }
     Connection {
       Type          Signal
-      SrcComponent  "From"
-      SrcTerminal   1
-      DstComponent  "FET2"
-      DstTerminal   3
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "From3"
-      SrcTerminal   1
-      DstComponent  "FET1"
-      DstTerminal   3
-    }
-    Connection {
-      Type          Signal
       SrcComponent  "V_c"
       SrcTerminal   3
       DstComponent  "Goto2"
@@ -1762,20 +2171,6 @@ Plecs {
       SrcTerminal   1
       DstComponent  "V_c"
       DstTerminal   2
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "C_d"
-      SrcTerminal   1
-      Points        [260, 240]
-      Branch {
-        DstComponent  "L1"
-        DstTerminal   2
-      }
-      Branch {
-        DstComponent  "Label2"
-        DstTerminal   1
-      }
     }
     Connection {
       Type          Wire
@@ -1796,13 +2191,6 @@ Plecs {
       SrcComponent  "Label5"
       SrcTerminal   1
       DstComponent  "V_c"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "Label6"
-      SrcTerminal   1
-      DstComponent  "Supercap \nNetwork"
       DstTerminal   1
     }
     Connection {
@@ -1835,28 +2223,78 @@ Plecs {
     }
     Connection {
       Type          Signal
-      SrcComponent  "Ramp"
-      SrcTerminal   1
-      Points        [95, 45]
-      Branch {
-        Points        [95, 80]
-        DstComponent  "Comparator"
-        DstTerminal   1
-      }
-      Branch {
-        DstComponent  "Goto4"
-        DstTerminal   1
-      }
-    }
-    Connection {
-      Type          Signal
       SrcComponent  "From4"
       SrcTerminal   1
       DstComponent  "Input Waveform"
       DstTerminal   1
     }
+    Connection {
+      Type          Wire
+      SrcComponent  "Label7"
+      SrcTerminal   1
+      DstComponent  "Supercap \nNetwork"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Ramp"
+      SrcTerminal   1
+      DstComponent  "Saturation"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Saturation"
+      SrcTerminal   2
+      Points        [105, 80]
+      Branch {
+        DstComponent  "Goto4"
+        DstTerminal   1
+      }
+      Branch {
+        DstComponent  "Comparator"
+        DstTerminal   1
+      }
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "Ground5"
+      SrcTerminal   1
+      Points        [145, 310]
+      Branch {
+        Points        [145, 280]
+        DstComponent  "Transformer"
+        DstTerminal   2
+      }
+      Branch {
+        Points        [225, 310]
+        DstComponent  "Transformer"
+        DstTerminal   3
+      }
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "Label6"
+      SrcTerminal   1
+      DstComponent  "Transformer"
+      DstTerminal   4
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "Label2"
+      SrcTerminal   1
+      DstComponent  "Transformer"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "From"
+      SrcTerminal   1
+      DstComponent  "Transformer"
+      DstTerminal   5
+    }
     RectangleAnnotation {
-      Position     [180, 80]
+      Position     [180, 115]
       Width        330
       Height       130
       CornerRadius 3
@@ -1869,10 +2307,10 @@ Plecs {
     Annotation {
       Name          "<html><body>\n<p align=\"right\"><span style=\" font-weig"
 "ht:700;\">Open-Loop Control</span></p></body></html>"
-      Position      [290, 25]
+      Position      [290, 60]
     } 
     RectangleAnnotation {
-      Position     [465, 80]
+      Position     [465, 115]
       Width        220
       Height       130
       CornerRadius 3
@@ -1885,10 +2323,10 @@ Plecs {
     Annotation {
       Name          "<html><body>\n<p align=\"right\"><span style=\" font-weig"
 "ht:700;\">Sensing</span></p></body></html>"
-      Position      [550, 25]
+      Position      [550, 60]
     } 
     RectangleAnnotation {
-      Position     [180, 235]
+      Position     [180, 270]
       Width        330
       Height       160
       CornerRadius 3
@@ -1901,10 +2339,10 @@ Plecs {
     Annotation {
       Name          "<html><body>\n<p align=\"right\"><span style=\" font-weig"
 "ht:700;\">Converter</span></p></body></html>"
-      Position      [315, 165]
+      Position      [315, 200]
     } 
     RectangleAnnotation {
-      Position     [465, 235]
+      Position     [465, 270]
       Width        220
       Height       160
       CornerRadius 3
@@ -1917,10 +2355,10 @@ Plecs {
     Annotation {
       Name          "<html><body>\n<p align=\"right\"><span style=\" font-weig"
 "ht:700;\">Supercaps</span></p></body></html>"
-      Position      [545, 165]
+      Position      [545, 200]
     } 
     RectangleAnnotation {
-      Position     [670, 165]
+      Position     [670, 200]
       Width        170
       Height       300
       CornerRadius 3
@@ -1933,7 +2371,7 @@ Plecs {
     Annotation {
       Name          "<html><body>\n<p align=\"right\"><span style=\" font-weig"
 "ht:700;\">Sensing Analysis</span></p></body></html>"
-      Position      [705, 25]
+      Position      [705, 60]
     } 
   }
 }
