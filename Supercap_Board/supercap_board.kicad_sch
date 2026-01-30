@@ -151,179 +151,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R_US"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 2.54 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R_US"
-				(at -2.54 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 1.016 -0.254 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor, US symbol"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_US_0_1"
-				(polyline
-					(pts
-						(xy 0 2.286) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0.762) (xy 1.016 0.381) (xy 0 0) (xy -1.016 -0.381) (xy 0 -0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -2.286) (xy 0 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_US_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GNDPWR"
 			(power)
 			(pin_numbers
@@ -499,20 +326,8 @@
 		)
 	)
 	(rectangle
-		(start 107.95 22.86)
-		(end 123.19 72.39)
-		(stroke
-			(width 0)
-			(type dash)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 1c6807bf-61a9-44a8-86ba-e0c395a183dc)
-	)
-	(rectangle
-		(start 87.63 16.51)
-		(end 135.89 77.47)
+		(start 73.66 48.26)
+		(end 138.43 81.28)
 		(stroke
 			(width 0.635)
 			(type dash)
@@ -522,20 +337,9 @@
 		)
 		(uuid 9b32ccd8-4fc6-49d2-811b-f5e0a043bd12)
 	)
-	(text "Voltage-balancing resistors"
+	(text "<= 0-3V"
 		(exclude_from_sim no)
-		(at 121.158 75.438 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify bottom)
-		)
-		(uuid "a721fdd8-a690-4ae3-a527-4a2dc98a5b32")
-	)
-	(text "<= 0-12V"
-		(exclude_from_sim no)
-		(at 123.19 22.86 0)
+		(at 122.174 55.88 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -546,7 +350,7 @@
 	)
 	(text "Supercapacitors"
 		(exclude_from_sim no)
-		(at 99.822 19.304 0)
+		(at 121.412 78.232 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -557,116 +361,54 @@
 		(uuid "e7317cd8-d0b2-4a9b-bf4d-8846b252f7a0")
 	)
 	(junction
-		(at 97.79 59.69)
+		(at 109.22 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1cf3f257-ab03-4d06-826b-367e1f779125")
+		(uuid "0ff96851-b39c-4111-817b-2b795642b308")
 	)
 	(junction
-		(at 97.79 71.12)
+		(at 86.36 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1f7da6f1-cd04-4ef9-8dca-8b5cb3c170ff")
+		(uuid "30024876-b7cb-47a7-8324-5c6285e6f034")
 	)
 	(junction
-		(at 114.3 59.69)
+		(at 97.79 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "82dae102-2d74-44f5-bbf0-37902f75b177")
+		(uuid "372267ab-8e6b-4922-b354-b92069ff674a")
 	)
 	(junction
-		(at 114.3 48.26)
+		(at 97.79 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "92c6798b-167c-4912-bfe4-bfac331b1c0e")
+		(uuid "619884c8-f9b2-493e-8168-55f83cf16a6f")
 	)
 	(junction
-		(at 97.79 36.83)
+		(at 86.36 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "9fb05a74-fb46-4331-b771-bfbf7d1e1699")
+		(uuid "673a2536-8da2-47f9-8050-61c09b3ae5a6")
 	)
 	(junction
-		(at 97.79 24.13)
+		(at 109.22 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a0f873f8-5528-419d-8c21-ed7a139c2c52")
-	)
-	(junction
-		(at 97.79 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ab127b35-83a5-4bc2-b0ec-27b69d0c4820")
-	)
-	(junction
-		(at 114.3 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ce7f8710-2f79-4309-a456-e01e599d0e78")
+		(uuid "7e2071c8-844a-4eb8-b8ae-68d7dab9c23e")
 	)
 	(wire
 		(pts
-			(xy 114.3 68.58) (xy 114.3 71.12)
+			(xy 97.79 58.42) (xy 97.79 55.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "010e9d98-045a-4407-b669-5a723b9bcb97")
+		(uuid "1edb3042-60ce-4173-aa09-753c12990018")
 	)
 	(wire
 		(pts
-			(xy 114.3 26.67) (xy 114.3 24.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "05304e60-0190-4adb-be76-e3b8ace0f571")
-	)
-	(wire
-		(pts
-			(xy 97.79 48.26) (xy 114.3 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1500c710-ba3c-498d-a1bd-c44e5ba5cf0d")
-	)
-	(wire
-		(pts
-			(xy 97.79 36.83) (xy 97.79 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "18c1725c-e55e-47f8-8c09-e6c506f57a2e")
-	)
-	(wire
-		(pts
-			(xy 114.3 59.69) (xy 114.3 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1a472337-3bce-4c60-8ebe-cabebda359a4")
-	)
-	(wire
-		(pts
-			(xy 114.3 45.72) (xy 114.3 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "217b9272-009a-487a-a41a-02debecca442")
-	)
-	(wire
-		(pts
-			(xy 95.25 24.13) (xy 97.79 24.13)
+			(xy 83.82 55.88) (xy 86.36 55.88)
 		)
 		(stroke
 			(width 0)
@@ -676,17 +418,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 34.29) (xy 114.3 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3e5fc2e2-d496-4cb6-9de8-f9b20c186e0a")
-	)
-	(wire
-		(pts
-			(xy 97.79 24.13) (xy 97.79 26.67)
+			(xy 86.36 55.88) (xy 86.36 58.42)
 		)
 		(stroke
 			(width 0)
@@ -696,7 +428,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 34.29) (xy 97.79 36.83)
+			(xy 86.36 66.04) (xy 86.36 68.58)
 		)
 		(stroke
 			(width 0)
@@ -706,127 +438,127 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 45.72) (xy 97.79 48.26)
+			(xy 97.79 66.04) (xy 97.79 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "56e18a3a-9878-4d3c-b475-3e62ae536a42")
+		(uuid "4cf759cf-238f-4bbb-a873-71bd5c3f5cfd")
 	)
 	(wire
 		(pts
-			(xy 114.3 24.13) (xy 97.79 24.13)
+			(xy 109.22 58.42) (xy 109.22 55.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "798bac96-0448-438b-950d-cc5f7211f08a")
+		(uuid "5e6364d4-38c1-402f-a8cb-b61cab1f8e3a")
 	)
 	(wire
 		(pts
-			(xy 97.79 68.58) (xy 97.79 71.12)
+			(xy 97.79 68.58) (xy 109.22 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "82390a71-a1ef-4e62-b569-24dd2343d8ac")
+		(uuid "67878a0a-5381-4356-9c02-00563f768352")
 	)
 	(wire
 		(pts
-			(xy 114.3 36.83) (xy 114.3 38.1)
+			(xy 120.65 66.04) (xy 120.65 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8d68a697-757f-4c57-8a4b-578121d859da")
+		(uuid "67e88481-78a3-4ebb-a13b-7b673a7e636a")
 	)
 	(wire
 		(pts
-			(xy 114.3 59.69) (xy 114.3 57.15)
+			(xy 86.36 68.58) (xy 97.79 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a6d07f87-721b-49d1-8293-7f28dd22ce8c")
+		(uuid "6b2e8629-7f53-4bea-bf57-eb52c898504f")
 	)
 	(wire
 		(pts
-			(xy 97.79 59.69) (xy 97.79 60.96)
+			(xy 97.79 55.88) (xy 86.36 55.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a935cf9c-5344-4078-8418-f052ad18772c")
+		(uuid "6f350624-3da3-4476-8ce3-a7e364a8ec57")
 	)
 	(wire
 		(pts
-			(xy 114.3 71.12) (xy 97.79 71.12)
+			(xy 109.22 66.04) (xy 109.22 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ad0b915e-d4af-473f-9371-13192a5b0d22")
+		(uuid "8e6270d4-58ec-42dc-ae45-4f2caa76e9c3")
 	)
 	(wire
 		(pts
-			(xy 97.79 36.83) (xy 114.3 36.83)
+			(xy 120.65 58.42) (xy 120.65 55.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ba9c5a99-0a4e-4cad-ace8-41a1b3362f88")
+		(uuid "bdcebd23-2a7b-44b4-971b-7c6333afab14")
 	)
 	(wire
 		(pts
-			(xy 97.79 57.15) (xy 97.79 59.69)
+			(xy 109.22 55.88) (xy 120.65 55.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c6864e50-f13c-4934-8ab3-999d604352dd")
+		(uuid "ca3431a3-644e-4144-8476-4768db80dfad")
 	)
 	(wire
 		(pts
-			(xy 97.79 48.26) (xy 97.79 49.53)
+			(xy 86.36 68.58) (xy 86.36 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c6a05109-40a4-456b-a379-a4b0d3358eef")
+		(uuid "ccb0bf3d-c1fb-4933-9545-605c2f2cc355")
 	)
 	(wire
 		(pts
-			(xy 114.3 48.26) (xy 114.3 49.53)
+			(xy 109.22 68.58) (xy 120.65 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ccaed1d0-b71e-4b5a-8bdd-62a769372aa8")
+		(uuid "d1ab59c6-1a36-49f5-85ef-98fc2eac0f07")
 	)
 	(wire
 		(pts
-			(xy 97.79 59.69) (xy 114.3 59.69)
+			(xy 97.79 55.88) (xy 109.22 55.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ede0d605-2a3f-4810-8ae7-116f3451c70d")
+		(uuid "fcceaeb4-8721-4a23-b93f-8b3cad48e580")
 	)
 	(hierarchical_label "V_{cap}"
 		(shape input)
-		(at 95.25 24.13 180)
+		(at 83.82 55.88 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -837,7 +569,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 97.79 41.91 0)
+		(at 97.79 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -845,7 +577,7 @@
 		(dnp no)
 		(uuid "0d5ddda2-4cd0-47bb-900f-fb6ba305672d")
 		(property "Reference" "C2"
-			(at 101.6 40.6399 0)
+			(at 101.6 60.9599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -854,7 +586,7 @@
 			)
 		)
 		(property "Value" "110"
-			(at 101.6 43.1799 0)
+			(at 101.6 63.4999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -863,7 +595,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Radial_D18.0mm_H35.5mm_P7.50mm"
-			(at 98.7552 45.72 0)
+			(at 98.7552 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -872,7 +604,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.com/datasheet/2/40/AVX_SCC-3084824.pdf"
-			(at 97.79 41.91 0)
+			(at 97.79 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -881,7 +613,7 @@
 			)
 		)
 		(property "Description" "Supercapacitor"
-			(at 97.79 41.91 0)
+			(at 97.79 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -890,7 +622,7 @@
 			)
 		)
 		(property "Mouser Part Number" "598-DSF117Q3R0"
-			(at 97.79 41.91 0)
+			(at 97.79 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -899,7 +631,7 @@
 			)
 		)
 		(property "Voltage Rating" "3V"
-			(at 101.6 45.72 0)
+			(at 101.6 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -924,7 +656,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 97.79 30.48 0)
+		(at 86.36 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -932,7 +664,7 @@
 		(dnp no)
 		(uuid "27ab3653-2e47-4688-9d52-0367b3f51349")
 		(property "Reference" "C1"
-			(at 101.6 29.2099 0)
+			(at 90.17 60.9599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -941,7 +673,7 @@
 			)
 		)
 		(property "Value" "110"
-			(at 101.6 31.7499 0)
+			(at 90.17 63.4999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -950,7 +682,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Radial_D18.0mm_H35.5mm_P7.50mm"
-			(at 98.7552 34.29 0)
+			(at 87.3252 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -959,7 +691,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.com/datasheet/2/40/AVX_SCC-3084824.pdf"
-			(at 97.79 30.48 0)
+			(at 86.36 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -968,7 +700,7 @@
 			)
 		)
 		(property "Description" "Supercapacitor"
-			(at 97.79 30.48 0)
+			(at 86.36 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -977,7 +709,7 @@
 			)
 		)
 		(property "Mouser Part Number" "598-DSF117Q3R0"
-			(at 97.79 30.48 0)
+			(at 86.36 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -986,7 +718,7 @@
 			)
 		)
 		(property "Voltage Rating" "3V"
-			(at 101.6 34.29 0)
+			(at 90.17 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1010,78 +742,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 114.3 41.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "3507b775-49a4-40b8-87ff-17822ea4ab45")
-		(property "Reference" "R2"
-			(at 116.84 40.6399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "R_US"
-			(at 116.84 43.1799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 115.316 42.164 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 114.3 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 114.3 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "1a3e12c9-e0f6-4468-b613-ea47b5de5636")
-		)
-		(pin "1"
-			(uuid "0ab6f64f-8484-4f73-88d3-997ec536c75a")
-		)
-		(instances
-			(project "Supercap"
-				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/79ba0ad0-1263-4d7e-82bc-d7cd5a71cdbf"
-					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GNDPWR")
-		(at 97.79 71.12 0)
+		(at 86.36 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1090,7 +752,7 @@
 		(fields_autoplaced yes)
 		(uuid "511c47ce-1061-47bb-a111-f6e68906477b")
 		(property "Reference" "#PWR05"
-			(at 97.79 76.2 0)
+			(at 86.36 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1099,7 +761,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 97.663 74.93 0)
+			(at 86.233 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1107,7 +769,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 97.79 72.39 0)
+			(at 86.36 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1116,7 +778,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 97.79 72.39 0)
+			(at 86.36 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1125,7 +787,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 97.79 71.12 0)
+			(at 86.36 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1146,148 +808,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 114.3 64.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "5305bb02-0912-46f5-854a-b13c18f94434")
-		(property "Reference" "R4"
-			(at 116.84 63.4999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "R_US"
-			(at 116.84 66.0399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 115.316 65.024 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 114.3 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 114.3 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "89dc368f-06ca-4570-9dc4-79eaa8a8e509")
-		)
-		(pin "1"
-			(uuid "1f6ffd60-1551-4738-94e0-9fcb686a73bc")
-		)
-		(instances
-			(project "Supercap"
-				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/79ba0ad0-1263-4d7e-82bc-d7cd5a71cdbf"
-					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 114.3 53.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "619657c1-5403-4644-9e39-65be37ef2ffa")
-		(property "Reference" "R3"
-			(at 116.84 52.0699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "R_US"
-			(at 116.84 54.6099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 115.316 53.594 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 114.3 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 114.3 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a626d1c8-ade5-4b63-9d9b-cd2b25374dd3")
-		)
-		(pin "1"
-			(uuid "87b1ff24-696d-445b-aaa2-97df26dcb6cc")
-		)
-		(instances
-			(project "Supercap"
-				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/79ba0ad0-1263-4d7e-82bc-d7cd5a71cdbf"
-					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
-		(at 97.79 53.34 0)
+		(at 109.22 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1295,7 +817,7 @@
 		(dnp no)
 		(uuid "64b57ede-0330-41f9-8293-8e29fad9890b")
 		(property "Reference" "C3"
-			(at 101.6 52.0699 0)
+			(at 113.03 60.9599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1304,7 +826,7 @@
 			)
 		)
 		(property "Value" "110"
-			(at 101.6 54.6099 0)
+			(at 113.03 63.4999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1313,7 +835,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Radial_D18.0mm_H35.5mm_P7.50mm"
-			(at 98.7552 57.15 0)
+			(at 110.1852 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1322,7 +844,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.com/datasheet/2/40/AVX_SCC-3084824.pdf"
-			(at 97.79 53.34 0)
+			(at 109.22 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1331,7 +853,7 @@
 			)
 		)
 		(property "Description" "Supercapacitor"
-			(at 97.79 53.34 0)
+			(at 109.22 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1340,7 +862,7 @@
 			)
 		)
 		(property "Mouser Part Number" "598-DSF117Q3R0"
-			(at 97.79 53.34 0)
+			(at 109.22 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1349,7 +871,7 @@
 			)
 		)
 		(property "Voltage Rating" "3V"
-			(at 101.6 57.15 0)
+			(at 113.03 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1379,78 +901,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 114.3 30.48 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "661f9d9b-7038-404d-b381-acad501b5151")
-		(property "Reference" "R1"
-			(at 116.84 29.2099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "R_US"
-			(at 116.84 31.7499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 115.316 30.734 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 114.3 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 114.3 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "1dcdfcbc-cd4a-4959-bff7-1f7d3ce39762")
-		)
-		(pin "1"
-			(uuid "3efb428e-8fa2-483d-b988-6a210119ca28")
-		)
-		(instances
-			(project ""
-				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/79ba0ad0-1263-4d7e-82bc-d7cd5a71cdbf"
-					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
-		(at 97.79 64.77 0)
+		(at 120.65 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1458,7 +910,7 @@
 		(dnp no)
 		(uuid "765c13c9-9c38-4b40-a073-a35c902724c2")
 		(property "Reference" "C4"
-			(at 101.6 63.4999 0)
+			(at 124.46 60.9599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1467,7 +919,7 @@
 			)
 		)
 		(property "Value" "110"
-			(at 101.6 66.0399 0)
+			(at 124.46 63.4999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1476,7 +928,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Radial_D18.0mm_H35.5mm_P7.50mm"
-			(at 98.7552 68.58 0)
+			(at 121.6152 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1485,7 +937,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.com/datasheet/2/40/AVX_SCC-3084824.pdf"
-			(at 97.79 64.77 0)
+			(at 120.65 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1494,7 +946,7 @@
 			)
 		)
 		(property "Description" "Supercapacitor"
-			(at 97.79 64.77 0)
+			(at 120.65 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1503,7 +955,7 @@
 			)
 		)
 		(property "Mouser Part Number" "598-DSF117Q3R0"
-			(at 97.79 64.77 0)
+			(at 120.65 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1512,7 +964,7 @@
 			)
 		)
 		(property "Voltage Rating" "3V"
-			(at 101.6 68.58 0)
+			(at 124.46 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)

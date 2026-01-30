@@ -754,7 +754,7 @@
 		)
 		(uuid b205fee0-a810-4eb4-904f-eb3d08bbaa11)
 	)
-	(text "----Buck--->\n24V <-> 0-12V\n<---Boost---"
+	(text "----Buck--->\n24V <-> 0-3V\n<---Boost---"
 		(exclude_from_sim no)
 		(at 162.56 90.17 0)
 		(effects
@@ -776,7 +776,7 @@
 		)
 		(uuid "88cb5a9c-087a-4a64-913d-4c2656b69c3e")
 	)
-	(text "4S\nCapacitors"
+	(text "4P\nCapacitors"
 		(exclude_from_sim no)
 		(at 223.52 89.916 0)
 		(effects
@@ -1882,7 +1882,7 @@
 				(justify left)
 			)
 		)
-		(pin "V_{cap}" bidirectional
+		(pin "V_{cap+}" bidirectional
 			(at 184.15 80.01 0)
 			(uuid "6bf84d89-c97d-4cb4-92ba-9253ed88cdf1")
 			(effects
