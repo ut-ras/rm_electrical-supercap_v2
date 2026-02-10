@@ -139,11 +139,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [1, 30; 773, 812]
+      Location      [1, 30; 773, 821]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAMEAAAAYvw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAAwQAAABQAP///wAAAwQAAAKNAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAAwQAAABQAP///wAAAwQAAAKWAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -1281,11 +1281,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 83; 1536, 873]
+      Location      [0, 74; 1536, 873]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAABgAAAAL7AAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAABgAAAAMEAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -1563,7 +1563,7 @@ Plecs {
         Direction     up
       }
       Schematic {
-        Location      [0, 27; 1280, 717]
+        Location      [250, 135; 1530, 825]
         ZoomFactor    2.57013
         SliderPosition [0, 0]
         ShowBrowser   off
@@ -1683,161 +1683,6 @@ Plecs {
           }
         }
         Component {
-          Type          ConfigurableSubsystem
-          Name          "Subsystem"
-          Show          off
-          Position      [190, 75]
-          Direction     right
-          Flipped       off
-          LabelPosition west
-          Frame         [-20, -15; 20, 15]
-          SampleTime    "-1"
-          CodeGenDiscretizationMethod "2"
-          CodeGenTarget "Generic"
-          MaskIconFrame on
-          MaskIconOpaque off
-          MaskIconRotates on
-          Terminal {
-            Type          Input
-            Position      [-15, 0]
-            Direction     left
-          }
-          Terminal {
-            Type          Output
-            Position      [19, 0]
-            Direction     right
-          }
-          TerminalNames { "In1", "Out1" }
-          Location      [415, 55; 698, 259]
-          ZoomFactor    1
-          SliderPosition [0, 0]
-          ShowBrowser   off
-          BrowserWidth  100
-          Configurations {
-            Name          "Internal"
-            Schematic {
-              Component {
-                Type          Input
-                Name          "In1"
-                Show          off
-                Position      [60, 80]
-                Direction     right
-                Flipped       off
-                LabelPosition south
-                Parameter {
-                  Variable      "Index"
-                  Value         "1"
-                  Show          on
-                }
-                Parameter {
-                  Variable      "Width"
-                  Value         "-1"
-                  Show          off
-                }
-              }
-              Component {
-                Type          Output
-                Name          "Out1"
-                Show          off
-                Position      [220, 80]
-                Direction     right
-                Flipped       off
-                LabelPosition south
-                Parameter {
-                  Variable      "Index"
-                  Value         "2"
-                  Show          on
-                }
-                Parameter {
-                  Variable      "Width"
-                  Value         "-1"
-                  Show          off
-                }
-              }
-              Component {
-                Type          Constant
-                Name          "Gain"
-                Show          on
-                Position      [150, 80]
-                Direction     right
-                Flipped       off
-                LabelPosition south
-                Frame         [-10, -10; 10, 10]
-                Parameter {
-                  Variable      "Value"
-                  Value         "K"
-                  Show          off
-                }
-                Parameter {
-                  Variable      "DataType"
-                  Value         "10"
-                  Show          off
-                }
-              }
-              Connection {
-                Type          Signal
-                SrcComponent  "Gain"
-                SrcTerminal   1
-                DstComponent  "Out1"
-                DstTerminal   1
-              }
-            }
-            Name          "External"
-            Schematic {
-              Component {
-                Type          Input
-                Name          "In1"
-                Show          off
-                Position      [60, 80]
-                Direction     right
-                Flipped       off
-                LabelPosition south
-                Parameter {
-                  Variable      "Index"
-                  Value         "1"
-                  Show          on
-                }
-                Parameter {
-                  Variable      "Width"
-                  Value         "-1"
-                  Show          off
-                }
-              }
-              Component {
-                Type          Output
-                Name          "Out1"
-                Show          off
-                Position      [220, 80]
-                Direction     right
-                Flipped       off
-                LabelPosition south
-                Parameter {
-                  Variable      "Index"
-                  Value         "2"
-                  Show          on
-                }
-                Parameter {
-                  Variable      "Width"
-                  Value         "-1"
-                  Show          off
-                }
-              }
-              Connection {
-                Type          Signal
-                SrcComponent  "In1"
-                SrcTerminal   1
-                DstComponent  "Out1"
-                DstTerminal   1
-              }
-            }
-          }
-          Parameter {
-            Variable      "Configuration"
-            Value         "ext"
-            Show          off
-          }
-        }
-        Component {
           Type          Product
           Name          "Product"
           Show          off
@@ -1944,8 +1789,7 @@ Plecs {
           Type          Signal
           SrcComponent  "K"
           SrcTerminal   1
-          DstComponent  "Subsystem"
-          DstTerminal   1
+          Points        [190, 60]
         }
         Connection {
           Type          Signal
@@ -1963,9 +1807,7 @@ Plecs {
         }
         Connection {
           Type          Signal
-          SrcComponent  "Subsystem"
-          SrcTerminal   2
-          Points        [190, 120]
+          Points        [190, 95; 190, 120]
           Branch {
             DstComponent  "Product1"
             DstTerminal   2
