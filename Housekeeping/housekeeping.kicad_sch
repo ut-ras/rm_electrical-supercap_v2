@@ -165,7 +165,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ec47c7e4-343d-4fea-a788-36282c684e23")
-		(property "Reference" "P78B-1000R1"
+		(property "Reference" "P78B-1000R?"
 			(at 139.7 85.7249 0)
 			(effects
 				(font
@@ -223,6 +223,12 @@
 			(project ""
 				(path "/54dd3bdb-fa85-45ef-ba5f-b0f6c4bf9e9e"
 					(reference "P78B-1000R1")
+					(unit 1)
+				)
+			)
+			(project "Supercap"
+				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/47f13d7b-df0e-4361-81b8-c133778882c5"
+					(reference "P78B-1000R?")
 					(unit 1)
 				)
 			)
