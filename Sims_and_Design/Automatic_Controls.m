@@ -1,0 +1,23 @@
+%%
+% This document serves as documentation for the design process for creating
+% an automatic controls system for the supercapacitor system. 
+clc;
+clear all;
+%% Problem Statement
+% Our robots have variable power consumption despite a constant 90W power
+% budget, necessitating the usage of power OR-ing paradigms to balance
+% power consumption with supply. Considering that each round has periods of
+% time such as startup and healing where power consumption is quite low,
+% allocating excess energy to a storage system contains high potential in
+% improving robot performance. 
+% 
+% To harness this extra power and release it during periods of high current
+% draw, this system uses supercapacitors to store excess energy in their
+% D-fields. Given a capacitor's i(t) = C * v'(t) voltage-current relation,
+% however, such storage requires dedicated power electronics and control
+% circuitry to maange operation. 
+% 
+% This simulation will model the power converter as an ideal transformer 
+
+%% Auto-Regressive Moving Average (ARMA)
+% 

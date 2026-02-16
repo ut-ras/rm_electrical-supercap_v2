@@ -479,6 +479,282 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "NCP5109ADR2G:NCP5109ADR2G"
+			(pin_names
+				(offset 0.762)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "IC"
+				(at 29.21 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "NCP5109ADR2G"
+				(at 29.21 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "SOIC127P600X175-8N"
+				(at 29.21 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NCP5109-D.PDF"
+				(at 29.21 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "High Voltage Range: Up to 200 V; dV/dt Immunity 50 V/nsec; Gate Drive Supply Range from 10 V to 20 V; High and Low Drive Outputs; Output Source / Sink Current Capability 250 mA / 500 mA; 3.3 V and 5 V Input Logic Compatible; Up to Vcc Swing on Input Pins; Matched Propagation Delays Between Both Channels; Outputs in Phase with the Inputs; Independent Logic Inputs to Accommodate All Topologies (Version A); Cross Conduction Protection with 100 ns Internal Fixed Dead Time (Version B ); Under Vcc LockOut (UVLO)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description_1" "High Voltage Range: Up to 200 V; dV/dt Immunity 50 V/nsec; Gate Drive Supply Range from 10 V to 20 V; High and Low Drive Outputs; Output Source / Sink Current Capability 250 mA / 500 mA; 3.3 V and 5 V Input Logic Compatible; Up to Vcc Swing on Input Pins; Matched Propagation Delays Between Both Channels; Outputs in Phase with the Inputs; Independent Logic Inputs to Accommodate All Topologies (Version A); Cross Conduction Protection with 100 ns Internal Fixed Dead Time (Version B ); Under Vcc LockOut (UVLO) "
+				(at 29.21 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Height" "1.75"
+				(at 29.21 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" ""
+				(at 29.21 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" ""
+				(at 29.21 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "onsemi"
+				(at 29.21 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "NCP5109ADR2G"
+				(at 29.21 -15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(symbol "NCP5109ADR2G_0_0"
+				(pin power_in line
+					(at 0 0 0)
+					(length 5.08)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "IN_HI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -5.08 0)
+					(length 5.08)
+					(name "IN_LO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 0)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 33.02 0 180)
+					(length 5.08)
+					(name "VBOOT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 33.02 -2.54 180)
+					(length 5.08)
+					(name "DRV_HI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 33.02 -5.08 180)
+					(length 5.08)
+					(name "BRIDGE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 33.02 -7.62 180)
+					(length 5.08)
+					(name "DRV_LO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "NCP5109ADR2G_0_1"
+				(polyline
+					(pts
+						(xy 5.08 2.54) (xy 27.94 2.54) (xy 27.94 -10.16) (xy 5.08 -10.16) (xy 5.08 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Transistor_FET:BSB013NE2LXI"
 			(pin_names
 				(hide yes)
@@ -1215,26 +1491,6 @@
 		)
 		(uuid "fec8715c-619d-42c4-b199-8f63a488943e")
 	)
-	(text_box "ADD GATE DRIVER HERE"
-		(exclude_from_sim no)
-		(at 63.5 110.49 0)
-		(size 20.32 12.7)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 2.54 2.54)
-			)
-			(justify left top)
-		)
-		(uuid "d39f464d-42f8-415f-a83b-380e02e2d48d")
-	)
 	(junction
 		(at 185.42 52.07)
 		(diameter 0)
@@ -1351,6 +1607,26 @@
 	)
 	(wire
 		(pts
+			(xy 91.44 111.76) (xy 90.17 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ad2edfb-8201-4be1-a4f3-2cac33fd6df4")
+	)
+	(wire
+		(pts
+			(xy 78.74 121.92) (xy 82.55 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ca2034b-4a4d-4040-994c-1b77385c97f7")
+	)
+	(wire
+		(pts
 			(xy 55.88 52.07) (xy 55.88 53.34)
 		)
 		(stroke
@@ -1431,6 +1707,16 @@
 	)
 	(wire
 		(pts
+			(xy 39.37 114.3) (xy 41.91 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3af8c488-8160-44a4-a858-715866662c19")
+	)
+	(wire
+		(pts
 			(xy 67.31 52.07) (xy 67.31 53.34)
 		)
 		(stroke
@@ -1478,6 +1764,26 @@
 			(type default)
 		)
 		(uuid "5420f8ca-d27d-49ff-bdb5-360c0ebfc347")
+	)
+	(wire
+		(pts
+			(xy 92.71 121.92) (xy 90.17 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60da1513-be39-475f-9960-554676f8d02c")
+	)
+	(wire
+		(pts
+			(xy 39.37 111.76) (xy 41.91 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "620b42f5-0d84-412a-8faa-c8124cec0387")
 	)
 	(wire
 		(pts
@@ -1541,6 +1847,36 @@
 	)
 	(wire
 		(pts
+			(xy 78.74 111.76) (xy 82.55 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91586584-9018-438c-9411-ed27729ab3ba")
+	)
+	(wire
+		(pts
+			(xy 38.1 119.38) (xy 38.1 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "991ffd25-c1f9-47eb-b20e-ca4917d3ce3a")
+	)
+	(wire
+		(pts
+			(xy 78.74 114.3) (xy 74.93 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9bf44790-6106-4f4f-b44f-1fc51b475910")
+	)
+	(wire
+		(pts
 			(xy 148.59 45.72) (xy 148.59 43.18)
 		)
 		(stroke
@@ -1558,6 +1894,26 @@
 			(type default)
 		)
 		(uuid "a63e8342-82d5-4352-951a-9fae57a21bb2")
+	)
+	(wire
+		(pts
+			(xy 78.74 111.76) (xy 78.74 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac22063f-2a4e-4a2c-bb91-3b53fe362a6c")
+	)
+	(wire
+		(pts
+			(xy 100.33 116.84) (xy 74.93 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aee086e5-cbe5-4d06-9b26-e5f70b27d419")
 	)
 	(wire
 		(pts
@@ -1621,6 +1977,16 @@
 	)
 	(wire
 		(pts
+			(xy 41.91 119.38) (xy 38.1 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1d89b1c-fa45-4e8b-b7c1-46a6e9f72552")
+	)
+	(wire
+		(pts
 			(xy 55.88 43.18) (xy 55.88 44.45)
 		)
 		(stroke
@@ -1628,6 +1994,16 @@
 			(type default)
 		)
 		(uuid "da30347e-0a5c-446d-b2ea-8bd65ebe7ad9")
+	)
+	(wire
+		(pts
+			(xy 78.74 121.92) (xy 78.74 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "daa378e6-afcb-4253-9db0-f390067740e1")
 	)
 	(wire
 		(pts
@@ -1648,6 +2024,16 @@
 			(type default)
 		)
 		(uuid "de0d3b3b-be2b-46a7-a8e2-e3c11aaffe19")
+	)
+	(wire
+		(pts
+			(xy 78.74 119.38) (xy 74.93 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ecba2955-9601-4516-b07d-03468b9d6de0")
 	)
 	(wire
 		(pts
@@ -1689,8 +2075,18 @@
 		)
 		(uuid "f45bb8ee-296d-4d23-a28b-7f55adc5f081")
 	)
+	(wire
+		(pts
+			(xy 39.37 116.84) (xy 41.91 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb374500-f902-4d21-a729-d171f5fe942a")
+	)
 	(label "LO_DRV_{1}"
-		(at 96.52 125.73 0)
+		(at 92.71 121.92 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1720,7 +2116,7 @@
 		(uuid "2df4323a-ff12-43c1-81e6-31b50ccc83e5")
 	)
 	(label "HI_DRV_{1}"
-		(at 96.52 110.49 0)
+		(at 91.44 111.76 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1780,7 +2176,7 @@
 		(uuid "6e23a06d-68e9-4564-a4d8-34ae91af2447")
 	)
 	(label "V_{sw,1}"
-		(at 88.9 115.57 0)
+		(at 100.33 116.84 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1839,9 +2235,20 @@
 		)
 		(uuid "f4f51597-7095-4aee-b5e3-b60bcf1c17c6")
 	)
+	(hierarchical_label "+10V"
+		(shape input)
+		(at 39.37 111.76 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1072e7c6-1e03-42c0-ba3a-00273bc31ece")
+	)
 	(hierarchical_label "+3V3"
 		(shape input)
-		(at 57.15 97.79 0)
+		(at 82.55 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1861,9 +2268,20 @@
 		)
 		(uuid "55c6725e-b56c-4a45-8d8e-109954635cf0")
 	)
+	(hierarchical_label "D_{2}"
+		(shape input)
+		(at 64.77 93.98 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "60598a65-a45d-4447-a7e2-f00f9e3d7d90")
+	)
 	(hierarchical_label "D_{1}"
 		(shape input)
-		(at 46.99 107.95 180)
+		(at 39.37 114.3 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1882,6 +2300,17 @@
 			(justify left)
 		)
 		(uuid "66c0d792-7def-4ab4-a798-841a59b31e05")
+	)
+	(hierarchical_label "D_{2}'"
+		(shape input)
+		(at 68.58 102.87 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "748dba47-6faf-40e6-a132-d31281c1ad0f")
 	)
 	(hierarchical_label "V_{sw}"
 		(shape output)
@@ -1918,7 +2347,7 @@
 	)
 	(hierarchical_label "D_{1}'"
 		(shape input)
-		(at 46.99 119.38 180)
+		(at 39.37 116.84 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2351,7 +2780,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 46.99 128.27 0)
+		(at 38.1 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2360,7 +2789,7 @@
 		(fields_autoplaced yes)
 		(uuid "4c9b4d98-a8df-4731-816f-112de6d2223e")
 		(property "Reference" "#PWR02"
-			(at 46.99 134.62 0)
+			(at 38.1 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2369,7 +2798,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 46.99 133.35 0)
+			(at 38.1 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2377,7 +2806,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 46.99 128.27 0)
+			(at 38.1 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2386,7 +2815,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 46.99 128.27 0)
+			(at 38.1 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2395,7 +2824,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 46.99 128.27 0)
+			(at 38.1 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2675,16 +3104,15 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 92.71 110.49 90)
+		(at 86.36 111.76 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "679d77cf-a280-4417-80df-2a0d0767f17d")
 		(property "Reference" "R_{small,top}1"
-			(at 92.71 104.14 90)
+			(at 86.36 109.22 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2692,7 +3120,7 @@
 			)
 		)
 		(property "Value" "R_small"
-			(at 92.71 106.68 90)
+			(at 86.36 113.792 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2700,7 +3128,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 92.964 109.474 90)
+			(at 86.614 110.744 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2709,7 +3137,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 92.71 110.49 0)
+			(at 86.36 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2718,7 +3146,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 92.71 110.49 0)
+			(at 86.36 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2743,7 +3171,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 36.83 128.27 0)
+		(at 142.24 132.08 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2752,7 +3180,7 @@
 		(fields_autoplaced yes)
 		(uuid "7e9d4ca2-92a8-4749-a13b-64730c864525")
 		(property "Reference" "#PWR0113"
-			(at 36.83 133.35 0)
+			(at 142.24 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2761,7 +3189,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 36.703 132.08 0)
+			(at 142.113 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2769,7 +3197,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 36.83 129.54 0)
+			(at 142.24 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2778,7 +3206,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 36.83 129.54 0)
+			(at 142.24 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2787,7 +3215,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 36.83 128.27 0)
+			(at 142.24 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3522,17 +3950,164 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 92.71 125.73 90)
+		(lib_id "NCP5109ADR2G:NCP5109ADR2G")
+		(at 41.91 111.76 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
+		(uuid "c544aa91-4cf9-4b0a-a068-542146977a18")
+		(property "Reference" "IC1"
+			(at 58.42 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NCP5109ADR2G"
+			(at 58.42 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SOIC127P600X175-8N"
+			(at 71.12 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NCP5109-D.PDF"
+			(at 71.12 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "High Voltage Range: Up to 200 V; dV/dt Immunity 50 V/nsec; Gate Drive Supply Range from 10 V to 20 V; High and Low Drive Outputs; Output Source / Sink Current Capability 250 mA / 500 mA; 3.3 V and 5 V Input Logic Compatible; Up to Vcc Swing on Input Pins; Matched Propagation Delays Between Both Channels; Outputs in Phase with the Inputs; Independent Logic Inputs to Accommodate All Topologies (Version A); Cross Conduction Protection with 100 ns Internal Fixed Dead Time (Version B ); Under Vcc LockOut (UVLO)"
+			(at 41.91 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "High Voltage Range: Up to 200 V; dV/dt Immunity 50 V/nsec; Gate Drive Supply Range from 10 V to 20 V; High and Low Drive Outputs; Output Source / Sink Current Capability 250 mA / 500 mA; 3.3 V and 5 V Input Logic Compatible; Up to Vcc Swing on Input Pins; Matched Propagation Delays Between Both Channels; Outputs in Phase with the Inputs; Independent Logic Inputs to Accommodate All Topologies (Version A); Cross Conduction Protection with 100 ns Internal Fixed Dead Time (Version B ); Under Vcc LockOut (UVLO) "
+			(at 71.12 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Height" "1.75"
+			(at 71.12 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "863-NCP5109ADR2G"
+			(at 71.12 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 71.12 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "onsemi"
+			(at 71.12 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "NCP5109ADR2G"
+			(at 71.12 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d462d42d-0528-4e68-8506-5c521da7d5d0")
+		)
+		(pin "1"
+			(uuid "ccf73c5c-d26b-4980-a464-28c32c4becb1")
+		)
+		(pin "7"
+			(uuid "9ef5d195-1fef-4654-8eef-960f9b04f957")
+		)
+		(pin "6"
+			(uuid "25aa7e88-575e-46e0-9c2d-7fd7dd37f732")
+		)
+		(pin "4"
+			(uuid "32feea01-021d-4aa6-8c23-436962abe798")
+		)
+		(pin "8"
+			(uuid "bc29a387-2efb-4ef4-bae7-371d68a95cb9")
+		)
+		(pin "5"
+			(uuid "fddfb0ad-7b66-4981-b6f5-ef8c5bfde8d5")
+		)
+		(pin "3"
+			(uuid "69571786-4719-4ed5-aceb-6be26a000fe8")
+		)
+		(instances
+			(project "Supercap"
+				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/66de8ce3-68f9-4d35-858c-1420192a373c"
+					(reference "IC1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 86.36 121.92 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(uuid "d1fe84cd-8dc1-4419-a8c5-b35c37bf9c9e")
 		(property "Reference" "R_{small,bottom}1"
-			(at 92.71 119.38 90)
+			(at 86.36 119.38 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3540,7 +4115,7 @@
 			)
 		)
 		(property "Value" "R_small"
-			(at 92.71 121.92 90)
+			(at 86.36 124.206 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3548,7 +4123,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 92.964 124.714 90)
+			(at 86.614 120.904 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3557,7 +4132,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 92.71 125.73 0)
+			(at 86.36 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3566,7 +4141,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 92.71 125.73 0)
+			(at 86.36 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
