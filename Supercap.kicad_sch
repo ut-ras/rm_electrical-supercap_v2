@@ -168,342 +168,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transistor_FET:FDMS8350LET40"
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "Q"
-				(at 5.08 1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "FDMS8350LET40"
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:TDSON-8-1"
-				(at 5.08 -1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/FDMS8350LET40-D.pdf"
-				(at 5.08 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "49A Id, 40V Vds, N-Channel PowerTrench MOSFET, 0.85mOhm Ron, 242nC Qgmax, -55 to 175 °C, 5x6mm SON8"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "powertrench-MOSFET MOSFET fairchild"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "TDSON*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "FDMS8350LET40_0_1"
-				(polyline
-					(pts
-						(xy 0.254 1.905) (xy 0.254 -1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 2.286) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.508) (xy 0.762 -0.508)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.27) (xy 0.762 -2.286)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 1.651 0)
-					(radius 2.794)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 2.54 -1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "FDMS8350LET40_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "G"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(hide yes)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(hide yes)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GNDPWR"
 			(power)
 			(pin_numbers
@@ -798,16 +462,6 @@
 		(color 0 0 0 0)
 		(uuid "d92180fa-8eb5-487a-a319-7c09041bdafa")
 	)
-	(wire
-		(pts
-			(xy 134.62 83.82) (xy 134.62 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "03b776c9-323d-48cc-b70e-635ae05938ef")
-	)
 	(polyline
 		(pts
 			(xy 207.01 91.44) (xy 207.01 95.25)
@@ -950,23 +604,13 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 54.61) (xy 138.43 62.23)
+			(xy 138.43 54.61) (xy 138.43 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "4dbe3a5f-fd92-4683-8512-61389c9c0bec")
-	)
-	(wire
-		(pts
-			(xy 130.81 100.33) (xy 142.24 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f9ddcca-f8d0-4da1-a76f-2f1168d28460")
 	)
 	(wire
 		(pts
@@ -1138,16 +782,6 @@
 		)
 		(uuid "87810788-1494-47d8-93e1-173931c11177")
 	)
-	(wire
-		(pts
-			(xy 130.81 67.31) (xy 129.54 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8b0cc0fa-c5d3-4c99-bd98-54be2a3f19b3")
-	)
 	(polyline
 		(pts
 			(xy 109.22 97.79) (xy 109.22 95.25)
@@ -1258,26 +892,6 @@
 		)
 		(uuid "c1eb1cc5-dfc2-46f8-abeb-05b7465cb635")
 	)
-	(wire
-		(pts
-			(xy 129.54 67.31) (xy 129.54 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ca6c0a16-b2bd-4161-a1c0-c5abc6d1913d")
-	)
-	(wire
-		(pts
-			(xy 130.81 96.52) (xy 142.24 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cd421a81-ac19-4722-85d1-b7e2fa4d234d")
-	)
 	(polyline
 		(pts
 			(xy 102.87 93.98) (xy 102.87 85.09)
@@ -1338,16 +952,6 @@
 		)
 		(uuid "dd709e84-fbba-4347-a8f2-62ed70b0c0c6")
 	)
-	(wire
-		(pts
-			(xy 138.43 72.39) (xy 138.43 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e0d8f756-7785-42bb-9e08-312dcea8e98d")
-	)
 	(polyline
 		(pts
 			(xy 114.3 96.52) (xy 105.41 96.52)
@@ -1397,16 +1001,6 @@
 			(type default)
 		)
 		(uuid "f6b79b2e-68f7-498f-aa47-0e2332bb71cc")
-	)
-	(wire
-		(pts
-			(xy 142.24 83.82) (xy 134.62 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ffb6f5e9-53fa-4ba2-8554-754e27f5ebea")
 	)
 	(label "+5V"
 		(at 83.82 83.82 0)
@@ -1684,88 +1278,6 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "Transistor_FET:FDMS8350LET40")
-		(at 135.89 67.31 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ab726758-89f4-444d-bf35-694c15e47d2a")
-		(property "Reference" "Q_{shutdown}"
-			(at 142.24 66.0399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "~"
-			(at 142.24 68.5799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 140.97 69.215 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 140.97 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 135.89 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "5b378d3c-8ced-43fb-b262-982a919f1aeb")
-		)
-		(pin "2"
-			(uuid "291cc8d9-26ca-4a36-b020-5a9866f914e9")
-		)
-		(pin "5"
-			(uuid "661c96f6-bce0-4c19-8d3f-a53250e08c84")
-		)
-		(pin "1"
-			(uuid "5e22e228-405b-40ca-b73f-70ca08448cca")
-		)
-		(pin "3"
-			(uuid "35f8053d-68fe-41ed-88f9-9817b93e2bc0")
-		)
-		(instances
-			(project ""
-				(path "/98ee8313-37ab-4329-91ab-b5710476f82f"
-					(reference "Q_{shutdown}")
-					(unit 1)
-				)
-			)
-		)
-	)
 	(sheet
 		(at 40.64 77.47)
 		(size 41.91 25.4)
@@ -1872,29 +1384,9 @@
 				(justify left top)
 			)
 		)
-		(pin "+3V3" input
-			(at 142.24 83.82 180)
-			(uuid "01097756-ac35-4cdf-8aeb-437d9153d4d2")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "V_{cap+}" bidirectional
 			(at 184.15 80.01 0)
 			(uuid "6bf84d89-c97d-4cb4-92ba-9253ed88cdf1")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "V_{sw}" output
-			(at 184.15 100.33 0)
-			(uuid "66b2ed48-73df-4258-921c-aad980b3fb4f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1910,46 +1402,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-			)
-		)
-		(pin "HI_DRV" output
-			(at 184.15 92.71 0)
-			(uuid "eb4fc12e-c26f-40eb-a4bd-0ef19329ca61")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "D'" input
-			(at 142.24 100.33 180)
-			(uuid "a9c7b1e6-dc11-40c1-adc5-d9171dff9a35")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "D" input
-			(at 142.24 96.52 180)
-			(uuid "dd125a38-7294-4501-96c7-c29f22c20335")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "LO_DRV" output
-			(at 184.15 96.52 0)
-			(uuid "581919de-adcd-4f01-b7b8-e75878dd4915")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 		(instances
@@ -2089,16 +1541,6 @@
 		(pin "D'" output
 			(at 130.81 100.33 0)
 			(uuid "92d06972-cdaa-4c47-93fd-fa373cdf2bad")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "Shutdown" output
-			(at 129.54 77.47 90)
-			(uuid "02b8690e-f027-4986-beb7-107f5b722804")
 			(effects
 				(font
 					(size 1.27 1.27)

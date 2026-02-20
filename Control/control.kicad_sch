@@ -27,17 +27,6 @@
 		)
 		(uuid "07e6769a-1ec1-496f-9d11-a73bd9ec24b7")
 	)
-	(hierarchical_label "Shutdown"
-		(shape output)
-		(at 176.53 90.17 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "2a2733fc-ee4c-4fba-92de-d6540ecb43f3")
-	)
 	(hierarchical_label "SCL_{IN}"
 		(shape input)
 		(at 125.73 82.55 180)
