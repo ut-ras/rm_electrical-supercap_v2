@@ -1688,7 +1688,7 @@
 		)
 		(uuid "0fc22b4d-4899-4910-9acd-97654f82f532")
 	)
-	(text "Outputs & Test Points"
+	(text "Test Points"
 		(exclude_from_sim no)
 		(at 194.564 139.192 0)
 		(effects
@@ -1815,24 +1815,6 @@
 		(uuid "3360d0bc-151c-4205-951d-6bedf9b9846a")
 	)
 	(junction
-		(at 167.64 119.38)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "37af1747-5946-4f1c-88d7-80976b2be38c")
-	)
-	(junction
-		(at 142.24 119.38)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3c799722-ee9b-4ef8-9775-d4942fa9b0c8")
-	)
-	(junction
-		(at 142.24 109.22)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "595e9549-64f2-495b-8455-ca2f97d011a9")
-	)
-	(junction
 		(at 67.31 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1843,12 +1825,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "61703b9b-709b-49fa-bb8d-403953d13f42")
-	)
-	(junction
-		(at 167.64 99.06)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6e15c2ec-add7-4be8-af7f-e5a70f0a22cf")
 	)
 	(junction
 		(at 148.59 43.18)
@@ -1873,12 +1849,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ad5d94dc-da2f-4ca7-94f4-55aa04fbde70")
-	)
-	(junction
-		(at 142.24 99.06)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b35281f6-dd3e-46e1-944b-f0be9706a942")
 	)
 	(junction
 		(at 102.87 43.18)
@@ -1915,12 +1885,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ebc1e604-d588-42bf-bd6e-42e39410f535")
-	)
-	(junction
-		(at 167.64 109.22)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f73c39a8-8909-49fe-a474-f4eaa1f2897f")
 	)
 	(junction
 		(at 55.88 53.34)
@@ -2286,26 +2250,6 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 119.38) (xy 144.78 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5cc6d037-1bdf-4aab-b4b1-40f362302bb5")
-	)
-	(wire
-		(pts
-			(xy 142.24 99.06) (xy 144.78 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5da66ca2-4c5d-4d38-a043-d5a1c4837c7a")
-	)
-	(wire
-		(pts
 			(xy 50.8 97.79) (xy 50.8 106.68)
 		)
 		(stroke
@@ -2616,16 +2560,6 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 109.22) (xy 144.78 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b0ebff78-6d77-4b48-bffe-606e81645bab")
-	)
-	(wire
-		(pts
 			(xy 67.31 43.18) (xy 78.74 43.18)
 		)
 		(stroke
@@ -2643,16 +2577,6 @@
 			(type default)
 		)
 		(uuid "b80fed71-921b-4a46-a6e6-a8fa2ba0bda2")
-	)
-	(wire
-		(pts
-			(xy 167.64 109.22) (xy 170.18 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bdc0de78-5483-48fe-9895-fe506d84506b")
 	)
 	(wire
 		(pts
@@ -2743,16 +2667,6 @@
 			(type default)
 		)
 		(uuid "d1d89b1c-fa45-4e8b-b7c1-46a6e9f72552")
-	)
-	(wire
-		(pts
-			(xy 167.64 99.06) (xy 170.18 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d4706b66-6dde-411d-9373-3146fbe99b0d")
 	)
 	(wire
 		(pts
@@ -2943,16 +2857,6 @@
 			(type default)
 		)
 		(uuid "fb374500-f902-4d21-a729-d171f5fe942a")
-	)
-	(wire
-		(pts
-			(xy 167.64 119.38) (xy 170.18 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ff5e1258-c031-499f-a23e-cd1c24d37c62")
 	)
 	(wire
 		(pts
@@ -3210,17 +3114,6 @@
 		)
 		(uuid "748dba47-6faf-40e6-a132-d31281c1ad0f")
 	)
-	(hierarchical_label "HI_DRV_{2}"
-		(shape output)
-		(at 170.18 109.22 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "900100c7-ee02-49e7-b41c-fc621f315314")
-	)
 	(hierarchical_label "+10V"
 		(shape input)
 		(at 34.29 128.27 180)
@@ -3231,17 +3124,6 @@
 			(justify right)
 		)
 		(uuid "b05bdbac-3b74-434e-b2bd-0df3c364a965")
-	)
-	(hierarchical_label "V_{sw,1}"
-		(shape output)
-		(at 144.78 119.38 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b1ccd5cd-0f43-475d-b308-fe4310be46ad")
 	)
 	(hierarchical_label "+24V"
 		(shape bidirectional)
@@ -3254,39 +3136,6 @@
 		)
 		(uuid "c2ab6687-3f75-42f0-8c03-44e9100a63fd")
 	)
-	(hierarchical_label "LO_DRV_{2}"
-		(shape output)
-		(at 170.18 99.06 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "c356b7d3-79df-41dc-982d-c8727fa9053f")
-	)
-	(hierarchical_label "V_{sw,1}"
-		(shape output)
-		(at 170.18 119.38 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d1bc34d2-a427-453e-9c25-4fe7077e3263")
-	)
-	(hierarchical_label "HI_DRV_{1}"
-		(shape output)
-		(at 144.78 109.22 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "eb4de9e0-5b6d-445e-8640-dc2008b6f116")
-	)
 	(hierarchical_label "D_{1}'"
 		(shape input)
 		(at 49.53 111.76 180)
@@ -3297,17 +3146,6 @@
 			(justify right)
 		)
 		(uuid "f95290f2-79d0-485c-b81b-041d512988fa")
-	)
-	(hierarchical_label "LO_DRV_{1}"
-		(shape output)
-		(at 144.78 99.06 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "fbb3a9d5-253e-48f4-a61a-0866c77f012f")
 	)
 	(symbol
 		(lib_id "Transistor_FET:BSB013NE2LXI")

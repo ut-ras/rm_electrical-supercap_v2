@@ -151,183 +151,10 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:GNDPWR"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "GNDPWR"
-				(at 0 -3.302 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global ground"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "GNDPWR_0_1"
-				(polyline
-					(pts
-						(xy -1.016 -1.27) (xy -1.27 -2.032) (xy -1.27 -2.032)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.508 -1.27) (xy -0.762 -2.032) (xy -0.762 -2.032)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy 0 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy -0.254 -2.032) (xy -0.254 -2.032)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.508 -1.27) (xy 0.254 -2.032) (xy 0.254 -2.032)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 -1.27) (xy -1.016 -1.27) (xy -1.016 -1.27)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 -1.27) (xy 0.762 -2.032) (xy 0.762 -2.032) (xy 0.762 -2.032)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GNDPWR_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(rectangle
-		(start 73.66 48.26)
-		(end 138.43 81.28)
+		(start 73.66 52.07)
+		(end 138.43 73.66)
 		(stroke
 			(width 0.635)
 			(type dash)
@@ -350,7 +177,7 @@
 	)
 	(text "Supercapacitors"
 		(exclude_from_sim no)
-		(at 121.412 78.232 0)
+		(at 121.666 70.358 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -367,16 +194,16 @@
 		(uuid "0ff96851-b39c-4111-817b-2b795642b308")
 	)
 	(junction
-		(at 86.36 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "30024876-b7cb-47a7-8324-5c6285e6f034")
-	)
-	(junction
 		(at 97.79 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "372267ab-8e6b-4922-b354-b92069ff674a")
+	)
+	(junction
+		(at 86.36 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3ac2d850-78dc-44c0-bd78-f6f3c216dee2")
 	)
 	(junction
 		(at 97.79 68.58)
@@ -445,6 +272,16 @@
 			(type default)
 		)
 		(uuid "4cf759cf-238f-4bbb-a873-71bd5c3f5cfd")
+	)
+	(wire
+		(pts
+			(xy 83.82 68.58) (xy 86.36 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50ba9895-f741-48b5-8e45-a235e9cb3871")
 	)
 	(wire
 		(pts
@@ -528,16 +365,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 68.58) (xy 86.36 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ccb0bf3d-c1fb-4933-9545-605c2f2cc355")
-	)
-	(wire
-		(pts
 			(xy 109.22 68.58) (xy 120.65 68.58)
 		)
 		(stroke
@@ -556,8 +383,8 @@
 		)
 		(uuid "fcceaeb4-8721-4a23-b93f-8b3cad48e580")
 	)
-	(hierarchical_label "V_{cap}"
-		(shape input)
+	(hierarchical_label "V_{cap+}"
+		(shape bidirectional)
 		(at 83.82 55.88 180)
 		(effects
 			(font
@@ -566,6 +393,17 @@
 			(justify right)
 		)
 		(uuid "6a461524-772b-43ed-a4d3-092c0e3e399f")
+	)
+	(hierarchical_label "V_{cap-}"
+		(shape bidirectional)
+		(at 83.82 68.58 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "eedb9033-4a99-466f-a164-d51c60927fee")
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -736,72 +574,6 @@
 			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/79ba0ad0-1263-4d7e-82bc-d7cd5a71cdbf"
 					(reference "C1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDPWR")
-		(at 86.36 69.85 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "511c47ce-1061-47bb-a111-f6e68906477b")
-		(property "Reference" "#PWR05"
-			(at 86.36 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GNDPWR"
-			(at 86.233 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 86.36 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 86.36 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 86.36 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a497e5d3-b57d-4155-8874-0078c25ac6a7")
-		)
-		(instances
-			(project ""
-				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/79ba0ad0-1263-4d7e-82bc-d7cd5a71cdbf"
-					(reference "#PWR05")
 					(unit 1)
 				)
 			)
