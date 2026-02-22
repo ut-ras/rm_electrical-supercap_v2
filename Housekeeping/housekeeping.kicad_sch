@@ -277,7 +277,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "32450839-3196-442f-b126-8e5c5a3434a7")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR?"
 			(at 140.97 95.25 0)
 			(effects
 				(font
@@ -325,6 +325,12 @@
 			(uuid "53b0a536-d3d1-4c8c-a733-d55a25bdeb69")
 		)
 		(instances
+			(project "housekeeping"
+				(path "/54dd3bdb-fa85-45ef-ba5f-b0f6c4bf9e9e"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/47f13d7b-df0e-4361-81b8-c133778882c5"
 					(reference "#PWR011")
@@ -343,7 +349,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "963bd8c6-a547-4817-a92a-840c2f1e9465")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR?"
 			(at 100.33 95.25 0)
 			(effects
 				(font
@@ -391,6 +397,12 @@
 			(uuid "9a6df146-4c3b-42b6-98ad-4e29cf013d32")
 		)
 		(instances
+			(project "housekeeping"
+				(path "/54dd3bdb-fa85-45ef-ba5f-b0f6c4bf9e9e"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/47f13d7b-df0e-4361-81b8-c133778882c5"
 					(reference "#PWR07")
@@ -464,6 +476,12 @@
 			(uuid "7a6eb736-0367-45e6-8dce-aae98c12b36a")
 		)
 		(instances
+			(project "housekeeping"
+				(path "/54dd3bdb-fa85-45ef-ba5f-b0f6c4bf9e9e"
+					(reference "P7809B-1000R")
+					(unit 1)
+				)
+			)
 			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/47f13d7b-df0e-4361-81b8-c133778882c5"
 					(reference "P7809B-1000R")
@@ -539,7 +557,7 @@
 		(instances
 			(project ""
 				(path "/54dd3bdb-fa85-45ef-ba5f-b0f6c4bf9e9e"
-					(reference "P78B-1000R1")
+					(reference "P7803B-1000R")
 					(unit 1)
 				)
 			)
