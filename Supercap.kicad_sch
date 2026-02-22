@@ -492,16 +492,6 @@
 		)
 		(uuid "0db1334a-1e92-4d1d-989d-7dd32c783529")
 	)
-	(wire
-		(pts
-			(xy 184.15 80.01) (xy 190.5 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "103f309c-93a1-4538-afa4-212967ef71e5")
-	)
 	(polyline
 		(pts
 			(xy 106.68 83.82) (xy 106.68 81.28)
@@ -734,6 +724,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 97.79) (xy 190.5 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7dd76910-2575-46eb-8522-e23f934138b0")
+	)
+	(wire
+		(pts
 			(xy 134.62 73.66) (xy 86.36 73.66)
 		)
 		(stroke
@@ -801,6 +801,16 @@
 			(type solid)
 		)
 		(uuid "93c4fd3c-2993-4973-9a68-89ae8150b4b7")
+	)
+	(wire
+		(pts
+			(xy 184.15 82.55) (xy 190.5 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95759545-6599-4014-a8b6-2c76ffc0c551")
 	)
 	(polyline
 		(pts
@@ -1385,7 +1395,7 @@
 			)
 		)
 		(pin "V_{cap+}" bidirectional
-			(at 184.15 80.01 0)
+			(at 184.15 82.55 0)
 			(uuid "6bf84d89-c97d-4cb4-92ba-9253ed88cdf1")
 			(effects
 				(font
@@ -1402,6 +1412,66 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "+10V" input
+			(at 142.24 82.55 180)
+			(uuid "21f74b81-fc9e-4b1f-9032-98b8ff05b078")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D_{1}" input
+			(at 142.24 93.98 180)
+			(uuid "827a349c-c897-4c9d-bf21-19eca6dc1cec")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D_{1}'" input
+			(at 142.24 96.52 180)
+			(uuid "e693ca9f-5a04-4555-8421-d7a1cfbc60fd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D_{2}" input
+			(at 142.24 99.06 180)
+			(uuid "977ab067-f03f-4c23-b515-4bea979ae912")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D_{2}'" input
+			(at 142.24 101.6 180)
+			(uuid "bacb4209-1d0b-427d-b781-e9d33decf84d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "V_{cap-}" bidirectional
+			(at 184.15 97.79 0)
+			(uuid "ae36639c-949f-401d-997b-22d41b5daa44")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -1446,9 +1516,19 @@
 				(justify left top)
 			)
 		)
-		(pin "V_{cap}" input
-			(at 190.5 80.01 180)
-			(uuid "a7ea1256-31ef-464b-a909-9561e61e2687")
+		(pin "V_{cap+}" bidirectional
+			(at 190.5 82.55 180)
+			(uuid "3a6bb0a0-1eba-47fa-b919-597e70522433")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "V_{cap-}" bidirectional
+			(at 190.5 97.79 180)
+			(uuid "d81a5055-0619-4998-83b1-0351b1ff516e")
 			(effects
 				(font
 					(size 1.27 1.27)
