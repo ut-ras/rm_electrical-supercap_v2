@@ -3683,7 +3683,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm"
 			(at 147.32 118.11 0)
 			(effects
 				(font
@@ -4063,7 +4063,7 @@
 				)
 			)
 		)
-		(property "Value" "R_small"
+		(property "Value" "0.75"
 			(at 96.52 108.712 90)
 			(effects
 				(font
@@ -4071,7 +4071,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 96.774 105.664 90)
 			(effects
 				(font
@@ -4837,7 +4837,7 @@
 				)
 			)
 		)
-		(property "Value" "R_small"
+		(property "Value" "0.75"
 			(at 96.52 140.208 90)
 			(effects
 				(font
@@ -4845,7 +4845,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 96.774 136.144 90)
 			(effects
 				(font
@@ -4904,7 +4904,7 @@
 				)
 			)
 		)
-		(property "Value" "R_small"
+		(property "Value" "0.75"
 			(at 96.52 150.114 90)
 			(effects
 				(font
@@ -4912,7 +4912,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 96.774 146.304 90)
 			(effects
 				(font
@@ -5322,7 +5322,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm"
 			(at 172.72 118.11 0)
 			(effects
 				(font
@@ -5613,7 +5613,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm"
 			(at 147.32 107.95 0)
 			(effects
 				(font
@@ -5680,7 +5680,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm"
 			(at 172.72 107.95 0)
 			(effects
 				(font
@@ -5736,7 +5736,7 @@
 				)
 			)
 		)
-		(property "Value" "R_small"
+		(property "Value" "0.75"
 			(at 96.52 119.126 90)
 			(effects
 				(font
@@ -5744,7 +5744,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 96.774 115.824 90)
 			(effects
 				(font
@@ -6345,7 +6345,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm"
 			(at 172.72 97.79 0)
 			(effects
 				(font
@@ -6412,7 +6412,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm"
 			(at 147.32 97.79 0)
 			(effects
 				(font
