@@ -3175,7 +3175,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "IQDH35N03LM5CGSCATMA1_MOSFET:IQDH45N04LM6CGSCATMA1"
 			(at 105.41 69.215 0)
 			(effects
 				(font
@@ -3468,7 +3468,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "IQDH35N03LM5CGSCATMA1_MOSFET:IQDH45N04LM6CGSCATMA1"
 			(at 105.41 52.705 0)
 			(effects
 				(font
@@ -4532,7 +4532,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "IQDH35N03LM5CGSCATMA1_MOSFET:IQDH45N04LM6CGSCATMA1"
 			(at 151.13 52.705 0)
 			(effects
 				(font
@@ -5389,7 +5389,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "IQDH35N03LM5CGSCATMA1_MOSFET:IQDH45N04LM6CGSCATMA1"
 			(at 151.13 69.215 0)
 			(effects
 				(font
