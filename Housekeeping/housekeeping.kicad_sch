@@ -223,16 +223,115 @@
 			(embedded_fonts no)
 		)
 	)
-	(hierarchical_label "MiniPC"
+	(hierarchical_label "24"
 		(shape input)
-		(at 95.25 110.49 180)
+		(at 92.71 77.47 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "3e02a1da-607d-4d61-b892-95dc2d29930d")
+		(uuid "69e05743-b986-46ad-ac2c-17f0a70457be")
+	)
+	(hierarchical_label "3.3V"
+		(shape input)
+		(at 92.71 80.01 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8919f265-7890-4c0c-b959-f446cbb46d2e")
+	)
+	(hierarchical_label "24V"
+		(shape input)
+		(at 133.35 77.47 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8fabc53b-467a-4936-be5f-60918c9a3c86")
+	)
+	(hierarchical_label "9V"
+		(shape input)
+		(at 133.35 80.01 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ba39a892-38b0-4390-969c-7655816cd62a")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 140.97 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "32450839-3196-442f-b126-8e5c5a3434a7")
+		(property "Reference" "#PWR011"
+			(at 140.97 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 140.97 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 140.97 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 140.97 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 140.97 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "53b0a536-d3d1-4c8c-a733-d55a25bdeb69")
+		)
+		(instances
+			(project ""
+				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/47f13d7b-df0e-4361-81b8-c133778882c5"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -302,6 +401,79 @@
 	)
 	(symbol
 		(lib_id "P78B-1000R series:P78B-1000R")
+		(at 140.97 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9cf38263-aa1a-4fc0-a4c3-6efcda982c2f")
+		(property "Reference" "P7809B-1000R"
+			(at 147.32 80.6449 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 147.32 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "P78B-1000R series:P78B-1000R"
+			(at 140.716 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.belfuse.com/media/datasheets/products/power-supplies/P78B-1000.pdf"
+			(at 140.97 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 140.97 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9b06b522-0089-4016-b417-56eda26328cf")
+		)
+		(pin "3"
+			(uuid "18e960b4-7a47-4d26-ae81-a88cba0a741e")
+		)
+		(pin "2"
+			(uuid "7a6eb736-0367-45e6-8dce-aae98c12b36a")
+		)
+		(instances
+			(project "Supercap"
+				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/47f13d7b-df0e-4361-81b8-c133778882c5"
+					(reference "P7809B-1000R")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "P78B-1000R series:P78B-1000R")
 		(at 100.33 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -310,7 +482,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ec47c7e4-343d-4fea-a788-36282c684e23")
-		(property "Reference" "P78B-1000R?"
+		(property "Reference" "P7803B-1000R"
 			(at 106.68 80.6449 0)
 			(effects
 				(font
@@ -373,7 +545,7 @@
 			)
 			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/47f13d7b-df0e-4361-81b8-c133778882c5"
-					(reference "P78B-1000R?")
+					(reference "P7803B-1000R")
 					(unit 1)
 				)
 			)
