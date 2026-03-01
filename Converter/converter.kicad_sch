@@ -3048,7 +3048,7 @@
 		)
 		(uuid "f4f51597-7095-4aee-b5e3-b60bcf1c17c6")
 	)
-	(hierarchical_label "+10V"
+	(hierarchical_label "+12V"
 		(shape input)
 		(at 34.29 97.79 180)
 		(effects
@@ -3114,7 +3114,7 @@
 		)
 		(uuid "748dba47-6faf-40e6-a132-d31281c1ad0f")
 	)
-	(hierarchical_label "+10V"
+	(hierarchical_label "+12V"
 		(shape input)
 		(at 34.29 128.27 180)
 		(effects

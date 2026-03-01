@@ -2335,7 +2335,7 @@
 		)
 		(uuid "00bee0b8-cb81-486b-a1da-8a23943a169d")
 	)
-	(hierarchical_label "D"
+	(hierarchical_label "D1"
 		(shape output)
 		(at 176.53 95.25 0)
 		(effects
@@ -2345,6 +2345,17 @@
 			(justify left)
 		)
 		(uuid "07e6769a-1ec1-496f-9d11-a73bd9ec24b7")
+	)
+	(hierarchical_label "D2'"
+		(shape output)
+		(at 176.53 106.68 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3b912540-f353-495e-947a-5674efe52acd")
 	)
 	(hierarchical_label "+3V3"
 		(shape input)
@@ -2357,17 +2368,6 @@
 		)
 		(uuid "6e73257c-9b47-4de9-b4e9-627744334411")
 	)
-	(hierarchical_label "SCL_{IN}"
-		(shape input)
-		(at 161.29 95.25 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "72988738-f9a7-4034-b12e-6977fc8f2b8e")
-	)
 	(hierarchical_label "V_{cap-}"
 		(shape bidirectional)
 		(at 118.11 77.47 180)
@@ -2379,18 +2379,7 @@
 		)
 		(uuid "82f25b50-a717-42fb-bd6c-d4e5daae5bec")
 	)
-	(hierarchical_label "SDA_{IN}"
-		(shape bidirectional)
-		(at 161.29 97.79 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "a45460d0-939f-41a6-acdf-65968a9519b2")
-	)
-	(hierarchical_label "D'"
+	(hierarchical_label "D1'"
 		(shape output)
 		(at 176.53 99.06 0)
 		(effects
@@ -2411,6 +2400,17 @@
 			(justify right)
 		)
 		(uuid "f5f6dfeb-89a9-4883-bce5-fa524be5505a")
+	)
+	(hierarchical_label "D2"
+		(shape output)
+		(at 176.53 102.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fd9dd3f3-b46d-489d-af02-b3a8ed2f71db")
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:TLV2372")

@@ -28,14 +28,14 @@ Plecs {
   AlgebraicLoopWithStateMachineMsg "3"
   AssertionAction "1"
   FixedPointDatatypeOverride "1"
-  InitializationCommands "V_g = 24; % Input voltage\nf_s = 360 * 10^3; % Switc"
-"hing frequency\nT_dead = 100*10^-9; % Dead time\nL_blk = 1 * 10^-5; % Bulk in"
-"ductance\nC_sc = 110; % Supercap capacitance\nR_on = 10^-1; % On-state MOSFET"
-" resistance\nd = 0.5; % duty cycle\nR_esr = 18*10^-3; \nR_sens = 10*10^-3\nL_"
-"esl = 0;\nL_damp = 7.5 * 10^-5;\nC_d = 10^-6;\nN_burst = 10;\n\nTs = 1/f_s;\n"
-"num_cycles = 500000;\t\t% number of switch cycles to simulate\nmax_step_size "
-"= 10^-1;\t% maximum time step size [s]\nTstop = num_cycles*Ts;\t% stop time o"
-"f simulation [s]"
+  InitializationCommands "V_g = 24; % Input voltage\nf_s = 120 * 10^3; % Switc"
+"hing frequency\nT_dead = 100*10^-9; % Dead time\nL_blk = 28.306 * 10^-6; % Bu"
+"lk inductance\nC_sc = 110; % Supercap capacitance\nR_on = 10^-1; % On-state M"
+"OSFET resistance\nd = 0.5; % duty cycle\nR_esr = 18*10^-3; \nR_sens = 10*10^-"
+"3;\nL_esl = 0;\nL_damp = 7.5 * 10^-5;\nC_d = 10^-6;\nN_burst = 10;\n\nTs = 1/"
+"f_s;\nnum_cycles = 500000;\t\t% number of switch cycles to simulate\nmax_step"
+"_size = 10^-1;\t% maximum time step size [s]\nTstop = num_cycles*Ts;\t% stop "
+"time of simulation [s]"
   InitialState  "1"
   SystemState   ""
   TaskingMode   "1"
@@ -1934,7 +1934,7 @@ Plecs {
     }
     Component {
       Type          PlecsProbe
-      Name          "Probe"
+      Name          "Currents"
       Show          on
       Position      [605, 45]
       Direction     right
@@ -1943,12 +1943,17 @@ Plecs {
       Probe {
         Component     "L1"
         Path          ""
-        Signals       {"Inductor current"}
+        Signals       {}
+      }
+      Probe {
+        Component     "V_g"
+        Path          ""
+        Signals       {"Source current"}
       }
     }
     Component {
       Type          PlecsProbe
-      Name          "Probe1"
+      Name          "Voltages"
       Show          on
       Position      [605, 95]
       Direction     right
@@ -1964,15 +1969,15 @@ Plecs {
       Type          Scope
       Name          "Scope"
       Show          on
-      Position      [695, 65]
+      Position      [750, 50]
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 26; 1536, 807]
+      Location      [0, 26; 1536, 849]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAF4A////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
-"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAABgAAAALyAAAA"
+"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAYAAAAAc/w"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABgAAAABQAP///wAABgAAAAKlAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -1988,7 +1993,7 @@ Plecs {
       Ts            "-1"
       SampleLimit   "0"
       XAxisLabel    "Time / s"
-      ShowLegend    "1"
+      ShowLegend    "2"
       Axis {
         Name          ""
         AutoScale     1
@@ -2040,31 +2045,234 @@ Plecs {
       }
     }
     Component {
-      Type          Step
-      Name          "Step"
+      Type          Reference
+      SrcComponent  "Components/Control/Sources/Ramp"
+      Name          "Ramp"
       Show          on
       Position      [35, 45]
-      Direction     right
+      Direction     up
       Flipped       off
       LabelPosition south
+      Frame         [-15, -15; 15, 15]
       Parameter {
-        Variable      "Time"
+        Variable      "slope"
+        Value         "1/6400"
+        Show          off
+      }
+      Parameter {
+        Variable      "start"
         Value         "0.05"
         Show          off
       }
       Parameter {
-        Variable      "Before"
+        Variable      "X0"
         Value         "0"
         Show          off
       }
       Parameter {
-        Variable      "After"
-        Value         "1/64"
+        Variable      "XFinal"
+        Value         "inf"
+        Show          off
+      }
+      Terminal {
+        Type          Output
+        Position      [19, 0]
+        Direction     right
+      }
+    }
+    Component {
+      Type          PeriodicAverage
+      Name          "Periodic Average"
+      Show          on
+      Position      [675, 45]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "T_average"
+        Value         "0.01"
+        Show          off
+      }
+    }
+    Component {
+      Type          ManualSignalSwitch
+      Name          "Manual Switch"
+      Show          on
+      Position      [85, 45]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "SwitchState"
+        Value         "2"
+        Show          off
+      }
+    }
+    Component {
+      Type          Sum
+      Name          "Subtract"
+      Show          off
+      Position      [635, 230]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "IconShape"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Inputs"
+        Value         "+-"
         Show          off
       }
       Parameter {
         Variable      "DataType"
-        Value         "10"
+        Value         "11"
+        Show          off
+      }
+      Parameter {
+        Variable      "DataTypeOverflowMode"
+        Value         "1"
+        Show          off
+      }
+    }
+    Component {
+      Type          From
+      Name          "From4"
+      Show          off
+      Position      [595, 210]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Tag"
+        Value         "D1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "1"
+        Show          off
+      }
+    }
+    Component {
+      Type          From
+      Name          "From7"
+      Show          off
+      Position      [595, 245]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Tag"
+        Value         "D2"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "1"
+        Show          off
+      }
+    }
+    Component {
+      Type          Scope
+      Name          "Scope1"
+      Show          on
+      Position      [695, 230]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Location      [0, 23; 1536, 795]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
+"G0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAAAAPw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAABgAAAALpAAAA"
+"BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
+"AAAAA=="
+      SavedViews    "AAAAAgAAAAA="
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":106,\"Labels\":[],"
+"\"VisualIdxs\":[]}"
+      PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      Axes          "1"
+      TimeRange     "0.0"
+      ScrollingMode "1"
+      SingleTimeAxis "1"
+      Open          "0"
+      Ts            "-1"
+      SampleLimit   "0"
+      XAxisLabel    "Time / s"
+      ShowLegend    "1"
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Fourier {
+        SingleXAxis       on
+        AxisLabel         "Frequency / Hz"
+        Scaling           0
+        PhaseDisplay      0
+        ShowFourierLegend off
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+      }
+    }
+    Component {
+      Type          SineGenerator
+      Name          "Sine Wave"
+      Show          on
+      Position      [35, 105]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Amplitude"
+        Value         "1/16"
+        Show          off
+      }
+      Parameter {
+        Variable      "Bias"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "Frequency"
+        Value         "f_s / 4"
+        Show          off
+      }
+      Parameter {
+        Variable      "Phase"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "Units"
+        Value         "1"
         Show          off
       }
     }
@@ -2284,7 +2492,37 @@ Plecs {
     }
     Connection {
       Type          Signal
-      SrcComponent  "Step"
+      SrcComponent  "Sum"
+      SrcTerminal   1
+      Points        [165, 85; 165, 115]
+      DstComponent  "Gate Driver"
+      DstTerminal   5
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Periodic Average"
+      SrcTerminal   1
+      DstComponent  "Scope"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Currents"
+      SrcTerminal   1
+      DstComponent  "Periodic Average"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Voltages"
+      SrcTerminal   1
+      Points        [705, 95; 705, 55]
+      DstComponent  "Scope"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Manual Switch"
       SrcTerminal   1
       Points        [110, 45]
       Branch {
@@ -2307,27 +2545,40 @@ Plecs {
     }
     Connection {
       Type          Signal
-      SrcComponent  "Probe"
+      SrcComponent  "Ramp"
       SrcTerminal   1
-      Points        [650, 45; 650, 60]
-      DstComponent  "Scope"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "Probe1"
-      SrcTerminal   1
-      Points        [650, 95; 650, 70]
-      DstComponent  "Scope"
+      DstComponent  "Manual Switch"
       DstTerminal   2
     }
     Connection {
       Type          Signal
-      SrcComponent  "Sum"
+      SrcComponent  "From7"
       SrcTerminal   1
-      Points        [165, 85; 165, 115]
-      DstComponent  "Gate Driver"
-      DstTerminal   5
+      Points        [605, 245]
+      DstComponent  "Subtract"
+      DstTerminal   3
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "From4"
+      SrcTerminal   1
+      Points        [605, 210]
+      DstComponent  "Subtract"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Subtract"
+      SrcTerminal   1
+      DstComponent  "Scope1"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Sine Wave"
+      SrcTerminal   1
+      DstComponent  "Manual Switch"
+      DstTerminal   3
     }
     RectangleAnnotation {
       Position     [290, 100]
