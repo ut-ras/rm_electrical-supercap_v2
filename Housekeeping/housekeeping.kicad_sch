@@ -223,7 +223,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(hierarchical_label "24"
+	(hierarchical_label "MiniPC"
 		(shape input)
 		(at 92.71 77.47 180)
 		(effects
@@ -234,7 +234,7 @@
 		)
 		(uuid "69e05743-b986-46ad-ac2c-17f0a70457be")
 	)
-	(hierarchical_label "3.3V"
+	(hierarchical_label "+3V3"
 		(shape input)
 		(at 92.71 80.01 180)
 		(effects
@@ -245,7 +245,7 @@
 		)
 		(uuid "8919f265-7890-4c0c-b959-f446cbb46d2e")
 	)
-	(hierarchical_label "24V"
+	(hierarchical_label "MiniPC"
 		(shape input)
 		(at 133.35 77.47 180)
 		(effects
@@ -466,6 +466,22 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer_Part_Number" "P7812B-1000"
+			(at 140.97 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" "490-P7812B-1000"
+			(at 140.97 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9b06b522-0089-4016-b417-56eda26328cf")
 		)
@@ -543,6 +559,22 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "P7803B-1000"
+			(at 100.33 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" "490-P7803B-1000"
+			(at 100.33 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"

@@ -410,7 +410,7 @@
 		(at 97.79 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "0d5ddda2-4cd0-47bb-900f-fb6ba305672d")
@@ -477,6 +477,14 @@
 				(justify left)
 			)
 		)
+		(property "Manufacturer_Part_Number" "DSF117Q3R0"
+			(at 97.79 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "41a52b2a-893a-409b-a41e-b276a5c9d8cc")
 		)
@@ -497,7 +505,7 @@
 		(at 86.36 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "27ab3653-2e47-4688-9d52-0367b3f51349")
@@ -564,6 +572,14 @@
 				(justify left)
 			)
 		)
+		(property "Manufacturer_Part_Number" "DSF117Q3R0"
+			(at 86.36 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ae174428-bb5e-4d5e-9db2-2f0fd614b2e3")
 		)
@@ -584,7 +600,7 @@
 		(at 109.22 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "64b57ede-0330-41f9-8293-8e29fad9890b")
@@ -651,6 +667,14 @@
 				(justify left)
 			)
 		)
+		(property "Manufacturer_Part_Number" "DSF117Q3R0"
+			(at 109.22 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "34428d66-cada-4368-a2be-d19972eeff2f")
 		)
@@ -677,7 +701,7 @@
 		(at 120.65 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "765c13c9-9c38-4b40-a073-a35c902724c2")
@@ -742,6 +766,14 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(property "Manufacturer_Part_Number" "DSF117Q3R0"
+			(at 120.65 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"

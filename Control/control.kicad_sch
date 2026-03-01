@@ -2415,14 +2415,14 @@
 	(symbol
 		(lib_id "Amplifier_Operational:TLV2372")
 		(at 196.85 67.31 0)
-		(unit 2)
+		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "13597194-dcb0-44c4-bb8c-d4b66c8fd24b")
-		(property "Reference" "U1"
+		(property "Reference" "U?"
 			(at 196.85 57.15 0)
 			(effects
 				(font
@@ -2496,6 +2496,12 @@
 					(unit 2)
 				)
 			)
+			(project "control"
+				(path "/f194d5da-fd8d-4aa7-96f3-295d70bb8ae2"
+					(reference "U?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2508,7 +2514,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2995413a-c550-4b69-bb01-d26faba9926c")
-		(property "Reference" "R3"
+		(property "Reference" "R?"
 			(at 139.7 82.5499 0)
 			(effects
 				(font
@@ -2535,7 +2541,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/508/1/PYu-RT_1-to-0.01_RoHS_L_15.pdf"
 			(at 137.16 83.82 0)
 			(effects
 				(font
@@ -2545,6 +2551,24 @@
 			)
 		)
 		(property "Description" "Resistor, small US symbol"
+			(at 137.16 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RT0603DRD071K1L"
+			(at 137.16 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "603-RT0603DRD071K1L"
 			(at 137.16 83.82 0)
 			(effects
 				(font
@@ -2566,6 +2590,12 @@
 					(unit 1)
 				)
 			)
+			(project "control"
+				(path "/f194d5da-fd8d-4aa7-96f3-295d70bb8ae2"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2577,7 +2607,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "50cda319-8e55-4af7-8870-7d0290a9d679")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0103"
 			(at 142.24 153.67 0)
 			(effects
 				(font
@@ -2648,7 +2678,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7698ee6e-555d-4478-a676-7e5df39e3b7f")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR?"
 			(at 137.16 95.25 0)
 			(effects
 				(font
@@ -2702,6 +2732,12 @@
 					(unit 1)
 				)
 			)
+			(project "control"
+				(path "/f194d5da-fd8d-4aa7-96f3-295d70bb8ae2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2713,7 +2749,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7844e572-3e32-40b5-8b23-79395f9dcae8")
-		(property "Reference" "R2"
+		(property "Reference" "R?"
 			(at 129.54 80.772 90)
 			(effects
 				(font
@@ -2738,7 +2774,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/508/1/PYu-RT_1-to-0.01_RoHS_L_15.pdf"
 			(at 129.54 77.47 0)
 			(effects
 				(font
@@ -2748,6 +2784,24 @@
 			)
 		)
 		(property "Description" "Resistor, small US symbol"
+			(at 129.54 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RT0603DRD071KL"
+			(at 129.54 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "603-RT0603DRD071KL"
 			(at 129.54 77.47 0)
 			(effects
 				(font
@@ -2769,6 +2823,12 @@
 					(unit 1)
 				)
 			)
+			(project "control"
+				(path "/f194d5da-fd8d-4aa7-96f3-295d70bb8ae2"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2780,7 +2840,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "78da23de-1006-46e5-8c2b-1930d382d592")
-		(property "Reference" "J3-J?"
+		(property "Reference" "J3-J1"
 			(at 133.35 119.38 0)
 			(effects
 				(font
@@ -2909,7 +2969,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "910082b3-f792-4bb1-a9e1-f2964add033e")
-		(property "Reference" "R1"
+		(property "Reference" "R?"
 			(at 129.54 66.04 90)
 			(effects
 				(font
@@ -2934,7 +2994,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/508/1/PYu-RT_1-to-0.01_RoHS_L_15.pdf"
 			(at 129.54 72.39 0)
 			(effects
 				(font
@@ -2944,6 +3004,24 @@
 			)
 		)
 		(property "Description" "Resistor, small US symbol"
+			(at 129.54 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RT0603DRD071KL"
+			(at 129.54 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "603-RT0603DRD071KL"
 			(at 129.54 72.39 0)
 			(effects
 				(font
@@ -2965,6 +3043,12 @@
 					(unit 1)
 				)
 			)
+			(project "control"
+				(path "/f194d5da-fd8d-4aa7-96f3-295d70bb8ae2"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2977,7 +3061,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a246c2b9-c6ce-4c43-96b5-f03e20bf63b2")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR?"
 			(at 176.53 82.55 0)
 			(effects
 				(font
@@ -3031,6 +3115,12 @@
 					(unit 1)
 				)
 			)
+			(project "control"
+				(path "/f194d5da-fd8d-4aa7-96f3-295d70bb8ae2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3038,12 +3128,12 @@
 		(at 147.32 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a798a24e-aa39-4d71-8e29-30cc6f2375a9")
-		(property "Reference" "U1"
+		(property "Reference" "U?"
 			(at 147.32 64.77 0)
 			(effects
 				(font
@@ -3117,6 +3207,12 @@
 					(unit 1)
 				)
 			)
+			(project "control"
+				(path "/f194d5da-fd8d-4aa7-96f3-295d70bb8ae2"
+					(reference "U?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3128,7 +3224,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c4fa8853-74cd-43c9-9f31-23e13d3e7b9b")
-		(property "Reference" "J2-J?"
+		(property "Reference" "J2-J4"
 			(at 182.88 119.38 0)
 			(effects
 				(font
@@ -3249,14 +3345,14 @@
 	(symbol
 		(lib_id "Amplifier_Operational:TLV2372")
 		(at 179.07 67.31 0)
-		(unit 3)
+		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cc3d88fc-3f08-4bcc-8c91-426bff4974e1")
-		(property "Reference" "U1"
+		(property "Reference" "U?"
 			(at 177.8 66.0399 0)
 			(effects
 				(font
@@ -3332,6 +3428,12 @@
 					(unit 3)
 				)
 			)
+			(project "control"
+				(path "/f194d5da-fd8d-4aa7-96f3-295d70bb8ae2"
+					(reference "U?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3344,7 +3446,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e3f4ef22-87f1-401c-81dd-0e4433c62c15")
-		(property "Reference" "R4"
+		(property "Reference" "R?"
 			(at 144.78 55.88 90)
 			(effects
 				(font
@@ -3369,7 +3471,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/508/1/PYu-RT_1-to-0.01_RoHS_L_15.pdf"
 			(at 144.78 62.23 0)
 			(effects
 				(font
@@ -3379,6 +3481,24 @@
 			)
 		)
 		(property "Description" "Resistor, small US symbol"
+			(at 144.78 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RT0603DRD071K1L"
+			(at 144.78 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "603-RT0603DRD071K1L"
 			(at 144.78 62.23 0)
 			(effects
 				(font
@@ -3400,6 +3520,12 @@
 					(unit 1)
 				)
 			)
+			(project "control"
+				(path "/f194d5da-fd8d-4aa7-96f3-295d70bb8ae2"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3411,7 +3537,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f5be977d-b942-4d87-a9da-3ed7e08a970d")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0102"
 			(at 191.77 153.67 0)
 			(effects
 				(font
@@ -3481,7 +3607,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f7162e7d-4613-45df-a1a9-aa12b5a65563")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0104"
 			(at 142.24 123.19 0)
 			(effects
 				(font
