@@ -614,6 +614,24 @@
           "label": "Manufacturer_Name",
           "name": "Manufacturer_Name",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser#",
+          "name": "Mouser#",
+          "show": false
         }
       ],
       "filter_string": "",
