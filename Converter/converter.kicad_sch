@@ -112,6 +112,119 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector_Generic:Conn_01x01"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x01"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x01_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -1654,7 +1767,7 @@
 	)
 	(rectangle
 		(start 50.8 39.37)
-		(end 115.57 80.01)
+		(end 107.95 80.01)
 		(stroke
 			(width 0)
 			(type dash)
@@ -1860,7 +1973,7 @@
 		(at 102.87 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d36c5831-0ce3-405d-95de-732797ca6d3f")
+		(uuid "cdfe6b12-9d13-4665-984d-b99a8833a51e")
 	)
 	(junction
 		(at 38.1 43.18)
@@ -1897,6 +2010,14 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fdb845b6-60b2-4f08-ae82-f5c901a5bfc3")
+	)
+	(no_connect
+		(at 123.19 58.42)
+		(uuid "469e740a-e7d2-4b59-9151-cda68e23cb2c")
+	)
+	(no_connect
+		(at 115.57 58.42)
+		(uuid "7e55683f-6acf-4853-a0d8-3cf33b1ec45e")
 	)
 	(wire
 		(pts
@@ -1957,16 +2078,6 @@
 			(type default)
 		)
 		(uuid "10135b1b-6e1c-45a3-bb6d-b4eccf8195e7")
-	)
-	(wire
-		(pts
-			(xy 102.87 59.69) (xy 102.87 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "12909b00-2952-4937-a3af-91168d5aef4d")
 	)
 	(wire
 		(pts
@@ -2330,6 +2441,16 @@
 	)
 	(wire
 		(pts
+			(xy 102.87 59.69) (xy 107.95 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73f0a1d4-9cc1-4ea3-9dfa-87b7af359904")
+	)
+	(wire
+		(pts
 			(xy 167.64 107.95) (xy 167.64 109.22)
 		)
 		(stroke
@@ -2590,16 +2711,6 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 59.69) (xy 124.46 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "beb764b2-4cb3-479d-b568-224fc3c60183")
-	)
-	(wire
-		(pts
 			(xy 55.88 43.18) (xy 67.31 43.18)
 		)
 		(stroke
@@ -2617,6 +2728,16 @@
 			(type default)
 		)
 		(uuid "c1ec7ea0-3512-4b67-a92c-9972df5751ee")
+	)
+	(wire
+		(pts
+			(xy 102.87 59.69) (xy 102.87 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5fe9c91-3f6e-48a2-a4cd-b92deb8186ea")
 	)
 	(wire
 		(pts
@@ -2797,16 +2918,6 @@
 			(type default)
 		)
 		(uuid "effaff73-07d6-4e89-b54d-32138d1a4516")
-	)
-	(wire
-		(pts
-			(xy 102.87 59.69) (xy 115.57 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f221bdcd-f500-459f-80fe-be41ce217ae0")
 	)
 	(wire
 		(pts
@@ -3094,7 +3205,7 @@
 	)
 	(hierarchical_label "V_{cap+}"
 		(shape bidirectional)
-		(at 124.46 59.69 0)
+		(at 130.81 59.69 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3146,6 +3257,74 @@
 			(justify right)
 		)
 		(uuid "f95290f2-79d0-485c-b81b-041d512988fa")
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 125.73 59.69 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "248b53ad-a459-4eda-8232-f19f384de050")
+		(property "Reference" "J5"
+			(at 127 62.4839 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 123.19 60.9599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "NCP5109ADR2G:Inductor_wire_conn"
+			(at 125.73 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 125.73 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 125.73 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a8847339-8620-4e0b-95b0-631538cbc3d9")
+		)
+		(instances
+			(project "Supercap"
+				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/66de8ce3-68f9-4d35-858c-1420192a373c"
+					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Transistor_FET:BSB013NE2LXI")
@@ -3589,73 +3768,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:L")
-		(at 119.38 59.69 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3993ab38-64bb-47f9-bd6e-0b28fe38b2b9")
-		(property "Reference" "L1"
-			(at 119.38 61.087 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "L"
-			(at 119.38 57.785 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 119.38 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 119.38 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 119.38 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "70cd91fa-dff0-4ad4-bb79-0e761739fca8")
-		)
-		(pin "2"
-			(uuid "7c71fd5c-ce84-4065-81a3-b273bfc74cc1")
-		)
-		(instances
-			(project "Supercap"
-				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/66de8ce3-68f9-4d35-858c-1420192a373c"
-					(reference "L1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 142.24 118.11 0)
 		(unit 1)
@@ -4041,6 +4153,74 @@
 			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/66de8ce3-68f9-4d35-858c-1420192a373c"
 					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L")
+		(at 119.38 58.42 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5e4e3e8d-61e7-4828-9fec-9b897e960bdb")
+		(property "Reference" "L1"
+			(at 119.38 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "28u"
+			(at 119.38 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 119.38 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 119.38 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inductor"
+			(at 119.38 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "34023e21-6c4b-4efe-bb94-8cde680ad1b2")
+		)
+		(pin "2"
+			(uuid "41facca3-745d-427e-9706-1a14b4ddfb72")
+		)
+		(instances
+			(project "Supercap"
+				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/66de8ce3-68f9-4d35-858c-1420192a373c"
+					(reference "L1")
 					(unit 1)
 				)
 			)
@@ -4949,6 +5129,73 @@
 			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/66de8ce3-68f9-4d35-858c-1420192a373c"
 					(reference "R_{small,bottom}2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 113.03 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "941bcd6b-d465-4bcd-be44-30b82c0eed13")
+		(property "Reference" "J6"
+			(at 112.014 62.4839 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 115.57 60.9599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "NCP5109ADR2G:Inductor_wire_conn"
+			(at 113.03 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 113.03 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 113.03 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "efe120c9-fc3e-4a62-bccf-b3ad152259a1")
+		)
+		(instances
+			(project "Supercap"
+				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/66de8ce3-68f9-4d35-858c-1420192a373c"
+					(reference "J6")
 					(unit 1)
 				)
 			)
