@@ -421,7 +421,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9cf38263-aa1a-4fc0-a4c3-6efcda982c2f")
-		(property "Reference" "P7812B-1000R"
+		(property "Reference" "P7809B-1000R"
 			(at 147.32 80.6449 0)
 			(effects
 				(font
