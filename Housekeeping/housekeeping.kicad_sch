@@ -256,7 +256,7 @@
 		)
 		(uuid "8fabc53b-467a-4936-be5f-60918c9a3c86")
 	)
-	(hierarchical_label "9V"
+	(hierarchical_label "12V"
 		(shape input)
 		(at 133.35 80.01 180)
 		(effects
@@ -484,7 +484,7 @@
 			)
 			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/47f13d7b-df0e-4361-81b8-c133778882c5"
-					(reference "P7809B-1000R")
+					(reference "P7812B-1000R")
 					(unit 1)
 				)
 			)
