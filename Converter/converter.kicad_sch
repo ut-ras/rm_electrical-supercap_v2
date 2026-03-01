@@ -3526,7 +3526,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 79.7052 52.07 0)
 			(effects
 				(font
@@ -3535,7 +3535,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/ZRB18AR6YA106ME01-02A-EN_PDF_CERAMICCAPACITORSMD"
 			(at 78.74 48.26 0)
 			(effects
 				(font
@@ -3553,7 +3553,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" ""
+		(property "Mouser Part Number" "81-ZRB18AR6YA106ME1L"
 			(at 78.74 48.26 0)
 			(effects
 				(font
@@ -4787,7 +4787,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 56.8452 52.07 0)
 			(effects
 				(font
@@ -4796,7 +4796,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/ZRB18AR6YA106ME01-02A-EN_PDF_CERAMICCAPACITORSMD"
 			(at 55.88 48.26 0)
 			(effects
 				(font
@@ -4814,7 +4814,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" ""
+		(property "Mouser Part Number" "81-ZRB18AR6YA106ME1L"
 			(at 55.88 48.26 0)
 			(effects
 				(font
@@ -5228,7 +5228,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 68.2752 52.07 0)
 			(effects
 				(font
@@ -5237,7 +5237,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/ZRB18AR6YA106ME01-02A-EN_PDF_CERAMICCAPACITORSMD"
 			(at 67.31 48.26 0)
 			(effects
 				(font
@@ -5255,7 +5255,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" ""
+		(property "Mouser Part Number" "81-ZRB18AR6YA106ME1L"
 			(at 67.31 48.26 0)
 			(effects
 				(font
