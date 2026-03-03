@@ -5,9 +5,9 @@
 	(uuid "6f064ce5-9417-412a-946b-9441bf0e315e")
 	(paper "A5")
 	(title_block
-		(title "Supercapacitor + Balancing")
+		(title "Supercapacitor Board")
 		(date "2025-02-12")
-		(rev "1")
+		(rev "2")
 		(company "UT Robomaster")
 		(comment 1 "Robomaster")
 	)
@@ -441,7 +441,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.com/datasheet/2/40/AVX_SCC-3084824.pdf"
+		(property "Datasheet" "https://www.cde.com/resources/catalogs/DSF.pdf"
 			(at 97.79 62.23 0)
 			(effects
 				(font
@@ -538,7 +538,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.com/datasheet/2/40/AVX_SCC-3084824.pdf"
+		(property "Datasheet" "https://www.cde.com/resources/catalogs/DSF.pdf"
 			(at 86.36 62.23 0)
 			(effects
 				(font
@@ -635,7 +635,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.com/datasheet/2/40/AVX_SCC-3084824.pdf"
+		(property "Datasheet" "https://www.cde.com/resources/catalogs/DSF.pdf"
 			(at 109.22 62.23 0)
 			(effects
 				(font
@@ -738,7 +738,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.com/datasheet/2/40/AVX_SCC-3084824.pdf"
+		(property "Datasheet" "https://www.cde.com/resources/catalogs/DSF.pdf"
 			(at 120.65 62.23 0)
 			(effects
 				(font
