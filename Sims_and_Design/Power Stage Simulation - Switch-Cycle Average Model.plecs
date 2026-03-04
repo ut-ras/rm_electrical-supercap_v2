@@ -1,6 +1,6 @@
 Plecs {
   Name          "Power Stage Simulation - Switch-Cycle Average Model"
-  Version       "4.9"
+  Version       "5.0"
   CircuitModel  "ContStateSpace"
   StartTime     "0.0"
   TimeSpan      "100"
@@ -29,16 +29,17 @@ Plecs {
   AssertionAction "1"
   FixedPointDatatypeOverride "1"
   InitializationCommands "V_g = 24; % Input voltage\nf_s = 360 * 10^3; % Switc"
-"hing frequency\nT_dead = 100*10^-9; % Dead time\nL_blk = 1 * 10^-5; % Bulk in"
-"ductance\nC_sc = 110; % Supercap capacitance\nR_on = 10^-1; % On-state MOSFET"
-" resistance\nd = 0.5; % duty cycle\nR_big = 10^5; % Balancing resistance\nR_e"
-"sr = 18*10^-3; \nR_sens = 10*10^-3\nL_esl = 1 * 10^-6;\nL_damp = 7.5 * 10^-5;"
-"\nC_d = 10^-6;\nN_burst = 10;\nV_sc0 = 0.6;\nV_c0 = V_sc0/4;\n\nTs = 1/f_s;\n"
-"num_cycles = 500000;\t\t% number of switch cycles to simulate\nmax_step_size "
-"= 10^-1;\t% maximum time step size [s]\nTstop = num_cycles*Ts;\t% stop time o"
-"f simulation [s]"
+"hing frequency\nT_dead = 100*10^-9; % Dead time\nL_blk = 28 * 10^-6; % Bulk i"
+"nductance\nC_sc = 110; % Supercap capacitance\nR_on = 10^-1; % On-state MOSFE"
+"T resistance\nd = 0.5; % duty cycle\nR_big = 10^5; % Balancing resistance\nR_"
+"esr = 18*10^-3; \nR_sens = 10*10^-3\nL_esl = 1 * 10^-6;\nL_damp = 7.5 * 10^-5"
+";\nC_d = 10^-6;\nN_burst = 10;\nV_sc0 = 0.6;\nV_c0 = V_sc0/4;\n\nTs = 1/f_s;"
+"\nnum_cycles = 500000;\t\t% number of switch cycles to simulate\nmax_step_siz"
+"e = 10^-1;\t% maximum time step size [s]\nTstop = num_cycles*Ts;\t% stop time"
+" of simulation [s]"
   InitialState  "1"
   SystemState   ""
+  JacobianComputation "2"
   TaskingMode   "1"
   TaskConfigurations ""
   CodeGenParameterInlining "2"
@@ -60,9 +61,21 @@ Plecs {
   AlgebraicLoopTolerance "1e-6"
   ScriptsDialogGeometry ""
   ScriptsDialogSplitterPos "0"
+  MixedSignalSolverBypassOperatingPoint "1"
+  MixedSignalSolverInitialConditions "2"
+  MixedSignalSolverMaxNewtonIterations "25"
+  MixedSignalSolverNumThreads "-1"
+  OperatingPointMaxNewtonIterations "50"
+  OperatingPointRelativeNewtonTolerance "1e-3"
+  OperatingPointAbsoluteNewtonTolerance "1e-12"
+  OperatingPointNodalVoltageNewtonTolerance "1e-6"
+  SpiceTemperature "27"
+  NetlistParserDetails "2"
+  InvalidNetlistFunctionEvaluationMsg "1"
+  IncompatibleInitialConditionMsg "2"
   Schematic {
-    Location      [0, 26; 1536, 776]
-    ZoomFactor    1.96256
+    Location      [0, 23; 2560, 1349]
+    ZoomFactor    2.57012
     SliderPosition [0, 0]
     ShowBrowser   off
     BrowserWidth  100
@@ -103,6 +116,17 @@ Plecs {
         Value         "2"
         Show          off
       }
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
+        Show          off
+      }
     }
     Component {
       Type          Ground
@@ -121,16 +145,17 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 26; 1536, 849]
+      Frame         [-15, -15; 15, 15]
+      Location      [0, 26; 1536, 867]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
-"G0AQQByAGUAYQAAAAAA/////wAAAF4A////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
-"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAYAAAAArPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABgAAAABQAP///wAABgAAAAJsAAAA"
+"G0AQQByAGUAYQAAAAAA/////wAAAFgA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAAYAAAAAk/w"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABgAAAABEAP///wAABgAAAAKRAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
-      HeaderState   "{\"DefaultSecSize\":100,\"FirstSecSize\":177,\"Labels\":["
-"\"Delta\"],\"VisualIdxs\":[3]}"
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":179,\"Labels\":[\""
+"Delta\"],\"VisualIdxs\":[3]}"
       PlotPalettes  "AAAAAQAAAAIAAAABAAAAAgAAAAEC//8u4P//zMwAAAAAAAEC//8AAP///"
 "/8AAAAAAAIAAAABAAAAAAEAAAAAAgAAAAEAAAABAAAAAQAAAAEAAAACAAAAAQAAAAABAAAAAAIAAA"
 "ABP/AAAAAAAAAAAAABP/AAAAAAAAAAAAACAAAAAQAAAAABAAAAAAEAAAABAAAAAAAAAAAAAAAAAAA"
@@ -228,6 +253,17 @@ Plecs {
         Value         "2"
         Show          off
       }
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
+        Show          off
+      }
     }
     Component {
       Type          Label
@@ -250,6 +286,17 @@ Plecs {
       Parameter {
         Variable      "NoMatchingCounterpartAction"
         Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
         Show          off
       }
     }
@@ -700,6 +747,17 @@ Plecs {
         Value         "2"
         Show          off
       }
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
+        Show          off
+      }
     }
     Component {
       Type          Label
@@ -724,6 +782,17 @@ Plecs {
         Value         "2"
         Show          off
       }
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
+        Show          off
+      }
     }
     Component {
       Type          From
@@ -746,6 +815,17 @@ Plecs {
       Parameter {
         Variable      "NoMatchingCounterpartAction"
         Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
         Show          off
       }
     }
@@ -1193,15 +1273,6 @@ Plecs {
       }
     }
     Component {
-      Type          Ammeter
-      Name          "Am1"
-      Show          on
-      Position      [380, 240]
-      Direction     left
-      Flipped       off
-      LabelPosition south
-    }
-    Component {
       Type          PlecsProbe
       Name          "Currents"
       Show          on
@@ -1213,11 +1284,6 @@ Plecs {
         Component     "V_g"
         Path          ""
         Signals       {"Source current"}
-      }
-      Probe {
-        Component     "Am1"
-        Path          ""
-        Signals       {}
       }
     }
     Component {
@@ -1404,6 +1470,17 @@ Plecs {
         Value         "1"
         Show          off
       }
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
+        Show          off
+      }
     }
     Component {
       Type          Product
@@ -1487,6 +1564,17 @@ Plecs {
         Value         "2"
         Show          off
       }
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
+        Show          off
+      }
     }
     Component {
       Type          Math
@@ -1513,7 +1601,7 @@ Plecs {
       Frame         [-20, -10; 20, 10]
       Parameter {
         Variable      "f(u)"
-        Value         "0.1 * u[1] / 100"
+        Value         "0.1 * u[1]^2 / 100"
         Show          off
       }
     }
@@ -1551,6 +1639,25 @@ Plecs {
         Type          Output
         Position      [19, 0]
         Direction     right
+      }
+    }
+    Component {
+      Type          Inductor
+      Name          "L1"
+      Show          on
+      Position      [380, 240]
+      Direction     left
+      Flipped       off
+      LabelPosition north
+      Parameter {
+        Variable      "L"
+        Value         "L_blk"
+        Show          off
+      }
+      Parameter {
+        Variable      "i_init"
+        Value         "0"
+        Show          off
       }
     }
     Connection {
@@ -1652,7 +1759,7 @@ Plecs {
       Type          Wire
       SrcComponent  "Label7"
       SrcTerminal   1
-      DstComponent  "Am1"
+      DstComponent  "L1"
       DstTerminal   1
     }
     Connection {
@@ -1671,7 +1778,7 @@ Plecs {
     }
     Connection {
       Type          Wire
-      SrcComponent  "Am1"
+      SrcComponent  "L1"
       SrcTerminal   2
       Points        [455, 240]
       Branch {

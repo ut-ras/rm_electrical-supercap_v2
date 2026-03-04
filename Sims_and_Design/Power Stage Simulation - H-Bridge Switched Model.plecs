@@ -1,6 +1,6 @@
 Plecs {
   Name          "Power Stage Simulation - H-Bridge Switched Model"
-  Version       "4.9"
+  Version       "5.0"
   CircuitModel  "ContStateSpace"
   StartTime     "0.0"
   TimeSpan      "5"
@@ -38,6 +38,7 @@ Plecs {
 "time of simulation [s]"
   InitialState  "1"
   SystemState   ""
+  JacobianComputation "2"
   TaskingMode   "1"
   TaskConfigurations ""
   CodeGenParameterInlining "2"
@@ -59,9 +60,21 @@ Plecs {
   AlgebraicLoopTolerance "1e-6"
   ScriptsDialogGeometry ""
   ScriptsDialogSplitterPos "0"
+  MixedSignalSolverBypassOperatingPoint "1"
+  MixedSignalSolverInitialConditions "2"
+  MixedSignalSolverMaxNewtonIterations "25"
+  MixedSignalSolverNumThreads "-1"
+  OperatingPointMaxNewtonIterations "50"
+  OperatingPointRelativeNewtonTolerance "1e-3"
+  OperatingPointAbsoluteNewtonTolerance "1e-12"
+  OperatingPointNodalVoltageNewtonTolerance "1e-6"
+  SpiceTemperature "27"
+  NetlistParserDetails "2"
+  InvalidNetlistFunctionEvaluationMsg "1"
+  IncompatibleInitialConditionMsg "2"
   Schematic {
-    Location      [0, 26; 1536, 776]
-    ZoomFactor    1.71498
+    Location      [0, 23; 2560, 1349]
+    ZoomFactor    2.57012
     SliderPosition [0, 0]
     ShowBrowser   off
     BrowserWidth  100
@@ -108,6 +121,11 @@ Plecs {
         Show          off
       }
       Parameter {
+        Variable      "Np"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
         Variable      "T_init"
         Value         ""
         Show          off
@@ -139,6 +157,11 @@ Plecs {
       Parameter {
         Variable      "Rth"
         Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "Np"
+        Value         "1"
         Show          off
       }
       Parameter {
@@ -179,6 +202,17 @@ Plecs {
         Value         "2"
         Show          off
       }
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
+        Show          off
+      }
     }
     Component {
       Type          Label
@@ -201,6 +235,17 @@ Plecs {
       Parameter {
         Variable      "NoMatchingCounterpartAction"
         Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
         Show          off
       }
     }
@@ -977,6 +1022,17 @@ Plecs {
         Value         "1"
         Show          off
       }
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
+        Show          off
+      }
     }
     Component {
       Type          From
@@ -999,6 +1055,17 @@ Plecs {
       Parameter {
         Variable      "NoMatchingCounterpartAction"
         Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
         Show          off
       }
     }
@@ -1025,6 +1092,17 @@ Plecs {
         Value         "2"
         Show          off
       }
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
+        Show          off
+      }
     }
     Component {
       Type          Goto
@@ -1049,28 +1127,15 @@ Plecs {
         Value         "2"
         Show          off
       }
-    }
-    Component {
-      Type          Goto
-      Name          "Goto4"
-      Show          off
-      Position      [140, 30]
-      Direction     right
-      Flipped       off
-      LabelPosition south
       Parameter {
-        Variable      "Tag"
-        Value         "d_off"
+        Variable      "CustomMessage"
+        Value         ""
         Show          off
+        Evaluate      on
       }
       Parameter {
-        Variable      "Visibility"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "2"
+        Variable      "HighlightLevel"
+        Value         "0"
         Show          off
       }
     }
@@ -1095,6 +1160,17 @@ Plecs {
       Parameter {
         Variable      "NoMatchingCounterpartAction"
         Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
         Show          off
       }
     }
@@ -1146,6 +1222,11 @@ Plecs {
         Show          off
       }
       Parameter {
+        Variable      "Np"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
         Variable      "T_init"
         Value         ""
         Show          off
@@ -1177,6 +1258,11 @@ Plecs {
       Parameter {
         Variable      "Rth"
         Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "Np"
+        Value         "1"
         Show          off
       }
       Parameter {
@@ -1217,6 +1303,17 @@ Plecs {
         Value         "2"
         Show          off
       }
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
+        Show          off
+      }
     }
     Component {
       Type          From
@@ -1239,6 +1336,17 @@ Plecs {
       Parameter {
         Variable      "NoMatchingCounterpartAction"
         Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
         Show          off
       }
     }
@@ -1265,6 +1373,17 @@ Plecs {
         Value         "1"
         Show          off
       }
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
+        Show          off
+      }
     }
     Component {
       Type          Label
@@ -1287,6 +1406,17 @@ Plecs {
       Parameter {
         Variable      "NoMatchingCounterpartAction"
         Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
         Show          off
       }
     }
@@ -1313,6 +1443,17 @@ Plecs {
         Value         "2"
         Show          off
       }
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
+        Show          off
+      }
     }
     Component {
       Type          Label
@@ -1337,6 +1478,17 @@ Plecs {
         Value         "2"
         Show          off
       }
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
+        Show          off
+      }
     }
     Component {
       Type          Label
@@ -1359,6 +1511,17 @@ Plecs {
       Parameter {
         Variable      "NoMatchingCounterpartAction"
         Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
         Show          off
       }
     }
@@ -1404,6 +1567,17 @@ Plecs {
         Value         "2"
         Show          off
       }
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
+        Show          off
+      }
     }
     Component {
       Type          Goto
@@ -1428,6 +1602,17 @@ Plecs {
         Value         "2"
         Show          off
       }
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
+        Show          off
+      }
     }
     Component {
       Type          Goto
@@ -1450,6 +1635,17 @@ Plecs {
       Parameter {
         Variable      "NoMatchingCounterpartAction"
         Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
         Show          off
       }
     }
@@ -1936,7 +2132,7 @@ Plecs {
       Type          PlecsProbe
       Name          "Currents"
       Show          on
-      Position      [605, 45]
+      Position      [605, 215]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -1955,7 +2151,7 @@ Plecs {
       Type          PlecsProbe
       Name          "Voltages"
       Show          on
-      Position      [605, 95]
+      Position      [605, 265]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -1969,20 +2165,21 @@ Plecs {
       Type          Scope
       Name          "Scope"
       Show          on
-      Position      [750, 50]
+      Position      [715, 220]
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 26; 1536, 849]
-      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
-"G0AQQByAGUAYQAAAAAA/////wAAAF4A////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
-"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAYAAAAAc/w"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABgAAAABQAP///wAABgAAAAKlAAAA"
+      Frame         [-15, -15; 15, 15]
+      Location      [584, 455; 2120, 1323]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAC0AAAC3/wCAAAAA/sAAAAQAFoAbwBvA"
+"G0AQQByAGUAYQAAAAAA/////wAAAFgA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMBAAAANAAAAt8AAABiAP///wAAAAMAAAYAAAAAYPw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABgAAAABEAP///wAABUYAAALfAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
-      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":166,\"Labels\":[],"
-"\"VisualIdxs\":[]}"
+      HeaderState   "{\"DefaultSecSize\":100,\"FirstSecSize\":168,\"Labels\":["
+"],\"VisualIdxs\":[]}"
       PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA"
 "AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
       Axes          "2"
@@ -1995,23 +2192,25 @@ Plecs {
       XAxisLabel    "Time / s"
       ShowLegend    "2"
       Axis {
-        Name          ""
+        Name          "Currents"
         AutoScale     1
         MinValue      0
         MaxValue      1
         Signals       {}
         SignalTypes   [ ]
+        AxisLabel     "Current (A)"
         Untangle      0
         KeepBaseline  off
         BaselineValue 0
       }
       Axis {
-        Name          ""
+        Name          "Voltages"
         AutoScale     1
         MinValue      0
         MaxValue      1
         Signals       {}
         SignalTypes   [ ]
+        AxisLabel     "Voltage (V)"
         Untangle      0
         KeepBaseline  off
         BaselineValue 0
@@ -2045,66 +2244,16 @@ Plecs {
       }
     }
     Component {
-      Type          Reference
-      SrcComponent  "Components/Control/Sources/Ramp"
-      Name          "Ramp"
-      Show          on
-      Position      [35, 45]
-      Direction     up
-      Flipped       off
-      LabelPosition south
-      Frame         [-15, -15; 15, 15]
-      Parameter {
-        Variable      "slope"
-        Value         "1/6400"
-        Show          off
-      }
-      Parameter {
-        Variable      "start"
-        Value         "0.05"
-        Show          off
-      }
-      Parameter {
-        Variable      "X0"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "XFinal"
-        Value         "inf"
-        Show          off
-      }
-      Terminal {
-        Type          Output
-        Position      [19, 0]
-        Direction     right
-      }
-    }
-    Component {
       Type          PeriodicAverage
-      Name          "Periodic Average"
+      Name          "Current"
       Show          on
-      Position      [675, 45]
+      Position      [660, 215]
       Direction     up
       Flipped       off
       LabelPosition south
       Parameter {
         Variable      "T_average"
-        Value         "0.01"
-        Show          off
-      }
-    }
-    Component {
-      Type          ManualSignalSwitch
-      Name          "Manual Switch"
-      Show          on
-      Position      [85, 45]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      Parameter {
-        Variable      "SwitchState"
-        Value         "2"
+        Value         "0.001"
         Show          off
       }
     }
@@ -2112,7 +2261,7 @@ Plecs {
       Type          Sum
       Name          "Subtract"
       Show          off
-      Position      [635, 230]
+      Position      [680, 320]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2141,7 +2290,7 @@ Plecs {
       Type          From
       Name          "From4"
       Show          off
-      Position      [595, 210]
+      Position      [605, 300]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -2160,12 +2309,23 @@ Plecs {
         Value         "1"
         Show          off
       }
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
+        Show          off
+      }
     }
     Component {
       Type          From
       Name          "From7"
       Show          off
-      Position      [595, 245]
+      Position      [605, 335]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -2184,15 +2344,27 @@ Plecs {
         Value         "1"
         Show          off
       }
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
+        Show          off
+      }
     }
     Component {
       Type          Scope
-      Name          "Scope1"
+      Name          "Sanity Check"
       Show          on
-      Position      [695, 230]
+      Position      [740, 320]
       Direction     up
       Flipped       off
       LabelPosition south
+      Frame         [-15, -15; 15, 15]
       Location      [0, 23; 1536, 795]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
@@ -2243,36 +2415,165 @@ Plecs {
       }
     }
     Component {
-      Type          SineGenerator
-      Name          "Sine Wave"
+      Type          Reference
+      SrcComponent  "Components/Control/Sources/Ramp"
+      Name          "Ramp"
       Show          on
-      Position      [35, 105]
+      Position      [605, 55]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-15, -15; 15, 15]
+      Parameter {
+        Variable      "slope"
+        Value         "1/6400"
+        Show          off
+      }
+      Parameter {
+        Variable      "start"
+        Value         "0.05"
+        Show          off
+      }
+      Parameter {
+        Variable      "X0"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "XFinal"
+        Value         "inf"
+        Show          off
+      }
+      Terminal {
+        Type          Output
+        Position      [19, 0]
+        Direction     right
+      }
+    }
+    Component {
+      Type          ManualSignalSwitch
+      Name          "Manual Switch"
+      Show          on
+      Position      [670, 85]
       Direction     right
       Flipped       off
       LabelPosition south
       Parameter {
-        Variable      "Amplitude"
-        Value         "1/16"
+        Variable      "SwitchState"
+        Value         "2"
+        Show          off
+      }
+    }
+    Component {
+      Type          Goto
+      Name          "Goto4"
+      Show          off
+      Position      [760, 85]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Tag"
+        Value         "d_off"
         Show          off
       }
       Parameter {
-        Variable      "Bias"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "Frequency"
-        Value         "f_s / 4"
-        Show          off
-      }
-      Parameter {
-        Variable      "Phase"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "Units"
+        Variable      "Visibility"
         Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
+        Show          off
+      }
+    }
+    Component {
+      Type          From
+      Name          "From1"
+      Show          off
+      Position      [100, 45]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Tag"
+        Value         "d_off"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
+        Show          off
+      }
+    }
+    Component {
+      Type          Math
+      Name          "Math"
+      Show          on
+      Position      [715, 85]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Operator"
+        Value         "2"
+        Show          off
+      }
+    }
+    Component {
+      Type          Step
+      Name          "Step"
+      Show          on
+      Position      [605, 115]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Time"
+        Value         "0.05"
+        Show          off
+      }
+      Parameter {
+        Variable      "Before"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "After"
+        Value         "1/160"
+        Show          off
+      }
+      Parameter {
+        Variable      "DataType"
+        Value         "10"
         Show          off
       }
     }
@@ -2500,7 +2801,7 @@ Plecs {
     }
     Connection {
       Type          Signal
-      SrcComponent  "Periodic Average"
+      SrcComponent  "Current"
       SrcTerminal   1
       DstComponent  "Scope"
       DstTerminal   1
@@ -2509,52 +2810,22 @@ Plecs {
       Type          Signal
       SrcComponent  "Currents"
       SrcTerminal   1
-      DstComponent  "Periodic Average"
+      DstComponent  "Current"
       DstTerminal   2
     }
     Connection {
       Type          Signal
       SrcComponent  "Voltages"
       SrcTerminal   1
-      Points        [705, 95; 705, 55]
+      Points        [685, 265]
       DstComponent  "Scope"
-      DstTerminal   2
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "Manual Switch"
-      SrcTerminal   1
-      Points        [110, 45]
-      Branch {
-        Points        [110, 30]
-        DstComponent  "Goto4"
-        DstTerminal   1
-      }
-      Branch {
-        Points        [140, 45]
-        Branch {
-          DstComponent  "Sum"
-          DstTerminal   2
-        }
-        Branch {
-          Points        [190, 45]
-          DstComponent  "Sum1"
-          DstTerminal   2
-        }
-      }
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "Ramp"
-      SrcTerminal   1
-      DstComponent  "Manual Switch"
       DstTerminal   2
     }
     Connection {
       Type          Signal
       SrcComponent  "From7"
       SrcTerminal   1
-      Points        [605, 245]
+      Points        [630, 335; 630, 325]
       DstComponent  "Subtract"
       DstTerminal   3
     }
@@ -2562,7 +2833,7 @@ Plecs {
       Type          Signal
       SrcComponent  "From4"
       SrcTerminal   1
-      Points        [605, 210]
+      Points        [630, 300; 630, 315]
       DstComponent  "Subtract"
       DstTerminal   2
     }
@@ -2570,15 +2841,53 @@ Plecs {
       Type          Signal
       SrcComponent  "Subtract"
       SrcTerminal   1
-      DstComponent  "Scope1"
+      DstComponent  "Sanity Check"
       DstTerminal   1
     }
     Connection {
       Type          Signal
-      SrcComponent  "Sine Wave"
+      SrcComponent  "Ramp"
       SrcTerminal   1
+      Points        [635, 55; 635, 80]
+      DstComponent  "Manual Switch"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Step"
+      SrcTerminal   1
+      Points        [625, 90]
       DstComponent  "Manual Switch"
       DstTerminal   3
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "From1"
+      SrcTerminal   1
+      Points        [140, 45]
+      Branch {
+        DstComponent  "Sum"
+        DstTerminal   2
+      }
+      Branch {
+        Points        [190, 45]
+        DstComponent  "Sum1"
+        DstTerminal   2
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Manual Switch"
+      SrcTerminal   1
+      DstComponent  "Math"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Math"
+      SrcTerminal   1
+      DstComponent  "Goto4"
+      DstTerminal   1
     }
     RectangleAnnotation {
       Position     [290, 100]
@@ -2627,6 +2936,38 @@ Plecs {
       Name          "<html><body>\n<p align=\"right\"><span style=\" font-weig"
 "ht:700;\">Supercaps</span></p></body></html>"
       Position      [540, 205]
+    } 
+    RectangleAnnotation {
+      Position     [685, 275]
+      Width        220
+      Height       160
+      CornerRadius 3
+      Thickness    2
+      PenColor     4278190080
+      PenAlpha     1
+      BrushColor   0
+      BrushAlpha   0
+    } 
+    Annotation {
+      Name          "<html><body>\n<p align=\"right\"><span style=\" font-weig"
+"ht:700;\">Outputs</span></p></body></html>"
+      Position      [770, 205]
+    } 
+    RectangleAnnotation {
+      Position     [685, 100]
+      Width        220
+      Height       170
+      CornerRadius 3
+      Thickness    2
+      PenColor     4278190080
+      PenAlpha     1
+      BrushColor   0
+      BrushAlpha   0
+    } 
+    Annotation {
+      Name          "<html><body>\n<p align=\"right\"><span style=\" font-weig"
+"ht:700;\">Input Signal Black Magic</span></p></body></html>"
+      Position      [725, 25]
     } 
   }
 }
