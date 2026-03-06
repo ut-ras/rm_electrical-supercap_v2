@@ -3,7 +3,7 @@ Plecs {
   Version       "5.0"
   CircuitModel  "ContStateSpace"
   StartTime     "0.0"
-  TimeSpan      "5"
+  TimeSpan      "300"
   Timeout       ""
   Solver        "auto"
   MaxStep       "max_step_size "
@@ -73,8 +73,13 @@ Plecs {
   InvalidNetlistFunctionEvaluationMsg "1"
   IncompatibleInitialConditionMsg "2"
   Schematic {
+<<<<<<< Updated upstream
     Location      [0, 23; 2560, 1349]
     ZoomFactor    2.57012
+=======
+    Location      [0, 30; 1536, 780]
+    ZoomFactor    1.71498
+>>>>>>> Stashed changes
     SliderPosition [0, 0]
     ShowBrowser   off
     BrowserWidth  100
@@ -1127,6 +1132,18 @@ Plecs {
         Value         "2"
         Show          off
       }
+<<<<<<< Updated upstream
+=======
+    }
+    Component {
+      Type          Goto
+      Name          "Goto4"
+      Show          off
+      Position      [830, 195]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+>>>>>>> Stashed changes
       Parameter {
         Variable      "CustomMessage"
         Value         ""
@@ -2165,7 +2182,11 @@ Plecs {
       Type          Scope
       Name          "Scope"
       Show          on
+<<<<<<< Updated upstream
       Position      [715, 220]
+=======
+      Position      [795, 50]
+>>>>>>> Stashed changes
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2244,6 +2265,45 @@ Plecs {
       }
     }
     Component {
+<<<<<<< Updated upstream
+=======
+      Type          Reference
+      SrcComponent  "Components/Control/Sources/Ramp"
+      Name          "Ramp"
+      Show          on
+      Position      [625, 195]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-15, -15; 15, 15]
+      Parameter {
+        Variable      "slope"
+        Value         "1/6400"
+        Show          off
+      }
+      Parameter {
+        Variable      "start"
+        Value         "0.05"
+        Show          off
+      }
+      Parameter {
+        Variable      "X0"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "XFinal"
+        Value         "inf"
+        Show          off
+      }
+      Terminal {
+        Type          Output
+        Position      [19, 0]
+        Direction     right
+      }
+    }
+    Component {
+>>>>>>> Stashed changes
       Type          PeriodicAverage
       Name          "Current"
       Show          on
@@ -2253,40 +2313,136 @@ Plecs {
       LabelPosition south
       Parameter {
         Variable      "T_average"
+<<<<<<< Updated upstream
         Value         "0.001"
+=======
+        Value         "0.01"
         Show          off
       }
     }
     Component {
-      Type          Sum
-      Name          "Subtract"
+      Type          ManualSignalSwitch
+      Name          "Manual Switch"
+      Show          on
+      Position      [675, 195]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "SwitchState"
+        Value         "2"
+>>>>>>> Stashed changes
+        Show          off
+      }
+    }
+    Component {
+      Type          Abs
+      Name          "Abs"
+      Show          on
+      Position      [720, 195]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+    }
+    Component {
+      Type          From
+      Name          "From1"
       Show          off
+<<<<<<< Updated upstream
       Position      [680, 320]
+      Direction     up
+=======
+      Position      [85, 45]
+      Direction     right
+>>>>>>> Stashed changes
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Tag"
+        Value         "d_off"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "1"
+        Show          off
+      }
+    }
+    Component {
+      Type          Math
+      Name          "Math"
+      Show          on
+      Position      [775, 195]
       Direction     up
       Flipped       off
       LabelPosition south
       Parameter {
-        Variable      "IconShape"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "Inputs"
-        Value         "+-"
-        Show          off
-      }
-      Parameter {
-        Variable      "DataType"
-        Value         "11"
-        Show          off
-      }
-      Parameter {
-        Variable      "DataTypeOverflowMode"
-        Value         "1"
+        Variable      "Operator"
+        Value         "2"
         Show          off
       }
     }
     Component {
+      Type          Function
+      Name          "Fcn"
+      Show          on
+      Position      [660, 255]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Frame         [-20, -10; 20, 10]
+      Parameter {
+        Variable      "f(u)"
+        Value         "u[1]+1/8"
+        Show          off
+      }
+    }
+    Component {
+      Type          PulseGenerator
+      Name          "Pulse\nGenerator"
+      Show          on
+      Position      [605, 255]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Hi"
+        Value         "1/80"
+        Show          off
+      }
+      Parameter {
+        Variable      "Lo"
+        Value         "1/160"
+        Show          off
+      }
+      Parameter {
+        Variable      "f"
+        Value         "10"
+        Show          off
+      }
+      Parameter {
+        Variable      "DutyCycle"
+        Value         "0.5"
+        Show          off
+      }
+      Parameter {
+        Variable      "Delay"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "DataType"
+        Value         "10"
+        Show          off
+      }
+    }
+    Component {
+<<<<<<< Updated upstream
       Type          From
       Name          "From4"
       Show          off
@@ -2455,10 +2611,17 @@ Plecs {
       Name          "Manual Switch"
       Show          on
       Position      [670, 85]
+=======
+      Type          Step
+      Name          "Step"
+      Show          on
+      Position      [605, 325]
+>>>>>>> Stashed changes
       Direction     right
       Flipped       off
       LabelPosition south
       Parameter {
+<<<<<<< Updated upstream
         Variable      "SwitchState"
         Value         "2"
         Show          off
@@ -2480,6 +2643,25 @@ Plecs {
       Parameter {
         Variable      "Visibility"
         Value         "1"
+=======
+        Variable      "Time"
+        Value         "0.05"
+        Show          off
+      }
+      Parameter {
+        Variable      "Before"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "After"
+        Value         "1/16"
+        Show          off
+      }
+      Parameter {
+        Variable      "DataType"
+        Value         "10"
+>>>>>>> Stashed changes
         Show          off
       }
       Parameter {
@@ -2801,6 +2983,7 @@ Plecs {
     }
     Connection {
       Type          Signal
+<<<<<<< Updated upstream
       SrcComponent  "Current"
       SrcTerminal   1
       DstComponent  "Scope"
@@ -2808,6 +2991,8 @@ Plecs {
     }
     Connection {
       Type          Signal
+=======
+>>>>>>> Stashed changes
       SrcComponent  "Currents"
       SrcTerminal   1
       DstComponent  "Current"
@@ -2817,12 +3002,17 @@ Plecs {
       Type          Signal
       SrcComponent  "Voltages"
       SrcTerminal   1
+<<<<<<< Updated upstream
       Points        [685, 265]
+=======
+      Points        [705, 95; 705, 65; 765, 65]
+>>>>>>> Stashed changes
       DstComponent  "Scope"
       DstTerminal   2
     }
     Connection {
       Type          Signal
+<<<<<<< Updated upstream
       SrcComponent  "From7"
       SrcTerminal   1
       Points        [630, 335; 630, 325]
@@ -2842,21 +3032,81 @@ Plecs {
       SrcComponent  "Subtract"
       SrcTerminal   1
       DstComponent  "Sanity Check"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Signal
+=======
       SrcComponent  "Ramp"
       SrcTerminal   1
-      Points        [635, 55; 635, 80]
       DstComponent  "Manual Switch"
       DstTerminal   2
     }
     Connection {
       Type          Signal
+      SrcComponent  "Manual Switch"
+      SrcTerminal   1
+      DstComponent  "Abs"
+>>>>>>> Stashed changes
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+<<<<<<< Updated upstream
+      SrcComponent  "Ramp"
+      SrcTerminal   1
+      Points        [635, 55; 635, 80]
+      DstComponent  "Manual Switch"
+=======
+      SrcComponent  "From1"
+      SrcTerminal   1
+      Points        [140, 45]
+      Branch {
+        DstComponent  "Sum"
+        DstTerminal   2
+      }
+      Branch {
+        Points        [190, 45]
+        DstComponent  "Sum1"
+        DstTerminal   2
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Abs"
+      SrcTerminal   2
+      DstComponent  "Math"
+>>>>>>> Stashed changes
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+<<<<<<< Updated upstream
       SrcComponent  "Step"
       SrcTerminal   1
       Points        [625, 90]
+=======
+      SrcComponent  "Math"
+      SrcTerminal   1
+      DstComponent  "Goto4"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Periodic Average"
+      SrcTerminal   1
+      DstComponent  "Scope"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Pulse\nGenerator"
+      SrcTerminal   1
+      DstComponent  "Fcn"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Step"
+      SrcTerminal   1
+      Points        [640, 325; 640, 200]
+>>>>>>> Stashed changes
       DstComponent  "Manual Switch"
       DstTerminal   3
     }
