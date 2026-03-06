@@ -29,19 +29,11 @@ Plecs {
   AssertionAction "1"
   FixedPointDatatypeOverride "1"
   InitializationCommands "V_g = 24; % Input voltage\nf_s = 360 * 10^3; % Switc"
-<<<<<<< Updated upstream
-"hing frequency\nT_dead = 100*10^-9; % Dead time\nL_blk = 28 * 10^-6; % Bulk i"
-"nductance\nC_sc = 110; % Supercap capacitance\nR_on = 10^-1; % On-state MOSFE"
-"T resistance\nd = 0.5; % duty cycle\nR_big = 10^5; % Balancing resistance\nR_"
-"esr = 18*10^-3; \nR_sens = 10*10^-3\nL_esl = 1 * 10^-6;\nL_damp = 7.5 * 10^-5"
-";\nC_d = 10^-6;\nN_burst = 10;\nV_sc0 = 0.6;\nV_c0 = V_sc0/4;\n\nTs = 1/f_s;"
-=======
 "hing frequency\nT_dead = 100*10^-9; % Dead time\nL_blk = 2.8 * 10^-5; % Bulk "
 "inductance\nC_sc = 110; % Supercap capacitance\nR_on = 10^-1; % On-state MOSF"
 "ET resistance\nd = 0.5; % duty cycle\nR_big = 10^5; % Balancing resistance\nR"
 "_esr = 18*10^-3; \nR_sens = 10*10^-3\nL_esl = 1 * 10^-6;\nL_damp = 7.5 * 10^-"
 "5;\nC_d = 10^-6;\nN_burst = 10;\nV_sc0 = 0.6;\nV_c0 = V_sc0/4;\n\nTs = 1/f_s;"
->>>>>>> Stashed changes
 "\nnum_cycles = 500000;\t\t% number of switch cycles to simulate\nmax_step_siz"
 "e = 10^-1;\t% maximum time step size [s]\nTstop = num_cycles*Ts;\t% stop time"
 " of simulation [s]"
@@ -156,15 +148,6 @@ Plecs {
       Frame         [-15, -15; 15, 15]
       Location      [0, 26; 1536, 867]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
-<<<<<<< Updated upstream
-"G0AQQByAGUAYQAAAAAA/////wAAAFgA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
-"///wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAAYAAAAAk/w"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABgAAAABEAP///wAABgAAAAKRAAAA"
-"BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
-"AAAAA=="
-      SavedViews    "AAAAAgAAAAA="
-      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":179,\"Labels\":[\""
-=======
 "G0AQQByAGUAYQAAAAAA/////wAAAF4A////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAYAAAAAc/w"
 "BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABgAAAABQAP///wAABgAAAAKlAAAA"
@@ -172,7 +155,6 @@ Plecs {
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
       HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":177,\"Labels\":[\""
->>>>>>> Stashed changes
 "Delta\"],\"VisualIdxs\":[3]}"
       PlotPalettes  "AAAAAQAAAAIAAAABAAAAAgAAAAEC//8u4P//zMwAAAAAAAEC//8AAP///"
 "/8AAAAAAAIAAAABAAAAAAEAAAAAAgAAAAEAAAABAAAAAQAAAAEAAAACAAAAAQAAAAABAAAAAAIAAA"
@@ -1680,8 +1662,6 @@ Plecs {
         Show          off
       }
     }
-<<<<<<< Updated upstream
-=======
     Component {
       Type          Reference
       SrcComponent  "Components/Control/Sources/Ramp"
@@ -1742,7 +1722,6 @@ Plecs {
         Show          off
       }
     }
->>>>>>> Stashed changes
     Connection {
       Type          Wire
       SrcComponent  "Ground1"
