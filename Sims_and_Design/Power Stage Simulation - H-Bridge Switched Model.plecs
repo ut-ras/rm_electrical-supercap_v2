@@ -32,10 +32,10 @@ Plecs {
 "hing frequency\nT_dead = 100*10^-9; % Dead time\nL_blk = 28.306 * 10^-6; % Bu"
 "lk inductance\nC_sc = 110; % Supercap capacitance\nR_on = 10^-1; % On-state M"
 "OSFET resistance\nd = 0.5; % duty cycle\nR_esr = 18*10^-3; \nR_sens = 10*10^-"
-"3;\nL_esl = 0;\nL_damp = 7.5 * 10^-5;\nC_d = 10^-6;\nN_burst = 10;\n\nTs = 1/"
-"f_s;\nnum_cycles = 500000;\t\t% number of switch cycles to simulate\nmax_step"
-"_size = 10^-1;\t% maximum time step size [s]\nTstop = num_cycles*Ts;\t% stop "
-"time of simulation [s]"
+"3;\nL_esl = 0;\nL_damp = 7.5 * 10^-5;\nC_d = 10^-6;\nN_burst = 10;\n\nMUX = 3"
+"; % Input i_ref signal to use\n\nTs = 1/f_s;\nnum_cycles = 500000;\t\t% numbe"
+"r of switch cycles to simulate\nmax_step_size = 10^-1;\t% maximum time step s"
+"ize [s]\nTstop = num_cycles*Ts;\t% stop time of simulation [s]"
   InitialState  "1"
   SystemState   ""
   JacobianComputation "2"
@@ -73,13 +73,8 @@ Plecs {
   InvalidNetlistFunctionEvaluationMsg "1"
   IncompatibleInitialConditionMsg "2"
   Schematic {
-<<<<<<< Updated upstream
     Location      [0, 23; 2560, 1349]
-    ZoomFactor    2.57012
-=======
-    Location      [0, 30; 1536, 780]
-    ZoomFactor    1.71498
->>>>>>> Stashed changes
+    ZoomFactor    2.2459
     SliderPosition [0, 0]
     ShowBrowser   off
     BrowserWidth  100
@@ -1132,18 +1127,41 @@ Plecs {
         Value         "2"
         Show          off
       }
-<<<<<<< Updated upstream
-=======
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
+        Show          off
+      }
     }
     Component {
       Type          Goto
       Name          "Goto4"
       Show          off
-      Position      [830, 195]
+      Position      [1025, 235]
       Direction     right
       Flipped       off
       LabelPosition south
->>>>>>> Stashed changes
+      Parameter {
+        Variable      "Tag"
+        Value         "d_off"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "3"
+        Show          off
+      }
       Parameter {
         Variable      "CustomMessage"
         Value         ""
@@ -2149,7 +2167,7 @@ Plecs {
       Type          PlecsProbe
       Name          "Currents"
       Show          on
-      Position      [605, 215]
+      Position      [45, 400]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -2168,7 +2186,7 @@ Plecs {
       Type          PlecsProbe
       Name          "Voltages"
       Show          on
-      Position      [605, 265]
+      Position      [45, 450]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -2182,25 +2200,21 @@ Plecs {
       Type          Scope
       Name          "Scope"
       Show          on
-<<<<<<< Updated upstream
-      Position      [715, 220]
-=======
-      Position      [795, 50]
->>>>>>> Stashed changes
+      Position      [200, 405]
       Direction     up
       Flipped       off
       LabelPosition south
       Frame         [-15, -15; 15, 15]
-      Location      [584, 455; 2120, 1323]
-      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAC0AAAC3/wCAAAAA/sAAAAQAFoAbwBvA"
+      Location      [0, 23; 2560, 1371]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAC0AAAEufwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAFgA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
-"///wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMBAAAANAAAAt8AAABiAP///wAAAAMAAAYAAAAAYPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABgAAAABEAP///wAABUYAAALfAAAA"
+"///wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMBAAAANAAABLkAAABiAP///wAAAAMAAAoAAAAAZvw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAACgAAAABEAP///wAACUYAAAS5AAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
       HeaderState   "{\"DefaultSecSize\":100,\"FirstSecSize\":168,\"Labels\":["
-"],\"VisualIdxs\":[]}"
+"\"Delta\"],\"VisualIdxs\":[3]}"
       PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA"
 "AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
       Axes          "2"
@@ -2265,13 +2279,11 @@ Plecs {
       }
     }
     Component {
-<<<<<<< Updated upstream
-=======
       Type          Reference
       SrcComponent  "Components/Control/Sources/Ramp"
       Name          "Ramp"
       Show          on
-      Position      [625, 195]
+      Position      [610, 50]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2303,35 +2315,16 @@ Plecs {
       }
     }
     Component {
->>>>>>> Stashed changes
       Type          PeriodicAverage
-      Name          "Current"
+      Name          "Average Current"
       Show          on
-      Position      [660, 215]
+      Position      [110, 400]
       Direction     up
       Flipped       off
       LabelPosition south
       Parameter {
         Variable      "T_average"
-<<<<<<< Updated upstream
         Value         "0.001"
-=======
-        Value         "0.01"
-        Show          off
-      }
-    }
-    Component {
-      Type          ManualSignalSwitch
-      Name          "Manual Switch"
-      Show          on
-      Position      [675, 195]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      Parameter {
-        Variable      "SwitchState"
-        Value         "2"
->>>>>>> Stashed changes
         Show          off
       }
     }
@@ -2339,74 +2332,16 @@ Plecs {
       Type          Abs
       Name          "Abs"
       Show          on
-      Position      [720, 195]
+      Position      [800, 80]
       Direction     right
       Flipped       off
       LabelPosition south
-    }
-    Component {
-      Type          From
-      Name          "From1"
-      Show          off
-<<<<<<< Updated upstream
-      Position      [680, 320]
-      Direction     up
-=======
-      Position      [85, 45]
-      Direction     right
->>>>>>> Stashed changes
-      Flipped       off
-      LabelPosition south
-      Parameter {
-        Variable      "Tag"
-        Value         "d_off"
-        Show          off
-      }
-      Parameter {
-        Variable      "Visibility"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "1"
-        Show          off
-      }
-    }
-    Component {
-      Type          Math
-      Name          "Math"
-      Show          on
-      Position      [775, 195]
-      Direction     up
-      Flipped       off
-      LabelPosition south
-      Parameter {
-        Variable      "Operator"
-        Value         "2"
-        Show          off
-      }
-    }
-    Component {
-      Type          Function
-      Name          "Fcn"
-      Show          on
-      Position      [660, 255]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      Frame         [-20, -10; 20, 10]
-      Parameter {
-        Variable      "f(u)"
-        Value         "u[1]+1/8"
-        Show          off
-      }
     }
     Component {
       Type          PulseGenerator
       Name          "Pulse\nGenerator"
       Show          on
-      Position      [605, 255]
+      Position      [610, 160]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -2442,208 +2377,14 @@ Plecs {
       }
     }
     Component {
-<<<<<<< Updated upstream
-      Type          From
-      Name          "From4"
-      Show          off
-      Position      [605, 300]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      Parameter {
-        Variable      "Tag"
-        Value         "D1"
-        Show          off
-      }
-      Parameter {
-        Variable      "Visibility"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "CustomMessage"
-        Value         ""
-        Show          off
-        Evaluate      on
-      }
-      Parameter {
-        Variable      "HighlightLevel"
-        Value         "0"
-        Show          off
-      }
-    }
-    Component {
-      Type          From
-      Name          "From7"
-      Show          off
-      Position      [605, 335]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      Parameter {
-        Variable      "Tag"
-        Value         "D2"
-        Show          off
-      }
-      Parameter {
-        Variable      "Visibility"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "CustomMessage"
-        Value         ""
-        Show          off
-        Evaluate      on
-      }
-      Parameter {
-        Variable      "HighlightLevel"
-        Value         "0"
-        Show          off
-      }
-    }
-    Component {
-      Type          Scope
-      Name          "Sanity Check"
-      Show          on
-      Position      [740, 320]
-      Direction     up
-      Flipped       off
-      LabelPosition south
-      Frame         [-15, -15; 15, 15]
-      Location      [0, 23; 1536, 795]
-      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
-"G0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
-"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAABgAAAALpAAAA"
-"BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
-"AAAAA=="
-      SavedViews    "AAAAAgAAAAA="
-      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":106,\"Labels\":[],"
-"\"VisualIdxs\":[]}"
-      PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-      Axes          "1"
-      TimeRange     "0.0"
-      ScrollingMode "1"
-      SingleTimeAxis "1"
-      Open          "0"
-      Ts            "-1"
-      SampleLimit   "0"
-      XAxisLabel    "Time / s"
-      ShowLegend    "1"
-      Axis {
-        Name          ""
-        AutoScale     1
-        MinValue      0
-        MaxValue      1
-        Signals       {}
-        SignalTypes   [ ]
-        Untangle      0
-        KeepBaseline  off
-        BaselineValue 0
-      }
-      Fourier {
-        SingleXAxis       on
-        AxisLabel         "Frequency / Hz"
-        Scaling           0
-        PhaseDisplay      0
-        ShowFourierLegend off
-        Axis {
-          Name          ""
-          AutoScale     1
-          MinValue      0
-          MaxValue      1
-          Signals       {}
-          Untangle      0
-          KeepBaseline  off
-          BaselineValue 0
-        }
-      }
-    }
-    Component {
-      Type          Reference
-      SrcComponent  "Components/Control/Sources/Ramp"
-      Name          "Ramp"
-      Show          on
-      Position      [605, 55]
-      Direction     up
-      Flipped       off
-      LabelPosition south
-      Frame         [-15, -15; 15, 15]
-      Parameter {
-        Variable      "slope"
-        Value         "1/6400"
-        Show          off
-      }
-      Parameter {
-        Variable      "start"
-        Value         "0.05"
-        Show          off
-      }
-      Parameter {
-        Variable      "X0"
-        Value         "0"
-        Show          off
-      }
-      Parameter {
-        Variable      "XFinal"
-        Value         "inf"
-        Show          off
-      }
-      Terminal {
-        Type          Output
-        Position      [19, 0]
-        Direction     right
-      }
-    }
-    Component {
-      Type          ManualSignalSwitch
-      Name          "Manual Switch"
-      Show          on
-      Position      [670, 85]
-=======
       Type          Step
-      Name          "Step"
+      Name          "1(t)"
       Show          on
-      Position      [605, 325]
->>>>>>> Stashed changes
+      Position      [610, 230]
       Direction     right
       Flipped       off
       LabelPosition south
       Parameter {
-<<<<<<< Updated upstream
-        Variable      "SwitchState"
-        Value         "2"
-        Show          off
-      }
-    }
-    Component {
-      Type          Goto
-      Name          "Goto4"
-      Show          off
-      Position      [760, 85]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      Parameter {
-        Variable      "Tag"
-        Value         "d_off"
-        Show          off
-      }
-      Parameter {
-        Variable      "Visibility"
-        Value         "1"
-=======
         Variable      "Time"
         Value         "0.05"
         Show          off
@@ -2661,23 +2402,6 @@ Plecs {
       Parameter {
         Variable      "DataType"
         Value         "10"
->>>>>>> Stashed changes
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "2"
-        Show          off
-      }
-      Parameter {
-        Variable      "CustomMessage"
-        Value         ""
-        Show          off
-        Evaluate      on
-      }
-      Parameter {
-        Variable      "HighlightLevel"
-        Value         "0"
         Show          off
       }
     }
@@ -2720,7 +2444,7 @@ Plecs {
       Type          Math
       Name          "Math"
       Show          on
-      Position      [715, 85]
+      Position      [985, 235]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2734,7 +2458,7 @@ Plecs {
       Type          Step
       Name          "Step"
       Show          on
-      Position      [605, 115]
+      Position      [610, 105]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -2756,6 +2480,181 @@ Plecs {
       Parameter {
         Variable      "DataType"
         Value         "10"
+        Show          off
+      }
+    }
+    Component {
+      Type          Reference
+      SrcComponent  "Components/Control/Sources/Ramp"
+      Name          "t"
+      Show          on
+      Position      [610, 285]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-15, -15; 15, 15]
+      Parameter {
+        Variable      "slope"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "start"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "X0"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "XFinal"
+        Value         "inf"
+        Show          off
+      }
+      Terminal {
+        Type          Output
+        Position      [19, 0]
+        Direction     right
+      }
+    }
+    Component {
+      Type          Function
+      Name          "Fcn"
+      Show          on
+      Position      [695, 255]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Frame         [-20, -10; 20, 10]
+      Parameter {
+        Variable      "f(u)"
+        Value         "u[1]*u[2]"
+        Show          off
+      }
+    }
+    Component {
+      Type          SignalMux
+      Name          "Mux"
+      Show          off
+      Position      [650, 255]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Frame         [-2, -10; 7, 10]
+      Parameter {
+        Variable      "Width"
+        Value         "2"
+        Show          off
+      }
+    }
+    Component {
+      Type          MultiportSignalSwitch
+      Name          "Multiport Signal Switch"
+      Show          on
+      Position      [750, 80]
+      Direction     up
+      Flipped       on
+      LabelPosition north
+      Parameter {
+        Variable      "Width"
+        Value         "4"
+        Show          off
+      }
+      Parameter {
+        Variable      "Default"
+        Value         "1"
+        Show          off
+      }
+    }
+    Component {
+      Type          Constant
+      Name          "MUX"
+      Show          on
+      Position      [750, 135]
+      Direction     up
+      Flipped       off
+      LabelPosition east
+      Frame         [-10, -10; 10, 10]
+      Parameter {
+        Variable      "Value"
+        Value         "MUX"
+        Show          off
+      }
+      Parameter {
+        Variable      "DataType"
+        Value         "10"
+        Show          off
+      }
+    }
+    Component {
+      Type          Goto
+      Name          "Goto5"
+      Show          off
+      Position      [840, 80]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Tag"
+        Value         "i_ref"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
+        Show          off
+      }
+    }
+    Component {
+      Type          From
+      Name          "From2"
+      Show          off
+      Position      [785, 235]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Tag"
+        Value         "i_ref"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
         Show          off
       }
     }
@@ -2924,13 +2823,13 @@ Plecs {
       Type          Signal
       SrcComponent  "Dead Time"
       SrcTerminal   1
-      Points        [240, 145]
+      Points        [230, 145]
       Branch {
         DstComponent  "Gate Driver"
         DstTerminal   3
       }
       Branch {
-        Points        [240, 160; 395, 160; 395, 145]
+        Points        [230, 160; 395, 160; 395, 145]
         DstComponent  "Gate Driver1"
         DstTerminal   3
       }
@@ -2983,77 +2882,13 @@ Plecs {
     }
     Connection {
       Type          Signal
-<<<<<<< Updated upstream
-      SrcComponent  "Current"
+      SrcComponent  "Math"
       SrcTerminal   1
-      DstComponent  "Scope"
+      DstComponent  "Goto4"
       DstTerminal   1
     }
     Connection {
       Type          Signal
-=======
->>>>>>> Stashed changes
-      SrcComponent  "Currents"
-      SrcTerminal   1
-      DstComponent  "Current"
-      DstTerminal   2
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "Voltages"
-      SrcTerminal   1
-<<<<<<< Updated upstream
-      Points        [685, 265]
-=======
-      Points        [705, 95; 705, 65; 765, 65]
->>>>>>> Stashed changes
-      DstComponent  "Scope"
-      DstTerminal   2
-    }
-    Connection {
-      Type          Signal
-<<<<<<< Updated upstream
-      SrcComponent  "From7"
-      SrcTerminal   1
-      Points        [630, 335; 630, 325]
-      DstComponent  "Subtract"
-      DstTerminal   3
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "From4"
-      SrcTerminal   1
-      Points        [630, 300; 630, 315]
-      DstComponent  "Subtract"
-      DstTerminal   2
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "Subtract"
-      SrcTerminal   1
-      DstComponent  "Sanity Check"
-=======
-      SrcComponent  "Ramp"
-      SrcTerminal   1
-      DstComponent  "Manual Switch"
-      DstTerminal   2
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "Manual Switch"
-      SrcTerminal   1
-      DstComponent  "Abs"
->>>>>>> Stashed changes
-      DstTerminal   1
-    }
-    Connection {
-      Type          Signal
-<<<<<<< Updated upstream
-      SrcComponent  "Ramp"
-      SrcTerminal   1
-      Points        [635, 55; 635, 80]
-      DstComponent  "Manual Switch"
-=======
       SrcComponent  "From1"
       SrcTerminal   1
       Points        [140, 45]
@@ -3069,75 +2904,107 @@ Plecs {
     }
     Connection {
       Type          Signal
-      SrcComponent  "Abs"
-      SrcTerminal   2
-      DstComponent  "Math"
->>>>>>> Stashed changes
+      SrcComponent  "Currents"
+      SrcTerminal   1
+      DstComponent  "Average Current"
       DstTerminal   2
     }
     Connection {
       Type          Signal
-<<<<<<< Updated upstream
-      SrcComponent  "Step"
-      SrcTerminal   1
-      Points        [625, 90]
-=======
-      SrcComponent  "Math"
-      SrcTerminal   1
-      DstComponent  "Goto4"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "Periodic Average"
+      SrcComponent  "Average Current"
       SrcTerminal   1
       DstComponent  "Scope"
       DstTerminal   1
     }
     Connection {
       Type          Signal
-      SrcComponent  "Pulse\nGenerator"
+      SrcComponent  "Voltages"
+      SrcTerminal   1
+      Points        [160, 450; 160, 410]
+      DstComponent  "Scope"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "1(t)"
+      SrcTerminal   1
+      Points        [635, 230]
+      DstComponent  "Mux"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "t"
+      SrcTerminal   1
+      Points        [635, 285]
+      DstComponent  "Mux"
+      DstTerminal   3
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Mux"
       SrcTerminal   1
       DstComponent  "Fcn"
       DstTerminal   1
     }
     Connection {
       Type          Signal
-      SrcComponent  "Step"
+      SrcComponent  "MUX"
       SrcTerminal   1
-      Points        [640, 325; 640, 200]
->>>>>>> Stashed changes
-      DstComponent  "Manual Switch"
-      DstTerminal   3
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "From1"
-      SrcTerminal   1
-      Points        [140, 45]
-      Branch {
-        DstComponent  "Sum"
-        DstTerminal   2
-      }
-      Branch {
-        Points        [190, 45]
-        DstComponent  "Sum1"
-        DstTerminal   2
-      }
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "Manual Switch"
-      SrcTerminal   1
-      DstComponent  "Math"
+      DstComponent  "Multiport Signal Switch"
       DstTerminal   2
     }
     Connection {
       Type          Signal
-      SrcComponent  "Math"
+      SrcComponent  "Ramp"
       SrcTerminal   1
-      DstComponent  "Goto4"
+      Points        [680, 50; 680, 65]
+      DstComponent  "Multiport Signal Switch"
+      DstTerminal   6
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Step"
+      SrcTerminal   1
+      Points        [680, 105; 680, 75]
+      DstComponent  "Multiport Signal Switch"
+      DstTerminal   5
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Pulse\nGenerator"
+      SrcTerminal   1
+      Points        [700, 160; 700, 85]
+      DstComponent  "Multiport Signal Switch"
+      DstTerminal   4
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Fcn"
+      SrcTerminal   2
+      DstComponent  "Multiport Signal Switch"
+      DstTerminal   3
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Multiport Signal Switch"
+      SrcTerminal   1
+      DstComponent  "Abs"
       DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Abs"
+      SrcTerminal   2
+      DstComponent  "Goto5"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "From2"
+      SrcTerminal   1
+      DstComponent  "Math"
+      DstTerminal   2
     }
     RectangleAnnotation {
       Position     [290, 100]
@@ -3188,9 +3055,9 @@ Plecs {
       Position      [540, 205]
     } 
     RectangleAnnotation {
-      Position     [685, 275]
+      Position     [120, 430]
       Width        220
-      Height       160
+      Height       130
       CornerRadius 3
       Thickness    2
       PenColor     4278190080
@@ -3201,12 +3068,12 @@ Plecs {
     Annotation {
       Name          "<html><body>\n<p align=\"right\"><span style=\" font-weig"
 "ht:700;\">Outputs</span></p></body></html>"
-      Position      [770, 205]
+      Position      [205, 375]
     } 
     RectangleAnnotation {
-      Position     [685, 100]
-      Width        220
-      Height       170
+      Position     [835, 185]
+      Width        520
+      Height       340
       CornerRadius 3
       Thickness    2
       PenColor     4278190080
@@ -3217,7 +3084,7 @@ Plecs {
     Annotation {
       Name          "<html><body>\n<p align=\"right\"><span style=\" font-weig"
 "ht:700;\">Input Signal Black Magic</span></p></body></html>"
-      Position      [725, 25]
+      Position      [1025, 25]
     } 
   }
 }
