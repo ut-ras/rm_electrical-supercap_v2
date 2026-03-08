@@ -15335,7 +15335,7 @@
 	(segment
 		(start 112.6 120.55)
 		(end 116.35 116.8)
-		(width 0.5)
+		(width 1)
 		(layer "In2.Cu")
 		(net 4)
 		(uuid "2bc100c5-999e-4720-ba47-32c2e8bdf717")
@@ -15343,7 +15343,7 @@
 	(segment
 		(start 112.861075 121.499)
 		(end 112.6 121.499)
-		(width 0.5)
+		(width 1)
 		(layer "In2.Cu")
 		(net 4)
 		(uuid "30d0b5b7-437d-47a2-9642-3cc7c506c262")
@@ -15351,7 +15351,7 @@
 	(segment
 		(start 118.125 116.725)
 		(end 118.125 115.075)
-		(width 0.5)
+		(width 1)
 		(layer "In2.Cu")
 		(net 4)
 		(uuid "6109be3d-2461-4186-983c-75c3a8fe144f")
@@ -15359,7 +15359,7 @@
 	(segment
 		(start 118.65 114.55)
 		(end 118.65 112.275)
-		(width 0.5)
+		(width 1)
 		(layer "In2.Cu")
 		(net 4)
 		(uuid "7401f7f3-e26a-417d-b4f9-8a07caa57aed")
@@ -15367,7 +15367,7 @@
 	(segment
 		(start 116.275 122.3)
 		(end 113.301 122.3)
-		(width 0.5)
+		(width 1)
 		(layer "In2.Cu")
 		(net 4)
 		(uuid "75b0aae7-100d-473f-bef6-ab74120d8674")
@@ -15383,7 +15383,7 @@
 	(segment
 		(start 116.35 116.8)
 		(end 118.05 116.8)
-		(width 0.5)
+		(width 1)
 		(layer "In2.Cu")
 		(net 4)
 		(uuid "a1c3cdd4-f31f-4b38-b0c2-c42b0a0baaa2")
@@ -15391,7 +15391,7 @@
 	(segment
 		(start 118.65 112.275)
 		(end 119.6 112.275)
-		(width 0.5)
+		(width 1)
 		(layer "In2.Cu")
 		(net 4)
 		(uuid "b6ad4961-ab67-4341-bb3e-253da1288543")
@@ -15399,7 +15399,7 @@
 	(segment
 		(start 112.6 121.499)
 		(end 112.6 120.55)
-		(width 0.5)
+		(width 1)
 		(layer "In2.Cu")
 		(net 4)
 		(uuid "c32a7c45-17b9-4945-9110-6c2968bd1c1a")
@@ -15415,7 +15415,7 @@
 	(segment
 		(start 113.301 121.938925)
 		(end 112.861075 121.499)
-		(width 0.5)
+		(width 1)
 		(layer "In2.Cu")
 		(net 4)
 		(uuid "d203589f-d32a-432a-87c3-cef6f96388d6")
@@ -15423,7 +15423,7 @@
 	(segment
 		(start 113.301 122.275)
 		(end 113.301 121.938925)
-		(width 0.5)
+		(width 1)
 		(layer "In2.Cu")
 		(net 4)
 		(uuid "d60dd82a-08fe-4cfe-bdfa-5385a2027e48")
@@ -15431,7 +15431,7 @@
 	(segment
 		(start 118.125 115.075)
 		(end 118.65 114.55)
-		(width 0.5)
+		(width 1)
 		(layer "In2.Cu")
 		(net 4)
 		(uuid "e6d0973a-c1f5-4309-bccf-8ff274503496")
