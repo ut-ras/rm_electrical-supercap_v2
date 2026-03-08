@@ -4,29 +4,58 @@
 	(generator_version "9.0")
 	(uuid "54dd3bdb-fa85-45ef-ba5f-b0f6c4bf9e9e")
 	(paper "A4")
+	(title_block
+		(title "Housekeeping Board")
+		(date "10/18/2025")
+		(rev "1")
+		(company "UT Robomaster")
+		(comment 1 "Robomaster")
+	)
 	(lib_symbols
-		(symbol "P78B-1000R series:P78B-1000R"
+		(symbol "P7812B-1000_1"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "P78B-1000R"
-				(at -2.54 6.096 0)
+			(property "Reference" "PS"
+				(at 21.59 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left top)
 				)
 			)
-			(property "Value" ""
+			(property "Value" "P7812B-1000"
+				(at 21.59 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "P7812B1000"
+				(at 21.59 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.cui.com/product/resource/p78b-1000.pdf"
+				(at 21.59 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "Non-Isolated DC/DC Converters dc-dc non-isolated, 1.0 A, 15-32 Vdc input, 12 Vdc output, SIP"
 				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "P78B-1000R series:P78B-1000R"
-				(at -0.254 -8.89 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -34,40 +63,72 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
-				(at 0 0 0)
+			(property "Height" "10.45"
+				(at 21.59 -394.92 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left top)
 					(hide yes)
 				)
 			)
-			(property "Description" ""
-				(at 0 0 0)
+			(property "Mouser Part Number" "490-P7812B-1000"
+				(at 21.59 -494.92 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left top)
 					(hide yes)
 				)
 			)
-			(symbol "P78B-1000R_1_1"
+			(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/CUI-Inc/P7812B-1000?qs=IKkN%2F947nfBpDKODYyx3RQ%3D%3D"
+				(at 21.59 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "CUI Inc."
+				(at 21.59 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "P7812B-1000"
+				(at 21.59 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "P7812B-1000_1_1_1"
 				(rectangle
-					(start -5.08 5.08)
-					(end 5.08 -5.08)
+					(start 5.08 2.54)
+					(end 20.32 -7.62)
 					(stroke
-						(width 0)
-						(type solid)
+						(width 0.254)
+						(type default)
 					)
 					(fill
 						(type background)
 					)
 				)
-				(pin input line
-					(at -7.62 3.81 0)
-					(length 2.54)
-					(name "+Vin"
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "+VIN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -82,10 +143,28 @@
 						)
 					)
 				)
-				(pin input line
-					(at -7.62 1.27 0)
-					(length 2.54)
-					(name "+Vout"
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 0)
+					(length 5.08)
+					(name "+VOUT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -100,9 +179,143 @@
 						)
 					)
 				)
-				(pin input line
-					(at 0 -7.62 90)
-					(length 2.54)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Robomaster_IV:P7803B-1000"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "PS"
+				(at 21.59 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "P7803B-1000"
+				(at 21.59 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "P7803B1000"
+				(at 21.59 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.cui.com/product/resource/p78b-1000.pdf"
+				(at 21.59 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "Non-Isolated DC/DC Converters dc-dc non-isolated, 1.0 A, 15-32 Vdc input, 12 Vdc output, SIP"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "10.45"
+				(at 21.59 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "490-P7803B-1000"
+				(at 21.59 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/CUI-Inc/P7803B-1000?qs=IKkN%2F947nfBpDKODYyx3RQ%3D%3D"
+				(at 21.59 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "CUI Inc."
+				(at 21.59 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "P7803B-1000"
+				(at 21.59 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "P7803B-1000_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 20.32 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "+VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
 					(name "GND"
 						(effects
 							(font
@@ -111,6 +324,24 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 0)
+					(length 5.08)
+					(name "+VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -223,9 +454,135 @@
 			(embedded_fonts no)
 		)
 	)
-	(hierarchical_label "24"
+	(rectangle
+		(start 118.11 93.98)
+		(end 176.53 114.3)
+		(stroke
+			(width 0.635)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 2db1dd02-40e3-48d8-b923-54809aee0c81)
+	)
+	(rectangle
+		(start 118.11 69.85)
+		(end 176.53 90.17)
+		(stroke
+			(width 0.635)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid b605aed5-5f58-4269-8045-f83318a74e4c)
+	)
+	(text "Gate Driver V_{cc} DC/DC"
+		(exclude_from_sim no)
+		(at 175.006 111.76 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+			)
+			(justify right)
+		)
+		(uuid "7842d75e-c279-41c3-961b-5317e341cc23")
+	)
+	(text "3V3 DC/DC"
+		(exclude_from_sim no)
+		(at 175.26 87.884 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+			)
+			(justify right)
+		)
+		(uuid "c1e05ca5-a8d1-4474-b732-7a74c46dc255")
+	)
+	(wire
+		(pts
+			(xy 130.81 106.68) (xy 130.81 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d63151f-1d2e-4bae-93d4-9131cf75987a")
+	)
+	(wire
+		(pts
+			(xy 129.54 80.01) (xy 135.89 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d6edd35-725c-4fb2-8f7b-f352bf4b1555")
+	)
+	(wire
+		(pts
+			(xy 132.08 77.47) (xy 132.08 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36107d8b-50ae-4e85-98be-731c6cf4c505")
+	)
+	(wire
+		(pts
+			(xy 135.89 77.47) (xy 132.08 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5cd9b116-17a7-4ea3-84ef-b069ebf67291")
+	)
+	(wire
+		(pts
+			(xy 128.27 104.14) (xy 134.62 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e590f71-2a02-4130-8ee7-6e3d30fed8f5")
+	)
+	(wire
+		(pts
+			(xy 129.54 74.93) (xy 135.89 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76172db7-a590-4139-9088-a50607f0c6f2")
+	)
+	(wire
+		(pts
+			(xy 130.81 101.6) (xy 134.62 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ecd1bfd9-98c9-4b71-9901-d2a4e8d99da8")
+	)
+	(wire
+		(pts
+			(xy 128.27 99.06) (xy 134.62 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fdb4b6c1-58d2-4e76-adf9-de50060f0258")
+	)
+	(hierarchical_label "MiniPC"
 		(shape input)
-		(at 92.71 77.47 180)
+		(at 129.54 74.93 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -234,9 +591,9 @@
 		)
 		(uuid "69e05743-b986-46ad-ac2c-17f0a70457be")
 	)
-	(hierarchical_label "3.3V"
+	(hierarchical_label "+3V3"
 		(shape input)
-		(at 92.71 80.01 180)
+		(at 129.54 80.01 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -245,9 +602,9 @@
 		)
 		(uuid "8919f265-7890-4c0c-b959-f446cbb46d2e")
 	)
-	(hierarchical_label "24V"
+	(hierarchical_label "+24V"
 		(shape input)
-		(at 133.35 77.47 180)
+		(at 128.27 99.06 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -256,9 +613,9 @@
 		)
 		(uuid "8fabc53b-467a-4936-be5f-60918c9a3c86")
 	)
-	(hierarchical_label "9V"
+	(hierarchical_label "+12V"
 		(shape input)
-		(at 133.35 80.01 180)
+		(at 128.27 104.14 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -269,7 +626,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 140.97 88.9 0)
+		(at 130.81 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -277,8 +634,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "32450839-3196-442f-b126-8e5c5a3434a7")
-		(property "Reference" "#PWR011"
-			(at 140.97 95.25 0)
+		(property "Reference" "#PWR019"
+			(at 130.81 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -287,7 +644,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 140.97 93.98 0)
+			(at 130.81 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -295,7 +652,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 140.97 88.9 0)
+			(at 130.81 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -304,7 +661,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 140.97 88.9 0)
+			(at 130.81 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -313,7 +670,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 140.97 88.9 0)
+			(at 130.81 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -325,9 +682,15 @@
 			(uuid "53b0a536-d3d1-4c8c-a733-d55a25bdeb69")
 		)
 		(instances
+			(project "housekeeping"
+				(path "/54dd3bdb-fa85-45ef-ba5f-b0f6c4bf9e9e"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/47f13d7b-df0e-4361-81b8-c133778882c5"
-					(reference "#PWR011")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -335,7 +698,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 100.33 88.9 0)
+		(at 132.08 82.55 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -343,8 +706,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "963bd8c6-a547-4817-a92a-840c2f1e9465")
-		(property "Reference" "#PWR07"
-			(at 100.33 95.25 0)
+		(property "Reference" "#PWR020"
+			(at 132.08 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -353,7 +716,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 100.33 93.98 0)
+			(at 132.08 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -361,7 +724,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 100.33 88.9 0)
+			(at 132.08 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -370,7 +733,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 100.33 88.9 0)
+			(at 132.08 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -379,7 +742,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 100.33 88.9 0)
+			(at 132.08 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -391,17 +754,24 @@
 			(uuid "9a6df146-4c3b-42b6-98ad-4e29cf013d32")
 		)
 		(instances
+			(project "housekeeping"
+				(path "/54dd3bdb-fa85-45ef-ba5f-b0f6c4bf9e9e"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/47f13d7b-df0e-4361-81b8-c133778882c5"
-					(reference "#PWR07")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "P78B-1000R series:P78B-1000R")
-		(at 140.97 81.28 0)
+		(lib_name "P7812B-1000_1")
+		(lib_id "Robomaster_IV:P7812B-1000")
+		(at 134.62 99.06 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -409,8 +779,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9cf38263-aa1a-4fc0-a4c3-6efcda982c2f")
-		(property "Reference" "P7809B-1000R"
-			(at 147.32 80.6449 0)
+		(property "Reference" "P7812B-1000R1"
+			(at 156.21 100.3299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -418,8 +788,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
-			(at 147.32 82.55 0)
+		(property "Value" "490-P7812B-1000"
+			(at 156.21 102.8699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -427,8 +797,28 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "P78B-1000R series:P78B-1000R"
-			(at 140.716 90.17 0)
+		(property "Footprint" "Robomaster_ICs:P7812B1000"
+			(at 156.21 193.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.cui.com/product/resource/p78b-1000.pdf"
+			(at 156.21 293.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Non-Isolated DC/DC Converters dc-dc non-isolated, 1.0 A, 15-32 Vdc input, 12 Vdc output, SIP"
+			(at 134.62 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -436,21 +826,53 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.belfuse.com/media/datasheets/products/power-supplies/P78B-1000.pdf"
-			(at 140.97 81.28 0)
+		(property "Manufacturer_Part_Number" "P7812B-1000"
+			(at 156.21 893.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 140.97 81.28 0)
+		(property "Mouser Part Number" "490-P7812B-1000"
+			(at 156.21 593.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Height" "10.45"
+			(at 156.21 493.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/CUI-Inc/P7812B-1000?qs=IKkN%2F947nfBpDKODYyx3RQ%3D%3D"
+			(at 156.21 693.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "CUI Inc."
+			(at 156.21 793.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
 				(hide yes)
 			)
 		)
@@ -464,17 +886,23 @@
 			(uuid "7a6eb736-0367-45e6-8dce-aae98c12b36a")
 		)
 		(instances
+			(project "housekeeping"
+				(path "/54dd3bdb-fa85-45ef-ba5f-b0f6c4bf9e9e"
+					(reference "P7812B-1000R")
+					(unit 1)
+				)
+			)
 			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/47f13d7b-df0e-4361-81b8-c133778882c5"
-					(reference "P7809B-1000R")
+					(reference "P7812B-1000R1")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "P78B-1000R series:P78B-1000R")
-		(at 100.33 81.28 0)
+		(lib_id "Robomaster_IV:P7803B-1000")
+		(at 135.89 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -482,8 +910,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ec47c7e4-343d-4fea-a788-36282c684e23")
-		(property "Reference" "P7803B-1000R"
-			(at 106.68 80.6449 0)
+		(property "Reference" "P7803B-1000R1"
+			(at 157.48 76.1999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -491,8 +919,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
-			(at 106.68 82.55 0)
+		(property "Value" "P7803B-1000"
+			(at 157.48 78.7399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -500,8 +928,28 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "P78B-1000R series:P78B-1000R"
-			(at 100.076 90.17 0)
+		(property "Footprint" "Robomaster_ICs:P7812B1000"
+			(at 157.48 169.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.cui.com/product/resource/p78b-1000.pdf"
+			(at 157.48 269.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Non-Isolated DC/DC Converters dc-dc non-isolated, 1.0 A, 15-32 Vdc input, 12 Vdc output, SIP"
+			(at 135.89 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -509,21 +957,53 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.belfuse.com/media/datasheets/products/power-supplies/P78B-1000.pdf"
-			(at 100.33 81.28 0)
+		(property "Manufacturer_Part_Number" "P7803B-1000"
+			(at 157.48 869.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 100.33 81.28 0)
+		(property "Mouser Part Number" "490-P7803B-1000"
+			(at 157.48 569.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Height" "10.45"
+			(at 157.48 469.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/CUI-Inc/P7803B-1000?qs=IKkN%2F947nfBpDKODYyx3RQ%3D%3D"
+			(at 157.48 669.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "CUI Inc."
+			(at 157.48 769.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
 				(hide yes)
 			)
 		)
@@ -539,13 +1019,13 @@
 		(instances
 			(project ""
 				(path "/54dd3bdb-fa85-45ef-ba5f-b0f6c4bf9e9e"
-					(reference "P78B-1000R1")
+					(reference "P7803B-1000R")
 					(unit 1)
 				)
 			)
 			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/47f13d7b-df0e-4361-81b8-c133778882c5"
-					(reference "P7803B-1000R")
+					(reference "P7803B-1000R1")
 					(unit 1)
 				)
 			)

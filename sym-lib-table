@@ -5,6 +5,5 @@
   (lib (name "Robomaster_IV")(type "KiCad")(uri "${KIPRJMOD}/KiCad_Library/Robomaster_IC.kicad_sym")(options "")(descr ""))
   (lib (name "Robomaster_CV")(type "KiCad")(uri "${KIPRJMOD}/KiCad_Library/Robomaster_CV.kicad_sym")(options "")(descr ""))
   (lib (name "Robomaster_Conn")(type "KiCad")(uri "${KIPRJMOD}/KiCad_Library/Robomaster_Conn.kicad_sym")(options "")(descr ""))
-  (lib (name "NVMTS0D4N04CLTXG")(type "KiCad")(uri "${KIPRJMOD}/KiCad_Library/mosfet(unused, onsemi)/NVMTS0D4N04CLTXG.kicad_sym")(options "")(descr "***INACTIVE (kept just in case) Sym for NVMTS0D4N04CL converter switch MOSFET")(disabled)(hidden))
-  (lib (name "IQDH35N03LM5CGSCATMA1")(type "KiCad")(uri "${KIPRJMOD}/KiCad_Library/IQDH35N03LM5CGSCATMA1_MOSFET/IQDH35N03LM5CGSCATMA1.kicad_sym")(options "")(descr ""))
+  (lib (name "ECE319K")(type "KiCad")(uri "${KIPRJMOD}/KiCad_Library/ECE319K.kicad_sym")(options "")(descr ""))
 )

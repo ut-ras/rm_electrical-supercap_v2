@@ -105,13 +105,13 @@ plot(step_time(1:end), step_outputCurrent(1:end));
 %%
 % Not sure why there's a stray factor of 10. We'll keep going and see what
 % happens.
-corrected_ramp_data = readtable("0.05_6400_ramp.csv");
-corrected_ramp_time = corrected_ramp_data.Time_S;
-corrected_ramp_inputDuty = corrected_ramp_data.Math;
-corrected_ramp_outputCurrent = corrected_ramp_data.AverageCurrent;
-corrected_ramp_capacitorVoltage = corrected_ramp_data.C1_CapacitorVoltage;
+corrected_ramp_data = readtable("");
+ramp_time = corrected_ramp_data.Time_S;
+ramp_inputDuty = corrected_ramp_data.Abs;
+ramp_outputCurrent = corrected_ramp_data.AverageCurrent;
+ramp_capacitorVoltage = corrected_ramp_data.C1_CapacitorVoltage;
 figure;
-lsim(10 * G_id, corrected_ramp_inputDuty(1:end), corrected_ramp_time(1:end));
+lsim(10 * G_id, ramp_inputDuty(1:end), ramp_time(1:end));
 hold on;
-plot(corrected_ramp_time(1:end), corrected_ramp_outputCurrent(1:end), "Color", "r");
+plot(ramp_time(1:end), ramp_outputCurrent(1:end), "Color", "r");
 legend;

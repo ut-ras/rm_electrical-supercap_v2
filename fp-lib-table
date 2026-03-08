@@ -1,5 +1,6 @@
 (fp_lib_table
   (version 7)
-  (lib (name "MOSFET")(type "KiCad")(uri "${KIPRJMOD}/KiCad_Library/mosfet(unused, onsemi)")(options "")(descr "***INACTIVE (kept just in case) Has NVMTS0D4N04CL MOSFET for converter switches (its the whole folder cuz for some reason kicad won't recognize just the mod file?)")(disabled))
-  (lib (name "IQDH35N03LM5CGSCATMA1_MOSFET")(type "KiCad")(uri "${KIPRJMOD}/KiCad_Library/IQDH35N03LM5CGSCATMA1_MOSFET")(options "")(descr "IQDH35N03LM5CGSCATMA1, MOSFET for switched in converter"))
+  (lib (name "Robomaster_ICs")(type "KiCad")(uri "${KIPRJMOD}/KiCad_Library/ICs.pretty")(options "")(descr ""))
+  (lib (name "Robomaster_Passives")(type "KiCad")(uri "${KIPRJMOD}/KiCad_Library/Passives.pretty")(options "")(descr ""))
+  (lib (name "MSPM0")(type "KiCad")(uri "${KIPRJMOD}/KiCad_Library/MSPM0")(options "")(descr ""))
 )
