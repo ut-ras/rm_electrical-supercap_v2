@@ -32,7 +32,7 @@ Plecs {
 "hing frequency\nT_dead = 100*10^-9; % Dead time\nL_blk = 28.306 * 10^-6; % Bu"
 "lk inductance\nC_sc = 110; % Supercap capacitance\nR_on = 10^-1; % On-state M"
 "OSFET resistance\nd = 0.5; % duty cycle\nR_esr = 18*10^-3; \nR_sens = 10*10^-"
-"3;\nL_esl = 0;\nL_damp = 7.5 * 10^-5;\nC_d = 10^-6;\nN_burst = 10;\n\nMUX = 3"
+"3;\nL_esl = 0;\nL_damp = 7.5 * 10^-5;\nC_d = 10^-6;\nN_burst = 10;\n\nMUX = 1"
 "; % Input i_ref signal to use\n\nTs = 1/f_s;\nnum_cycles = 500000;\t\t% numbe"
 "r of switch cycles to simulate\nmax_step_size = 10^-1;\t% maximum time step s"
 "ize [s]\nTstop = num_cycles*Ts;\t% stop time of simulation [s]"
@@ -73,7 +73,7 @@ Plecs {
   InvalidNetlistFunctionEvaluationMsg "1"
   IncompatibleInitialConditionMsg "2"
   Schematic {
-    Location      [0, 23; 2560, 1349]
+    Location      [0, 24; 2560, 1350]
     ZoomFactor    2.2459
     SliderPosition [0, 0]
     ShowBrowser   off
@@ -2204,25 +2204,26 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Frame         [-15, -15; 15, 15]
-      Location      [0, 23; 2560, 1371]
-      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAC0AAAEufwCAAAAA/sAAAAQAFoAbwBvA"
-"G0AQQByAGUAYQAAAAAA/////wAAAFgA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
-"///wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMBAAAANAAABLkAAABiAP///wAAAAMAAAoAAAAAZvw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAACgAAAABEAP///wAACUYAAAS5AAAA"
+      Frame         [-15, -20; 15, 20]
+      Location      [0, 24; 2560, 1423]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAC0AAAEsPwCAAAAA/sAAAAQAFoAbwBvA"
+"G0AQQByAGUAYQAAAAAA/////wAAAIAA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMBAAAANAAABLAAAABiAP///wAAAAMAAAoAAAAAovw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAACgAAAABEAP///wAACUYAAASwAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
       HeaderState   "{\"DefaultSecSize\":100,\"FirstSecSize\":168,\"Labels\":["
-"\"Delta\"],\"VisualIdxs\":[3]}"
+"\"Delta\",\"Slope\"],\"VisualIdxs\":[4,3]}"
       PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA"
-"AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
-      Axes          "2"
+"AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"=="
+      Axes          "3"
       TimeRange     "0"
       ScrollingMode "1"
       SingleTimeAxis "0"
       Open          "0"
-      Ts            "-1"
+      Ts            "0.5"
       SampleLimit   "0"
       XAxisLabel    "Time / s"
       ShowLegend    "2"
@@ -2250,12 +2251,33 @@ Plecs {
         KeepBaseline  off
         BaselineValue 0
       }
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
       Fourier {
         SingleXAxis       on
         AxisLabel         "Frequency / Hz"
         Scaling           0
         PhaseDisplay      0
         ShowFourierLegend off
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
         Axis {
           Name          ""
           AutoScale     1
@@ -2295,7 +2317,7 @@ Plecs {
       }
       Parameter {
         Variable      "start"
-        Value         "0.05"
+        Value         "0"
         Show          off
       }
       Parameter {
@@ -2444,7 +2466,7 @@ Plecs {
       Type          Math
       Name          "Math"
       Show          on
-      Position      [985, 235]
+      Position      [915, 235]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2464,7 +2486,7 @@ Plecs {
       LabelPosition south
       Parameter {
         Variable      "Time"
-        Value         "0.05"
+        Value         "0"
         Show          off
       }
       Parameter {
@@ -2474,7 +2496,7 @@ Plecs {
       }
       Parameter {
         Variable      "After"
-        Value         "1/160"
+        Value         "2/160"
         Show          off
       }
       Parameter {
@@ -2530,7 +2552,7 @@ Plecs {
       Frame         [-20, -10; 20, 10]
       Parameter {
         Variable      "f(u)"
-        Value         "u[1]*u[2]"
+        Value         "(cos(u[2])+1)/16"
         Show          off
       }
     }
@@ -2634,6 +2656,41 @@ Plecs {
       Parameter {
         Variable      "Tag"
         Value         "i_ref"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
+        Show          off
+      }
+    }
+    Component {
+      Type          From
+      Name          "From4"
+      Show          off
+      Position      [140, 470]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Tag"
+        Value         "d_off"
         Show          off
       }
       Parameter {
@@ -2913,6 +2970,7 @@ Plecs {
       Type          Signal
       SrcComponent  "Average Current"
       SrcTerminal   1
+      Points        [150, 400; 150, 395]
       DstComponent  "Scope"
       DstTerminal   1
     }
@@ -2920,7 +2978,7 @@ Plecs {
       Type          Signal
       SrcComponent  "Voltages"
       SrcTerminal   1
-      Points        [160, 450; 160, 410]
+      Points        [160, 450; 160, 405]
       DstComponent  "Scope"
       DstTerminal   2
     }
@@ -2964,14 +3022,6 @@ Plecs {
     }
     Connection {
       Type          Signal
-      SrcComponent  "Step"
-      SrcTerminal   1
-      Points        [680, 105; 680, 75]
-      DstComponent  "Multiport Signal Switch"
-      DstTerminal   5
-    }
-    Connection {
-      Type          Signal
       SrcComponent  "Pulse\nGenerator"
       SrcTerminal   1
       Points        [700, 160; 700, 85]
@@ -3005,6 +3055,22 @@ Plecs {
       SrcTerminal   1
       DstComponent  "Math"
       DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "From4"
+      SrcTerminal   1
+      Points        [165, 470; 165, 415]
+      DstComponent  "Scope"
+      DstTerminal   3
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Step"
+      SrcTerminal   1
+      Points        [680, 105; 680, 75]
+      DstComponent  "Multiport Signal Switch"
+      DstTerminal   5
     }
     RectangleAnnotation {
       Position     [290, 100]
