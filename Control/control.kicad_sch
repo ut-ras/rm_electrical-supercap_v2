@@ -6155,16 +6155,16 @@
 	)
 	(symbol
 		(lib_id "ECE319K:LP-MSPM0G3507")
-		(at 163.83 166.37 0)
+		(at 259.08 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "59517690-0095-48e3-a0bf-6b2502598287")
 		(property "Reference" "U6"
-			(at 163.83 128.27 0)
+			(at 259.08 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6172,7 +6172,7 @@
 			)
 		)
 		(property "Value" "LP-MSPM0G3507"
-			(at 163.83 130.81 0)
+			(at 259.08 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6180,7 +6180,7 @@
 			)
 		)
 		(property "Footprint" "MSPM0:ti_LP_MSPM0G3507"
-			(at 163.83 165.1 0)
+			(at 259.08 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6190,7 +6190,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/tool/LP-MSPM0G3507"
-			(at 171.45 130.81 0)
+			(at 266.7 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6199,7 +6199,7 @@
 			)
 		)
 		(property "Description" "LaunchPad"
-			(at 163.83 166.37 0)
+			(at 259.08 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6208,7 +6208,7 @@
 			)
 		)
 		(property "Distributor" "Mouser"
-			(at 163.83 163.83 0)
+			(at 259.08 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6217,7 +6217,7 @@
 			)
 		)
 		(property "Manufacturer" "Texas Instruments"
-			(at 163.83 163.83 0)
+			(at 259.08 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6226,7 +6226,7 @@
 			)
 		)
 		(property "P/N" "LP-MSPM0G3507"
-			(at 161.29 137.16 0)
+			(at 256.54 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6235,7 +6235,7 @@
 			)
 		)
 		(property "LCSC Part #" ""
-			(at 163.83 166.37 0)
+			(at 259.08 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6244,7 +6244,7 @@
 			)
 		)
 		(property "Cost" "22.60"
-			(at 163.83 163.83 0)
+			(at 259.08 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)

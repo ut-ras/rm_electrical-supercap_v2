@@ -678,6 +678,36 @@
           "label": "Mouser#",
           "name": "Mouser#",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "P/N",
+          "name": "P/N",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer",
+          "name": "Manufacturer",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Cost",
+          "name": "Cost",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC Part #",
+          "name": "LCSC Part #",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Distributor",
+          "name": "Distributor",
+          "show": false
         }
       ],
       "filter_string": "",
