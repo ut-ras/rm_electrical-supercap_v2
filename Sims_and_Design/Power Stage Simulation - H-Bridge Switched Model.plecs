@@ -29,13 +29,13 @@ Plecs {
   AssertionAction "1"
   FixedPointDatatypeOverride "1"
   InitializationCommands "V_g = 24; % Input voltage\nf_s = 120 * 10^3; % Switc"
-"hing frequency\nT_dead = 100*10^-9; % Dead time\nL_blk = 28.306 * 10^-6; % Bu"
-"lk inductance\nC_sc = 110; % Supercap capacitance\nR_on = 10^-1; % On-state M"
-"OSFET resistance\nd = 0.5; % duty cycle\nR_esr = 18*10^-3; \nR_sens = 10*10^-"
-"3;\nL_esl = 0;\nL_damp = 7.5 * 10^-5;\nC_d = 10^-6;\nN_burst = 10;\n\nMUX = 1"
-"; % Input i_ref signal to use\n\nTs = 1/f_s;\nnum_cycles = 500000;\t\t% numbe"
-"r of switch cycles to simulate\nmax_step_size = 10^-1;\t% maximum time step s"
-"ize [s]\nTstop = num_cycles*Ts;\t% stop time of simulation [s]"
+"hing frequency\nT_dead = 0; % 100*10^-9; % Dead time\nL_blk = 28.306 * 10^-6;"
+" % Bulk inductance\nC_sc = 110; % Supercap capacitance\nR_on = 10^-1; % On-st"
+"ate MOSFET resistance\nd = 0.5; % duty cycle\nR_esr = 18*10^-3; \nR_sens = 10"
+"*10^-3;\nL_esl = 0;\nL_damp = 7.5 * 10^-5;\nC_d = 10^-6;\nN_burst = 10;\n\nMU"
+"X = 3; % Input i_ref signal to use\n\nTs = 1/f_s;\nnum_cycles = 500000;\t\t% "
+"number of switch cycles to simulate\nmax_step_size = 10^-1;\t% maximum time s"
+"tep size [s]\nTstop = num_cycles*Ts;\t% stop time of simulation [s]"
   InitialState  "1"
   SystemState   ""
   JacobianComputation "2"
@@ -1217,6 +1217,7 @@ Plecs {
       Direction     down
       Flipped       on
       LabelPosition west
+      CommentOut    DisabledOpenCircuit
       Parameter {
         Variable      "C"
         Value         "C_d"
@@ -2470,6 +2471,7 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
+      CommentOut    DisabledClosedCircuit
       Parameter {
         Variable      "Operator"
         Value         "2"
@@ -2496,7 +2498,7 @@ Plecs {
       }
       Parameter {
         Variable      "After"
-        Value         "2/160"
+        Value         "1/16"
         Show          off
       }
       Parameter {
@@ -2713,6 +2715,78 @@ Plecs {
         Variable      "HighlightLevel"
         Value         "0"
         Show          off
+      }
+    }
+    Component {
+      Type          Scope
+      Name          "Scope1"
+      Show          on
+      Position      [405, 420]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-15, -15; 15, 15]
+      Location      [0, 23; 2560, 1371]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
+"G0AQQByAGUAYQAAAAAA/////wAAADAA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAAAAAAAAAPw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAACgAAAAUlAAAA"
+"BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
+"AAAAA=="
+      SavedViews    "AAAAAgAAAAA="
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":159,\"Labels\":[],"
+"\"VisualIdxs\":[]}"
+      PlotPalettes  "AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      Axes          "1"
+      TimeRange     "0.0"
+      ScrollingMode "1"
+      SingleTimeAxis "1"
+      Open          "1"
+      Ts            "-1"
+      SampleLimit   "0"
+      XAxisLabel    "Time / s"
+      ShowLegend    "1"
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Fourier {
+        SingleXAxis       on
+        AxisLabel         "Frequency / Hz"
+        Scaling           0
+        PhaseDisplay      0
+        ShowFourierLegend off
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+      }
+    }
+    Component {
+      Type          PlecsProbe
+      Name          "Probe"
+      Show          on
+      Position      [350, 420]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Probe {
+        Component     "L1"
+        Path          ""
+        Signals       {"Inductor current"}
       }
     }
     Connection {
@@ -3071,6 +3145,13 @@ Plecs {
       Points        [680, 105; 680, 75]
       DstComponent  "Multiport Signal Switch"
       DstTerminal   5
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Probe"
+      SrcTerminal   1
+      DstComponent  "Scope1"
+      DstTerminal   1
     }
     RectangleAnnotation {
       Position     [290, 100]
