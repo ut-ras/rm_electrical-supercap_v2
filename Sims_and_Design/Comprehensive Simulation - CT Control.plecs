@@ -3245,9 +3245,10 @@ Plecs {
     } 
     Annotation {
       Name          "<html><body>\n<p><span style=\" font-weight:700;\">TODO:<"
-"/span></p>\n<p>- Linearize model</p>\n<p>- Implement sensing noise</p>\n<p>- "
-"Create DT model</p>\n<p>- Add MSMP0 simulation</p></body></html>"
-      Position      [935, 160]
+"/span></p>\n<p>- Linearize model <span style=\" color:#55ff55;\">(DONE)</span"
+"></p>\n<p>- Implement sensing noise</p>\n<p>- Create DT model</p>\n<p>- Add M"
+"SMP0 simulation</p></body></html>"
+      Position      [705, 235]
     } 
     Annotation {
       Name          "<html><body>\n<p><span style=\" font-weight:700;\">Sensin"

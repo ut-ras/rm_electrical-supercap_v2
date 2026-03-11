@@ -183,7 +183,7 @@ Plecs {
       Type          Label
       Name          "Label"
       Show          off
-      Position      [140, 220]
+      Position      [140, 230]
       Direction     up
       Flipped       off
       LabelPosition east
@@ -1233,7 +1233,7 @@ Plecs {
       Type          Mosfet
       Name          "FET3"
       Show          on
-      Position      [265, 250]
+      Position      [280, 250]
       Direction     up
       Flipped       off
       LabelPosition east
@@ -1272,7 +1272,7 @@ Plecs {
       Type          Mosfet
       Name          "FET4"
       Show          on
-      Position      [265, 310]
+      Position      [280, 310]
       Direction     up
       Flipped       off
       LabelPosition east
@@ -1311,7 +1311,7 @@ Plecs {
       Type          Ground
       Name          "Ground2"
       Show          off
-      Position      [265, 340]
+      Position      [280, 340]
       Direction     up
       Flipped       off
       LabelPosition east
@@ -1320,7 +1320,7 @@ Plecs {
       Type          Label
       Name          "Label6"
       Show          off
-      Position      [265, 220]
+      Position      [280, 230]
       Direction     up
       Flipped       off
       LabelPosition east
@@ -1355,7 +1355,7 @@ Plecs {
       Type          From
       Name          "From5"
       Show          off
-      Position      [225, 310]
+      Position      [240, 310]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -1390,7 +1390,7 @@ Plecs {
       Type          From
       Name          "From6"
       Show          off
-      Position      [225, 250]
+      Position      [240, 250]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -1425,10 +1425,10 @@ Plecs {
       Type          Label
       Name          "Label8"
       Show          off
-      Position      [285, 280]
-      Direction     right
+      Position      [265, 280]
+      Direction     left
       Flipped       off
-      LabelPosition south
+      LabelPosition north
       Parameter {
         Variable      "Tag"
         Value         "V_sc-"
@@ -2726,22 +2726,24 @@ Plecs {
       Flipped       off
       LabelPosition south
       Frame         [-15, -15; 15, 15]
-      Location      [0, 23; 2560, 1371]
+      Location      [0, 24; 2560, 1390]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAADAA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAACgAAAAUlAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAACgAAAAU3AAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
-      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":159,\"Labels\":[],"
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":186,\"Labels\":[],"
 "\"VisualIdxs\":[]}"
-      PlotPalettes  "AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      PlotPalettes  "AAAAAQAAAAIAAAABAAAAAgAAAAEC//8u4P//zMwAAAAAAAEC//8AAP///"
+"/8AAAAAAAIAAAABAAAAAAEAAAAAAgAAAAEAAAABAAAAAQAAAAEAAAACAAAAAQAAAAABAAAAAAIAAA"
+"ABQCQAAAAAAAAAAAABQCQAAAAAAAAAAAACAAAAAQEAAAABAQ=="
       Axes          "1"
       TimeRange     "0.0"
       ScrollingMode "1"
       SingleTimeAxis "1"
-      Open          "1"
+      Open          "0"
       Ts            "-1"
       SampleLimit   "0"
       XAxisLabel    "Time / s"
@@ -2784,9 +2786,14 @@ Plecs {
       Flipped       off
       LabelPosition south
       Probe {
-        Component     "L1"
+        Component     "FET1"
         Path          ""
-        Signals       {"Inductor current"}
+        Signals       {"MOSFET gate input"}
+      }
+      Probe {
+        Component     "FET3"
+        Path          ""
+        Signals       {"MOSFET gate input"}
       }
     }
     Connection {
@@ -2891,7 +2898,7 @@ Plecs {
       Type          Wire
       SrcComponent  "FET3"
       SrcTerminal   2
-      Points        [265, 280]
+      Points        [280, 280]
       Branch {
         DstComponent  "FET4"
         DstTerminal   1
