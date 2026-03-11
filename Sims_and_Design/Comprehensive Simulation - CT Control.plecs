@@ -30,12 +30,12 @@ Plecs {
   FixedPointDatatypeOverride "1"
   InitializationCommands "% Circuit parameters\nf_s = 120e3; % Switching frequ"
 "ency\nV_g = 24; % Nominal input voltage\nd_off = 1/16;\n\n%Passive parameters"
-"\nR_on = 10^-1; % On-state MOSFET resistance\nR_l = 77.13e-3; % Inductor ESR"
-"\nL_blk = 28.306 * 10^-6; % Bulk inductance\n\n% Supercap network\nC_sc = 110"
-"; % Supercap capacitance\nR_esr = 18*10^-3; % Supercap resistance\nL_esl = 0;"
-" % Supercap inductance\n\n% Control\nd_max = 0.475; % Maximum steady-state du"
-"ty cycle\nd_min = 0; % Maximum steady-state duty cycle\nv_max = 3 * 0.95;\nv_"
-"min = 3 * 0.05;\nv_thres_low = v_min;\nv_thres_high = v_max;"
+"\nR_on = 0.35e-3; % On-state MOSFET resistance\nR_l = 77.13e-3; % Inductor ES"
+"R\nL_blk = 28.306 * 10^-6; % Bulk inductance\n\n% Supercap network\nC_sc = 11"
+"0; % Supercap capacitance\nR_esr = 18*10^-3; % Supercap resistance\nL_esl = 0"
+"; % Supercap inductance\n\n% Control\nd_max = 0.475; % Maximum steady-state d"
+"uty cycle\nd_min = 0; % Maximum steady-state duty cycle\nv_max = 3 * 0.95;\nv"
+"_min = 3 * 0.05;\nv_thres_low = v_min;\nv_thres_high = v_max;"
   InitialState  "1"
   SystemState   ""
   JacobianComputation "2"
@@ -73,7 +73,7 @@ Plecs {
   InvalidNetlistFunctionEvaluationMsg "1"
   IncompatibleInitialConditionMsg "2"
   Schematic {
-    Location      [0, 23; 2560, 1349]
+    Location      [0, 24; 2560, 1350]
     ZoomFactor    1.96257
     SliderPosition [0, 0]
     ShowBrowser   off
