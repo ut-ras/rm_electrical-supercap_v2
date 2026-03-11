@@ -70,8 +70,8 @@ Plecs {
   InvalidNetlistFunctionEvaluationMsg "1"
   IncompatibleInitialConditionMsg "2"
   Schematic {
-    Location      [0, 24; 2560, 1350]
-    ZoomFactor    2.2459
+    Location      [0, 24; 1539, 825]
+    ZoomFactor    1.49863
     SliderPosition [0, 0]
     ShowBrowser   off
     BrowserWidth  100
@@ -198,7 +198,7 @@ Plecs {
       Type          Constant
       Name          "V_c"
       Show          on
-      Position      [40, 125]
+      Position      [30, 125]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -216,44 +216,9 @@ Plecs {
     }
     Component {
       Type          Goto
-      Name          "Goto"
-      Show          off
-      Position      [80, 125]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      Parameter {
-        Variable      "Tag"
-        Value         "U_ffi"
-        Show          off
-      }
-      Parameter {
-        Variable      "Visibility"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "2"
-        Show          off
-      }
-      Parameter {
-        Variable      "CustomMessage"
-        Value         ""
-        Show          off
-        Evaluate      on
-      }
-      Parameter {
-        Variable      "HighlightLevel"
-        Value         "0"
-        Show          off
-      }
-    }
-    Component {
-      Type          Goto
       Name          "Goto1"
       Show          off
-      Position      [335, 175]
+      Position      [250, 200]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -288,7 +253,7 @@ Plecs {
       Type          PlecsProbe
       Name          "Currents"
       Show          on
-      Position      [40, 285]
+      Position      [40, 305]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -302,7 +267,7 @@ Plecs {
       Type          Product
       Name          "Divide"
       Show          off
-      Position      [130, 310]
+      Position      [130, 330]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -331,7 +296,7 @@ Plecs {
       Type          From
       Name          "From3"
       Show          off
-      Position      [85, 315]
+      Position      [85, 335]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -366,16 +331,16 @@ Plecs {
       Type          Scope
       Name          "Scope"
       Show          on
-      Position      [185, 290]
+      Position      [185, 310]
       Direction     up
       Flipped       off
       LabelPosition south
       Frame         [-15, -15; 15, 15]
-      Location      [0, 24; 2560, 1423]
+      Location      [0, 24; 1539, 847]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAC0AAAFQPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAFgA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAANAAABUAAAABiAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAACgAAAAVYAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAABgMAAAMYAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -862,24 +827,10 @@ Plecs {
       }
     }
     Component {
-      Type          Math
-      Name          "Math"
-      Show          on
-      Position      [195, 180]
-      Direction     up
-      Flipped       off
-      LabelPosition south
-      Parameter {
-        Variable      "Operator"
-        Value         "2"
-        Show          off
-      }
-    }
-    Component {
       Type          PulseGenerator
       Name          "Pulse\nGenerator"
       Show          on
-      Position      [40, 180]
+      Position      [80, 200]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -916,46 +867,102 @@ Plecs {
     }
     Component {
       Type          Function
-      Name          "Fcn"
+      Name          "K"
       Show          on
-      Position      [195, 145]
+      Position      [80, 125]
       Direction     right
       Flipped       off
-      LabelPosition north
+      LabelPosition south
       Frame         [-20, -10; 20, 10]
       Parameter {
         Variable      "f(u)"
-        Value         "(  u[1] - sqrt( (u[1]/V_g)^2 - 4*(R/V_g)*u[2] )  ) / (2"
-"*V_g)"
+        Value         "u[1]/(2*V_g)"
         Show          off
       }
     }
     Component {
-      Type          SignalMux
-      Name          "Mux1"
+      Type          Sum
+      Name          "Sum"
       Show          off
-      Position      [150, 145]
-      Direction     right
+      Position      [125, 200]
+      Direction     up
       Flipped       off
       LabelPosition south
-      Frame         [-2, -10; 7, 10]
       Parameter {
-        Variable      "Width"
+        Variable      "IconShape"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "Inputs"
+        Value         "++|"
+        Show          off
+      }
+      Parameter {
+        Variable      "DataType"
+        Value         "11"
+        Show          off
+      }
+      Parameter {
+        Variable      "DataTypeOverflowMode"
+        Value         "1"
+        Show          off
+      }
+    }
+    Component {
+      Type          Math
+      Name          "Math1"
+      Show          on
+      Position      [125, 155]
+      Direction     right
+      Flipped       off
+      LabelPosition west
+      Parameter {
+        Variable      "Operator"
+        Value         "1"
+        Show          off
+      }
+    }
+    Component {
+      Type          Math
+      Name          "Math2"
+      Show          on
+      Position      [170, 200]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Operator"
         Value         "2"
         Show          off
       }
     }
     Component {
-      Type          ManualSignalSwitch
-      Name          "Processing Type"
-      Show          on
-      Position      [270, 175]
-      Direction     right
+      Type          Sum
+      Name          "Sum1"
+      Show          off
+      Position      [215, 200]
+      Direction     up
       Flipped       off
       LabelPosition south
       Parameter {
-        Variable      "SwitchState"
+        Variable      "IconShape"
         Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "Inputs"
+        Value         "++|"
+        Show          off
+      }
+      Parameter {
+        Variable      "DataType"
+        Value         "11"
+        Show          off
+      }
+      Parameter {
+        Variable      "DataTypeOverflowMode"
+        Value         "1"
         Show          off
       }
     }
@@ -998,7 +1005,7 @@ Plecs {
       Type          Signal
       SrcComponent  "Divide"
       SrcTerminal   1
-      Points        [155, 310]
+      Points        [155, 330]
       DstComponent  "Scope"
       DstTerminal   2
     }
@@ -1006,13 +1013,13 @@ Plecs {
       Type          Signal
       SrcComponent  "Currents"
       SrcTerminal   1
-      Points        [95, 285]
+      Points        [95, 305]
       Branch {
         DstComponent  "Scope"
         DstTerminal   1
       }
       Branch {
-        Points        [95, 305]
+        Points        [95, 325]
         DstComponent  "Divide"
         DstTerminal   2
       }
@@ -1071,62 +1078,60 @@ Plecs {
     }
     Connection {
       Type          Signal
-      SrcComponent  "Mux1"
+      SrcComponent  "Math1"
       SrcTerminal   1
-      DstComponent  "Fcn"
-      DstTerminal   1
+      DstComponent  "Sum"
+      DstTerminal   2
     }
     Connection {
       Type          Signal
-      SrcComponent  "Math"
+      SrcComponent  "Sum"
       SrcTerminal   1
-      DstComponent  "Processing Type"
+      DstComponent  "Math2"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Math2"
+      SrcTerminal   1
+      DstComponent  "Sum1"
       DstTerminal   3
     }
     Connection {
       Type          Signal
-      SrcComponent  "Processing Type"
+      SrcComponent  "K"
+      SrcTerminal   2
+      Points        [125, 125]
+      Branch {
+        DstComponent  "Math1"
+        DstTerminal   2
+      }
+      Branch {
+        Points        [215, 125]
+        DstComponent  "Sum1"
+        DstTerminal   2
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Pulse\nGenerator"
+      SrcTerminal   1
+      DstComponent  "Sum"
+      DstTerminal   3
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Sum1"
       SrcTerminal   1
       DstComponent  "Goto1"
       DstTerminal   1
     }
     Connection {
       Type          Signal
-      SrcComponent  "Fcn"
-      SrcTerminal   2
-      Points        [240, 145]
-      DstComponent  "Processing Type"
-      DstTerminal   2
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "Pulse\nGenerator"
-      SrcTerminal   1
-      Points        [125, 180]
-      Branch {
-        DstComponent  "Math"
-        DstTerminal   2
-      }
-      Branch {
-        Points        [125, 150]
-        DstComponent  "Mux1"
-        DstTerminal   3
-      }
-    }
-    Connection {
-      Type          Signal
       SrcComponent  "V_c"
       SrcTerminal   1
-      Points        [60, 125]
-      Branch {
-        DstComponent  "Goto"
-        DstTerminal   1
-      }
-      Branch {
-        Points        [60, 140]
-        DstComponent  "Mux1"
-        DstTerminal   2
-      }
+      DstComponent  "K"
+      DstTerminal   1
     }
     RectangleAnnotation {
       Position     [185, 55]
@@ -1145,9 +1150,9 @@ Plecs {
       Position      [310, 20]
     } 
     RectangleAnnotation {
-      Position     [185, 170]
-      Width        350
-      Height       120
+      Position     [145, 180]
+      Width        270
+      Height       140
       CornerRadius 3
       Thickness    2
       PenColor     4278190080
@@ -1158,10 +1163,10 @@ Plecs {
     Annotation {
       Name          "<html><body>\n<p><span style=\" font-weight:700;\">Inputs"
 "</span></p></body></html>"
-      Position      [335, 120]
+      Position      [255, 120]
     } 
     RectangleAnnotation {
-      Position     [110, 290]
+      Position     [110, 310]
       Width        200
       Height       100
       CornerRadius 3
@@ -1174,7 +1179,7 @@ Plecs {
     Annotation {
       Name          "<html><body>\n<p><span style=\" font-weight:700;\">Scopes"
 "</span></p></body></html>"
-      Position      [185, 250]
+      Position      [185, 270]
     } 
     Annotation {
       Name          base64 "PGh0bWw+PGJvZHk+CjxwPjxzcGFuIHN0eWxlPSIgZm9udC1zaX"
@@ -1248,7 +1253,7 @@ Plecs {
 "C1zaXplOjRweDsiPuKjv+Kjv+Kjv+Kjv+Kjv+Kjv+Kjt+KjtuKhpOKjjeKjmeKhguKjkOKgsuKglu"
 "KgkuKgkuKgkuKggOKjpOKjpOKjpOKihOKjoOKjgOKjgOKjgOKhgOKipOKhhOKgsuKgm+KioeKjtOK"
 "gv+Kjv+Kjv+Kjvzwvc3Bhbj48L3A+PC9ib2R5PjwvaHRtbD4="
-      Position      [440, 120]
+      Position      [435, 125]
     } 
     Annotation {
       Name          "<html><body>\n<p align=\"center\"><span style=\" font-wei"
@@ -1261,23 +1266,6 @@ Plecs {
 "/span></p>\n<p>- Characterize effect of feed-forward voltage</p>\n<p>- Quadra"
 "tics hell?</p></body></html>"
       Position      [475, 220]
-    } 
-    RectangleAnnotation {
-      Position     [185, 140]
-      Width        130
-      Height       40
-      CornerRadius 3
-      Thickness    2
-      PenColor     3237937152
-      PenAlpha     0.752941
-      BrushColor   0
-      BrushAlpha   0
-    } 
-    Annotation {
-      Name          "<html><body>\n<p><span style=\" font-size:9px; color:#ff0"
-"000;\">Quadratic bullshit</span></p>\n<p><span style=\" font-size:9px; color:"
-"#ff0000;\">that doesn't work</span></p></body></html>"
-      Position      [290, 140]
     } 
   }
 }
