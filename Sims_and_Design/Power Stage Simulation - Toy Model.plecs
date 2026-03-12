@@ -3,7 +3,7 @@ Plecs {
   Version       "5.0"
   CircuitModel  "ContStateSpace"
   StartTime     "0.0"
-  TimeSpan      "100"
+  TimeSpan      "10"
   Timeout       ""
   Solver        "auto"
   MaxStep       "1e-3"
@@ -74,9 +74,9 @@ Plecs {
   InvalidNetlistFunctionEvaluationMsg "1"
   IncompatibleInitialConditionMsg "2"
   Schematic {
-    Location      [0, 23; 2560, 1349]
+    Location      [0, 24; 2560, 1350]
     ZoomFactor    1.96257
-    SliderPosition [525, 0]
+    SliderPosition [11, 0]
     ShowBrowser   off
     BrowserWidth  100
     Component {
@@ -256,11 +256,11 @@ Plecs {
       Flipped       off
       LabelPosition south
       Frame         [-15, -20; 15, 20]
-      Location      [0, 24; 2560, 1399]
+      Location      [0, 24; 2560, 1417]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAC0AAAE4/wCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAIAA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAANAAABOMAAABiAP///wAAAAMAAAoAAAAAYPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAACgAAAABEAP///wAACgAAAATaAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAACgAAAABEAP///wAACgAAAATsAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -2481,7 +2481,6 @@ Plecs {
       SrcTerminal   1
       Points        [300, 460]
       Branch {
-        Points        [300, 485]
         DstComponent  "Selector"
         DstTerminal   1
       }
