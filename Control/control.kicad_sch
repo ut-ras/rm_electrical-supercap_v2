@@ -4985,7 +4985,7 @@
 		(uuid "00bee0b8-cb81-486b-a1da-8a23943a169d")
 	)
 	(hierarchical_label "I_{out sense+}"
-		(shape input)
+		(shape bidirectional)
 		(at 242.57 64.77 180)
 		(effects
 			(font
@@ -5106,7 +5106,7 @@
 		(uuid "9e4f4b48-ccd8-4cf0-bc33-982bbff4c3ae")
 	)
 	(hierarchical_label "I_{out sense-}"
-		(shape input)
+		(shape bidirectional)
 		(at 242.57 72.39 180)
 		(effects
 			(font
