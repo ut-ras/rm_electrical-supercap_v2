@@ -1493,28 +1493,6 @@
 		)
 		(uuid "f2ee757b-ee8f-41dd-b6e6-9342713ef11d")
 	)
-	(hierarchical_label "I_{out sense-}"
-		(shape input)
-		(at 135.89 77.47 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4e43af89-dda7-4fe7-8e95-1674e1bc61fd")
-	)
-	(hierarchical_label "I_{out sense+}"
-		(shape input)
-		(at 133.35 77.47 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "a08fac71-8f5d-4a40-a523-110177c5a692")
-	)
 	(symbol
 		(lib_id "power:GNDPWR")
 		(at 62.23 66.04 0)
@@ -2308,6 +2286,26 @@
 		(pin "V_{sc,-}" bidirectional
 			(at 144.78 100.33 0)
 			(uuid "b5a64678-1711-442f-af0a-f1e6cda58fbe")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "I_{out sense+}" bidirectional
+			(at 133.35 77.47 90)
+			(uuid "ecab0333-ba91-4cf2-bfab-3d30d98d7630")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "I_{out sense-}" bidirectional
+			(at 135.89 77.47 90)
+			(uuid "da39a69c-d959-411f-81fc-df5e3f321fd0")
 			(effects
 				(font
 					(size 1.27 1.27)
