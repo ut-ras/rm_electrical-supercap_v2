@@ -4178,7 +4178,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "44c9d1a3-4698-40df-8c60-1e48165750f0")
-		(property "Reference" "TP3"
+		(property "Reference" "V_{sw}1"
 			(at 181.61 117.3479 0)
 			(effects
 				(font
@@ -4229,7 +4229,7 @@
 		(instances
 			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/66de8ce3-68f9-4d35-858c-1420192a373c"
-					(reference "TP3")
+					(reference "V_{sw}1")
 					(unit 1)
 				)
 			)
@@ -5831,7 +5831,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b5544479-308b-45c2-89bc-468b3a042c2e")
-		(property "Reference" "TP6"
+		(property "Reference" "V_{sw}2"
 			(at 207.01 117.3479 0)
 			(effects
 				(font
@@ -5882,7 +5882,7 @@
 		(instances
 			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/66de8ce3-68f9-4d35-858c-1420192a373c"
-					(reference "TP6")
+					(reference "V_{sw}2")
 					(unit 1)
 				)
 			)
@@ -6140,7 +6140,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cce0df81-f08e-4955-a8c8-0a86ad906d14")
-		(property "Reference" "TP2"
+		(property "Reference" "HI_{DRV}1"
 			(at 181.61 107.1879 0)
 			(effects
 				(font
@@ -6191,7 +6191,7 @@
 		(instances
 			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/66de8ce3-68f9-4d35-858c-1420192a373c"
-					(reference "TP2")
+					(reference "HI_{DRV}1")
 					(unit 1)
 				)
 			)
@@ -6207,7 +6207,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d0615261-67fc-466e-9525-b5da13cb4689")
-		(property "Reference" "TP5"
+		(property "Reference" "HI_{DRV}2"
 			(at 207.01 107.1879 0)
 			(effects
 				(font
@@ -6258,7 +6258,7 @@
 		(instances
 			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/66de8ce3-68f9-4d35-858c-1420192a373c"
-					(reference "TP5")
+					(reference "HI_{DRV}2")
 					(unit 1)
 				)
 			)
@@ -6832,7 +6832,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f4300c42-47c3-4ef8-9ec2-718e1c15fccf")
-		(property "Reference" "TP4"
+		(property "Reference" "LO_{DRV}2"
 			(at 207.01 97.0279 0)
 			(effects
 				(font
@@ -6883,7 +6883,7 @@
 		(instances
 			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/66de8ce3-68f9-4d35-858c-1420192a373c"
-					(reference "TP4")
+					(reference "LO_{DRV}2")
 					(unit 1)
 				)
 			)
@@ -7031,7 +7031,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fe3295be-74a6-4132-9fc8-679c9b8fae0c")
-		(property "Reference" "TP1"
+		(property "Reference" "LO_{DRV}1"
 			(at 181.61 97.0279 0)
 			(effects
 				(font
@@ -7082,7 +7082,7 @@
 		(instances
 			(project ""
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/66de8ce3-68f9-4d35-858c-1420192a373c"
-					(reference "TP1")
+					(reference "LO_{DRV}1")
 					(unit 1)
 				)
 			)
