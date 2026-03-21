@@ -620,13 +620,13 @@
           "show": false
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "Manufacturer_Part_Number",
           "name": "Manufacturer_Part_Number",
           "show": true
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "Mouser Part Number",
           "name": "Mouser Part Number",
           "show": true

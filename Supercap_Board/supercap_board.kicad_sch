@@ -164,6 +164,28 @@
 		)
 		(uuid 9b32ccd8-4fc6-49d2-811b-f5e0a043bd12)
 	)
+	(text "Notes:\n- Capacitors are mounted sideways relative to board, so upright relative to gravity\n- Bodies of capacitors are secured to board via adhesive/brackets\n- 1980J of energy storage => ideal charging time of 22 seconds under no load"
+		(exclude_from_sim no)
+		(at 73.787 78.994 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "15ec1bd6-d8b9-4691-804d-c2de6a42df3c")
+	)
+	(text "Supercapacitors"
+		(exclude_from_sim no)
+		(at 137.16 71.628 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+			)
+			(justify right)
+		)
+		(uuid "92b31982-7b57-44f4-9bc4-14be38be489d")
+	)
 	(text "<= 0-3V"
 		(exclude_from_sim no)
 		(at 122.174 55.88 0)
@@ -174,18 +196,6 @@
 			(justify left)
 		)
 		(uuid "c03c95ee-695b-4f51-aad3-6be10b902889")
-	)
-	(text "Supercapacitors"
-		(exclude_from_sim no)
-		(at 121.666 70.358 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(italic yes)
-			)
-			(justify left top)
-		)
-		(uuid "e7317cd8-d0b2-4a9b-bf4d-8846b252f7a0")
 	)
 	(junction
 		(at 109.22 68.58)

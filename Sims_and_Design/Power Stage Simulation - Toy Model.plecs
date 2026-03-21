@@ -74,16 +74,16 @@ Plecs {
   InvalidNetlistFunctionEvaluationMsg "1"
   IncompatibleInitialConditionMsg "2"
   Schematic {
-    Location      [0, 23; 2560, 1349]
-    ZoomFactor    2.24589
-    SliderPosition [0, 0]
+    Location      [2400, 23; 4320, 989]
+    ZoomFactor    1.96256
+    SliderPosition [0, -1]
     ShowBrowser   off
     BrowserWidth  100
     Component {
       Type          Goto
       Name          "Goto1"
       Show          off
-      Position      [310, 110]
+      Position      [300, 110]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -137,16 +137,16 @@ Plecs {
       Flipped       off
       LabelPosition south
       Frame         [-15, -20; 15, 20]
-      Location      [0, 24; 2560, 1423]
+      Location      [2400, 23; 4320, 1011]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAC0AAAE8vwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAIAA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
-"///wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAANAAABPIAAABiAP///wAAAAMAAAoAAAAAYPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAACgAAAABEAP///wAACgAAAATyAAAA"
+"///wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAANAAABPIAAABiAP///wAAAAMAAAeAAAAAYPw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAB4AAAABEAP///wAAB4AAAANXAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
-      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":178,\"Labels\":[\""
-"Min\",\"Abs Max\",\"RMS\"],\"VisualIdxs\":[5,7,9]}"
+      HeaderState   "{\"DefaultSecSize\":100,\"FirstSecSize\":177,\"Labels\":["
+"\"Min\",\"Abs Max\",\"RMS\"],\"VisualIdxs\":[5,7,9]}"
       PlotPalettes  "AAAAAQAAAAMAAAABAAAAAwAAAAEC//8u4P//zMwAAAAAAAEC//8AAP///"
 "/8AAAAAAAEC//9PsP////8AAAAAAAMAAAABAAAAAAEAAAAAAQAAAAADAAAAAQAAAAEAAAABAAAAAQ"
 "AAAAEAAAABAAAAAwAAAAEAAAAAAQAAAAABAAAAAAMAAAABQAgAAAAAAAAAAAABQAgAAAAAAAAAAAA"
@@ -281,7 +281,7 @@ Plecs {
         Direction     right
       }
       Schematic {
-        Location      [0, 24; 2560, 1350]
+        Location      [0, 41; 2560, 1058]
         ZoomFactor    3.36578
         SliderPosition [0, 0]
         ShowBrowser   off
@@ -1042,7 +1042,7 @@ Plecs {
       Type          Constant
       Name          "Reference Current"
       Show          on
-      Position      [430, 360]
+      Position      [430, 315]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -2081,7 +2081,7 @@ Plecs {
       Type          Subsystem
       Name          "EVIL square root"
       Show          on
-      Position      [150, 110]
+      Position      [775, 395]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2594,7 +2594,7 @@ Plecs {
       Type          Math
       Name          "Math"
       Show          on
-      Position      [585, 480]
+      Position      [150, 110]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2613,15 +2613,15 @@ Plecs {
       Flipped       off
       LabelPosition south
       Frame         [-15, -15; 15, 15]
-      Location      [0, 24; 2560, 1399]
+      Location      [0, 23; 1536, 795]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAADAA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAACgAAAAVAAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAABgAAAALlAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
-      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":95,\"Labels\":[],"
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":94,\"Labels\":[],"
 "\"VisualIdxs\":[]}"
       PlotPalettes  "AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
       Axes          "1"
@@ -2666,7 +2666,7 @@ Plecs {
       Type          Saturation
       Name          "Saturation"
       Show          on
-      Position      [780, 395]
+      Position      [260, 110]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -2677,7 +2677,7 @@ Plecs {
       }
       Parameter {
         Variable      "LowerLimit"
-        Value         "0"
+        Value         "0.01"
         Show          off
       }
     }
@@ -2685,7 +2685,7 @@ Plecs {
       Type          SineGenerator
       Name          "Sine Wave"
       Show          on
-      Position      [430, 315]
+      Position      [680, 370]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -2696,7 +2696,7 @@ Plecs {
       }
       Parameter {
         Variable      "Bias"
-        Value         "0"
+        Value         "5"
         Show          off
       }
       Parameter {
@@ -2779,7 +2779,7 @@ Plecs {
       Type          Subsystem
       Name          "Dithering"
       Show          on
-      Position      [260, 110]
+      Position      [705, 445]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2983,7 +2983,7 @@ Plecs {
       SrcComponent  "Components/Control/Sources/Ramp"
       Name          "Ramp"
       Show          on
-      Position      [465, 430]
+      Position      [430, 430]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -3366,20 +3366,6 @@ Plecs {
     }
     Connection {
       Type          Signal
-      SrcComponent  "Sum"
-      SrcTerminal   1
-      DstComponent  "EVIL square root"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "EVIL square root"
-      SrcTerminal   2
-      DstComponent  "Sum1"
-      DstTerminal   3
-    }
-    Connection {
-      Type          Signal
       SrcComponent  "Sum2"
       SrcTerminal   1
       Points        [110, 305]
@@ -3395,22 +3381,11 @@ Plecs {
     }
     Connection {
       Type          Signal
-      SrcComponent  "Sine Wave"
-      SrcTerminal   1
-      DstComponent  "Goto4"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Signal
-      Points        [555, 430; 570, 430]
-    }
-    Connection {
-      Type          Signal
       SrcComponent  "Sum1"
       SrcTerminal   1
       Points        [215, 110]
       Branch {
-        DstComponent  "Dithering"
+        DstComponent  "Saturation"
         DstTerminal   1
       }
       Branch {
@@ -3427,13 +3402,6 @@ Plecs {
       DstTerminal   1
     }
     Connection {
-      Type          Signal
-      SrcComponent  "Dithering"
-      SrcTerminal   2
-      DstComponent  "Goto1"
-      DstTerminal   1
-    }
-    Connection {
       Type          Wire
       SrcComponent  "L_EMI"
       SrcTerminal   1
@@ -3445,6 +3413,38 @@ Plecs {
       SrcComponent  "Am1"
       SrcTerminal   1
       DstComponent  "V_PI"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Sum"
+      SrcTerminal   1
+      DstComponent  "Math"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Math"
+      SrcTerminal   1
+      DstComponent  "Sum1"
+      DstTerminal   3
+    }
+    Connection {
+      Type          Signal
+      Points        [590, 445; 605, 445]
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Saturation"
+      SrcTerminal   2
+      DstComponent  "Goto1"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Reference Current"
+      SrcTerminal   1
+      DstComponent  "Goto4"
       DstTerminal   1
     }
     RectangleAnnotation {
