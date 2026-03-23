@@ -19,11 +19,11 @@ void test_PWM_Output(void);
 int main(void)
 {
     // 1. Initialize hardware via SysConfig
-    // (Ensure your Action Configurations are set in the GUI first!)
     SYSCFG_DL_init();
 
-    // 2. Enable the interrupt in the NVIC for ADC0
+    // 2. Enable the interrupt in the NVIC for ADC0 & Hardware Fault
     NVIC_EnableIRQ(ADC12_0_INST_INT_IRQN);
+    NVIC_EnableIRQ(PWM_0_INST_INT_IRQN);
 
     // 3. Wake up the ADCs
     DL_ADC12_enableConversions(ADC12_0_INST);
@@ -67,6 +67,31 @@ void ADC12_0_INST_IRQHandler(void)
 }
 
 // ------------------------------------------------------------------
+// TIMER FAULT INTERRUPT HANDLER
+// ------------------------------------------------------------------
+void PWM_0_INST_IRQHandler(void)
+{
+    // Check which timer event triggered the interrupt
+    switch (DL_TimerA_getPendingInterrupt(PWM_0_INST)) {
+        
+        case DL_TIMER_IIDX_FAULT:
+            // 1. Turn on the Red LED to indicate a fault occurred
+            DL_GPIO_setPins(GPIO_LEDS_PORT, GPIO_LEDS_USER_LED_1_PIN);
+
+            // 2. Clear the interrupt flag so the CPU doesn't get stuck in this loop.
+            // Note: Because we set "Software Clear" in SysConfig, clearing this 
+            // interrupt flag DOES NOT automatically turn the PWM back on if the 
+            // physical sensor pin is still pulling LOW. It just acknowledges the event.
+            DL_TimerA_clearInterruptStatus(PWM_0_INST, DL_TIMER_INTERRUPT_FAULT_EVENT);
+            break;
+            
+        default:
+            break;
+    }
+}
+
+
+// ------------------------------------------------------------------
 // HELPER & TEST FUNCTIONS
 // ------------------------------------------------------------------
 
@@ -91,10 +116,5 @@ void set_PWM_Edges(uint32_t ch1_up_tick, uint32_t ch0_down_tick)
 // A simple starter control function to verify the oscilloscope
 void test_PWM_Output(void)
 {
-    // PB9 will go HIGH at 0, and drop LOW early at tick 33 on the way up.
-    // PA8 will go HIGH at 0, stay HIGH all the way over the top of the triangle, 
-    // and drop LOW late at tick 33 on the way down.
-    
     set_PWM_Edges(60, 100);
-
 }

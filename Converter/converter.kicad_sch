@@ -3454,7 +3454,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 123.825 64.77 0)
 			(effects
 				(font
@@ -3903,7 +3903,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 140.97 64.77 0)
 			(effects
 				(font
@@ -4205,7 +4205,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 184.15 121.92 0)
 			(effects
 				(font
@@ -5858,7 +5858,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 209.55 121.92 0)
 			(effects
 				(font
@@ -6008,7 +6008,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOIC127P600X175-8N"
+		(property "Footprint" "Robomaster_ICs:SOIC127P600X175-8N"
 			(at 118.11 107.95 0)
 			(effects
 				(font
@@ -6167,7 +6167,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 184.15 111.76 0)
 			(effects
 				(font
@@ -6234,7 +6234,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 209.55 111.76 0)
 			(effects
 				(font
@@ -6700,7 +6700,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOIC127P600X175-8N"
+		(property "Footprint" "Robomaster_ICs:SOIC127P600X175-8N"
 			(at 118.11 137.16 0)
 			(effects
 				(font
@@ -6859,7 +6859,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 209.55 101.6 0)
 			(effects
 				(font
@@ -7058,7 +7058,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 184.15 101.6 0)
 			(effects
 				(font
