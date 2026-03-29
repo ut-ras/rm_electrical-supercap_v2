@@ -5,4 +5,5 @@
   (lib (name "Robomaster_IV")(type "KiCad")(uri "${KIPRJMOD}/KiCad_Library/Robomaster_IC.kicad_sym")(options "")(descr ""))
   (lib (name "Robomaster_CV")(type "KiCad")(uri "${KIPRJMOD}/KiCad_Library/Robomaster_CV.kicad_sym")(options "")(descr ""))
   (lib (name "Robomaster_Conn")(type "KiCad")(uri "${KIPRJMOD}/KiCad_Library/Robomaster_Conn.kicad_sym")(options "")(descr ""))
+  (lib (name "ECE319K")(type "KiCad")(uri "${KIPRJMOD}/KiCad_Library/ECE319K.kicad_sym")(options "")(descr ""))
 )
