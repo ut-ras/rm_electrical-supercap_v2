@@ -95,6 +95,6 @@ void test_PWM_Output(void)
     // PA8 will go HIGH at 0, stay HIGH all the way over the top of the triangle, 
     // and drop LOW late at tick 33 on the way down.
     
-    set_PWM_Edges(60, 100);
+    set_PWM_Edges(60, 80);
 
 }
