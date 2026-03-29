@@ -1,20 +1,22 @@
 /**
  * These arguments were used when this file was generated. They will be automatically applied on subsequent loads
  * via the GUI or CLI. Run CLI with '--help' for additional information on how to override these arguments.
- * @cliArgs --device "MSPM0G350X" --part "Default" --package "LQFP-64(PM)" --product "mspm0_sdk@2.09.00.02"
- * @v2CliArgs --device "MSPM0G3507" --package "LQFP-64(PM)" --product "mspm0_sdk@2.09.00.02"
- * @versions {"tool":"1.26.0+4407"}
+ * @cliArgs --device "MSPM0G350X" --part "Default" --package "LQFP-64(PM)" --product "mspm0_sdk@2.10.00.04"
+ * @v2CliArgs --device "MSPM0G3507" --package "LQFP-64(PM)" --product "mspm0_sdk@2.10.00.04"
+ * @versions {"tool":"1.26.2+4477"}
  */
 
 /**
  * Import the modules used in this configuration.
  */
-const ADC12  = scripting.addModule("/ti/driverlib/ADC12", {}, false);
-const ADC121 = ADC12.addInstance();
-const ADC122 = ADC12.addInstance();
-const PWM    = scripting.addModule("/ti/driverlib/PWM", {}, false);
-const PWM1   = PWM.addInstance();
-const SYSCTL = scripting.addModule("/ti/driverlib/SYSCTL");
+const ADC12       = scripting.addModule("/ti/driverlib/ADC12", {}, false);
+const ADC121      = ADC12.addInstance();
+const ADC122      = ADC12.addInstance();
+const PWM         = scripting.addModule("/ti/driverlib/PWM", {}, false);
+const PWM1        = PWM.addInstance();
+const SYSCTL      = scripting.addModule("/ti/driverlib/SYSCTL");
+const TIMERFault  = scripting.addModule("/ti/driverlib/TIMERFault", {}, false);
+const TIMERFault1 = TIMERFault.addInstance();
 
 /**
  * Write custom configuration values to the imported modules.
@@ -31,6 +33,7 @@ ADC121.adcMem1chansel             = "DL_ADC12_INPUT_CHAN_1";
 ADC121.adcPin0Config.$name        = "ti_driverlib_gpio_GPIOPinGeneric4";
 ADC121.peripheral.$assign         = "ADC1";
 ADC121.peripheral.adcPin0.$assign = "PA15";
+ADC121.peripheral.adcPin1.$assign = "PA16";
 ADC121.adcPin1Config.$name        = "ti_driverlib_gpio_GPIOPinGeneric6";
 
 ADC122.$name                      = "ADC12_1";
@@ -39,16 +42,15 @@ ADC122.subChanID                  = 2;
 ADC122.samplingOperationMode      = "sequence";
 ADC122.repeatMode                 = true;
 ADC122.disChan12                  = true;
-ADC122.endAdd                     = 2;
 ADC122.adcMem2chansel             = "DL_ADC12_INPUT_CHAN_6";
 ADC122.adcMem1chansel             = "DL_ADC12_INPUT_CHAN_3";
 ADC122.adcMem0chansel             = "DL_ADC12_INPUT_CHAN_5";
-ADC122.adcPin6Config.$name        = "ti_driverlib_gpio_GPIOPinGeneric9";
+ADC122.endAdd                     = 1;
 ADC122.adcPin3Config.$name        = "ti_driverlib_gpio_GPIOPinGeneric5";
-ADC122.peripheral.$assign         = "ADC0";
-ADC122.peripheral.adcPin3.$assign = "PA24";
-ADC122.peripheral.adcPin6.$assign = "PB20";
 ADC122.adcPin5Config.$name        = "ti_driverlib_gpio_GPIOPinGeneric7";
+ADC122.peripheral.$assign         = "ADC0";
+ADC122.peripheral.adcPin5.$assign = "PB24";
+ADC122.peripheral.adcPin3.$assign = "PA24";
 
 const Board = scripting.addModule("/ti/driverlib/Board", {}, false);
 
@@ -64,6 +66,12 @@ PWM1.event1PublisherChannel          = 1;
 PWM1.event1ControllerInterruptEn     = ["CC2_UP_EVENT"];
 PWM1.event2PublisherChannel          = 2;
 PWM1.event2ControllerInterruptEn     = ["CC2_UP_EVENT"];
+PWM1.faultHandlerEn                  = true;
+PWM1.faultConditionDuration          = "FL_LATCH_SW_CLR";
+PWM1.faultChannel0BehaviorEntry      = "LOW";
+PWM1.faultChannel1BehaviorEntry      = "LOW";
+PWM1.faultChannel2BehaviorEntry      = "LOW";
+PWM1.faultSource                     = ["0","2"];
 PWM1.PWM_CHANNEL_0.$name             = "ti_driverlib_pwm_PWMTimerCC0";
 PWM1.PWM_CHANNEL_0.dutyCycle         = 70;
 PWM1.PWM_CHANNEL_1.$name             = "ti_driverlib_pwm_PWMTimerCC1";
@@ -83,13 +91,19 @@ PWM1.ccp2PinConfig.$name             = "ti_driverlib_gpio_GPIOPinGeneric8";
 SYSCTL.forceDefaultClkConfig = true;
 SYSCTL.HSCLKSource           = "HFCLK";
 
+TIMERFault1.$name                 = "FAULT_0";
+PWM1.associatedFault              = TIMERFault1;
+TIMERFault1.enabledFaults         = ["0","2"];
+TIMERFault1.faultPin0.$assign     = "PB23";
+TIMERFault1.faultPin0Config.$name = "ti_driverlib_gpio_GPIOPinGeneric10";
+TIMERFault1.faultPin2.$assign     = "PA27";
+TIMERFault1.faultPin2Config.$name = "ti_driverlib_gpio_GPIOPinGeneric9";
+
 /**
  * Pinmux solution for unlocked pins/peripherals. This ensures that minor changes to the automatic solver in a future
  * version of the tool will not impact the pinmux you originally saw.  These lines can be completely deleted in order to
  * re-solve from scratch.
  */
-ADC121.peripheral.adcPin1.$suggestSolution = "PA16";
-ADC122.peripheral.adcPin5.$suggestSolution = "PB24";
 Board.peripheral.$suggestSolution          = "DEBUGSS";
 Board.peripheral.swclkPin.$suggestSolution = "PA20";
 Board.peripheral.swdioPin.$suggestSolution = "PA19";
