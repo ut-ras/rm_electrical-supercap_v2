@@ -31,13 +31,13 @@ Plecs {
   InitializationCommands "V_g = 24; % Nominal battery voltage\nfsw = 120e3; % "
 "Switching frequency\nV_c0 = 3; % Initial supercapacitor voltage\ni_L0 = 0; % "
 "Initial inductor current\n\nL_EMI = 2.3e-12;\nC_shunt = 10e-6;\n\nR_on = 0.35"
-"e-3;   % On-state MOSFET resistance\nR_l = 77.13e-3;   % Inductor ESR\nR_esr "
-"= 18*10^-3; % Supercap resistance\nR = 2 * R_on + R_l + R_esr/4;\n\nL_blk = 2"
-"8.306 * 10^-6; % Bulk inductance\nL = L_blk;\n\nC_sc = 110; % Supercap capaci"
-"tance\nC = 4*C_sc; % Total capacitance\n\ntau_i = 1/(2*pi*fsw*1e-4); % Cutoff"
-" period\nkp_pi = L/tau_i; % proportional gain [Ohms]\nki_pi = R/tau_i; % inte"
-"gral gain [F^-1]\n\nki2_pi2 = tau_i/(V_g*C);\nkp_pi2 = L*C*ki2_pi2;\nki_pi2 ="
-" R*C*ki2_pi2;\n\ndith_lim = 0.01;"
+"e-3;   % On-state MOSFET resistance\nR_l = 4.3e-3;   % Inductor ESR\nR_esr = "
+"18*10^-3; % Supercap resistance\nR = 2 * R_on + R_l + R_esr/4;\n\nL_blk = 28."
+"306 * 10^-6; % Bulk inductance\nL = L_blk;\n\nC_sc = 110; % Supercap capacita"
+"nce\nC = 4*C_sc; % Total capacitance\n\ntau_i = 1/(2*pi*fsw*1e-4); % Cutoff p"
+"eriod\nkp_pi = L/tau_i; % proportional gain [Ohms]\nki_pi = R/tau_i; % integr"
+"al gain [F^-1]\n\nki2_pi2 = tau_i/(V_g*C);\nkp_pi2 = L*C*ki2_pi2;\nki_pi2 = R"
+"*C*ki2_pi2;\n\ndith_lim = 0.01;"
   InitialState  "1"
   SystemState   ""
   JacobianComputation "2"
@@ -75,9 +75,9 @@ Plecs {
   InvalidNetlistFunctionEvaluationMsg "1"
   IncompatibleInitialConditionMsg "2"
   Schematic {
-    Location      [0, 23; 2560, 1349]
-    ZoomFactor    2.57013
-    SliderPosition [0, 161]
+    Location      [0, 24; 2560, 1350]
+    ZoomFactor    1.96257
+    SliderPosition [0, 0]
     ShowBrowser   off
     BrowserWidth  100
     Component {
@@ -112,7 +112,7 @@ Plecs {
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
       HeaderState   "{\"DefaultSecSize\":100,\"FirstSecSize\":178,\"Labels\":["
-"\"Min\",\"Abs Max\",\"Mean\",\"RMS\"],\"VisualIdxs\":[5,7,8,9]}"
+"\"Delta\",\"Min\",\"Abs Max\",\"Mean\",\"RMS\"],\"VisualIdxs\":[3,5,7,8,9]}"
       PlotPalettes  "AAAAAQAAAAMAAAABAAAAAwAAAAEC//8u4P//zMwAAAAAAAEC//8AAP///"
 "/8AAAAAAAEC//9PsP////8AAAAAAAMAAAABAAAAAAEAAAAAAQAAAAADAAAAAQAAAAEAAAABAAAAAQ"
 "AAAAEAAAABAAAAAwAAAAEAAAAAAQAAAAABAAAAAAMAAAABQAgAAAAAAAAAAAABQAgAAAAAAAAAAAA"
@@ -959,7 +959,7 @@ Plecs {
       Type          Constant
       Name          "Reference Current"
       Show          on
-      Position      [445, 310]
+      Position      [710, 395]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -1772,18 +1772,18 @@ Plecs {
       Type          SineGenerator
       Name          "Sine Wave"
       Show          on
-      Position      [710, 325]
+      Position      [730, 290]
       Direction     right
       Flipped       off
       LabelPosition south
       Parameter {
         Variable      "Amplitude"
-        Value         "0.2"
+        Value         "0.3"
         Show          off
       }
       Parameter {
         Variable      "Bias"
-        Value         "0.3"
+        Value         "0.2"
         Show          off
       }
       Parameter {
@@ -2103,7 +2103,7 @@ Plecs {
       Type          Display
       Name          "Display"
       Show          on
-      Position      [620, 465]
+      Position      [515, 365]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2132,14 +2132,14 @@ Plecs {
       Type          Constant
       Name          "Constant"
       Show          on
-      Position      [620, 410]
+      Position      [435, 285]
       Direction     right
       Flipped       off
       LabelPosition south
       Frame         [-10, -10; 10, 10]
       Parameter {
         Variable      "Value"
-        Value         "-100"
+        Value         "-1.5"
         Show          off
       }
       Parameter {
@@ -2306,6 +2306,7 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
+      CommentOut    DisabledOpenCircuit
       Frame         [-15, -15; 15, 15]
       Parameter {
         Variable      "mu"
@@ -2400,6 +2401,7 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
+      CommentOut    DisabledOpenCircuit
       Frame         [-15, -15; 15, 15]
       Parameter {
         Variable      "mu"
@@ -2523,6 +2525,7 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
+      CommentOut    DisabledOpenCircuit
       Frame         [-15, -15; 15, 15]
       Parameter {
         Variable      "mu"
@@ -2796,6 +2799,60 @@ Plecs {
       Parameter {
         Variable      "NoMatchingCounterpartAction"
         Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
+        Show          off
+      }
+    }
+    Component {
+      Type          MinMax
+      Name          "Min/Max"
+      Show          on
+      Position      [505, 310]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Operation"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "Inputs"
+        Value         "2"
+        Show          off
+      }
+    }
+    Component {
+      Type          From
+      Name          "From15"
+      Show          off
+      Position      [445, 340]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Tag"
+        Value         "i_min"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "1"
         Show          off
       }
       Parameter {
@@ -3173,10 +3230,34 @@ Plecs {
     }
     Connection {
       Type          Signal
-      SrcComponent  "Reference Current"
+      SrcComponent  "Min/Max"
       SrcTerminal   1
       DstComponent  "Goto4"
       DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "From15"
+      SrcTerminal   1
+      Points        [465, 340]
+      Branch {
+        Points        [465, 315]
+        DstComponent  "Min/Max"
+        DstTerminal   3
+      }
+      Branch {
+        Points        [465, 365]
+        DstComponent  "Display"
+        DstTerminal   1
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Constant"
+      SrcTerminal   1
+      Points        [465, 285; 465, 305]
+      DstComponent  "Min/Max"
+      DstTerminal   2
     }
     RectangleAnnotation {
       Position     [180, 195]
