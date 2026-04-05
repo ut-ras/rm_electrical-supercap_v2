@@ -2830,272 +2830,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Sensor_Current:ACS711xEXLT-31AB"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at 8.89 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "ACS711xEXLT-31AB"
-				(at 8.89 3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Sensor_Current:Allegro_QFN-12-10-1EP_3x3mm_P0.5mm"
-				(at 8.89 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://www.allegromicro.com/~/Media/Files/Datasheets/ACS711-Datasheet.ashx"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "±31A Bidirectional, Hall-Effect Current Sensor, +3.3V supply, 45mV/A, QFN-12"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "hall effect current monitor sensor isolated"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Allegro*QFN*EP*3x3mm*P0.5mm*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "ACS711xEXLT-31AB_0_1"
-				(rectangle
-					(start -7.62 7.62)
-					(end 7.62 -7.62)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "ACS711xEXLT-31AB_1_1"
-				(pin passive line
-					(at -10.16 5.08 0)
-					(length 2.54)
-					(name "IP+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 -2.54 0)
-					(length 2.54)
-					(name "IP-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -10.16 90)
-					(length 2.54)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -2.54 -10.16 90)
-					(length 2.54)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 10.16 270)
-					(length 2.54)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -10.16 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -10.16 90)
-					(length 2.54)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -10.16 90)
-					(length 2.54)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 10.16 0 180)
-					(length 2.54)
-					(name "VIOUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 10.16 -2.54 180)
-					(length 2.54)
-					(name "~{FAULT}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+5V"
 			(power)
 			(pin_names
@@ -3491,18 +3225,6 @@
 		)
 	)
 	(rectangle
-		(start 145.415 76.835)
-		(end 222.885 113.665)
-		(stroke
-			(width 0.635)
-			(type dash)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 5ece68d2-31d5-4a0d-b809-ef846ceb382e)
-	)
-	(rectangle
 		(start 83.82 37.465)
 		(end 142.24 113.665)
 		(stroke
@@ -3607,17 +3329,6 @@
 		)
 		(uuid "27797f31-b9b4-49fb-a469-117f1315bd39")
 	)
-	(text "Inductor Current Sensing"
-		(exclude_from_sim no)
-		(at 147.193 110.998 0)
-		(effects
-			(font
-				(size 1.905 1.905)
-			)
-			(justify left)
-		)
-		(uuid "2fd22e96-f420-4d67-80d2-7312f2b7fc55")
-	)
 	(text "MSMP0"
 		(exclude_from_sim no)
 		(at 271.78 161.798 0)
@@ -3638,6 +3349,16 @@
 			)
 		)
 		(uuid "38833905-1e99-4b6e-a3e7-a293206f0ff0")
+	)
+	(text "Removed Inductor Current sense, redundant (and more accurate) via math"
+		(exclude_from_sim no)
+		(at 184.658 94.996 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3b08dd7a-4f91-406b-b203-393e60572535")
 	)
 	(text "Battery Current Sensing"
 		(exclude_from_sim no)
@@ -3840,28 +3561,10 @@
 		(uuid "36b4e128-d935-48a2-ac62-0f3faac0bb9a")
 	)
 	(junction
-		(at 203.2 83.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3e1ce0dd-db9f-4e0f-b2b3-ecc55c8601c2")
-	)
-	(junction
-		(at 212.09 97.79)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4110bd2f-331b-49bb-940e-6686eec1aff7")
-	)
-	(junction
 		(at 33.02 132.08)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "42a7ca83-2ba4-4763-b119-c19d00a2e588")
-	)
-	(junction
-		(at 158.75 83.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "434a9917-438a-49b6-be91-92d5500edff2")
 	)
 	(junction
 		(at 69.85 59.055)
@@ -3898,18 +3601,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c5ad2c42-8c03-4b29-9233-154ab6294431")
-	)
-	(junction
-		(at 203.2 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dd46491c-fb03-4d52-aa29-654d41840ea5")
-	)
-	(junction
-		(at 187.96 83.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "eb98e72e-5206-4c15-89a7-e30605858a6d")
 	)
 	(junction
 		(at 184.785 144.78)
@@ -3970,10 +3661,6 @@
 		(uuid "4b7c00cd-a394-4cec-b78d-fba918772b49")
 	)
 	(no_connect
-		(at 193.04 105.41)
-		(uuid "4ea36174-6f84-4388-9ffd-6663c3b0b9b1")
-	)
-	(no_connect
 		(at 100.33 144.78)
 		(uuid "514bb3c5-7ceb-4e68-b19c-59ed0166afa6")
 	)
@@ -4004,10 +3691,6 @@
 	(no_connect
 		(at 139.7 94.615)
 		(uuid "76a43dba-ddf9-464f-b20d-7e09671d97c2")
-	)
-	(no_connect
-		(at 185.42 105.41)
-		(uuid "80299857-0954-4ed6-b06a-36eff9d1db37")
 	)
 	(no_connect
 		(at 62.23 142.24)
@@ -4046,20 +3729,12 @@
 		(uuid "b49b6a56-bcd8-46c6-a649-64f3bf5ad58d")
 	)
 	(no_connect
-		(at 182.88 105.41)
-		(uuid "ca4fb890-efb1-4022-ad12-a3e6868af42f")
-	)
-	(no_connect
 		(at 100.33 154.94)
 		(uuid "cb529b2e-a313-4145-a878-509b9060b4b8")
 	)
 	(no_connect
 		(at 100.33 134.62)
 		(uuid "d2afb86c-d8de-453d-b183-193d2ac0dc27")
-	)
-	(no_connect
-		(at 190.5 105.41)
-		(uuid "dcef11ed-0bb8-48b2-83b8-9ce4e9307aa7")
 	)
 	(no_connect
 		(at 49.53 154.94)
@@ -4177,16 +3852,6 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 95.25) (xy 214.63 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "143222f3-b4d5-4270-9681-bc632cc19033")
-	)
-	(wire
-		(pts
 			(xy 132.08 46.355) (xy 132.08 59.055)
 		)
 		(stroke
@@ -4204,16 +3869,6 @@
 			(type solid)
 		)
 		(uuid "1a0a89e9-df79-4dc8-9633-4ad1ddb742c9")
-	)
-	(wire
-		(pts
-			(xy 212.09 87.63) (xy 212.09 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1b58efca-f2c9-4e14-a35e-c717b35c4238")
 	)
 	(wire
 		(pts
@@ -4337,16 +3992,6 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 85.09) (xy 203.2 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "40a1e0d3-e3c0-406e-9c7b-333a0375da79")
-	)
-	(wire
-		(pts
 			(xy 209.55 43.18) (xy 209.55 44.45)
 		)
 		(stroke
@@ -4397,16 +4042,6 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 97.79) (xy 214.63 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4e00b535-0c94-4413-ab2b-e42b2f03b535")
-	)
-	(wire
-		(pts
 			(xy 30.48 61.595) (xy 39.37 61.595)
 		)
 		(stroke
@@ -4414,16 +4049,6 @@
 			(type default)
 		)
 		(uuid "4e1a273e-e0b0-4c11-bb99-c23862476b36")
-	)
-	(wire
-		(pts
-			(xy 158.75 83.82) (xy 187.96 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "521c635d-9da3-44b4-bd90-24418149db76")
 	)
 	(wire
 		(pts
@@ -4647,26 +4272,6 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 92.71) (xy 212.09 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8cd1cb45-a90e-4819-be69-d0befd22bc1e")
-	)
-	(wire
-		(pts
-			(xy 153.67 83.82) (xy 158.75 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "90186ad3-eb8c-42df-91a6-9e6a86c01892")
-	)
-	(wire
-		(pts
 			(xy 91.44 81.915) (xy 96.52 81.915)
 		)
 		(stroke
@@ -4717,16 +4322,6 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 90.17) (xy 177.8 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9c2dd4bf-7db2-448e-83ad-ef9b821ce36a")
-	)
-	(wire
-		(pts
 			(xy 49.53 61.595) (xy 49.53 65.405)
 		)
 		(stroke
@@ -4764,16 +4359,6 @@
 			(type default)
 		)
 		(uuid "a53c1c64-489a-449c-8c57-7d2f7e5c8c25")
-	)
-	(wire
-		(pts
-			(xy 198.12 95.25) (xy 203.2 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a70f0da4-0d30-424b-ac29-d8a1560f314e")
 	)
 	(wire
 		(pts
@@ -4844,26 +4429,6 @@
 			(type default)
 		)
 		(uuid "b5930316-53c7-4d58-8a65-ea33c91ebb59")
-	)
-	(wire
-		(pts
-			(xy 212.09 83.82) (xy 203.2 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b691a312-8ff8-4c0f-804e-d951a0ec9279")
-	)
-	(wire
-		(pts
-			(xy 198.12 97.79) (xy 212.09 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b8e06367-2555-4707-aaf9-41924b56d8a2")
 	)
 	(wire
 		(pts
@@ -4947,16 +4512,6 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 83.82) (xy 203.2 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cf3a5cfb-2e82-4bb3-a1fe-a64a17e8a64c")
-	)
-	(wire
-		(pts
 			(xy 46.99 144.78) (xy 49.53 144.78)
 		)
 		(stroke
@@ -5024,16 +4579,6 @@
 			(type default)
 		)
 		(uuid "d8a5f932-e60a-44c2-a94c-f55dccfa0820")
-	)
-	(wire
-		(pts
-			(xy 203.2 92.71) (xy 203.2 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d8ab979e-b26a-4c74-9ff3-3f02743b12aa")
 	)
 	(wire
 		(pts
@@ -5117,16 +4662,6 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 97.79) (xy 177.8 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e9a0be92-af4f-4fe1-90ff-ed8324f8717a")
-	)
-	(wire
-		(pts
 			(xy 184.15 125.73) (xy 184.785 125.73)
 		)
 		(stroke
@@ -5154,16 +4689,6 @@
 			(type default)
 		)
 		(uuid "f3557f43-4264-457b-aba3-223e66c977b1")
-	)
-	(wire
-		(pts
-			(xy 187.96 83.82) (xy 187.96 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f89bdb91-aaee-40cc-aec2-0ff8c4fb3e6e")
 	)
 	(wire
 		(pts
@@ -5355,16 +4880,6 @@
 		)
 		(uuid "8e2c5a47-7dec-4438-8736-bc30dd72b56f")
 	)
-	(label "I_L"
-		(at 214.63 95.25 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "9008f62e-99dc-460d-8ccc-3f04a54e4673")
-	)
 	(label "PA25"
 		(at 154.94 132.08 180)
 		(effects
@@ -5444,16 +4959,6 @@
 			(justify right bottom)
 		)
 		(uuid "c5983ed4-e8cc-41c0-a5ef-3d26ed485a72")
-	)
-	(label "F_L"
-		(at 214.63 97.79 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ccb14d64-898c-4b82-bf15-d1ec019da433")
 	)
 	(label "PA24"
 		(at 208.28 126.365 180)
@@ -5635,39 +5140,6 @@
 		)
 		(uuid "82f25b50-a717-42fb-bd6c-d4e5daae5bec")
 	)
-	(hierarchical_label "V_{sc,+}"
-		(shape bidirectional)
-		(at 175.26 97.79 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "9e4f4b48-ccd8-4cf0-bc33-982bbff4c3ae")
-	)
-	(hierarchical_label "+3V3"
-		(shape input)
-		(at 153.67 83.82 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "bce46386-c093-4201-bf88-c4397ce37075")
-	)
-	(hierarchical_label "I_{L,out+}"
-		(shape bidirectional)
-		(at 175.26 90.17 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "c877ac48-cd6c-4784-9f18-a26169802da0")
-	)
 	(hierarchical_label "D1'"
 		(shape output)
 		(at 160.02 124.46 0)
@@ -5793,72 +5265,6 @@
 			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/ee005c00-ec4f-437e-b20a-795d960ff7e7"
 					(reference "R_{RC}1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 158.75 91.44 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0898b31b-daa6-4145-a9de-fec4b4db865b")
-		(property "Reference" "#PWR012"
-			(at 158.75 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 158.75 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 158.75 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 158.75 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 158.75 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0682f62b-20bc-4759-9c1c-72fd70dce88d")
-		)
-		(instances
-			(project "Supercap"
-				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/ee005c00-ec4f-437e-b20a-795d960ff7e7"
-					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -6852,103 +6258,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 203.2 88.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5067fe78-f3d4-4694-a932-1515a3954380")
-		(property "Reference" "C_{l}1"
-			(at 207.01 87.6299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1n"
-			(at 207.01 90.1699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 204.1652 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.com/datasheet/3/508/1/UPY_GPHC_X7R_6_3V_TO_250V.pdf"
-			(at 203.2 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 203.2 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser#" ""
-			(at 203.2 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "CC0603JRX7R7BB102"
-			(at 203.2 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "603-CC0603JR7R7BB102"
-			(at 203.2 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e22d3966-4828-4846-9278-5f02e6fbc084")
-		)
-		(pin "2"
-			(uuid "a30e58ac-5759-474f-9b54-d3dba5d659ab")
-		)
-		(instances
-			(project "Supercap"
-				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/ee005c00-ec4f-437e-b20a-795d960ff7e7"
-					(reference "C_{l}1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 69.85 139.7 0)
 		(unit 1)
@@ -7755,94 +7064,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 212.09 90.17 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "75b6ca7f-52bc-46da-bf31-60514c59d112")
-		(property "Reference" "R_{pu}1"
-			(at 214.63 88.8999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "100"
-			(at 214.63 91.4399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 212.09 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=Data%20Sheet&DocLang=English&PartCntxt=1-2176339-3&DocFormat=pdf"
-			(at 212.09 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 212.09 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "CRGCQ0603F100R"
-			(at 212.09 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "279-CRGCQ0603F100R"
-			(at 212.09 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "83a8e806-d2a6-4b0f-be65-e15a0bd05791")
-		)
-		(pin "1"
-			(uuid "860bdd35-30fa-4719-bc1c-8afa6646b0c8")
-		)
-		(instances
-			(project "Supercap"
-				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/ee005c00-ec4f-437e-b20a-795d960ff7e7"
-					(reference "R_{pu}1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 111.76 73.025 0)
 		(unit 1)
@@ -8383,103 +7604,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 158.75 87.63 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "86eb9ca4-1165-4797-9146-9f394c72a063")
-		(property "Reference" "C_{byp}1"
-			(at 162.56 86.3599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1u"
-			(at 162.56 88.8999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 159.7152 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/Taiyo%20Yuden_1102023_MC_mlcc_all_e.pdf"
-			(at 158.75 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 158.75 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser#" ""
-			(at 158.75 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "MCAST168SB5104KTNA01"
-			(at 158.75 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "963-MCAST168SB5104KT"
-			(at 158.75 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d2e786c0-9cb7-4cd0-8f00-f92d75ffe25c")
-		)
-		(pin "2"
-			(uuid "0e597d06-bab1-4262-854e-1e8de1a9b7a6")
-		)
-		(instances
-			(project "Supercap"
-				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/ee005c00-ec4f-437e-b20a-795d960ff7e7"
-					(reference "C_{byp}1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Sensor_Current:ACS711xEXLT-15AB")
 		(at 209.55 54.61 0)
 		(unit 1)
@@ -8996,72 +8120,6 @@
 			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/ee005c00-ec4f-437e-b20a-795d960ff7e7"
 					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 187.96 105.41 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a246c2b9-c6ce-4c43-96b5-f03e20bf63b3")
-		(property "Reference" "#PWR013"
-			(at 187.96 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 187.96 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 187.96 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 187.96 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 187.96 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ce2399c8-58a8-4927-aa43-dbf3da7adaf4")
-		)
-		(instances
-			(project "Supercap"
-				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/ee005c00-ec4f-437e-b20a-795d960ff7e7"
-					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -9841,119 +8899,6 @@
 			(project "control"
 				(path "/f194d5da-fd8d-4aa7-96f3-295d70bb8ae2"
 					(reference "U?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Sensor_Current:ACS711xEXLT-31AB")
-		(at 187.96 95.25 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d76c902b-b851-4e1f-bcc3-9d16c33853a1")
-		(property "Reference" "U3"
-			(at 186.436 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ACS71240KEXBLT-050U5"
-			(at 176.53 82.296 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Sensor_Current:Allegro_QFN-12-10-1EP_3x3mm_P0.5mm"
-			(at 196.85 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.allegromicro.com/~/Media/Files/Datasheets/ACS711-Datasheet.ashx"
-			(at 187.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Board Mount Current Sensors CURRENT SENSOR IC WITH COMMON MODE REJECTION"
-			(at 187.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "ACS71240KEXBLT-050U5 "
-			(at 187.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "250-71240KEXBLT050U5"
-			(at 187.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "8"
-			(uuid "c8e1a79f-629f-44f5-b899-9a519010914b")
-		)
-		(pin "1"
-			(uuid "9136178a-38d4-435e-b9eb-627b9e0fd450")
-		)
-		(pin "5"
-			(uuid "0d4423bf-b9f1-4487-aea3-5aaf8874b005")
-		)
-		(pin "3"
-			(uuid "6b81cb79-ece2-4961-a6ea-2076ee3d6544")
-		)
-		(pin "2"
-			(uuid "9e25d5e4-96af-4052-9f96-92e36512e9d4")
-		)
-		(pin "7"
-			(uuid "f066b71d-1da4-40de-a7b0-450ae346eac6")
-		)
-		(pin "6"
-			(uuid "97c90f29-da6a-4163-a29e-9b8e3c377886")
-		)
-		(pin "10"
-			(uuid "22aecd17-fa7c-40c2-96f8-081f52dd960b")
-		)
-		(pin "4"
-			(uuid "1cec7454-a8ef-4013-b5f1-9934d34b8c1a")
-		)
-		(pin "9"
-			(uuid "6a329186-d2b1-4a85-9a56-7d7a3b1a42c0")
-		)
-		(instances
-			(project ""
-				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/ee005c00-ec4f-437e-b20a-795d960ff7e7"
-					(reference "U3")
 					(unit 1)
 				)
 			)
