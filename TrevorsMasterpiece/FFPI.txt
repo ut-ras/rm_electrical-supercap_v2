@@ -1,0 +1,60 @@
+pUT THIS INTO THE ADC12_0IRQ
+
+// 1. Convert ADC values to real physical units (Floats)
+// NOTE: You will need to replace the 'SCALAR' and 'OFFSET' with your actual hardware sensor scaling!
+float V_cap = ((float)voltage1 / 4095.0f) * 3.3f * V_SCALE; 
+float I_bat = (((float)current1 / 4095.0f) * 3.3f - I_OFFSET) * I_SCALE;
+
+// 2. PI Controller Math
+float error = I_ref - I_bat;
+integral_error += (error * DT);
+
+// Optional but highly recommended: Add an anti-windup clamp to integral_error here
+
+float M_T = (KP * error) + (KI * integral_error);
+
+// 3. Feed-Forward Linearization
+float K_T = V_cap / (2.0f * V_G);
+float KT_sq = K_T * K_T;
+
+// CRITICAL LIMIT: Clamp M_T to prevent imaginary numbers in the square root
+// As noted in your reverse charging slides, M_T(t) < -K_T^2 results in non-real M(t).
+if (M_T < -KT_sq) {
+    M_T = -KT_sq; 
+}
+
+// Calculate the final duty cycle ratio M(t)
+float M = K_T + sqrtf(M_T + KT_sq);
+
+// Safety Clamp: Don't let M exceed safe limits (e.g., keeping duty cycle between 2.5% and 97.5%).
+if (M > 0.95f) M = 0.95f;
+if (M < -0.95f) M = -0.95f;
+
+// 4. Convert M back to Timer Ticks for the H-Bridge
+// M dictates the duty cycle shift. Half-bridge 1 is 0.5 + M/2, Half-bridge 2 is 0.5 - M/2.
+float hb1_duty = 0.5f + (M / 2.0f);
+float hb2_duty = 0.5f - (M / 2.0f);
+
+// Convert percentage to timer ticks (Max timer count is 133 for 120kHz) [cite: 2]
+uint32_t ch1_up_tick   = (uint32_t)(133.0f * hb1_duty);
+uint32_t ch0_down_tick = (uint32_t)(133.0f * hb2_duty);
+
+// Update the PWM!
+set_PWM_Edges(ch1_up_tick, ch0_down_tick);
+
+
+//______________________________________________________________
+//this goes at the top of the function i think but I am not sure how to import the math function
+#include <math.h> // Needed for sqrtf()
+
+// --- System Constants ---
+#define V_G 24.0f // Input Battery Voltage 
+#define DT (1.0f / 120000.0f) // 120kHz control loop interval
+
+// --- PI Constants (From your Sensitivity Slides) ---
+#define KP 2.13422f  // 
+#define KI 6207.54f  // 
+
+// --- Controller State Variables ---
+volatile float I_ref = 3.75f; // Target current in Amps 
+volatile float integral_error = 0.0f;

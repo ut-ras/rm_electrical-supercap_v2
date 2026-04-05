@@ -1,4 +1,5 @@
 #include "ti_msp_dl_config.h"
+//#include <math.h>
 
 volatile uint16_t voltage1 = 0;
 volatile uint16_t current1 = 0;
@@ -47,7 +48,8 @@ void ADC12_0_INST_IRQHandler(void)
             current1 = DL_ADC12_getMemResult(ADC12_0_INST, DL_ADC12_MEM_IDX_1);
             voltage2 = DL_ADC12_getMemResult(ADC12_1_INST, DL_ADC12_MEM_IDX_0);
             current2 = DL_ADC12_getMemResult(ADC12_1_INST, DL_ADC12_MEM_IDX_1);
-            //
+            
+            // PUT THE FF PI CONTROLER HERE
             
             break;
             
@@ -98,7 +100,7 @@ void set_PWM_Edges(uint32_t ch1_up_tick, uint32_t ch0_down_tick)
     DL_TimerA_setCaptureCompareValue(PWM_0_INST, midpoint_tick, DL_TIMER_CC_2_INDEX);
 }
 
-// A simple starter control function to verify the oscilloscope
+// Starting PWM value for testing
 void test_PWM_Output(void)
 {
     set_PWM_Edges(60, 100);
