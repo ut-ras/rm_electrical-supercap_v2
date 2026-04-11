@@ -112,6 +112,8 @@ extern "C" {
 #define GPIO_PWM_0_C2_IOMUX                                      (IOMUX_PINCM21)
 #define GPIO_PWM_0_C2_IOMUX_FUNC                     IOMUX_PINCM21_PF_TIMA0_CCP2
 #define GPIO_PWM_0_C2_IDX                                    DL_TIMER_CC_2_INDEX
+#define GPIO_PWM_0_IOMUX_FAULT_0                                 (IOMUX_PINCM51)
+#define GPIO_PWM_0_IOMUX_FAULT_0_FUNC               IOMUX_PINCM51_PF_TIMA_FAULT0
 
 /* Publisher defines */
 #define PWM_0_INST_PUB_0_CH                                                  (1)
@@ -150,9 +152,6 @@ extern "C" {
 #define ADC12_1_ADCMEM_1                                      DL_ADC12_MEM_IDX_1
 #define ADC12_1_ADCMEM_1_REF                     DL_ADC12_REFERENCE_VOLTAGE_VDDA
 #define ADC12_1_ADCMEM_1_REF_VOLTAGE_V                                       3.3
-#define ADC12_1_ADCMEM_2                                      DL_ADC12_MEM_IDX_2
-#define ADC12_1_ADCMEM_2_REF                     DL_ADC12_REFERENCE_VOLTAGE_VDDA
-#define ADC12_1_ADCMEM_2_REF_VOLTAGE_V                                       3.3
 #define ADC12_1_INST_SUB_CH                                                  (2)
 #define GPIO_ADC12_1_C5_PORT                                               GPIOB
 #define GPIO_ADC12_1_C5_PIN                                       DL_GPIO_PIN_24
@@ -162,11 +161,20 @@ extern "C" {
 #define GPIO_ADC12_1_C3_PIN                                       DL_GPIO_PIN_24
 #define GPIO_ADC12_1_IOMUX_C3                                    (IOMUX_PINCM54)
 #define GPIO_ADC12_1_IOMUX_C3_FUNC                (IOMUX_PINCM54_PF_UNCONNECTED)
-#define GPIO_ADC12_1_C6_PORT                                               GPIOB
-#define GPIO_ADC12_1_C6_PIN                                       DL_GPIO_PIN_20
-#define GPIO_ADC12_1_IOMUX_C6                                    (IOMUX_PINCM48)
-#define GPIO_ADC12_1_IOMUX_C6_FUNC                (IOMUX_PINCM48_PF_UNCONNECTED)
 
+
+
+/* Port definition for Pin Group GPIO_GRP_0 */
+#define GPIO_GRP_0_PORT                                                  (GPIOA)
+
+/* Defines for PIN_0: GPIOA.0 with pinCMx 1 on package pin 33 */
+#define GPIO_GRP_0_PIN_0_PIN                                     (DL_GPIO_PIN_0)
+#define GPIO_GRP_0_PIN_0_IOMUX                                    (IOMUX_PINCM1)
+
+#define GPIO_FAULT_0_FAULT_PIN_0_PORT                                      GPIOB
+#define GPIO_FAULT_0_FAULT_PIN_0                                  DL_GPIO_PIN_23
+#define GPIO_FAULT_0_IOMUX_FAULT_PIN_0                           (IOMUX_PINCM51)
+#define GPIO_FAULT_0_IOMUX_FAULT_PIN_0_FUNC            IOMUX_PINCM51_PF_TIMA_FAULT0
 
 
 /* clang-format on */
@@ -178,6 +186,7 @@ void SYSCFG_DL_SYSCTL_init(void);
 void SYSCFG_DL_PWM_0_init(void);
 void SYSCFG_DL_ADC12_0_init(void);
 void SYSCFG_DL_ADC12_1_init(void);
+
 
 bool SYSCFG_DL_saveConfiguration(void);
 bool SYSCFG_DL_restoreConfiguration(void);

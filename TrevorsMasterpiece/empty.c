@@ -1,8 +1,6 @@
 #include "ti_msp_dl_config.h"
+//#include <math.h>
 
-// ------------------------------------------------------------------
-// GLOBAL VARIABLES
-// ------------------------------------------------------------------
 volatile uint16_t voltage1 = 0;
 volatile uint16_t current1 = 0;
 volatile uint16_t voltage2 = 0;
@@ -13,37 +11,33 @@ volatile uint16_t inductorVoltage = 0;
 void set_PWM_Edges(uint32_t ch1_up_tick, uint32_t ch0_down_tick);
 void test_PWM_Output(void);
 
-// ------------------------------------------------------------------
-// MAIN ROUTINE
-// ------------------------------------------------------------------
 int main(void)
 {
-    // 1. Initialize hardware via SysConfig
+    // Initilize Hardware
     SYSCFG_DL_init();
-
-    // 2. Enable the interrupt in the NVIC for ADC0 & Hardware Fault
+    // Enable ADC interupt
     NVIC_EnableIRQ(ADC12_0_INST_INT_IRQN);
+    // Enable error signal interupts
     NVIC_EnableIRQ(PWM_0_INST_INT_IRQN);
-
-    // 3. Wake up the ADCs
+    DL_TimerA_enableInterrupt(PWM_0_INST, DL_TIMER_INTERRUPT_FAULT_EVENT);
+    // Turn off LED
+    DL_GPIO_clearPins(GPIO_GRP_0_PORT, GPIO_GRP_0_PIN_0_PIN);
+    // Turn on adc
     DL_ADC12_enableConversions(ADC12_0_INST);
     DL_ADC12_enableConversions(ADC12_1_INST);
-
-    // 4. Run our static test to verify the asymmetric waveform on the scope
+    //TEMP code for setting initil PWM output
     test_PWM_Output();
-
-    // 5. Start the Advanced Timer (Begins generating PWM and triggering ADCs)
+    //fuck
+    DL_TimerA_enableFaultInput(PWM_0_INST);
+    // Furn on timer for PWM and ADCs
     DL_TimerA_startCounter(PWM_0_INST);
-
     while (1) {
-        // Put the CPU into a low-power sleep state until the next interrupt
         __WFI(); 
     }
 }
 
 // ------------------------------------------------------------------
 // INTERRUPT SERVICE ROUTINE (Runs at 120 kHz)
-// ------------------------------------------------------------------
 void ADC12_0_INST_IRQHandler(void)
 {
     switch (DL_ADC12_getPendingInterrupt(ADC12_0_INST)) {
@@ -54,10 +48,8 @@ void ADC12_0_INST_IRQHandler(void)
             current1 = DL_ADC12_getMemResult(ADC12_0_INST, DL_ADC12_MEM_IDX_1);
             voltage2 = DL_ADC12_getMemResult(ADC12_1_INST, DL_ADC12_MEM_IDX_0);
             current2 = DL_ADC12_getMemResult(ADC12_1_INST, DL_ADC12_MEM_IDX_1);
-            inductorVoltage = DL_ADC12_getMemResult(ADC12_1_INST, DL_ADC12_MEM_IDX_2);
-
-            // Once you are ready, you will calculate your new edge ticks 
-            // based on these ADC readings and call set_PWM_Edges() here.
+            
+            // PUT THE FF PI CONTROLER HERE
             
             break;
             
@@ -68,20 +60,15 @@ void ADC12_0_INST_IRQHandler(void)
 
 // ------------------------------------------------------------------
 // TIMER FAULT INTERRUPT HANDLER
-// ------------------------------------------------------------------
 void PWM_0_INST_IRQHandler(void)
 {
     // Check which timer event triggered the interrupt
     switch (DL_TimerA_getPendingInterrupt(PWM_0_INST)) {
         
         case DL_TIMER_IIDX_FAULT:
-            // 1. Turn on the Red LED to indicate a fault occurred
-            DL_GPIO_setPins(GPIO_LEDS_PORT, GPIO_LEDS_USER_LED_1_PIN);
-
-            // 2. Clear the interrupt flag so the CPU doesn't get stuck in this loop.
-            // Note: Because we set "Software Clear" in SysConfig, clearing this 
-            // interrupt flag DOES NOT automatically turn the PWM back on if the 
-            // physical sensor pin is still pulling LOW. It just acknowledges the event.
+            DL_GPIO_setPins(GPIO_GRP_0_PORT, GPIO_GRP_0_PIN_0_PIN);
+            __asm("nop");
+            // Clear interrupt flag, I don't think we will need this for our application
             DL_TimerA_clearInterruptStatus(PWM_0_INST, DL_TIMER_INTERRUPT_FAULT_EVENT);
             break;
             
@@ -113,7 +100,7 @@ void set_PWM_Edges(uint32_t ch1_up_tick, uint32_t ch0_down_tick)
     DL_TimerA_setCaptureCompareValue(PWM_0_INST, midpoint_tick, DL_TIMER_CC_2_INDEX);
 }
 
-// A simple starter control function to verify the oscilloscope
+// Starting PWM value for testing
 void test_PWM_Output(void)
 {
     set_PWM_Edges(60, 100);

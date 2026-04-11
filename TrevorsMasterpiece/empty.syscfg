@@ -12,6 +12,8 @@
 const ADC12       = scripting.addModule("/ti/driverlib/ADC12", {}, false);
 const ADC121      = ADC12.addInstance();
 const ADC122      = ADC12.addInstance();
+const GPIO        = scripting.addModule("/ti/driverlib/GPIO", {}, false);
+const GPIO1       = GPIO.addInstance();
 const PWM         = scripting.addModule("/ti/driverlib/PWM", {}, false);
 const PWM1        = PWM.addInstance();
 const SYSCTL      = scripting.addModule("/ti/driverlib/SYSCTL");
@@ -46,13 +48,20 @@ ADC122.adcMem2chansel             = "DL_ADC12_INPUT_CHAN_6";
 ADC122.adcMem1chansel             = "DL_ADC12_INPUT_CHAN_3";
 ADC122.adcMem0chansel             = "DL_ADC12_INPUT_CHAN_5";
 ADC122.endAdd                     = 1;
-ADC122.adcPin3Config.$name        = "ti_driverlib_gpio_GPIOPinGeneric5";
 ADC122.adcPin5Config.$name        = "ti_driverlib_gpio_GPIOPinGeneric7";
 ADC122.peripheral.$assign         = "ADC0";
 ADC122.peripheral.adcPin5.$assign = "PB24";
 ADC122.peripheral.adcPin3.$assign = "PA24";
+ADC122.adcPin3Config.$name        = "ti_driverlib_gpio_GPIOPinGeneric5";
 
 const Board = scripting.addModule("/ti/driverlib/Board", {}, false);
+
+GPIO1.$name                               = "GPIO_GRP_0";
+GPIO1.associatedPins[0].$name             = "PIN_0";
+GPIO1.associatedPins[0].assignedPort      = "PORTA";
+GPIO1.associatedPins[0].launchPadShortcut = "LED1En";
+GPIO1.associatedPins[0].subOutputPolicy   = "TOGGLE";
+GPIO1.associatedPins[0].pin.$assign       = "PA0";
 
 PWM1.$name                           = "PWM_0";
 PWM1.timerCount                      = 133;
@@ -70,8 +79,12 @@ PWM1.faultHandlerEn                  = true;
 PWM1.faultConditionDuration          = "FL_LATCH_SW_CLR";
 PWM1.faultChannel0BehaviorEntry      = "LOW";
 PWM1.faultChannel1BehaviorEntry      = "LOW";
-PWM1.faultChannel2BehaviorEntry      = "LOW";
-PWM1.faultSource                     = ["0","2"];
+PWM1.faultChannel0BehaviorExit       = "LOW";
+PWM1.faultChannel1BehaviorExit       = "LOW";
+PWM1.faultTriggerIn                  = "TFIM_ENABLED";
+PWM1.faultSource                     = ["0"];
+PWM1.faultInputEn                    = "FIEN_ENABLED";
+PWM1.faultTimerCountEntry            = "FAULT_ENTRY_CTR_SUSP_COUNT";
 PWM1.PWM_CHANNEL_0.$name             = "ti_driverlib_pwm_PWMTimerCC0";
 PWM1.PWM_CHANNEL_0.dutyCycle         = 70;
 PWM1.PWM_CHANNEL_1.$name             = "ti_driverlib_pwm_PWMTimerCC1";
@@ -91,13 +104,13 @@ PWM1.ccp2PinConfig.$name             = "ti_driverlib_gpio_GPIOPinGeneric8";
 SYSCTL.forceDefaultClkConfig = true;
 SYSCTL.HSCLKSource           = "HFCLK";
 
-TIMERFault1.$name                 = "FAULT_0";
-PWM1.associatedFault              = TIMERFault1;
-TIMERFault1.enabledFaults         = ["0","2"];
-TIMERFault1.faultPin0.$assign     = "PB23";
-TIMERFault1.faultPin0Config.$name = "ti_driverlib_gpio_GPIOPinGeneric10";
-TIMERFault1.faultPin2.$assign     = "PA27";
-TIMERFault1.faultPin2Config.$name = "ti_driverlib_gpio_GPIOPinGeneric9";
+TIMERFault1.$name                            = "FAULT_0";
+PWM1.associatedFault                         = TIMERFault1;
+TIMERFault1.enabledFaults                    = ["0"];
+TIMERFault1.faultPin0.$assign                = "PB23";
+TIMERFault1.faultPin0Config.$name            = "ti_driverlib_gpio_GPIOPinGeneric10";
+TIMERFault1.faultPin0Config.enableConfig     = true;
+TIMERFault1.faultPin0Config.internalResistor = "PULL_UP";
 
 /**
  * Pinmux solution for unlocked pins/peripherals. This ensures that minor changes to the automatic solver in a future
