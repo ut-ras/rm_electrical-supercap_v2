@@ -1,0 +1,45 @@
+w_n = 2*pi*12;
+L_values = linspace(25e-6, 30e-6, 10);
+C_values = linspace(10e-6,10e-5, 10000);
+R_values = linspace(10e2, 10e4, 100000);
+
+L_list = [];
+C_list = [];
+R_list = [];
+a_list = [];
+f_list = [];
+zero_list = [];
+for L = L_values
+    for C = C_values
+        invLC = L * C;   % precompute scaling factor
+    
+        for R = R_values
+            a = R/L - w_n;
+    
+            ratio = (w_n * a) * invLC;
+    
+            if abs(ratio - 1) < 1e-5
+                a_actual = 1/(L*C*24*3.141592);
+                r_actual = L*(24*3.1415+a_actual)
+                L_list(end+1) = L;
+                C_list(end+1) = C;
+                R_list(end+1) = r_actual;
+                a_list(end+1) = a_actual;
+                f_list(end+1) = a_actual/(24*3.141592);
+                zero_list(end+1) = 1/(r_actual*C);
+                
+            end
+        end
+    end
+end
+
+L_list_uH = L_list * 1e6;
+C_list_uF = C_list * 1e6;
+R_list_kOhm = R_list * 1e-3;
+
+T = table(L_list_uH', C_list_uF', R_list_kOhm', a_list', ...
+    'VariableNames', {'L_uH','C_uF', 'R_kOhm', 'a'});
+
+writetable(T, 'pi_filter_solutions.xlsx', 'WriteMode', 'overwrite');
+
+disp(['Exported ' num2str(height(T)) ' valid points to pi_filter_solutions.xlsx']);
