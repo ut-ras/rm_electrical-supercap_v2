@@ -597,7 +597,7 @@
 	(footprint "MSPM0:ti_LP_MSPM0G3507"
 		(layer "F.Cu")
 		(uuid "14a21af9-9bd2-40e0-86be-d622770b0189")
-		(at 99.1 43.67 -90)
+		(at 197.99 40.98 -90)
 		(property "Reference" "U6"
 			(at -22.86 -45.72 90)
 			(layer "F.SilkS")
@@ -916,7 +916,7 @@
 			(layer "Cmts.User")
 			(uuid "1d1c0db6-637a-4288-b7b1-eb4e166ca9ec")
 			(pts
-				(xy 101.64 51.29) (xy 152.44 51.29)
+				(xy 200.53 48.6) (xy 251.33 48.6)
 			)
 			(height 5.08)
 			(format
@@ -936,7 +936,7 @@
 				(keep_text_aligned yes)
 			)
 			(gr_text "2.000"
-				(at 127.04 55.27 0)
+				(at 225.93 52.58 0)
 				(layer "Cmts.User")
 				(uuid "1d1c0db6-637a-4288-b7b1-eb4e166ca9ec")
 				(effects
@@ -952,7 +952,7 @@
 			(layer "Cmts.User")
 			(uuid "44ef48c5-2f24-4da4-86b6-67b80a030787")
 			(pts
-				(xy 132.12 15.73) (xy 132.12 71.61)
+				(xy 231.01 13.04) (xy 231.01 68.92)
 			)
 			(height -2.54)
 			(format
@@ -972,7 +972,7 @@
 				(keep_text_aligned yes)
 			)
 			(gr_text "2.200"
-				(at 133.56 43.67 90)
+				(at 232.45 40.98 90)
 				(layer "Cmts.User")
 				(uuid "44ef48c5-2f24-4da4-86b6-67b80a030787")
 				(effects
@@ -988,7 +988,7 @@
 			(layer "Cmts.User")
 			(uuid "5d7052c0-896f-4b1d-842a-2954c027e8c1")
 			(pts
-				(xy 78.78 56.37) (xy 48.3 56.37)
+				(xy 177.67 53.68) (xy 147.19 53.68)
 			)
 			(height -2.54)
 			(format
@@ -1008,7 +1008,7 @@
 				(keep_text_aligned yes)
 			)
 			(gr_text "1.200"
-				(at 63.54 57.81 0)
+				(at 162.43 55.12 0)
 				(layer "Cmts.User")
 				(uuid "5d7052c0-896f-4b1d-842a-2954c027e8c1")
 				(effects
@@ -1024,7 +1024,7 @@
 			(layer "Cmts.User")
 			(uuid "a4f5a06b-c70b-4e1d-aaeb-cea27cf824d1")
 			(pts
-				(xy 152.44 30.97) (xy 48.3 30.97)
+				(xy 251.33 28.28) (xy 147.19 28.28)
 			)
 			(height -5.08)
 			(format
@@ -1044,7 +1044,7 @@
 				(keep_text_aligned yes)
 			)
 			(gr_text "4.100"
-				(at 100.37 34.95 0)
+				(at 199.26 32.26 0)
 				(layer "Cmts.User")
 				(uuid "a4f5a06b-c70b-4e1d-aaeb-cea27cf824d1")
 				(effects
@@ -19407,34 +19407,8 @@
 		(layer "Edge.Cuts")
 		(uuid "9a31ad9e-48ec-474a-a2bc-247aabee09b2")
 	)
-	(gr_text "3v3 and gnd are just powering\n=> put the outputs pa15/16 close to mspm0"
-		(at 144.49 65.17 -0)
-		(layer "F.Cu")
-		(uuid "516502b9-4601-4f13-8a23-ea87642b0f20")
-		(effects
-			(font
-				(size 1.5 1.5)
-				(thickness 0.3)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-	)
-	(gr_text "4 pins on top only, need to route, redo 3 tp?\nthey are:\nPA15	mainly these 2\nPA16	mainly these 2\n\nI_L/PA24	these 2 gone with i sense that removed?\nF_L/PB23? A: can remove, use pb12?\nWAIT FOR EGAN DO END"
-		(at 211.67 112.72 0)
-		(layer "F.Cu")
-		(uuid "f841ece3-e238-4e33-ab7e-27a44a4ac6af")
-		(effects
-			(font
-				(size 1.5 1.5)
-				(thickness 0.3)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-	)
-	(gr_text "UT Robomasters\nElectrical Subteam"
-		(at 87.05 31.17 0)
+	(gr_text "UT Robomasters\nElectrical Subteam\nEgan Wang\nTrevor White\nDaniel Zhou"
+		(at 98.61 92.21 0)
 		(layer "F.SilkS")
 		(uuid "c8416da9-5b14-4659-8706-a656ad0a343d")
 		(effects
@@ -19446,7 +19420,7 @@
 		)
 	)
 	(gr_text "Supercap\nBoard"
-		(at 87.7 27.82 0)
+		(at 99.18 84.13 0)
 		(layer "F.SilkS")
 		(uuid "dbfcd1c3-027f-4910-befc-b11756c16c0a")
 		(effects
@@ -24078,7 +24052,7 @@
 		(net 4)
 		(net_name "/Voltage Converter/V_{sw,1}")
 		(layer "F.Cu")
-		(uuid "5359c4de-5cca-4a76-b627-b1e0bd7c9582")
+		(uuid "c4146ce6-5630-41ea-a6c0-779686bf839c")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
 		(priority 30000)
