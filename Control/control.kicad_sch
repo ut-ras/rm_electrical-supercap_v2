@@ -3717,6 +3717,12 @@
 		(uuid "1719fbbf-5479-43aa-9b88-323c5c24745f")
 	)
 	(junction
+		(at 200.66 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "29e24446-4fde-4dcc-bb6f-6310fda784a8")
+	)
+	(junction
 		(at 111.76 61.595)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3729,6 +3735,12 @@
 		(uuid "36b4e128-d935-48a2-ac62-0f3faac0bb9a")
 	)
 	(junction
+		(at 190.5 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3df0e0c2-215d-4b28-9767-102f2d801586")
+	)
+	(junction
 		(at 33.02 132.08)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3739,6 +3751,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4850ef10-04e9-4e68-82e1-2b08e13f3b35")
+	)
+	(junction
+		(at 180.34 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4cae3104-5361-4f5d-98cf-ee2b42218a47")
 	)
 	(junction
 		(at 49.53 56.515)
@@ -3763,6 +3781,24 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7e8a8115-2e1a-4eea-a2f0-f0a93a04c366")
+	)
+	(junction
+		(at 190.5 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "82e0ff35-83c8-478d-8a73-b45e2548792d")
+	)
+	(junction
+		(at 200.66 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "831190ec-40ea-4cfb-99de-1a8d1fc698fd")
+	)
+	(junction
+		(at 180.34 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9ddeb6fd-ee91-472a-bea6-92c10acad35d")
 	)
 	(junction
 		(at 256.54 58.42)
@@ -4014,13 +4050,13 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 58.42) (xy 200.66 59.69)
+			(xy 180.34 59.69) (xy 190.5 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0962ebe7-fb38-4586-b4ff-2e39bc19fcfb")
+		(uuid "0a01914b-2e9a-4fe8-b028-4f16b3d3940a")
 	)
 	(wire
 		(pts
@@ -4091,6 +4127,16 @@
 			(type solid)
 		)
 		(uuid "1a0a89e9-df79-4dc8-9633-4ad1ddb742c9")
+	)
+	(wire
+		(pts
+			(xy 180.34 67.31) (xy 190.5 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cbaa7f1-33b3-41f4-8212-b4919dde3878")
 	)
 	(wire
 		(pts
@@ -4254,6 +4300,16 @@
 	)
 	(wire
 		(pts
+			(xy 190.5 59.69) (xy 200.66 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4da7a0b5-607b-4a17-bc2e-3b279642cdb2")
+	)
+	(wire
+		(pts
 			(xy 132.08 59.055) (xy 133.35 59.055)
 		)
 		(stroke
@@ -4371,6 +4427,16 @@
 			(type default)
 		)
 		(uuid "65537a72-2428-4914-a410-475f7184272a")
+	)
+	(wire
+		(pts
+			(xy 170.18 67.31) (xy 180.34 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68e1db36-bd53-4dbe-a24e-fb93aa7ea3bb")
 	)
 	(wire
 		(pts
@@ -4644,6 +4710,16 @@
 	)
 	(wire
 		(pts
+			(xy 190.5 67.31) (xy 200.66 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7f81e77-ec16-4d88-97e7-9bc477a462fa")
+	)
+	(wire
+		(pts
 			(xy 69.85 134.62) (xy 62.23 134.62)
 		)
 		(stroke
@@ -4824,6 +4900,16 @@
 	)
 	(wire
 		(pts
+			(xy 200.66 58.42) (xy 200.66 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dca6e2dc-39f9-4c9a-bb35-270a2b8524f0")
+	)
+	(wire
+		(pts
 			(xy 232.41 44.45) (xy 247.65 44.45)
 		)
 		(stroke
@@ -4911,6 +4997,16 @@
 			(type default)
 		)
 		(uuid "f3557f43-4264-457b-aba3-223e66c977b1")
+	)
+	(wire
+		(pts
+			(xy 170.18 59.69) (xy 180.34 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f65a2e1f-3798-4595-ae7e-fc73df5674cb")
 	)
 	(wire
 		(pts
@@ -5477,6 +5573,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 181.61 144.78 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "b433f29f-d2d5-4ac4-9df0-b9ca914fb322")
 		)
@@ -5537,6 +5642,15 @@
 			)
 		)
 		(property "Description" "Dual Rail-to-Rail Input/Output Operational Amplifier, DIP-8/SOIC-8/VSSOP-8"
+			(at 69.85 94.615 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
 			(at 69.85 94.615 0)
 			(effects
 				(font
@@ -5721,6 +5835,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 119.38 46.355 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "2ac50246-edb3-4a8e-b956-8f61e7f2e09c")
 		)
@@ -5800,6 +5923,15 @@
 		)
 		(property "Mouser Part Number" "279-CRGCQ0603F100R"
 			(at 181.61 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 181.61 125.73 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5967,6 +6099,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 49.53 67.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e0e13fe5-ba27-48df-b8f3-68310442863c")
 		)
@@ -6062,6 +6203,15 @@
 			)
 		)
 		(property "Mouser Part Number" "187-CL10A475KO8NNNC"
+			(at 96.52 85.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
 			(at 96.52 85.725 0)
 			(effects
 				(font
@@ -6167,6 +6317,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 156.21 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "80db0834-323f-4dbd-a48f-d28e196fd9e2")
 		)
@@ -6177,6 +6336,111 @@
 			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/ee005c00-ec4f-437e-b20a-795d960ff7e7"
 					(reference "C_{byp}1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 170.18 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3de18251-516b-453e-b826-4a32081cadbb")
+		(property "Reference" "C_{filter}4"
+			(at 172.974 61.214 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 172.974 63.754 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 171.1452 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GRM188R6YA106MA73-01A-EN_PDF_CERAMICCAPACITORSMD"
+			(at 170.18 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 170.18 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser#" "81-GRM188R6YA106MA3D "
+			(at 170.18 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM188R6YA106MA73D "
+			(at 170.18 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "81-GRM188R6YA106MA3D "
+			(at 170.18 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 170.18 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8f821b1e-3440-485f-a33e-3e4487281d2d")
+		)
+		(pin "2"
+			(uuid "29bc81a2-3d43-48d5-bc00-06afaff64f2b")
+		)
+		(instances
+			(project "Supercap"
+				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/ee005c00-ec4f-437e-b20a-795d960ff7e7"
+					(reference "C_{filter}4")
 					(unit 1)
 				)
 			)
@@ -6227,6 +6491,15 @@
 		)
 		(property "Description" "Inductor"
 			(at 187.325 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 187.325 50.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6389,6 +6662,15 @@
 			)
 		)
 		(property "Mouser Part Number" "603-CC0603JR7R7BB102"
+			(at 184.785 147.955 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
 			(at 184.785 147.955 0)
 			(effects
 				(font
@@ -6621,6 +6903,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 256.54 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "e9e7fd61-d118-4a9b-b585-9fdc01ee5440")
 		)
@@ -6728,6 +7019,15 @@
 		)
 		(property "Cost" "22.60"
 			(at 248.92 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 248.92 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6919,6 +7219,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 207.01 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7979a6f2-c4f4-4e5f-b17e-18e82690070e")
 		)
@@ -6979,6 +7288,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 194.31 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
 			(at 194.31 50.8 0)
 			(effects
 				(font
@@ -7069,6 +7387,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 104.14 61.595 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "afcc5390-3ea6-4b57-b4f0-45ae484f6f8f")
 		)
@@ -7131,6 +7458,15 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 207.01 103.505 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
 			(at 207.01 103.505 0)
 			(effects
 				(font
@@ -7206,6 +7542,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 180.975 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a058768a-4044-4937-acbc-80f5a2b74237")
 		)
@@ -7213,6 +7558,111 @@
 			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/ee005c00-ec4f-437e-b20a-795d960ff7e7"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 180.34 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "68b62c97-83a1-4414-ad31-b4d826c36a67")
+		(property "Reference" "C_{filter}3"
+			(at 182.88 61.468 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 182.88 64.008 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 181.3052 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GRM188R6YA106MA73-01A-EN_PDF_CERAMICCAPACITORSMD"
+			(at 180.34 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 180.34 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser#" "81-GRM188R6YA106MA3D "
+			(at 180.34 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM188R6YA106MA73D "
+			(at 180.34 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "81-GRM188R6YA106MA3D "
+			(at 180.34 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 180.34 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "60327662-06db-4160-9e3d-370def72afb7")
+		)
+		(pin "2"
+			(uuid "dd9e6304-7b89-4479-a1ad-6cfbfd91b5dd")
+		)
+		(instances
+			(project "Supercap"
+				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/ee005c00-ec4f-437e-b20a-795d960ff7e7"
+					(reference "C_{filter}3")
 					(unit 1)
 				)
 			)
@@ -7420,6 +7870,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 41.91 61.595 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1410460b-21bb-4798-9b40-0b86389c1e7e")
 		)
@@ -7492,6 +7951,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Digi-Key Part Number" "2553-2044-2X10G00SA-ND"
+			(at 54.61 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "2044-2X10G00SA"
+			(at 54.61 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7723,6 +8200,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 34.29 85.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3395ffdd-fd9a-4061-a802-7b5bd4d1d33b")
 		)
@@ -7733,6 +8219,111 @@
 			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/ee005c00-ec4f-437e-b20a-795d960ff7e7"
 					(reference "C_{smooth}2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 190.5 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "820de514-44c2-4484-8d57-6d041ea6723a")
+		(property "Reference" "C_{filter}2"
+			(at 193.294 61.468 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 193.294 64.008 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 191.4652 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GRM188R6YA106MA73-01A-EN_PDF_CERAMICCAPACITORSMD"
+			(at 190.5 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 190.5 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser#" "81-GRM188R6YA106MA3D "
+			(at 190.5 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM188R6YA106MA73D "
+			(at 190.5 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "81-GRM188R6YA106MA3D "
+			(at 190.5 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 190.5 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "890b5339-a00d-48f0-9f71-e9dfca3bceeb")
+		)
+		(pin "2"
+			(uuid "6a4270c8-2e48-4d7f-9de4-1c8f781f01de")
+		)
+		(instances
+			(project "Supercap"
+				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/ee005c00-ec4f-437e-b20a-795d960ff7e7"
+					(reference "C_{filter}2")
 					(unit 1)
 				)
 			)
@@ -7783,6 +8374,15 @@
 			)
 		)
 		(property "Description" "Dual Rail-to-Rail Input/Output Operational Amplifier, DIP-8/SOIC-8/VSSOP-8"
+			(at 121.92 59.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
 			(at 121.92 59.055 0)
 			(effects
 				(font
@@ -7956,6 +8556,15 @@
 			)
 		)
 		(property "Mouser Part Number" "250-71240KEXBLT010B3"
+			(at 232.41 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
 			(at 232.41 55.88 0)
 			(effects
 				(font
@@ -8140,6 +8749,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 41.91 56.515 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "583b5b25-106d-4faf-8f3d-282e28531fc9")
 		)
@@ -8243,6 +8861,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 184.785 128.905 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d19245a4-4cf5-4c82-b590-b9ce8d589c77")
 		)
@@ -8323,6 +8950,15 @@
 			)
 		)
 		(property "Mouser Part Number" "603-AT0603DRD072KL "
+			(at 111.76 67.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
 			(at 111.76 67.945 0)
 			(effects
 				(font
@@ -8465,6 +9101,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 59.69 59.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "9c5b4873-b7e6-4491-bed6-2036ca61b3de")
 		)
@@ -8549,6 +9194,15 @@
 			)
 		)
 		(property "Description" "Dual Rail-to-Rail Input/Output Operational Amplifier, DIP-8/SOIC-8/VSSOP-8"
+			(at 132.08 94.615 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
 			(at 132.08 94.615 0)
 			(effects
 				(font
@@ -8803,6 +9457,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 33.02 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "81542e18-4e3e-4efc-b956-a0247a039efb")
 		)
@@ -8889,6 +9552,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 104.14 56.515 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "0271af27-a8ce-4838-a573-258cb3455b8d")
 		)
@@ -8954,6 +9626,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Digi-Key Part Number" "2553-2044-2X10G00SA-ND"
+			(at 105.41 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "2044-2X10G00SA"
+			(at 105.41 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9152,6 +9842,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 53.34 93.345 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "9c5b4873-b7e6-4491-bed6-2036ca61b3df")
 		)
@@ -9193,16 +9892,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 200.66 54.61 0)
+		(at 200.66 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d2515b4a-d199-4a3b-b7e3-a75e69b022d7")
 		(property "Reference" "C_{filter}1"
-			(at 204.47 53.3399 0)
+			(at 203.454 61.468 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9211,7 +9909,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 204.47 55.8799 0)
+			(at 203.454 64.008 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9220,7 +9918,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 201.6252 58.42 0)
+			(at 201.6252 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9229,7 +9927,7 @@
 			)
 		)
 		(property "Datasheet" "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GRM188R6YA106MA73-01A-EN_PDF_CERAMICCAPACITORSMD"
-			(at 200.66 54.61 0)
+			(at 200.66 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9238,7 +9936,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 200.66 54.61 0)
+			(at 200.66 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9247,7 +9945,7 @@
 			)
 		)
 		(property "Mouser#" "81-GRM188R6YA106MA3D "
-			(at 200.66 54.61 0)
+			(at 200.66 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9256,7 +9954,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "GRM188R6YA106MA73D "
-			(at 200.66 54.61 0)
+			(at 200.66 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9265,7 +9963,16 @@
 			)
 		)
 		(property "Mouser Part Number" "81-GRM188R6YA106MA3D "
-			(at 200.66 54.61 0)
+			(at 200.66 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 200.66 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9290,7 +9997,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 200.66 63.5 0)
+		(at 200.66 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9299,7 +10006,7 @@
 		(fields_autoplaced yes)
 		(uuid "d9f96aae-085d-4606-b6ac-233170ad86ac")
 		(property "Reference" "R_{filter}1"
-			(at 203.2 62.2299 0)
+			(at 203.2 53.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9308,7 +10015,7 @@
 			)
 		)
 		(property "Value" "3.3"
-			(at 203.2 64.7699 0)
+			(at 203.2 55.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9317,7 +10024,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 201.676 63.754 90)
+			(at 201.676 54.864 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9326,7 +10033,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
-			(at 200.66 63.5 0)
+			(at 200.66 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9335,7 +10042,7 @@
 			)
 		)
 		(property "Description" "Thick Film Resistors - SMD RMC 0603 1/10W 1% T/R-5000"
-			(at 200.66 63.5 0)
+			(at 200.66 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9344,7 +10051,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "0603WAF330KT5E "
-			(at 200.66 63.5 0)
+			(at 200.66 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9353,7 +10060,16 @@
 			)
 		)
 		(property "Mouser Part Number" "303-0603WAF330KT5E "
-			(at 200.66 63.5 0)
+			(at 200.66 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 200.66 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9579,6 +10295,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 57.15 46.355 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c2e69853-bf7f-494b-ba16-0203ecd378cb")
 		)
@@ -9647,6 +10372,15 @@
 			)
 		)
 		(property "Description" "Dual Rail-to-Rail Input/Output Operational Amplifier, DIP-8/SOIC-8/VSSOP-8"
+			(at 115.57 93.345 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
 			(at 115.57 93.345 0)
 			(effects
 				(font
@@ -9770,6 +10504,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 247.65 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3fc6051e-9bbf-41fa-b020-2c020e96d5c7")
 		)
@@ -9832,6 +10575,15 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 207.01 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
 			(at 207.01 92.71 0)
 			(effects
 				(font

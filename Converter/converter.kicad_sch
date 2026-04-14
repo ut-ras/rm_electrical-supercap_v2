@@ -3422,7 +3422,7 @@
 		(at 123.825 64.77 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -3464,6 +3464,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 123.825 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
 			(at 123.825 64.77 0)
 			(effects
 				(font
@@ -3629,6 +3638,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 100.965 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6025c1f7-e809-44b5-b474-2d47df2eaf9a")
 		)
@@ -3721,6 +3739,15 @@
 			)
 		)
 		(property "Mouser Part Number" "187-CL10A475KO8NNNC"
+			(at 74.93 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
 			(at 74.93 134.62 0)
 			(effects
 				(font
@@ -3853,6 +3880,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 79.375 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8b8b641b-850e-44e2-9f78-e1f26e108316")
 		)
@@ -3874,7 +3910,7 @@
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "33139abe-8acd-4502-a899-ba106ff77d6e")
@@ -3913,6 +3949,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 140.97 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
 			(at 140.97 64.77 0)
 			(effects
 				(font
@@ -4004,6 +4049,15 @@
 			)
 		)
 		(property "Mouser Part Number" "726-IQFH36N04NM6ATMA"
+			(at 100.965 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
 			(at 100.965 54.61 0)
 			(effects
 				(font
@@ -4223,6 +4277,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 179.07 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0ec6990a-eb9d-49c6-9d57-223880b3af26")
 		)
@@ -4341,6 +4404,15 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 196.215 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -4509,7 +4581,7 @@
 				)
 			)
 		)
-		(property "Value" "28u"
+		(property "Value" "24.52u"
 			(at 132.08 57.15 90)
 			(effects
 				(font
@@ -4537,6 +4609,15 @@
 		)
 		(property "Description" "Inductor"
 			(at 132.08 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 132.08 59.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4622,6 +4703,15 @@
 		)
 		(property "Mouser Part Number" "603-RL0603FR-070R75L"
 			(at 133.35 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 133.35 105.41 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4724,6 +4814,15 @@
 			)
 		)
 		(property "Mouser Part Number" "78-V1P22HM3_A/H"
+			(at 113.03 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
 			(at 113.03 128.27 0)
 			(effects
 				(font
@@ -4901,6 +5000,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 113.03 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "095c9792-c22e-44f1-aab6-b84bcd7891cb")
 		)
@@ -4998,6 +5106,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 74.93 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6e316ffb-f8a4-4f11-be0c-02b5bc83fe2f")
 		)
@@ -5078,6 +5195,15 @@
 			)
 		)
 		(property "Mouser Part Number" "963-MAJCT168BB7105KT"
+			(at 149.86 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
 			(at 149.86 133.35 0)
 			(effects
 				(font
@@ -5206,6 +5332,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 182.245 139.065 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a239f5d9-cbd8-4981-9216-b25ed5107d88")
 		)
@@ -5289,6 +5424,15 @@
 			)
 		)
 		(property "Mouser Part Number" "726-IQFH36N04NM6ATMA"
+			(at 179.705 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
 			(at 179.705 54.61 0)
 			(effects
 				(font
@@ -5424,6 +5568,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 56.515 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e10beffe-6ad3-4294-b2dd-156dfc617d7c")
 		)
@@ -5509,6 +5662,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 133.35 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6afc3b9f-071d-43aa-984a-29d1c09d74be")
 		)
@@ -5587,6 +5749,15 @@
 		)
 		(property "Mouser Part Number" "603-RL0603FR-070R75L"
 			(at 140.97 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 140.97 147.32 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5718,6 +5889,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 67.945 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8f14fee9-42ff-47ff-b132-23e7a561c02d")
 		)
@@ -5806,6 +5986,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 149.86 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "fa6e7356-3943-41f7-9516-7451665d5332")
 		)
@@ -5868,6 +6057,15 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 204.47 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
 			(at 204.47 121.92 0)
 			(effects
 				(font
@@ -5956,6 +6154,15 @@
 			)
 		)
 		(property "Mouser Part Number" "726-IQFH36N04NM6ATMA"
+			(at 179.705 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
 			(at 179.705 71.12 0)
 			(effects
 				(font
@@ -6097,6 +6304,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 88.9 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "d462d42d-0528-4e68-8506-5c521da7d5d0")
 		)
@@ -6185,6 +6401,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 179.07 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4352cf24-5fb1-49a3-a4dc-265e934d6551")
 		)
@@ -6244,6 +6469,15 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 204.47 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
 			(at 204.47 111.76 0)
 			(effects
 				(font
@@ -6327,6 +6561,15 @@
 		)
 		(property "Mouser Part Number" "603-RL0603FR-070R75L"
 			(at 140.97 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 140.97 118.11 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6464,6 +6707,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 219.075 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "089a5769-2493-471c-95f8-0ec58d5eb85e")
 		)
@@ -6585,6 +6837,15 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 207.645 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -6789,6 +7050,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 88.9 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "9de19446-cd28-429a-8ed6-41a129f1a3bb")
 		)
@@ -6869,6 +7139,15 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 204.47 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
 			(at 204.47 101.6 0)
 			(effects
 				(font
@@ -7068,6 +7347,15 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 179.07 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
 			(at 179.07 101.6 0)
 			(effects
 				(font

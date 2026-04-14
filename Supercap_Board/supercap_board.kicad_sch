@@ -497,6 +497,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 97.79 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "41a52b2a-893a-409b-a41e-b276a5c9d8cc")
 		)
@@ -586,6 +595,15 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "DSF117Q3R0"
+			(at 86.36 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
 			(at 86.36 62.23 0)
 			(effects
 				(font
@@ -691,6 +709,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 109.22 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "34428d66-cada-4368-a2be-d19972eeff2f")
 		)
@@ -786,6 +813,15 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "DSF117Q3R0"
+			(at 120.65 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
 			(at 120.65 62.23 0)
 			(effects
 				(font
