@@ -3705,12 +3705,6 @@
 		(uuid "0215e041-5f93-410d-916a-04a624750f11")
 	)
 	(junction
-		(at 96.52 81.915)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0831d25a-b457-4b32-98da-e03906ade388")
-	)
-	(junction
 		(at 184.785 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3759,6 +3753,12 @@
 		(uuid "4cae3104-5361-4f5d-98cf-ee2b42218a47")
 	)
 	(junction
+		(at 109.22 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5aba26a6-026c-4c0c-a227-0dff165f9bb0")
+	)
+	(junction
 		(at 49.53 56.515)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3771,10 +3771,22 @@
 		(uuid "684c2ffb-4d50-4b8c-bb1a-5fec7f0d5296")
 	)
 	(junction
+		(at 44.45 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6bd43ebc-7ffb-46b9-8c7f-4af5f5e5f66f")
+	)
+	(junction
 		(at 111.76 56.515)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "74b8b667-4e29-4cb1-9058-769065118e09")
+	)
+	(junction
+		(at 30.48 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7ca3ca60-e634-4b3e-b4d0-db69cddfbf61")
 	)
 	(junction
 		(at 200.66 50.8)
@@ -3819,10 +3831,10 @@
 		(uuid "b02dec4e-ce2c-496f-887c-b72388bf6f1f")
 	)
 	(junction
-		(at 34.29 81.915)
+		(at 93.98 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c5ad2c42-8c03-4b29-9233-154ab6294431")
+		(uuid "b830e6a4-a3fb-4bd7-897f-fd79bfb5f71d")
 	)
 	(junction
 		(at 156.21 44.45)
@@ -3853,11 +3865,11 @@
 		(uuid "1e20f2c9-a42a-4fca-b87a-f3f1c15eada3")
 	)
 	(no_connect
-		(at 62.23 92.075)
+		(at 62.23 102.87)
 		(uuid "2355d510-9b9c-4249-b080-78bf235557bd")
 	)
 	(no_connect
-		(at 62.23 97.155)
+		(at 62.23 107.95)
 		(uuid "288e6689-8c5e-4161-a0b5-c395dbc35d5b")
 	)
 	(no_connect
@@ -3873,7 +3885,7 @@
 		(uuid "3daef31d-694b-4dd1-b797-442905d1f90b")
 	)
 	(no_connect
-		(at 124.46 92.075)
+		(at 124.46 102.87)
 		(uuid "4330956d-72d5-4601-89fa-05a9a6a6c162")
 	)
 	(no_connect
@@ -3917,7 +3929,7 @@
 		(uuid "738cd9cd-ff2a-4fc7-a867-0e0922768812")
 	)
 	(no_connect
-		(at 139.7 94.615)
+		(at 139.7 105.41)
 		(uuid "76a43dba-ddf9-464f-b20d-7e09671d97c2")
 	)
 	(no_connect
@@ -3973,7 +3985,7 @@
 		(uuid "dde6ffbc-31ec-4eb2-a9d6-e0c7160cc09a")
 	)
 	(no_connect
-		(at 77.47 94.615)
+		(at 77.47 105.41)
 		(uuid "df15bb0c-33c1-48a7-8075-2d83f9c512f4")
 	)
 	(no_connect
@@ -3981,7 +3993,7 @@
 		(uuid "e4d03389-699c-4212-b49a-542a8003c372")
 	)
 	(no_connect
-		(at 124.46 97.155)
+		(at 124.46 107.95)
 		(uuid "ee50290a-1ce5-400a-beb7-14e323c08c5e")
 	)
 	(no_connect
@@ -4020,16 +4032,6 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 81.915) (xy 34.29 81.915)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "06721eae-0aeb-4852-a22f-ba9a56929b4c")
-	)
-	(wire
-		(pts
 			(xy 247.65 45.72) (xy 247.65 44.45)
 		)
 		(stroke
@@ -4040,7 +4042,17 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 81.915) (xy 113.03 85.725)
+			(xy 93.98 95.25) (xy 93.98 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09170f14-fd03-41e9-9009-ffdea7b4a2f1")
+	)
+	(wire
+		(pts
+			(xy 120.65 82.55) (xy 120.65 85.09)
 		)
 		(stroke
 			(width 0)
@@ -4238,6 +4250,16 @@
 		)
 		(uuid "31ec3621-1d5c-40ae-a047-3d6d3c0f2871")
 	)
+	(wire
+		(pts
+			(xy 30.48 82.55) (xy 30.48 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35b7de19-f024-4059-a50e-035931c6db94")
+	)
 	(polyline
 		(pts
 			(xy 85.725 80.01) (xy 140.335 80.01)
@@ -4297,6 +4319,16 @@
 			(type default)
 		)
 		(uuid "49f18495-2d34-432a-ae44-2fc234893310")
+	)
+	(wire
+		(pts
+			(xy 30.48 82.55) (xy 44.45 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d7ec363-9ae5-48cc-aeec-4a0f2e69ebc1")
 	)
 	(wire
 		(pts
@@ -4450,13 +4482,13 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 81.915) (xy 50.8 81.915)
+			(xy 109.22 82.55) (xy 109.22 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6e62bd55-fa5d-4300-8978-0abce1cf56ba")
+		(uuid "6c159a30-e1e9-4e35-aaa9-f1e4a0e49667")
 	)
 	(wire
 		(pts
@@ -4510,6 +4542,16 @@
 	)
 	(wire
 		(pts
+			(xy 30.48 91.44) (xy 30.48 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8116db68-4316-40de-8fc3-54703d83335b")
+	)
+	(wire
+		(pts
 			(xy 184.785 125.73) (xy 189.23 125.73)
 		)
 		(stroke
@@ -4550,7 +4592,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 81.915) (xy 96.52 81.915)
+			(xy 91.44 82.55) (xy 93.98 82.55)
 		)
 		(stroke
 			(width 0)
@@ -4567,6 +4609,16 @@
 			(type default)
 		)
 		(uuid "96ebb8fb-4028-403b-bf05-2ec91ef7bba1")
+	)
+	(wire
+		(pts
+			(xy 93.98 83.82) (xy 93.98 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97f4785f-5d06-44dc-a6aa-c430f72909fb")
 	)
 	(wire
 		(pts
@@ -4617,6 +4669,16 @@
 			(type default)
 		)
 		(uuid "a0cb338b-785e-42f7-911d-465f0d065de5")
+	)
+	(wire
+		(pts
+			(xy 109.22 82.55) (xy 120.65 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a31c1620-c290-4db2-b52d-3cd2e15402e1")
 	)
 	(wire
 		(pts
@@ -4750,13 +4812,13 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 81.915) (xy 113.03 81.915)
+			(xy 44.45 91.44) (xy 44.45 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bc688997-4d0d-4e43-a693-989fdfb4fc62")
+		(uuid "bc5f8153-cb9d-43d6-b898-d78a5dd8cd3e")
 	)
 	(wire
 		(pts
@@ -4780,6 +4842,16 @@
 	)
 	(wire
 		(pts
+			(xy 29.21 82.55) (xy 30.48 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c43b5d72-42e2-4be9-92c6-eafe91789284")
+	)
+	(wire
+		(pts
 			(xy 114.3 61.595) (xy 111.76 61.595)
 		)
 		(stroke
@@ -4790,7 +4862,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 81.915) (xy 50.8 85.725)
+			(xy 54.61 82.55) (xy 54.61 85.09)
 		)
 		(stroke
 			(width 0)
@@ -4860,13 +4932,23 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 100.965) (xy 50.8 102.235)
+			(xy 54.61 100.33) (xy 54.61 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "d32dbb22-02df-47d8-8982-398538977c75")
+	)
+	(wire
+		(pts
+			(xy 44.45 82.55) (xy 44.45 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d82ab9a3-3b3d-4c33-9206-068eca445ffb")
 	)
 	(wire
 		(pts
@@ -4877,6 +4959,16 @@
 			(type default)
 		)
 		(uuid "d8a5f932-e60a-44c2-a94c-f55dccfa0820")
+	)
+	(wire
+		(pts
+			(xy 93.98 82.55) (xy 109.22 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8fdaf5b-7f7e-430a-aaa8-dec3f6e08f99")
 	)
 	(wire
 		(pts
@@ -4970,6 +5062,16 @@
 	)
 	(wire
 		(pts
+			(xy 44.45 82.55) (xy 54.61 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7e603b3-d726-437e-ba2c-30bfc5e1de1a")
+	)
+	(wire
+		(pts
 			(xy 184.15 125.73) (xy 184.785 125.73)
 		)
 		(stroke
@@ -4980,7 +5082,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 100.965) (xy 113.03 102.235)
+			(xy 120.65 100.33) (xy 120.65 101.6)
 		)
 		(stroke
 			(width 0)
@@ -5007,6 +5109,16 @@
 			(type default)
 		)
 		(uuid "f65a2e1f-3798-4595-ae7e-fc73df5674cb")
+	)
+	(wire
+		(pts
+			(xy 109.22 91.44) (xy 109.22 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7b1bd02-5f5e-47b0-94ac-d04827f678b3")
 	)
 	(wire
 		(pts
@@ -5416,7 +5528,7 @@
 	)
 	(hierarchical_label "+3V3"
 		(shape input)
-		(at 91.44 81.915 180)
+		(at 91.44 82.55 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5438,7 +5550,7 @@
 	)
 	(hierarchical_label "+3V3"
 		(shape input)
-		(at 29.21 81.915 180)
+		(at 29.21 82.55 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5599,7 +5711,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:TLV2372")
-		(at 69.85 94.615 0)
+		(at 69.85 105.41 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -5608,7 +5720,7 @@
 		(fields_autoplaced yes)
 		(uuid "13597194-dcb0-44c4-bb8c-d4b66c8fd24b")
 		(property "Reference" "U1"
-			(at 69.85 84.455 0)
+			(at 69.85 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5616,7 +5728,7 @@
 			)
 		)
 		(property "Value" "TLV2372"
-			(at 69.85 86.995 0)
+			(at 69.85 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5624,7 +5736,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 69.85 94.615 0)
+			(at 69.85 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5633,7 +5745,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tlv2375.pdf"
-			(at 69.85 94.615 0)
+			(at 69.85 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5642,7 +5754,7 @@
 			)
 		)
 		(property "Description" "Dual Rail-to-Rail Input/Output Operational Amplifier, DIP-8/SOIC-8/VSSOP-8"
-			(at 69.85 94.615 0)
+			(at 69.85 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5651,7 +5763,7 @@
 			)
 		)
 		(property "Digi-Key Part Number" ""
-			(at 69.85 94.615 0)
+			(at 69.85 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6045,7 +6157,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1100"
+		(property "Value" "11k"
 			(at 52.07 69.2149 0)
 			(effects
 				(font
@@ -6063,7 +6175,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.com/datasheet/3/508/1/PYu-RT_1-to-0.01_RoHS_L_15.pdf"
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/KOA_Speer_RN73R__8_20_24.pdf"
 			(at 49.53 67.945 0)
 			(effects
 				(font
@@ -6081,7 +6193,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "RT0603DRD071K1L"
+		(property "Manufacturer_Part_Number" "RN73R1JTTD1102B25 "
 			(at 49.53 67.945 0)
 			(effects
 				(font
@@ -6090,7 +6202,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "603-RT0603DRD071K1L"
+		(property "Mouser Part Number" "660-RN73R1JTD1102B25 "
 			(at 49.53 67.945 0)
 			(effects
 				(font
@@ -6131,7 +6243,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 96.52 85.725 0)
+		(at 93.98 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6140,7 +6252,7 @@
 		(fields_autoplaced yes)
 		(uuid "3296f8d4-6006-4941-ae23-e51129f4e668")
 		(property "Reference" "C_{smooth}3"
-			(at 100.33 84.4549 0)
+			(at 97.79 86.3599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6149,7 +6261,7 @@
 			)
 		)
 		(property "Value" "4.7u"
-			(at 100.33 86.9949 0)
+			(at 97.79 88.8999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6158,7 +6270,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 97.4852 89.535 0)
+			(at 94.9452 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6167,7 +6279,7 @@
 			)
 		)
 		(property "Datasheet" "https://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10A475KO8NNN"
-			(at 96.52 85.725 0)
+			(at 93.98 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6176,7 +6288,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 96.52 85.725 0)
+			(at 93.98 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6185,7 +6297,7 @@
 			)
 		)
 		(property "Mouser#" ""
-			(at 96.52 85.725 0)
+			(at 93.98 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6194,7 +6306,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "CL10A475KO8NNNC"
-			(at 96.52 85.725 0)
+			(at 93.98 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6203,7 +6315,7 @@
 			)
 		)
 		(property "Mouser Part Number" "187-CL10A475KO8NNNC"
-			(at 96.52 85.725 0)
+			(at 93.98 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6212,7 +6324,7 @@
 			)
 		)
 		(property "Digi-Key Part Number" ""
-			(at 96.52 85.725 0)
+			(at 93.98 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6696,16 +6808,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 34.29 89.535 0)
+		(at 44.45 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4d684dd0-3eba-4495-a790-c1561c25b578")
-		(property "Reference" "#PWR05"
-			(at 34.29 95.885 0)
+		(uuid "4cbca3da-39f8-410d-ba73-c5c17907f87c")
+		(property "Reference" "#PWR032"
+			(at 44.45 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6714,7 +6826,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 34.29 94.615 0)
+			(at 44.45 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6722,7 +6834,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 34.29 89.535 0)
+			(at 44.45 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6731,7 +6843,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 34.29 89.535 0)
+			(at 44.45 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6740,7 +6852,73 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 34.29 89.535 0)
+			(at 44.45 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e596e67b-a993-4de9-b354-b934483d3c8e")
+		)
+		(instances
+			(project "Supercap"
+				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/ee005c00-ec4f-437e-b20a-795d960ff7e7"
+					(reference "#PWR032")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 30.48 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4d684dd0-3eba-4495-a790-c1561c25b578")
+		(property "Reference" "#PWR05"
+			(at 30.48 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 30.48 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.48 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 30.48 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7565,6 +7743,111 @@
 	)
 	(symbol
 		(lib_id "Device:C")
+		(at 109.22 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "66cebf72-f473-4663-bd11-ba22b4c8f592")
+		(property "Reference" "C_{d}8"
+			(at 111.76 86.3662 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 111.76 88.9062 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 110.1852 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 109.22 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 109.22 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser#" ""
+			(at 109.22 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "KGM15BR71H104JM "
+			(at 109.22 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "581-KGM15BR71H104JM "
+			(at 109.22 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 109.22 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "25377630-b3b6-4436-acf6-481ae89abd85")
+		)
+		(pin "2"
+			(uuid "60d44aea-3d4c-4c95-b1f5-b07a1eebf33c")
+		)
+		(instances
+			(project "Supercap"
+				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/ee005c00-ec4f-437e-b20a-795d960ff7e7"
+					(reference "C_{d}8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
 		(at 180.34 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7817,7 +8100,7 @@
 				)
 			)
 		)
-		(property "Value" "1000"
+		(property "Value" "10k"
 			(at 41.91 67.437 90)
 			(effects
 				(font
@@ -7834,7 +8117,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.com/datasheet/3/508/1/PYu-RT_1-to-0.01_RoHS_L_15.pdf"
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/KOA_Speer_RN73R__8_20_24.pdf"
 			(at 41.91 61.595 0)
 			(effects
 				(font
@@ -7852,7 +8135,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "RT0603DRD071KL"
+		(property "Manufacturer_Part_Number" "RN73R1JTTD1002B50 "
 			(at 41.91 61.595 0)
 			(effects
 				(font
@@ -7861,7 +8144,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "603-RT0603DRD071KL"
+		(property "Mouser Part Number" "660-RN73R1JTD1002B50 "
 			(at 41.91 61.595 0)
 			(effects
 				(font
@@ -8048,7 +8331,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 50.8 102.235 0)
+		(at 54.61 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8057,7 +8340,7 @@
 		(fields_autoplaced yes)
 		(uuid "800fade1-c7db-4cb7-9fb3-c866556ff244")
 		(property "Reference" "#PWR07"
-			(at 50.8 108.585 0)
+			(at 54.61 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8066,7 +8349,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 50.8 107.315 0)
+			(at 54.61 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8074,7 +8357,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 50.8 102.235 0)
+			(at 54.61 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8083,7 +8366,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 102.235 0)
+			(at 54.61 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8092,7 +8375,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 50.8 102.235 0)
+			(at 54.61 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8120,16 +8403,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 34.29 85.725 0)
+		(at 30.48 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "810e2c11-9dda-4cf5-9816-167d8258fe42")
 		(property "Reference" "C_{smooth}2"
-			(at 38.1 84.4549 0)
+			(at 33.02 86.3662 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8138,7 +8420,7 @@
 			)
 		)
 		(property "Value" "4.7u"
-			(at 38.1 86.9949 0)
+			(at 33.02 88.9062 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8147,7 +8429,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 35.2552 89.535 0)
+			(at 31.4452 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8155,8 +8437,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10A475KO8NNN"
-			(at 34.29 85.725 0)
+		(property "Datasheet" "~"
+			(at 30.48 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8165,7 +8447,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 34.29 85.725 0)
+			(at 30.48 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8174,7 +8456,7 @@
 			)
 		)
 		(property "Mouser#" ""
-			(at 34.29 85.725 0)
+			(at 30.48 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8183,7 +8465,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "CL10A475KO8NNNC"
-			(at 34.29 85.725 0)
+			(at 30.48 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8192,7 +8474,7 @@
 			)
 		)
 		(property "Mouser Part Number" "187-CL10A475KO8NNNC"
-			(at 34.29 85.725 0)
+			(at 30.48 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8201,7 +8483,7 @@
 			)
 		)
 		(property "Digi-Key Part Number" ""
-			(at 34.29 85.725 0)
+			(at 30.48 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8696,7 +8978,7 @@
 				)
 			)
 		)
-		(property "Value" "1000"
+		(property "Value" "10k"
 			(at 41.91 52.705 90)
 			(effects
 				(font
@@ -8713,7 +8995,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.com/datasheet/3/508/1/PYu-RT_1-to-0.01_RoHS_L_15.pdf"
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/KOA_Speer_RN73R__8_20_24.pdf"
 			(at 41.91 56.515 0)
 			(effects
 				(font
@@ -8731,7 +9013,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "RT0603DRD071KL"
+		(property "Manufacturer_Part_Number" "RN73R1JTTD1002B50 "
 			(at 41.91 56.515 0)
 			(effects
 				(font
@@ -8740,7 +9022,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "603-RT0603DRD071KL"
+		(property "Mouser Part Number" "660-RN73R1JTD1002B50 "
 			(at 41.91 56.515 0)
 			(effects
 				(font
@@ -8984,7 +9266,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 113.03 102.235 0)
+		(at 120.65 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8993,7 +9275,7 @@
 		(fields_autoplaced yes)
 		(uuid "a246c2b9-c6ce-4c43-96b5-f03e20bf63b2")
 		(property "Reference" "#PWR013"
-			(at 113.03 108.585 0)
+			(at 120.65 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9002,7 +9284,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 113.03 107.315 0)
+			(at 120.65 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9010,7 +9292,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 113.03 102.235 0)
+			(at 120.65 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9019,7 +9301,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 113.03 102.235 0)
+			(at 120.65 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9028,7 +9310,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 113.03 102.235 0)
+			(at 120.65 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9151,7 +9433,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:TLV2372")
-		(at 132.08 94.615 0)
+		(at 132.08 105.41 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9160,7 +9442,7 @@
 		(fields_autoplaced yes)
 		(uuid "a832ac9f-f244-4a9c-a74a-64082fdb2c65")
 		(property "Reference" "U2"
-			(at 132.08 84.455 0)
+			(at 132.08 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9168,7 +9450,7 @@
 			)
 		)
 		(property "Value" "TLV2372"
-			(at 132.08 86.995 0)
+			(at 132.08 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9176,7 +9458,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 132.08 94.615 0)
+			(at 132.08 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9185,7 +9467,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tlv2375.pdf"
-			(at 132.08 94.615 0)
+			(at 132.08 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9194,7 +9476,7 @@
 			)
 		)
 		(property "Description" "Dual Rail-to-Rail Input/Output Operational Amplifier, DIP-8/SOIC-8/VSSOP-8"
-			(at 132.08 94.615 0)
+			(at 132.08 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9203,7 +9485,7 @@
 			)
 		)
 		(property "Digi-Key Part Number" ""
-			(at 132.08 94.615 0)
+			(at 132.08 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9240,6 +9522,111 @@
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/ee005c00-ec4f-437e-b20a-795d960ff7e7"
 					(reference "U2")
 					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 44.45 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a83cc017-f222-47bb-9e90-d1838746642e")
+		(property "Reference" "C_{d}7"
+			(at 46.99 86.3662 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 46.99 88.9062 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 45.4152 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 44.45 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 44.45 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser#" ""
+			(at 44.45 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "KGM15BR71H104JM "
+			(at 44.45 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "581-KGM15BR71H104JM "
+			(at 44.45 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 44.45 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1b0864ea-1ba7-4da8-9609-f9ad539dec77")
+		)
+		(pin "2"
+			(uuid "34535ceb-1c77-4520-a5a9-11de2ff1debc")
+		)
+		(instances
+			(project "Supercap"
+				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/ee005c00-ec4f-437e-b20a-795d960ff7e7"
+					(reference "C_{d}7")
+					(unit 1)
 				)
 			)
 		)
@@ -9789,16 +10176,15 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:TLV2372")
-		(at 53.34 93.345 0)
+		(at 57.15 92.71 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "cc3d88fc-3f08-4bcc-8c91-426bff4974e1")
 		(property "Reference" "U1"
-			(at 52.07 92.0749 0)
+			(at 55.88 91.4399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9807,7 +10193,7 @@
 			)
 		)
 		(property "Value" "TLV2372"
-			(at 52.07 94.6149 0)
+			(at 55.88 93.9799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9816,7 +10202,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 53.34 93.345 0)
+			(at 57.15 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9825,7 +10211,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tlv2375.pdf"
-			(at 53.34 93.345 0)
+			(at 57.15 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9834,7 +10220,7 @@
 			)
 		)
 		(property "Description" "Dual Rail-to-Rail Input/Output Operational Amplifier, DIP-8/SOIC-8/VSSOP-8"
-			(at 53.34 93.345 0)
+			(at 57.15 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9843,7 +10229,7 @@
 			)
 		)
 		(property "Digi-Key Part Number" ""
-			(at 53.34 93.345 0)
+			(at 57.15 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9996,6 +10382,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 109.22 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d2d44aae-42c0-4514-968f-0ff19a6dcfee")
+		(property "Reference" "#PWR033"
+			(at 109.22 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 109.22 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 109.22 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 109.22 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b08e19c9-daa5-4fae-a176-6f5e4e352fa2")
+		)
+		(instances
+			(project "Supercap"
+				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/ee005c00-ec4f-437e-b20a-795d960ff7e7"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 200.66 54.61 0)
 		(unit 1)
@@ -10094,7 +10546,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 96.52 89.535 0)
+		(at 93.98 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10103,7 +10555,7 @@
 		(fields_autoplaced yes)
 		(uuid "dda96d17-0252-47cc-afa5-bf4249618a8d")
 		(property "Reference" "#PWR011"
-			(at 96.52 95.885 0)
+			(at 93.98 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10112,7 +10564,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 96.52 94.615 0)
+			(at 93.98 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10120,7 +10572,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 96.52 89.535 0)
+			(at 93.98 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10129,7 +10581,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 96.52 89.535 0)
+			(at 93.98 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10138,7 +10590,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 96.52 89.535 0)
+			(at 93.98 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10242,7 +10694,7 @@
 				)
 			)
 		)
-		(property "Value" "1100"
+		(property "Value" "11k"
 			(at 57.15 42.545 90)
 			(effects
 				(font
@@ -10259,7 +10711,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.com/datasheet/3/508/1/PYu-RT_1-to-0.01_RoHS_L_15.pdf"
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/KOA_Speer_RN73R__8_20_24.pdf"
 			(at 57.15 46.355 0)
 			(effects
 				(font
@@ -10277,7 +10729,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "RT0603DRD071K1L"
+		(property "Manufacturer_Part_Number" "RN73R1JTTD1102B25 "
 			(at 57.15 46.355 0)
 			(effects
 				(font
@@ -10286,7 +10738,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "603-RT0603DRD071K1L"
+		(property "Mouser Part Number" "660-RN73R1JTD1102B25 "
 			(at 57.15 46.355 0)
 			(effects
 				(font
@@ -10327,7 +10779,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:TLV2372")
-		(at 115.57 93.345 0)
+		(at 123.19 92.71 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10336,7 +10788,7 @@
 		(fields_autoplaced yes)
 		(uuid "e705aa91-f08d-45cb-bef2-97d7cdb895a2")
 		(property "Reference" "U2"
-			(at 114.3 92.0749 0)
+			(at 121.92 91.4399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10345,7 +10797,7 @@
 			)
 		)
 		(property "Value" "TLV2372"
-			(at 114.3 94.6149 0)
+			(at 121.92 93.9799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10354,7 +10806,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 115.57 93.345 0)
+			(at 123.19 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10363,7 +10815,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tlv2375.pdf"
-			(at 115.57 93.345 0)
+			(at 123.19 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10372,7 +10824,7 @@
 			)
 		)
 		(property "Description" "Dual Rail-to-Rail Input/Output Operational Amplifier, DIP-8/SOIC-8/VSSOP-8"
-			(at 115.57 93.345 0)
+			(at 123.19 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10381,7 +10833,7 @@
 			)
 		)
 		(property "Digi-Key Part Number" ""
-			(at 115.57 93.345 0)
+			(at 123.19 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
