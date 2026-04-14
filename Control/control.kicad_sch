@@ -6463,7 +6463,7 @@
 				)
 			)
 		)
-		(property "Value" "L_{filter}"
+		(property "Value" "41u"
 			(at 187.198 52.324 90)
 			(effects
 				(font
@@ -6480,7 +6480,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.tdk-electronics.tdk.com/inf/80/db/fer/etd_29_16_10.pdf"
 			(at 187.325 50.8 0)
 			(effects
 				(font

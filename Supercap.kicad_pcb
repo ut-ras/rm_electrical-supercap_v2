@@ -335,6 +335,19 @@
 				)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "23824a1c-4527-4d15-9864-a6e5a2f11aa0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/ee005c00-ec4f-437e-b20a-795d960ff7e7/c265f96e-25d8-4b0e-b9df-65230554937c")
 		(sheetname "/Control/")
@@ -554,6 +567,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "65a96622-57ed-4059-91c7-c4c5d15111a4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "562e64a9-8a8b-4a9a-99ea-1ec8b9f7d7ff")
 			(effects
 				(font
 					(size 1 1)
@@ -898,6 +924,19 @@
 				)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "48cd32da-9318-4a64-a34f-34a64194e889")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/ee005c00-ec4f-437e-b20a-795d960ff7e7/6317c33a-3796-40c2-869f-439639307784")
 		(sheetname "/Control/")
@@ -1131,6 +1170,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0c1544b8-5729-4db1-a52c-3deae87ad078")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a908e010-d714-489f-92fd-48bfd9cc0262")
 			(effects
 				(font
 					(size 1 1)
@@ -1393,6 +1445,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "90d181e6-d9f6-4ddf-98a6-95062a4b74e9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "536487c5-d672-47dd-9644-ca6575732b94")
 			(effects
 				(font
 					(size 1 1)
@@ -2336,6 +2401,19 @@
 				)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8d19c43f-3ad8-48c8-829b-71e90aa58d83")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/ee005c00-ec4f-437e-b20a-795d960ff7e7/920ea9ff-96f0-4424-b90a-f0fa2f83a6b6")
 		(sheetname "/Control/")
@@ -2531,6 +2609,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6472a2ae-517f-4247-9d6b-03de9990105e")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -2937,6 +3028,19 @@
 				)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f0ebff15-2bc1-47e9-812b-5f17270ac162")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/ee005c00-ec4f-437e-b20a-795d960ff7e7/3de18251-516b-453e-b826-4a32081cadbb")
 		(sheetname "/Control/")
@@ -3119,6 +3223,19 @@
 				)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c20da6d1-726a-419b-a358-35e2aa24abe9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/ee005c00-ec4f-437e-b20a-795d960ff7e7/68b62c97-83a1-4414-ad31-b4d826c36a67")
 		(sheetname "/Control/")
@@ -3260,6 +3377,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5f55b7c6-2877-4119-93c7-61f157f10b9f")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -3496,6 +3626,19 @@
 				)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5c293c49-1e5f-48f2-9e86-8b1581bf7c5c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/79ba0ad0-1263-4d7e-82bc-d7cd5a71cdbf/765c13c9-9c38-4b40-a073-a35c902724c2")
 		(sheetname "/Supercap Board/")
@@ -3709,6 +3852,19 @@
 				)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2cab6ceb-c24f-4cf3-be54-762b1b467c9f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/66de8ce3-68f9-4d35-858c-1420192a373c/d410528e-7ccd-49d8-86a3-cafede7b9f38")
 		(sheetname "/Voltage Converter/")
@@ -3863,7 +4019,7 @@
 		(descr "wire loop as test point, pitch 2.0mm, hole diameter 0.7mm, wire diameter 0.5mm")
 		(tags "test point wire loop")
 		(property "Reference" "HI_{DRV}1"
-			(at 5.749999 -0.050001 0)
+			(at 1.26876 2.097837 0)
 			(layer "F.SilkS")
 			(uuid "241efbcd-100b-4d7a-98ab-e516a456a71e")
 			(effects
@@ -3906,6 +4062,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7bc94387-7d1d-4f92-a1ba-07c4c6b0e504")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -4142,6 +4311,19 @@
 				)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3f95a66b-20d5-4ae4-b94e-d849233a264c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/79ba0ad0-1263-4d7e-82bc-d7cd5a71cdbf/0d5ddda2-4cd0-47bb-900f-fb6ba305672d")
 		(sheetname "/Supercap Board/")
@@ -4347,6 +4529,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "53fc4cbf-33e8-46e3-9fe9-8f1e36fc1d4d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "53486c23-c908-49ec-ac04-3f934f26360d")
 			(effects
 				(font
 					(size 1 1)
@@ -4579,6 +4774,19 @@
 				)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 315)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c60fc38a-37ea-43dd-8df9-fb950e385c14")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/66de8ce3-68f9-4d35-858c-1420192a373c/679d77cf-a280-4417-80df-2a0d0767f17d")
 		(sheetname "/Voltage Converter/")
@@ -4733,7 +4941,7 @@
 		(descr "wire loop as test point, pitch 2.0mm, hole diameter 0.7mm, wire diameter 0.5mm")
 		(tags "test point wire loop")
 		(property "Reference" "HI_{DRV}2"
-			(at -3.7 -0.05 0)
+			(at -3.76876 0.652163 0)
 			(layer "F.SilkS")
 			(uuid "0a69758c-eff9-4772-9cda-d2c53427b14c")
 			(effects
@@ -4776,6 +4984,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "65c1375c-ca74-4538-8ff8-c119c381ff65")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -4992,6 +5213,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "bdb85d70-24a8-43cf-97e8-d01b236a8836")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6f53a1a6-8609-4cdd-b28c-9eb10be83f4f")
 			(effects
 				(font
 					(size 1 1)
@@ -5232,6 +5466,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "bfbc8f38-9978-4a5c-a804-09bd878aeba1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6c715266-d07a-4d1f-b885-6a46a20c6993")
 			(effects
 				(font
 					(size 1 1)
@@ -5505,6 +5752,19 @@
 				)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "28aad87d-b926-4ac4-8868-f02aca4b22a2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/47f13d7b-df0e-4361-81b8-c133778882c5/ec47c7e4-343d-4fea-a788-36282c684e23")
 		(sheetname "/Housekeeping/")
 		(sheetfile "Housekeeping/housekeeping.kicad_sch")
@@ -5735,7 +5995,7 @@
 		(descr "wire loop as test point, pitch 2.0mm, hole diameter 0.7mm, wire diameter 0.5mm")
 		(tags "test point wire loop")
 		(property "Reference" "LO_{DRV}1"
-			(at 5.999998 0.000001 0)
+			(at 6.01876 -0.402163 0)
 			(layer "F.SilkS")
 			(uuid "49173031-6f16-4b05-b5d7-5659514b045f")
 			(effects
@@ -5778,6 +6038,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "db74ded8-1583-4669-848f-8392ee4fc464")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -5995,6 +6268,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "bb36ab71-00ec-494e-ae31-b6ed22490e6b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3f7ac263-4ef7-47a1-b90f-b20d9c361c1f")
 			(effects
 				(font
 					(size 1 1)
@@ -6392,6 +6678,19 @@
 				)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 315)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "79a1da0b-56d9-40d2-a7df-92b09b466853")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/66de8ce3-68f9-4d35-858c-1420192a373c/c544aa91-4cf9-4b0a-a068-542146977a18")
 		(sheetname "/Voltage Converter/")
 		(sheetfile "Converter/converter.kicad_sch")
@@ -6773,6 +7072,19 @@
 				)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e6634366-ff3d-4fd6-a76a-f7fc4e8c4e40")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/66de8ce3-68f9-4d35-858c-1420192a373c/9c7426b8-e67f-40d3-a923-09a4c5f775cb")
 		(sheetname "/Voltage Converter/")
@@ -6998,6 +7310,19 @@
 				)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "94152262-7d6e-49a3-8845-9856db2f7664")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/ee005c00-ec4f-437e-b20a-795d960ff7e7/e3f4ef22-87f1-401c-81dd-0e4433c62c15")
 		(sheetname "/Control/")
@@ -7199,11 +7524,24 @@
 				)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ad862e8f-9c6c-461f-aabe-45a6a09beb5a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/66de8ce3-68f9-4d35-858c-1420192a373c/066479a5-5a08-4b63-b4eb-997352801850")
 		(sheetname "/Voltage Converter/")
 		(sheetfile "Converter/converter.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_bom)
 		(fp_line
 			(start -1.009999 2.71)
 			(end 7.710002 2.710001)
@@ -7460,7 +7798,7 @@
 		(descr "wire loop as test point, pitch 2.0mm, hole diameter 0.7mm, wire diameter 0.5mm")
 		(tags "test point wire loop")
 		(property "Reference" "LO_{DRV}2"
-			(at 5.999999 0.000001 0)
+			(at 5.999999 -0.402163 0)
 			(layer "F.SilkS")
 			(uuid "a36ad439-4c3b-41ee-9762-302f49f45770")
 			(effects
@@ -7503,6 +7841,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "48b11e38-a6c7-4cc5-a977-5042cd0e0955")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -7720,6 +8071,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2f945024-4187-4dc1-b6db-047414f163dd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e72d9395-d365-4106-93fc-2d9c24652749")
 			(effects
 				(font
 					(size 1 1)
@@ -8036,6 +8400,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "590a67f3-08cd-4b74-aac0-af7324bb373a")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -8535,6 +8912,19 @@
 				)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2e8e2bee-bc65-4dbe-bfa5-be4082f724a3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/79ba0ad0-1263-4d7e-82bc-d7cd5a71cdbf/27ab3653-2e47-4688-9d52-0367b3f51349")
 		(sheetname "/Supercap Board/")
@@ -8690,6 +9080,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "159b3a43-b4fb-4fc3-8fe6-0e6a3317a3a2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ef58ad55-6527-4a30-afad-09b23a340dfa")
 			(effects
 				(font
 					(size 1 1)
@@ -9104,6 +9507,19 @@
 				)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "79356d27-83e2-4581-88b7-8404f73e923f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/ee005c00-ec4f-437e-b20a-795d960ff7e7/820de514-44c2-4484-8d57-6d041ea6723a")
 		(sheetname "/Control/")
@@ -9319,6 +9735,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "069eb6b5-7fe2-4437-89fb-98bcfc7bd8d6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 315)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "27a9981a-cdb7-45a7-bab5-118e4ff0190f")
 			(effects
 				(font
 					(size 1 1)
@@ -9627,6 +10056,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e4e276a4-de0c-4b3e-8025-5f4385e3d40b")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -10038,11 +10480,11 @@
 	(footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "8bd1c11e-3aa4-4cb9-890f-bf792a73cf93")
-		(at 150.76876 155.347837 -90)
+		(at 150.5 155.347837 -90)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C_{bulk,out}1"
-			(at 1.25 -1.25 90)
+			(at 5.152162 -0.000002 90)
 			(layer "F.SilkS")
 			(uuid "ffffff35-02a3-4f11-873f-bcab244c7aee")
 			(effects
@@ -10165,6 +10607,19 @@
 				)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3376f1f7-2881-4ac4-aa98-ab6d98168731")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/66de8ce3-68f9-4d35-858c-1420192a373c/86991031-bfe1-481f-a2eb-93cbbb6e0179")
 		(sheetname "/Voltage Converter/")
@@ -10172,7 +10627,7 @@
 		(attr smd exclude_from_bom)
 		(fp_line
 			(start -0.146268 0.51)
-			(end 0.146268 0.51)
+			(end 0.146269 0.51)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -10181,7 +10636,7 @@
 			(uuid "ff87fec8-80ab-4246-a260-7afed012b4ce")
 		)
 		(fp_line
-			(start -0.146268 -0.51)
+			(start -0.146269 -0.51)
 			(end 0.146268 -0.51)
 			(stroke
 				(width 0.12)
@@ -10191,7 +10646,17 @@
 			(uuid "a12c5e62-283a-47a9-b5cb-91c4b9ee8fd2")
 		)
 		(fp_line
-			(start -1.649999 0.729999)
+			(start 1.650002 0.729998)
+			(end -1.649997 0.729996)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "8d826f77-c406-4183-bd34-9f162d95f37a")
+		)
+		(fp_line
+			(start -1.649997 0.729996)
 			(end -1.650002 -0.729998)
 			(stroke
 				(width 0.05)
@@ -10201,27 +10666,7 @@
 			(uuid "763fc384-39d5-4ace-ae32-99d202bb19e0")
 		)
 		(fp_line
-			(start 1.650002 0.729998)
-			(end -1.649999 0.729999)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "8d826f77-c406-4183-bd34-9f162d95f37a")
-		)
-		(fp_line
-			(start -1.650002 -0.729998)
-			(end 1.649999 -0.729999)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "e929f17f-6f41-41ee-8cd7-45f6d13308b2")
-		)
-		(fp_line
-			(start 1.649999 -0.729999)
+			(start 1.649997 -0.729996)
 			(end 1.650002 0.729998)
 			(stroke
 				(width 0.05)
@@ -10231,8 +10676,18 @@
 			(uuid "fe86dedc-a7fd-4bb2-9a1d-9e7a6ca19641")
 		)
 		(fp_line
-			(start -0.800001 0.400001)
-			(end -0.800001 -0.399999)
+			(start -1.650002 -0.729998)
+			(end 1.649997 -0.729996)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "e929f17f-6f41-41ee-8cd7-45f6d13308b2")
+		)
+		(fp_line
+			(start -0.8 0.400001)
+			(end -0.8 -0.400001)
 			(stroke
 				(width 0.1)
 				(type solid)
@@ -10241,8 +10696,8 @@
 			(uuid "f83b59f2-fffe-4d8e-a13e-de8859dc6092")
 		)
 		(fp_line
-			(start 0.800001 0.399999)
-			(end -0.800001 0.400001)
+			(start 0.8 0.400001)
+			(end -0.8 0.400001)
 			(stroke
 				(width 0.1)
 				(type solid)
@@ -10251,8 +10706,8 @@
 			(uuid "c43a53f4-e1be-417b-9a62-f876058a0336")
 		)
 		(fp_line
-			(start -0.800001 -0.399999)
-			(end 0.800001 -0.400001)
+			(start -0.8 -0.400001)
+			(end 0.8 -0.400001)
 			(stroke
 				(width 0.1)
 				(type solid)
@@ -10261,8 +10716,8 @@
 			(uuid "d7d5104e-b6f4-4055-96ca-35e3c88ef856")
 		)
 		(fp_line
-			(start 0.800001 -0.400001)
-			(end 0.800001 0.399999)
+			(start 0.8 -0.400001)
+			(end 0.8 0.400001)
 			(stroke
 				(width 0.1)
 				(type solid)
@@ -10396,6 +10851,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "10bc727d-bbb3-4349-bcd5-e617054aec8a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7bf938ad-0bad-4f2c-9e5f-80df7fb09abc")
 			(effects
 				(font
 					(size 1 1)
@@ -10548,11 +11016,24 @@
 				)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1175ee57-045e-48c8-944e-e4b0e3ea5a2f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/66de8ce3-68f9-4d35-858c-1420192a373c/33139abe-8acd-4502-a899-ba106ff77d6e")
 		(sheetname "/Voltage Converter/")
 		(sheetfile "Converter/converter.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_bom)
 		(fp_line
 			(start -1.01 2.71)
 			(end 7.71 2.71)
@@ -10852,6 +11333,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "11dc858c-87fc-404a-b362-6be43de0367b")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -11351,6 +11845,19 @@
 				)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "87befc1a-6d44-4282-913e-e19e5479993d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/79ba0ad0-1263-4d7e-82bc-d7cd5a71cdbf/64b57ede-0330-41f9-8293-8e29fad9890b")
 		(sheetname "/Supercap Board/")
@@ -11504,6 +12011,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0d57eb0e-3b4a-4c83-859e-0bd6bd426f15")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "039e6882-72c5-494b-b933-7229e51a9770")
 			(effects
 				(font
 					(size 1 1)
@@ -11688,6 +12208,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "cd551836-0d34-4cb4-b604-b8e28403991f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b330a493-9443-4387-8d2f-40f063598fce")
 			(effects
 				(font
 					(size 1 1)
@@ -11913,6 +12446,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0b25457a-de8b-44f7-aaf7-a3e90736028c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "edbb90c0-d419-4572-b531-69c42fd44e4d")
 			(effects
 				(font
 					(size 1 1)
@@ -12160,6 +12706,19 @@
 				)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 225)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "09d97c3f-ff3f-4c4d-8ee9-db58b1f7e40f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/66de8ce3-68f9-4d35-858c-1420192a373c/7d4e3bb9-ee46-4406-ba83-9291541b9182")
 		(sheetname "/Voltage Converter/")
@@ -12385,6 +12944,19 @@
 				)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "eb63c4d0-8943-4226-a77f-c0dcbc7937a6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/66de8ce3-68f9-4d35-858c-1420192a373c/940f1f0e-41de-4e4c-b9af-ea94968ef685")
 		(sheetname "/Voltage Converter/")
@@ -12582,6 +13154,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1d9f1eed-b562-40af-82eb-d83d5a0c5b3b")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -12798,6 +13383,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d3c75f39-f2ae-4c6c-925f-4d85381f6e5f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "28f0884f-f7a6-47dd-9b67-2839273c422b")
 			(effects
 				(font
 					(size 1 1)
@@ -13030,6 +13628,19 @@
 				)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b4be050c-586e-478c-abff-7ec3bac1d93e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/ee005c00-ec4f-437e-b20a-795d960ff7e7/2995413a-c550-4b69-bb01-d26faba9926c")
 		(sheetname "/Control/")
@@ -13225,6 +13836,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bd79f262-e138-4d90-9938-456fbfa989d9")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -13594,6 +14218,19 @@
 				)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "759104ab-3908-4853-8952-6accc221da7d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/ee005c00-ec4f-437e-b20a-795d960ff7e7/5cef38dd-0e80-4b92-869c-54c42cb3fdd8")
 		(sheetname "/Control/")
@@ -13821,6 +14458,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ad70a185-f3a2-4b01-b2f1-efbad1943d39")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 225)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "64f5ad1f-6bf7-4890-8b8e-b938c8bd57e5")
 			(effects
 				(font
 					(size 1 1)
@@ -14086,6 +14736,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "8fe7bc77-dc55-41c0-a5c1-3ea1e6c9371b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "34a47c2f-8bf7-49ef-8ea2-a83bad1bf375")
 			(effects
 				(font
 					(size 1 1)
@@ -14446,6 +15109,19 @@
 				)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b0efacd9-1b6e-4056-8416-5724bbf63a3b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/66de8ce3-68f9-4d35-858c-1420192a373c/90ca3942-5c08-4e1e-a8ce-a0a90278498c")
 		(sheetname "/Voltage Converter/")
@@ -14593,6 +15269,240 @@
 			)
 		)
 	)
+	(footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(layer "F.Cu")
+		(uuid "dcbd6991-7024-46bf-91c6-4244fe0d6fdb")
+		(at 152 155.3625 -90)
+		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
+		(tags "capacitor handsolder")
+		(property "Reference" "C_{bulk,out}2"
+			(at 5.1375 0 90)
+			(layer "F.SilkS")
+			(uuid "b00fc6f4-50de-407f-8bf5-074d02fb39a9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at -0.000001 1.429999 90)
+			(layer "F.Fab")
+			(uuid "d579004b-e34a-475a-bdae-f620427140c1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1da07227-160d-4be5-be13-ab5934f8f35a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "65b9c283-6bcf-4cdd-a9a3-d6552c754f80")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4423f434-b475-46cf-9acb-8bc2a9f36418")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3c205195-4428-44f3-9e3e-5e6a7a09d677")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fcd4ab0e-a760-45f6-9b93-0629b55f0a76")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "241a419b-7038-46b1-8959-cfb130824a8b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b3223e8f-589a-4017-aa4d-07c0bd770343")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Voltage Rating" "50V"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6d9af212-5690-46c0-90fb-7f46d7d4ef3f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a5f859c7-3c43-47f9-93e8-6685b509ee24")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "C_*")
+		(path "/66de8ce3-68f9-4d35-858c-1420192a373c/e564aa8f-91c9-4fc4-bc22-1b5a92e66913")
+		(sheetname "/Voltage Converter/")
+		(sheetfile "Converter/converter.kicad_sch")
+		(attr smd exclude_from_bom)
+		(fp_line
+			(start -0.146267 0.51)
+			(end 0.146269 0.51)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "486912db-2eaa-44d3-9318-cbf248f0dde4")
+		)
+		(fp_line
+			(start -0.146269 -0.51)
+			(end 0.146267 -0.51)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "b55f2a1e-8014-4e57-87fe-b8c1658ec4a8")
+		)
+		(fp_poly
+			(pts
+				(xy -1.650003 -0.729999) (xy 1.65 -0.729999) (xy 1.650003 0.729999) (xy -1.65 0.729999)
+			)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "ceadb9af-9340-43a5-b31a-2329aa2cfd9c")
+		)
+		(fp_poly
+			(pts
+				(xy -0.800002 -0.4) (xy 0.800002 -0.4) (xy 0.800002 0.4) (xy -0.800002 0.4)
+			)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "f81e7d47-2c44-4311-8706-dea978ce8d81")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(uuid "e3026085-97ab-4400-b7fe-17743d2533af")
+			(effects
+				(font
+					(size 0.4 0.4)
+					(thickness 0.06)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.8625 0 270)
+			(size 1.075 0.95)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 73 "/Control/I_{bat,out+}")
+			(pintype "passive")
+			(uuid "c80c32fb-39f9-4037-941d-a23eaf5b9297")
+		)
+		(pad "2" smd roundrect
+			(at 0.8625 0 270)
+			(size 1.075 0.95)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 3 "GNDPWR")
+			(pintype "passive")
+			(uuid "58be1591-8ecc-43e6-a0ca-6cd95e92d71b")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "Robomaster_Passives:Inductor_wire_conn"
 		(layer "F.Cu")
 		(uuid "e11a1b38-0660-4cc1-9561-07344738f108")
@@ -14642,6 +15552,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0a3ef93e-0a46-4388-9998-c64772dc182a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "03ef01f0-8077-4038-a8c1-7f94c117b79f")
 			(effects
 				(font
 					(size 1 1)
@@ -14738,6 +15661,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "4f2dde64-87c8-4f9c-99fb-dbed6e70bf0b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 315)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5f94cb25-992b-4a24-a310-6c400b201bb7")
 			(effects
 				(font
 					(size 1 1)
@@ -14899,7 +15835,7 @@
 		(descr "wire loop as test point, pitch 2.0mm, hole diameter 0.7mm, wire diameter 0.5mm")
 		(tags "test point wire loop")
 		(property "Reference" "V_{sw}1"
-			(at 4.999999 0.000001 0)
+			(at 5.01876 -0.402163 0)
 			(layer "F.SilkS")
 			(uuid "efbb3f18-2a3a-4b3a-8b0c-f84c829a4454")
 			(effects
@@ -14942,6 +15878,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1d9b3238-4169-4716-bb5e-52501148e1ff")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -15137,6 +16086,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2484fdde-376f-40db-a163-d7ef5003b7f8")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -15412,6 +16374,19 @@
 				)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "10f3d232-108f-4f60-83c9-fac5e323ac40")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/66de8ce3-68f9-4d35-858c-1420192a373c/4d36630f-7b01-40ab-82e2-874bdfc45062")
 		(sheetname "/Voltage Converter/")
@@ -15630,6 +16605,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "5a53cdc4-39d3-4808-82a4-244b8caa636f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "46ca2bbe-5a2d-4730-834a-ad9df91c20c9")
 			(effects
 				(font
 					(size 1 1)
@@ -15856,6 +16844,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ac7080c7-69d5-451f-a502-f980767dd7bb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "28caa454-e9d3-4995-8585-e74fade982f8")
 			(effects
 				(font
 					(size 1 1)
@@ -16252,6 +17253,19 @@
 				)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5a257441-f4d9-48e0-83b7-18f103001dd2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/66de8ce3-68f9-4d35-858c-1420192a373c/2adb81ba-4424-4794-b875-7976f35b2782")
 		(sheetname "/Voltage Converter/")
@@ -16399,6 +17413,252 @@
 			)
 		)
 	)
+	(footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(layer "B.Cu")
+		(uuid "1b7a79c0-a118-42d7-b9a7-31dd20ca7b2c")
+		(at 150.5 155.3625 -90)
+		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
+		(tags "capacitor handsolder")
+		(property "Reference" "C_{bulk,out}3"
+			(at 5.1375 0 90)
+			(layer "B.SilkS")
+			(uuid "9fd9a793-671d-4ccf-88fd-f9aefc871e93")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "~"
+			(at -0.000001 -1.429999 90)
+			(layer "B.Fab")
+			(uuid "b8c34b09-b93f-482a-93a7-f07c4158ac94")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 90)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "648d6a5a-b08c-46bf-aa2b-0799e3616973")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 0 0 90)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "e203e328-c602-41cf-bf8a-85d60dc62cb5")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "3690efd7-5616-41e8-8648-9d109531a4e5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Height" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "28852c00-e540-4740-a51a-2a4d78ec478a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "92fc6764-fd2e-43e5-93c3-44b970937c24")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Part_Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "8fcd601d-b920-4c80-a9a1-1d0f97a403fc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "15a95a48-84a0-4b69-8a54-fb99afe60e5c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Voltage Rating" "50V"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "d6b44616-db75-4e7e-b196-fad2d3b8f378")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "a3e68578-9e36-4b29-81cd-e94de0b57163")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "C_*")
+		(path "/66de8ce3-68f9-4d35-858c-1420192a373c/2f7f7070-265b-46b4-9e3f-d359af05df69")
+		(sheetname "/Voltage Converter/")
+		(sheetfile "Converter/converter.kicad_sch")
+		(attr smd exclude_from_bom)
+		(fp_line
+			(start -0.146268 0.51)
+			(end 0.146269 0.51)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "0c65fe99-6208-43f0-a56a-11eb6d22b870")
+		)
+		(fp_line
+			(start -0.146269 -0.51)
+			(end 0.146268 -0.51)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "724e82ed-1ccc-4f3e-a38f-c19c571680ce")
+		)
+		(fp_poly
+			(pts
+				(xy -1.650003 0.73) (xy 1.650001 0.729998) (xy 1.650003 -0.73) (xy -1.650001 -0.729998)
+			)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "78e66046-6166-4dc3-8bac-8e2bf8285c71")
+		)
+		(fp_poly
+			(pts
+				(xy -0.8 0.400001) (xy 0.800001 0.399999) (xy 0.8 -0.400001) (xy -0.800001 -0.399999)
+			)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "B.Fab")
+			(uuid "e836d157-4432-4ab8-9454-b5752701bda2")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 90)
+			(layer "B.Fab")
+			(uuid "5e75010a-ca4e-4614-b81e-1168764d9978")
+			(effects
+				(font
+					(size 0.4 0.4)
+					(thickness 0.06)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.8625 0 270)
+			(size 1.075 0.95)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.25)
+			(net 73 "/Control/I_{bat,out+}")
+			(pintype "passive")
+			(uuid "a4541b68-fe6b-4f1f-bf3f-56c04b6d06ac")
+		)
+		(pad "2" smd roundrect
+			(at 0.8625 0 270)
+			(size 1.075 0.95)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.25)
+			(net 3 "GNDPWR")
+			(pintype "passive")
+			(uuid "2753400f-0862-4e93-9734-4d2c220edbb8")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 		(layer "B.Cu")
 		(uuid "23872a39-9a72-4ab6-8a27-df34baf5e79e")
@@ -16477,6 +17737,20 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "2eac8dbe-10a5-4d21-b576-6a466b8f8e69")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "5ba8fd32-84b7-4f2e-9d92-0ad5c23dfb24")
 			(effects
 				(font
 					(size 1 1)
@@ -16719,6 +17993,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "00c01344-71a3-45e9-9359-835c334e62d6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/ee005c00-ec4f-437e-b20a-795d960ff7e7/1f549fe3-2550-4e18-b1fd-7c521c5ba3ac")
 		(sheetname "/Control/")
@@ -16951,6 +18239,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 225)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "3c525725-d759-4f2b-bdf2-4fac58a0bf50")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/66de8ce3-68f9-4d35-858c-1420192a373c/a59e6192-563c-4a7e-8f5f-d7c70fa8f42d")
 		(sheetname "/Voltage Converter/")
@@ -17175,6 +18477,20 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "334d8b79-f3f2-42c3-bd38-fc9ff8abdc56")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 225)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "2e6c69d2-45fe-446b-9590-38b240bb6f13")
 			(effects
 				(font
 					(size 1 1)
@@ -17431,6 +18747,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "66599a57-ff90-44fa-a0a3-5ac38e1ac9c9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/ee005c00-ec4f-437e-b20a-795d960ff7e7/37193cdc-4a6b-4a08-9e3e-8109d7c5f9b2")
 		(sheetname "/Control/")
@@ -17618,6 +18948,34 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Digi-Key Part Number" "2553-2044-2X10G00SA-ND"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "19324c66-d123-4b81-8e9c-4b252fc4bd02")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Part_Number" "2044-2X10G00SA"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "75e7366c-cb86-44f9-9e97-7d6427c5e0de")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -18129,6 +19487,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "36ab814a-4272-4173-9235-f65bf096f710")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/ee005c00-ec4f-437e-b20a-795d960ff7e7/540e049d-1900-4408-8623-2713ce2a17a8")
 		(sheetname "/Control/")
@@ -18393,6 +19765,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 135)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "c626b1cf-7d6e-41f4-b011-4aaf76eb0394")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/66de8ce3-68f9-4d35-858c-1420192a373c/73385302-d1c5-40a8-80ea-644046f7ab13")
 		(sheetname "/Voltage Converter/")
@@ -18626,6 +20012,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "2e66e8fc-72fd-4d66-9279-9dc24f87b9b6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/ee005c00-ec4f-437e-b20a-795d960ff7e7/5d546064-e46a-4eff-beb0-3943d43939af")
 		(sheetname "/Control/")
@@ -18643,6 +20043,252 @@
 			(uuid "494934a6-e277-48b8-a30e-feba06ff7fa1")
 		)
 		(embedded_fonts no)
+	)
+	(footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(layer "B.Cu")
+		(uuid "d75be8c9-1225-42b5-97d2-9eb3334839fd")
+		(at 152 155.3625 -90)
+		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
+		(tags "capacitor handsolder")
+		(property "Reference" "C_{bulk,out}4"
+			(at 5.1375 0 90)
+			(layer "B.SilkS")
+			(uuid "c99e26a4-3c9e-4c90-abb9-9229edee4848")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "~"
+			(at -0.000001 -1.429999 90)
+			(layer "B.Fab")
+			(uuid "2e980db6-bc8b-43a3-9d87-f3692bebe962")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 90)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "75349026-ad27-4a23-b9df-ce39e9ecd145")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 0 0 90)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "1ed79ee7-0ae6-4c17-b306-0e4344aa89de")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "e0da99ac-6f2f-454e-adee-a1fda7e607d6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Height" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "07f1f25d-827d-48a4-a4a8-e2572944fbff")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "d055e4a8-e3f0-4b1a-bca7-909a339bb741")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Part_Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "ad9a030c-7d94-4c17-ab75-ecb8eaec9ea5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "95b8d91e-846b-4d22-b859-78a85d3493ef")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Voltage Rating" "50V"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "3647b170-0204-460b-b527-77f38ec05f79")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "ba1b6af3-5244-4fbb-918e-faacb030270d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "C_*")
+		(path "/66de8ce3-68f9-4d35-858c-1420192a373c/565d5e51-a2f1-43f0-b023-d4c3057caae9")
+		(sheetname "/Voltage Converter/")
+		(sheetfile "Converter/converter.kicad_sch")
+		(attr smd exclude_from_bom)
+		(fp_line
+			(start -0.146268 0.51)
+			(end 0.146269 0.51)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "d5fa02d9-58fc-44c2-adc7-1177ff030e56")
+		)
+		(fp_line
+			(start -0.146269 -0.51)
+			(end 0.146268 -0.51)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "dcb4262b-1b13-49c0-a703-33fb2ea8dbcd")
+		)
+		(fp_poly
+			(pts
+				(xy -1.650003 0.73) (xy 1.650001 0.729998) (xy 1.650003 -0.73) (xy -1.650001 -0.729998)
+			)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "4063197c-bb2c-4d7b-ad39-19e52a6fe71d")
+		)
+		(fp_poly
+			(pts
+				(xy -0.8 0.400001) (xy 0.800001 0.399999) (xy 0.8 -0.400001) (xy -0.800001 -0.399999)
+			)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "B.Fab")
+			(uuid "2e442d88-634b-4f3f-8f84-a4a244913fa2")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 90)
+			(layer "B.Fab")
+			(uuid "022b22d8-7339-49d7-b2c1-b78476c8d20f")
+			(effects
+				(font
+					(size 0.4 0.4)
+					(thickness 0.06)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.8625 0 270)
+			(size 1.075 0.95)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.25)
+			(net 73 "/Control/I_{bat,out+}")
+			(pintype "passive")
+			(uuid "58a5d7ae-6dce-47d7-b728-83a5a742b76e")
+		)
+		(pad "2" smd roundrect
+			(at 0.8625 0 270)
+			(size 1.075 0.95)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.25)
+			(net 3 "GNDPWR")
+			(pintype "passive")
+			(uuid "5902a7e3-79fd-4cd9-93e7-9f9edd61a2e5")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 		(layer "B.Cu")
@@ -18720,6 +20366,20 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "321db233-0c64-49c1-9fa9-1c8ffbdf03fa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "b7069c02-4d82-480b-8f9c-ad65b65e5241")
 			(effects
 				(font
 					(size 1 1)
@@ -18976,6 +20636,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "1645ea47-3ca6-4230-a36e-43e95048d780")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/ee005c00-ec4f-437e-b20a-795d960ff7e7/3296f8d4-6006-4941-ae23-e51129f4e668")
 		(sheetname "/Control/")
@@ -19175,6 +20849,34 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Digi-Key Part Number" "2553-2044-2X10G00SA-ND"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "a441eec0-f40c-4acc-be8f-4f431501cc21")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Part_Number" "2044-2X10G00SA"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "9da3ac30-5fba-4b86-9fa3-4a6d700ed660")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -19716,6 +21418,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 135)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "1c389ec4-cf1a-4d44-a38a-f71138790c88")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/66de8ce3-68f9-4d35-858c-1420192a373c/7c2ef11c-051d-4ab2-a624-afa62971e9d7")
 		(sheetname "/Voltage Converter/")
@@ -19981,6 +21697,20 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "247fd880-11f0-44f5-b1ef-ce9461d96e81")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "63e4f99e-9cee-4950-817a-da367d8f9a91")
 			(effects
 				(font
 					(size 1 1)

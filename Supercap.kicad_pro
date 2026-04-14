@@ -714,7 +714,7 @@
           "group_by": false,
           "label": "Digi-Key Part Number",
           "name": "Digi-Key Part Number",
-          "show": false
+          "show": true
         }
       ],
       "filter_string": "",
