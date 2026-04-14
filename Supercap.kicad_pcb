@@ -19603,6 +19603,17 @@
 		(uuid "10e8647d-ecd6-4665-b13b-b3c9a8bcdd9a")
 	)
 	(gr_rect
+		(start 134.75 103)
+		(end 154.75 123)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "Cmts.User")
+		(uuid "ecbfd461-82d0-4f38-ba09-2c6d10901e04")
+	)
+	(gr_rect
 		(start 22.57876 103.127837)
 		(end 161.57876 173.127837)
 		(stroke
@@ -19642,6 +19653,18 @@
 		(at 96.26876 124.847837 0)
 		(layer "Cmts.User")
 		(uuid "28a46176-1f0a-48b8-82ba-584a17be6e14")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "Filter Inductor Size"
+		(at 134.75 104.5 0)
+		(layer "Cmts.User")
+		(uuid "bf7c06d8-0f87-452a-9e8f-34747a914b1e")
 		(effects
 			(font
 				(size 1 1)
