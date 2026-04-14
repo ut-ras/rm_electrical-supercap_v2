@@ -30,7 +30,7 @@ Plecs {
   FixedPointDatatypeOverride "1"
   InitializationCommands "V_g = 24; % Nominal battery voltage\nfsw = 120e3; % "
 "Switching frequency\nV_c0 = 0; % Initial supercapacitor voltage\ni_L0 = 0; % "
-"Initial inductor current\n\nL_EMI = 1.5e-9; %minimum 1.5e-9\nC_shunt = 10e-6;"
+"Initial inductor current\n\nL_EMI = 27e-6; %minimum 1.5e-9\nC_shunt = 10e-6;"
 "\n\nR_on = 0.35e-3;   % On-state MOSFET resistance\nR_l = 4.3e-3;   % Inducto"
 "r ESR\nR_esr = 18*10^-3; % Supercap resistance\nR = 2 * R_on + R_l + R_esr/4;"
 "\n\nL_blk = 28.306 * 10^-6; % Bulk inductance\nL = L_blk;\n\nC_sc = 110; % Su"
@@ -38,7 +38,7 @@ Plecs {
 "-4); % Cutoff period\nkp_pi = L/tau_i; % proportional gain [Ohms]\nki_pi = R/"
 "tau_i; % integral gain [F^-1]\n\nki2_pi2 = tau_i/(V_g*C);\nkp_pi2 = L*C*ki2_p"
 "i2;\nki_pi2 = R*C*ki2_pi2;\n\ndith_lim = 0.01;\n\n%Pi-Circuit Model\nW = fsw*"
-"1e-4; %frequency\nPr = 2*W*L_EMI;\nPc = 1/(W^2 * L_EMI);"
+"1e-3; %frequency\nPr = 2*W*L_EMI;\nPc = 1/(W^2 * L_EMI);"
   InitialState  "1"
   SystemState   ""
   JacobianComputation "2"
@@ -76,9 +76,9 @@ Plecs {
   InvalidNetlistFunctionEvaluationMsg "1"
   IncompatibleInitialConditionMsg "2"
   Schematic {
-    Location      [0, 24; 1538, 920]
+    Location      [0, 24; 1538, 825]
     ZoomFactor    1.49863
-    SliderPosition [0, -1]
+    SliderPosition [0, 171]
     ShowBrowser   off
     BrowserWidth  100
     Component {
@@ -104,15 +104,15 @@ Plecs {
       Flipped       off
       LabelPosition south
       Frame         [-15, -20; 15, 20]
-      Location      [0, 22; 1536, 891]
+      Location      [0, 24; 1536, 847]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAC0AAAE8vwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAIAA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
-"///wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAANAAABPIAAABiAP///wAAAAMAAAYAAAAAxPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABgAAAABEAP///wAABgAAAAJ8AAAA"
+"///wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAANAAABPIAAABiAP///wAAAAMAAAYAAAAAb/w"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABgAAAABEAP///wAABgAAAAKjAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
-      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":178,\"Labels\":[\""
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":177,\"Labels\":[\""
 "Delta\",\"Min\",\"Abs Max\",\"Mean\",\"RMS\"],\"VisualIdxs\":[3,5,7,8,9]}"
       PlotPalettes  "AAAAAQAAAAMAAAABAAAAAwAAAAEC//8u4P//zMwAAAAAAAEC//8AAP///"
 "/8AAAAAAAEC//9PsP////8AAAAAAAMAAAABAAAAAAEAAAAAAQAAAAADAAAAAQAAAAEAAAABAAAAAQ"
@@ -127,7 +127,7 @@ Plecs {
       TimeRange     "0"
       ScrollingMode "1"
       SingleTimeAxis "0"
-      Open          "1"
+      Open          "0"
       Ts            "-1"
       SampleLimit   "0"
       XAxisLabel    "Time / s"
@@ -1981,7 +1981,7 @@ Plecs {
       Type          SineGenerator
       Name          "Sine Wave1"
       Show          on
-      Position      [635, 425]
+      Position      [385, 255]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -2080,7 +2080,7 @@ Plecs {
       Type          Constant
       Name          "Constant"
       Show          on
-      Position      [635, 475]
+      Position      [385, 305]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -2856,6 +2856,7 @@ Plecs {
       Direction     down
       Flipped       on
       LabelPosition west
+      CommentOut    DisabledOpenCircuit
       Parameter {
         Variable      "C"
         Value         "Pc"
@@ -2885,13 +2886,13 @@ Plecs {
       Type          ManualSignalSwitch
       Name          "Manual Switch"
       Show          on
-      Position      [710, 460]
+      Position      [460, 290]
       Direction     right
       Flipped       off
       LabelPosition south
       Parameter {
         Variable      "SwitchState"
-        Value         "2"
+        Value         "1"
         Show          off
       }
     }
@@ -3352,7 +3353,7 @@ Plecs {
       Type          Signal
       SrcComponent  "Sine Wave1"
       SrcTerminal   1
-      Points        [680, 425]
+      Points        [430, 255]
       DstComponent  "Manual Switch"
       DstTerminal   2
     }
@@ -3360,7 +3361,7 @@ Plecs {
       Type          Signal
       SrcComponent  "Constant"
       SrcTerminal   1
-      Points        [665, 475; 665, 465]
+      Points        [415, 305; 415, 295]
       DstComponent  "Manual Switch"
       DstTerminal   3
     }
@@ -3420,6 +3421,14 @@ Plecs {
       SrcTerminal   2
       DstComponent  "Scope2"
       DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Manual Switch"
+      SrcTerminal   1
+      Points        [485, 290; 485, 305]
+      DstComponent  "Min/Max"
+      DstTerminal   2
     }
     RectangleAnnotation {
       Position     [180, 225]
