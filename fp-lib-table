@@ -4,4 +4,6 @@
   (lib (name "Robomaster_Passives")(type "KiCad")(uri "${KIPRJMOD}/KiCad_Library/Passives.pretty")(options "")(descr ""))
   (lib (name "MSPM0")(type "KiCad")(uri "${KIPRJMOD}/KiCad_Library/MSPM0")(options "")(descr ""))
   (lib (name "Robomaster_Conn")(type "KiCad")(uri "${KIPRJMOD}/KiCad_Library/Connectors.pretty")(options "")(descr ""))
+  (lib (name "Memes")(type "KiCad")(uri "${KIPRJMOD}/KiCad_Library/Memes.pretty")(options "")(descr ""))
+  (lib (name "Special")(type "KiCad")(uri "${KIPRJMOD}/KiCad_Library/Special.pretty")(options "")(descr ""))
 )

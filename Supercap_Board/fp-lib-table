@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Connectors")(type "KiCad")(uri "C:/Users/dhakk/rm_electrical-supercap_v2/KiCad_Library/Connectors.pretty")(options "")(descr ""))
+)
