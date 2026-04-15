@@ -836,7 +836,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 106.68) (xy 130.81 101.6)
+			(xy 121.92 107.95) (xy 121.92 101.6)
 		)
 		(stroke
 			(width 0)
@@ -856,7 +856,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 77.47) (xy 132.08 82.55)
+			(xy 121.92 77.47) (xy 121.92 82.55)
 		)
 		(stroke
 			(width 0)
@@ -866,7 +866,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 77.47) (xy 132.08 77.47)
+			(xy 135.89 77.47) (xy 121.92 77.47)
 		)
 		(stroke
 			(width 0)
@@ -876,7 +876,17 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 104.14) (xy 134.62 104.14)
+			(xy 109.22 107.95) (xy 109.22 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f6047a7-37be-44ef-beaa-4263554fd2c9")
+	)
+	(wire
+		(pts
+			(xy 129.54 104.14) (xy 134.62 104.14)
 		)
 		(stroke
 			(width 0)
@@ -906,7 +916,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 101.6) (xy 134.62 101.6)
+			(xy 121.92 101.6) (xy 134.62 101.6)
 		)
 		(stroke
 			(width 0)
@@ -959,7 +969,7 @@
 	)
 	(hierarchical_label "+12V"
 		(shape input)
-		(at 128.27 104.14 180)
+		(at 129.54 104.14 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1076,7 +1086,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 109.22 106.68 0)
+		(at 109.22 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1085,7 +1095,7 @@
 		(fields_autoplaced yes)
 		(uuid "8802e818-95af-47d7-8146-de89d205b673")
 		(property "Reference" "#PWR035"
-			(at 109.22 111.76 0)
+			(at 109.22 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1094,7 +1104,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 109.093 110.49 0)
+			(at 109.093 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1102,7 +1112,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 109.22 107.95 0)
+			(at 109.22 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1111,7 +1121,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 109.22 107.95 0)
+			(at 109.22 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1120,7 +1130,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 109.22 106.68 0)
+			(at 109.22 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1142,7 +1152,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 130.81 106.68 0)
+		(at 121.92 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1151,7 +1161,7 @@
 		(fields_autoplaced yes)
 		(uuid "91abd7e0-60a2-49e0-b400-e8ee43ab1746")
 		(property "Reference" "#PWR021"
-			(at 130.81 111.76 0)
+			(at 121.92 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1160,7 +1170,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 130.683 110.49 0)
+			(at 121.793 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1168,7 +1178,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 130.81 107.95 0)
+			(at 121.92 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1177,7 +1187,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.81 107.95 0)
+			(at 121.92 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1186,7 +1196,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 130.81 106.68 0)
+			(at 121.92 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1208,7 +1218,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 132.08 82.55 0)
+		(at 121.92 82.55 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1217,7 +1227,7 @@
 		(fields_autoplaced yes)
 		(uuid "963bd8c6-a547-4817-a92a-840c2f1e9465")
 		(property "Reference" "#PWR022"
-			(at 132.08 88.9 0)
+			(at 121.92 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1226,7 +1236,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 132.08 87.63 0)
+			(at 121.92 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1234,7 +1244,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 132.08 82.55 0)
+			(at 121.92 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1243,7 +1253,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 132.08 82.55 0)
+			(at 121.92 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1252,7 +1262,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 132.08 82.55 0)
+			(at 121.92 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1307,7 +1317,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Robomaster_ICs:P7812B1000"
+		(property "Footprint" "Robomaster_ICs:P78B-1000R"
 			(at 156.21 193.98 0)
 			(effects
 				(font
@@ -1619,7 +1629,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Robomaster_ICs:P7812B1000"
+		(property "Footprint" "Robomaster_ICs:P78B-1000R"
 			(at 157.48 169.85 0)
 			(effects
 				(font
