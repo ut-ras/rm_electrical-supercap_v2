@@ -1,0 +1,1234 @@
+(kicad_pcb
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(general
+		(thickness 1.6)
+		(legacy_teardrops no)
+	)
+	(paper "A4")
+	(layers
+		(0 "F.Cu" signal)
+		(2 "B.Cu" signal)
+		(9 "F.Adhes" user "F.Adhesive")
+		(11 "B.Adhes" user "B.Adhesive")
+		(13 "F.Paste" user)
+		(15 "B.Paste" user)
+		(5 "F.SilkS" user "F.Silkscreen")
+		(7 "B.SilkS" user "B.Silkscreen")
+		(1 "F.Mask" user)
+		(3 "B.Mask" user)
+		(17 "Dwgs.User" user "User.Drawings")
+		(19 "Cmts.User" user "User.Comments")
+		(21 "Eco1.User" user "User.Eco1")
+		(23 "Eco2.User" user "User.Eco2")
+		(25 "Edge.Cuts" user)
+		(27 "Margin" user)
+		(31 "F.CrtYd" user "F.Courtyard")
+		(29 "B.CrtYd" user "B.Courtyard")
+		(35 "F.Fab" user)
+		(33 "B.Fab" user)
+		(39 "User.1" user)
+		(41 "User.2" user)
+		(43 "User.3" user)
+		(45 "User.4" user)
+	)
+	(setup
+		(pad_to_mask_clearance 0)
+		(allow_soldermask_bridges_in_footprints no)
+		(tenting front back)
+		(pcbplotparams
+			(layerselection 0x00000000_00000000_55555555_5755f5ff)
+			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
+			(disableapertmacros no)
+			(usegerberextensions no)
+			(usegerberattributes yes)
+			(usegerberadvancedattributes yes)
+			(creategerberjobfile yes)
+			(dashed_line_dash_ratio 12.000000)
+			(dashed_line_gap_ratio 3.000000)
+			(svgprecision 4)
+			(plotframeref no)
+			(mode 1)
+			(useauxorigin no)
+			(hpglpennumber 1)
+			(hpglpenspeed 20)
+			(hpglpendiameter 15.000000)
+			(pdf_front_fp_property_popups yes)
+			(pdf_back_fp_property_popups yes)
+			(pdf_metadata yes)
+			(pdf_single_document no)
+			(dxfpolygonmode yes)
+			(dxfimperialunits yes)
+			(dxfusepcbnewfont yes)
+			(psnegative no)
+			(psa4output no)
+			(plot_black_and_white yes)
+			(plotinvisibletext no)
+			(sketchpadsonfab no)
+			(plotpadnumbers no)
+			(hidednponfab no)
+			(sketchdnponfab yes)
+			(crossoutdnponfab yes)
+			(subtractmaskfromsilk no)
+			(outputformat 1)
+			(mirror no)
+			(drillshape 1)
+			(scaleselection 1)
+			(outputdirectory "")
+		)
+	)
+	(net 0 "")
+	(net 1 "/Supercaps/V_{cap+}")
+	(net 2 "/Supercaps/V_{cap-}")
+	(footprint "Capacitor_THT:C_Radial_D18.0mm_H35.5mm_P7.50mm"
+		(layer "F.Cu")
+		(uuid "02dde4af-c8d9-4dcf-b9d7-c35ab9e4f48a")
+		(at 79.875 82.925)
+		(descr "C, Radial series, Radial, pin pitch=7.50mm, diameter=18mm, height=35.5mm, Non-Polar Electrolytic Capacitor")
+		(tags "C Radial series Radial pin pitch 7.50mm diameter 18mm height 35.5mm Non-Polar Electrolytic Capacitor")
+		(property "Reference" "C3"
+			(at 11.65 -7.905 0)
+			(layer "F.SilkS")
+			(uuid "a20cb1fe-e9ff-4c8a-a115-ac8f5d593a7b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "110"
+			(at 3.75 10.25 0)
+			(layer "F.Fab")
+			(uuid "86f2c940-87e8-4d73-a1c6-124a428cae67")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.cde.com/resources/catalogs/DSF.pdf"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "440ff788-bc22-4bee-a5c6-3c4d44f78844")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Supercapacitor"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9c64c247-1c81-43de-acfb-5a2ff7952dd6")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" "598-DSF117Q3R0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dc117ae6-07ee-48f4-a7dd-23f0a8375d22")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Voltage Rating" "3V"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "98950ced-ab75-4e4a-ac61-01baf6dfd4ad")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "DSF117Q3R0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5d811876-4728-44ed-ae85-4c6662948d4d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1f0b2f61-67f2-41ec-b3c3-c1ed1b8faa63")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "C_*")
+		(path "/c4c58492-09b0-47dd-a7f6-99bc88243ff5/64b57ede-0330-41f9-8293-8e29fad9890b")
+		(sheetname "/Supercaps/")
+		(sheetfile "supercap_board.kicad_sch")
+		(attr through_hole exclude_from_bom)
+		(fp_circle
+			(center 3.75 0)
+			(end 12.87 0)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "5cf77821-8d25-4c41-9f8c-ef3deecbb6dc")
+		)
+		(fp_circle
+			(center 3.75 0)
+			(end 13 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "195529ac-d820-4656-8660-19117ed585ea")
+		)
+		(fp_circle
+			(center 3.75 0)
+			(end 12.75 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "24ab338d-6b18-463d-aea1-98c3721cdb35")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 3.75 0 0)
+			(layer "F.Fab")
+			(uuid "353fd690-e903-474d-894f-5d36afe43ec4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole circle
+			(at 0 0)
+			(size 2 2)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 1 "/Supercaps/V_{cap+}")
+			(pintype "passive")
+			(uuid "3372313b-ccd4-4941-8d3c-813d980e58da")
+		)
+		(pad "2" thru_hole circle
+			(at 7.5 0)
+			(size 2 2)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 2 "/Supercaps/V_{cap-}")
+			(pintype "passive")
+			(uuid "16e5884b-1048-4413-ab39-8857389e9714")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Radial_D18.0mm_H35.5mm_P7.50mm.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Capacitor_THT:C_Radial_D18.0mm_H35.5mm_P7.50mm"
+		(layer "F.Cu")
+		(uuid "36bf0186-ddd3-49f0-b9df-e527f8c30951")
+		(at 79.875 101.525)
+		(descr "C, Radial series, Radial, pin pitch=7.50mm, diameter=18mm, height=35.5mm, Non-Polar Electrolytic Capacitor")
+		(tags "C Radial series Radial pin pitch 7.50mm diameter 18mm height 35.5mm Non-Polar Electrolytic Capacitor")
+		(property "Reference" "C4"
+			(at 11.35 -8.455 0)
+			(layer "F.SilkS")
+			(uuid "f5f3650a-ad61-482a-ad09-4dc1979b9925")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "110"
+			(at 3.75 10.25 0)
+			(layer "F.Fab")
+			(uuid "64af3276-7e4a-48dc-b8e0-da26a09852d7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.cde.com/resources/catalogs/DSF.pdf"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9f74e43f-f678-448f-935c-7b28dc26b14b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Supercapacitor"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "923a066b-249b-4f33-a96c-6bb35fe07536")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" "598-DSF117Q3R0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "45557383-81b3-4e26-ab25-98e2b8443c11")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Voltage Rating" "3V"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e06ef0ba-a3ca-4b15-820e-c7381ae17a02")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "DSF117Q3R0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f9c4a7a6-9c9c-4da2-bc98-86c99236a521")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9d1eff59-fd7a-406f-9a5d-fe4d0c1cb823")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "C_*")
+		(path "/c4c58492-09b0-47dd-a7f6-99bc88243ff5/765c13c9-9c38-4b40-a073-a35c902724c2")
+		(sheetname "/Supercaps/")
+		(sheetfile "supercap_board.kicad_sch")
+		(attr through_hole exclude_from_bom)
+		(fp_circle
+			(center 3.75 0)
+			(end 12.87 0)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "23b68283-ec87-4bc6-86de-982cc101e497")
+		)
+		(fp_circle
+			(center 3.75 0)
+			(end 13 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "461c0ce5-3030-4ecf-abf8-e09b8cdd6a71")
+		)
+		(fp_circle
+			(center 3.75 0)
+			(end 12.75 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "b76f10c9-cd93-43b1-aa5c-6f813eccab48")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 3.75 0 0)
+			(layer "F.Fab")
+			(uuid "f61c262f-e7f5-46c2-8ede-0cf7c5481f55")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole circle
+			(at 0 0)
+			(size 2 2)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 1 "/Supercaps/V_{cap+}")
+			(pintype "passive")
+			(uuid "ba0f3d57-a5aa-4605-87d9-ab6a2f5562e9")
+		)
+		(pad "2" thru_hole circle
+			(at 7.5 0)
+			(size 2 2)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 2 "/Supercaps/V_{cap-}")
+			(pintype "passive")
+			(uuid "051e4439-aa3b-4ab2-a2af-c0062cfc7393")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Radial_D18.0mm_H35.5mm_P7.50mm.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Capacitor_THT:C_Radial_D18.0mm_H35.5mm_P7.50mm"
+		(layer "F.Cu")
+		(uuid "417c94d5-1a95-4788-8fcd-fb814fe424ad")
+		(at 79.825 64.325)
+		(descr "C, Radial series, Radial, pin pitch=7.50mm, diameter=18mm, height=35.5mm, Non-Polar Electrolytic Capacitor")
+		(tags "C Radial series Radial pin pitch 7.50mm diameter 18mm height 35.5mm Non-Polar Electrolytic Capacitor")
+		(property "Reference" "C2"
+			(at 11.55 -8.505 0)
+			(layer "F.SilkS")
+			(uuid "c3d47bac-443f-484e-8902-4309568d4ccb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "110"
+			(at 3.75 10.25 0)
+			(layer "F.Fab")
+			(uuid "1a8eca0a-a06a-4be4-bb48-a703a3a273b8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.cde.com/resources/catalogs/DSF.pdf"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a735860f-27e0-47e6-ba4c-2c26f5ff32ef")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Supercapacitor"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1fca4fb9-67a9-4c4d-af9e-9964d92b8a53")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" "598-DSF117Q3R0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "79153338-abf4-4b10-9401-8a014cebd112")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Voltage Rating" "3V"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "40dbe40a-4b36-4427-9da4-38ecfed96bf3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "DSF117Q3R0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cd17b9de-e24c-4d6c-a96d-0f427ff58566")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4c3fe647-00b7-49cf-bdac-091765d13852")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "C_*")
+		(path "/c4c58492-09b0-47dd-a7f6-99bc88243ff5/0d5ddda2-4cd0-47bb-900f-fb6ba305672d")
+		(sheetname "/Supercaps/")
+		(sheetfile "supercap_board.kicad_sch")
+		(attr through_hole exclude_from_bom)
+		(fp_circle
+			(center 3.75 0)
+			(end 12.87 0)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "49666c1e-f4f9-4054-acf9-f8bbd37b9d89")
+		)
+		(fp_circle
+			(center 3.75 0)
+			(end 13 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "4acaea81-a294-44a1-85b3-02fa5e7becd1")
+		)
+		(fp_circle
+			(center 3.75 0)
+			(end 12.75 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "ea2c56f9-993e-4359-9e1a-eddd7f57576d")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 3.75 0 0)
+			(layer "F.Fab")
+			(uuid "bc6e5851-30f2-4506-9229-b1e74b8246e4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole circle
+			(at 0 0)
+			(size 2 2)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 1 "/Supercaps/V_{cap+}")
+			(pintype "passive")
+			(uuid "e464fb16-8f34-475c-8fa6-3c82f14ffb1d")
+		)
+		(pad "2" thru_hole circle
+			(at 7.5 0)
+			(size 2 2)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 2 "/Supercaps/V_{cap-}")
+			(pintype "passive")
+			(uuid "d843fbf3-af6d-4a64-9801-0920e9f82400")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Radial_D18.0mm_H35.5mm_P7.50mm.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Capacitor_THT:C_Radial_D18.0mm_H35.5mm_P7.50mm"
+		(layer "F.Cu")
+		(uuid "49d4b583-4532-4e8f-bdc0-2a2fa7cf7be0")
+		(at 79.875 45.725)
+		(descr "C, Radial series, Radial, pin pitch=7.50mm, diameter=18mm, height=35.5mm, Non-Polar Electrolytic Capacitor")
+		(tags "C Radial series Radial pin pitch 7.50mm diameter 18mm height 35.5mm Non-Polar Electrolytic Capacitor")
+		(property "Reference" "C1"
+			(at 11.6 -8.665 0)
+			(layer "F.SilkS")
+			(uuid "aa25c37e-6c61-4223-91cd-d9793311f92a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "110"
+			(at 3.75 10.25 0)
+			(layer "F.Fab")
+			(uuid "3c705fc2-6fb1-4753-ab88-82255470c05b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.cde.com/resources/catalogs/DSF.pdf"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d7006ede-9ce6-44c3-8bcb-42cf7ff0807d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Supercapacitor"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c37bd2fd-7732-4d7b-999e-7256d21c4c37")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" "598-DSF117Q3R0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e3b31fd8-c844-4a1d-9469-1581365e4187")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Voltage Rating" "3V"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7628fc0b-ce95-4ef6-a89a-25719fcf880c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "DSF117Q3R0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e1b96eca-a2de-4fc1-9b0d-ea190192895e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "65004ac1-e8c8-427d-8783-6eab3177057f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "C_*")
+		(path "/c4c58492-09b0-47dd-a7f6-99bc88243ff5/27ab3653-2e47-4688-9d52-0367b3f51349")
+		(sheetname "/Supercaps/")
+		(sheetfile "supercap_board.kicad_sch")
+		(attr through_hole exclude_from_bom)
+		(fp_circle
+			(center 3.75 0)
+			(end 12.87 0)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "3c7ee480-74db-4c44-939b-d182dc5e5dfe")
+		)
+		(fp_circle
+			(center 3.75 0)
+			(end 13 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "12e3b8c3-ea1a-4734-bd04-937fdc0ae904")
+		)
+		(fp_circle
+			(center 3.75 0)
+			(end 12.75 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "4153d501-2800-469d-a6be-93278682927e")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 3.75 0 0)
+			(layer "F.Fab")
+			(uuid "5c8aa0b8-b2a5-48e0-bdcb-b1a2c53b9bee")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole circle
+			(at 0 0)
+			(size 2 2)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 1 "/Supercaps/V_{cap+}")
+			(pintype "passive")
+			(uuid "1c30144e-58da-4b14-b744-2310b940940b")
+		)
+		(pad "2" thru_hole circle
+			(at 7.5 0)
+			(size 2 2)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 2 "/Supercaps/V_{cap-}")
+			(pintype "passive")
+			(uuid "65ab0e47-ef04-495a-89ae-460a0e582dc5")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Radial_D18.0mm_H35.5mm_P7.50mm.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Connector_AMASS:AMASS_XT30UPB-F_1x02_P5.0mm_Vertical"
+		(layer "F.Cu")
+		(uuid "e6d3ccf6-c672-40ec-8fe9-6686c41415ff")
+		(at 86.175 33.225 180)
+		(descr "Connector XT30 Vertical PCB Female, https://www.tme.eu/Document/81f11ca924696756331f21b972812074/XT30PB-F.pdf")
+		(tags "RC Connector XT30")
+		(property "Reference" "J1"
+			(at 9.2 1.75 0)
+			(layer "F.SilkS")
+			(uuid "3345e546-deee-46c1-9a30-ca3d350eb5c7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02_Pin"
+			(at 2.5 4 0)
+			(layer "F.Fab")
+			(uuid "1c675693-918c-4dbd-9b32-9b218404f091")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a68d2ad7-293a-4f5e-880a-7aaacdec74d9")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b17f4ed5-bd8b-4b15-ae5a-74d6f88f61fe")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Connector*:*_1x??_*")
+		(path "/6375bfec-6dc1-4d64-8c01-22129522c1a7")
+		(sheetname "/")
+		(sheetfile "Standalone Board.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start 7.71 -2.71)
+			(end 7.71 2.71)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "5a8580e6-7bd6-454e-9075-e0792d5f0cbb")
+		)
+		(fp_line
+			(start -1.01 2.71)
+			(end 7.71 2.71)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "b7a08660-2438-4995-ae79-e23cc60092cc")
+		)
+		(fp_line
+			(start -1.01 -2.71)
+			(end 7.71 -2.71)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "d127540e-e893-4677-93cf-442950f87fb8")
+		)
+		(fp_line
+			(start -2.71 1.41)
+			(end -1.01 2.71)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "eddc88f5-55c4-4430-aace-c1baa162cc3c")
+		)
+		(fp_line
+			(start -2.71 -1.41)
+			(end -1.01 -2.71)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "01d20d3a-1434-4499-8bac-8f0dd1f01209")
+		)
+		(fp_line
+			(start -2.71 -1.41)
+			(end -2.71 1.41)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "22fcd622-dfec-42db-b51c-46e9335a3269")
+		)
+		(fp_line
+			(start 8.1 -3.1)
+			(end 8.1 3.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "75d44634-37e5-42cb-822f-b1fe79124980")
+		)
+		(fp_line
+			(start -1.4 3.1)
+			(end 8.1 3.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "0997963f-ba78-4b87-8456-ae961e3935d1")
+		)
+		(fp_line
+			(start -1.4 -3.1)
+			(end 8.1 -3.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "0b72bcda-9185-4fd6-af87-581d05ae793a")
+		)
+		(fp_line
+			(start -3.1 1.8)
+			(end -1.4 3.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "25ebe247-b554-487b-a2d8-d9884d98008d")
+		)
+		(fp_line
+			(start -3.1 -1.8)
+			(end -1.4 -3.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "5a7b65ba-b2a1-495a-ad45-ff1062de19f7")
+		)
+		(fp_line
+			(start -3.1 -1.8)
+			(end -3.1 1.8)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "37a22dea-84d6-48ed-a860-f987bbcc6dd8")
+		)
+		(fp_line
+			(start 7.6 -2.6)
+			(end 7.6 2.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "9dec382a-8208-4147-a482-8ecd23ed60f3")
+		)
+		(fp_line
+			(start -0.9 2.6)
+			(end 7.6 2.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "5ce49625-a65e-474d-964c-012318737880")
+		)
+		(fp_line
+			(start -0.9 -2.6)
+			(end 7.6 -2.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "0615d62f-676f-4f0a-a95c-1fe3e28ac7db")
+		)
+		(fp_line
+			(start -2.6 1.3)
+			(end -0.9 2.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "49cf4a4b-50b1-489c-b882-8d8fad0f8394")
+		)
+		(fp_line
+			(start -2.6 -1.3)
+			(end -0.9 -2.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "b8373afc-1201-46af-9864-a12667c1d753")
+		)
+		(fp_line
+			(start -2.6 -1.3)
+			(end -2.6 1.3)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "a35c5703-3d2e-47af-aca4-f44321c332f7")
+		)
+		(fp_text user "+"
+			(at 9 0 0)
+			(layer "F.SilkS")
+			(uuid "be06b042-9b44-40d1-88d6-11b297f61475")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(fp_text user "-"
+			(at -4 0 0)
+			(layer "F.SilkS")
+			(uuid "cff4fb96-3137-4278-b2d8-c869efd3ce73")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.15)
+				)
+			)
+		)
+		(fp_text user "${REFERENCE}"
+			(at 2.5 0 0)
+			(layer "F.Fab")
+			(uuid "4b7351fc-636e-4e32-9923-df79b6d7b82c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole roundrect
+			(at 0 0 180)
+			(size 3 3)
+			(drill 1.8)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(roundrect_rratio 0.25)
+			(net 2 "/Supercaps/V_{cap-}")
+			(pinfunction "Pin_1")
+			(pintype "passive")
+			(uuid "8c0ec537-4b3b-492a-a83b-d7ef8895af7a")
+		)
+		(pad "2" thru_hole circle
+			(at 5 0 180)
+			(size 3 3)
+			(drill 1.8)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 1 "/Supercaps/V_{cap+}")
+			(pinfunction "Pin_2")
+			(pintype "passive")
+			(uuid "d32c5ad5-9410-4acc-b093-a952df8dfd6f")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Connector_AMASS.3dshapes/AMASS_XT30UPB-F_1x02_P5.0mm_Vertical.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(gr_rect
+		(start 74.3 30.1)
+		(end 92.95 110.9)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "ce74c71f-b13d-4c5c-9b1e-4d6c4b1b058c")
+	)
+	(zone
+		(net 1)
+		(net_name "/Supercaps/V_{cap+}")
+		(layers "F.Cu" "B.Cu")
+		(uuid "ce93a150-b840-40a6-9815-0fab6a61b405")
+		(hatch edge 0.5)
+		(connect_pads yes
+			(clearance 0.5)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy 74.3 30.1) (xy 83.75 30.1) (xy 83.625 110.9) (xy 74.3 110.9)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(pts
+				(xy 83.187539 30.620185) (xy 83.233294 30.672989) (xy 83.2445 30.7245) (xy 83.2445 110.2755) (xy 83.224815 110.342539)
+				(xy 83.172011 110.388294) (xy 83.1205 110.3995) (xy 74.9245 110.3995) (xy 74.857461 110.379815)
+				(xy 74.811706 110.327011) (xy 74.8005 110.2755) (xy 74.8005 30.7245) (xy 74.820185 30.657461) (xy 74.872989 30.611706)
+				(xy 74.9245 30.6005) (xy 83.1205 30.6005)
+			)
+		)
+		(filled_polygon
+			(layer "B.Cu")
+			(pts
+				(xy 83.187539 30.620185) (xy 83.233294 30.672989) (xy 83.2445 30.7245) (xy 83.2445 110.2755) (xy 83.224815 110.342539)
+				(xy 83.172011 110.388294) (xy 83.1205 110.3995) (xy 74.9245 110.3995) (xy 74.857461 110.379815)
+				(xy 74.811706 110.327011) (xy 74.8005 110.2755) (xy 74.8005 30.7245) (xy 74.820185 30.657461) (xy 74.872989 30.611706)
+				(xy 74.9245 30.6005) (xy 83.1205 30.6005)
+			)
+		)
+	)
+	(zone
+		(net 2)
+		(net_name "/Supercaps/V_{cap-}")
+		(layers "F.Cu" "B.Cu")
+		(uuid "e0902f00-4d1d-4a1a-81fd-2edcd32fd7d9")
+		(hatch edge 0.5)
+		(connect_pads yes
+			(clearance 0.5)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy 83.75 30.1) (xy 93.2 30.1) (xy 93.075 110.9) (xy 83.75 110.9)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(pts
+				(xy 92.392539 30.620185) (xy 92.438294 30.672989) (xy 92.4495 30.7245) (xy 92.4495 110.2755) (xy 92.429815 110.342539)
+				(xy 92.377011 110.388294) (xy 92.3255 110.3995) (xy 83.874 110.3995) (xy 83.806961 110.379815) (xy 83.761206 110.327011)
+				(xy 83.75 110.2755) (xy 83.75 30.7245) (xy 83.769685 30.657461) (xy 83.822489 30.611706) (xy 83.874 30.6005)
+				(xy 92.3255 30.6005)
+			)
+		)
+		(filled_polygon
+			(layer "B.Cu")
+			(pts
+				(xy 92.392539 30.620185) (xy 92.438294 30.672989) (xy 92.4495 30.7245) (xy 92.4495 110.2755) (xy 92.429815 110.342539)
+				(xy 92.377011 110.388294) (xy 92.3255 110.3995) (xy 83.874 110.3995) (xy 83.806961 110.379815) (xy 83.761206 110.327011)
+				(xy 83.75 110.2755) (xy 83.75 30.7245) (xy 83.769685 30.657461) (xy 83.822489 30.611706) (xy 83.874 30.6005)
+				(xy 92.3255 30.6005)
+			)
+		)
+	)
+	(embedded_fonts no)
+)

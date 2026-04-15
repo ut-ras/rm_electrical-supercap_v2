@@ -514,6 +514,12 @@
 		)
 		(instances
 			(project "Supercap"
+				(path "/9616a728-958f-46be-9b23-7f91632a992a/c4c58492-09b0-47dd-a7f6-99bc88243ff5"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/79ba0ad0-1263-4d7e-82bc-d7cd5a71cdbf"
 					(reference "C2")
 					(unit 1)
@@ -619,6 +625,12 @@
 			(uuid "68554219-41f5-4600-9f92-56091c178257")
 		)
 		(instances
+			(project "Supercap"
+				(path "/9616a728-958f-46be-9b23-7f91632a992a/c4c58492-09b0-47dd-a7f6-99bc88243ff5"
+					(reference "C1")
+					(unit 1)
+				)
+			)
 			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/79ba0ad0-1263-4d7e-82bc-d7cd5a71cdbf"
 					(reference "C1")
@@ -731,6 +743,12 @@
 					(unit 1)
 				)
 			)
+			(project "SupercapHost 1B"
+				(path "/9616a728-958f-46be-9b23-7f91632a992a/c4c58492-09b0-47dd-a7f6-99bc88243ff5"
+					(reference "C3")
+					(unit 1)
+				)
+			)
 			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/79ba0ad0-1263-4d7e-82bc-d7cd5a71cdbf"
 					(reference "C3")
@@ -840,6 +858,12 @@
 			(project "SupercapHost 1B"
 				(path "/2a3f3601-51b7-41b9-b22b-93a593876f3f/2537d381-6dd1-4912-a8cc-ff3890783762"
 					(reference "C75")
+					(unit 1)
+				)
+			)
+			(project "SupercapHost 1B"
+				(path "/9616a728-958f-46be-9b23-7f91632a992a/c4c58492-09b0-47dd-a7f6-99bc88243ff5"
+					(reference "C4")
 					(unit 1)
 				)
 			)
