@@ -4000,7 +4000,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "IQDH35N03LM5CGSC"
+		(property "Manufacturer_Part_Number" "IQDH35N03LM5CGSCATMA1"
 			(at 100.965 71.12 0)
 			(effects
 				(font
@@ -4009,7 +4009,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "726-IQFH36N04NM6ATMA"
+		(property "Mouser Part Number" "726-IQDH35N03LM5CGSC"
 			(at 100.965 71.12 0)
 			(effects
 				(font
@@ -4630,7 +4630,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "IQDH35N03LM5CGSC"
+		(property "Manufacturer_Part_Number" "IQDH35N03LM5CGSCATMA1"
 			(at 100.965 54.61 0)
 			(effects
 				(font
@@ -4639,7 +4639,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "726-IQFH36N04NM6ATMA"
+		(property "Mouser Part Number" "726-IQDH35N03LM5CGSC"
 			(at 100.965 54.61 0)
 			(effects
 				(font
@@ -6216,7 +6216,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "IQDH35N03LM5CGSC"
+		(property "Manufacturer_Part_Number" "IQDH35N03LM5CGSCATMA1"
 			(at 179.705 54.61 0)
 			(effects
 				(font
@@ -6225,7 +6225,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "726-IQFH36N04NM6ATMA"
+		(property "Mouser Part Number" "726-IQDH35N03LM5CGSC"
 			(at 179.705 54.61 0)
 			(effects
 				(font
@@ -6946,7 +6946,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "IQDH35N03LM5CGSC"
+		(property "Manufacturer_Part_Number" "IQDH35N03LM5CGSCATMA1"
 			(at 179.705 71.12 0)
 			(effects
 				(font
@@ -6955,7 +6955,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "726-IQFH36N04NM6ATMA"
+		(property "Mouser Part Number" "726-IQDH35N03LM5CGSC"
 			(at 179.705 71.12 0)
 			(effects
 				(font
