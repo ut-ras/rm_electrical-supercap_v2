@@ -1,0 +1,136 @@
+\documentclass[]{report}
+
+
+% Title Page
+\title{Bringup Guide}
+\author{Egan Wang}
+
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+\pagebreak
+\chapter{Before Beginning}
+The goal of this paper is to provide a summary of the procedures required to fabricate the supercapacitor system and validate function. At the time of the writing of this document, this author will not be in Austin for the duration of the supercapacitor system's fabrication and testing, making direct supervision impossible. While videocalls and frequent communication can allow for an indirect approach to system bringup, the associated requirement for synchronicity causes reduced responsiveness due to internet latency as well as difficulties in scheduling testing time. By creating documentation for testing procedures, this document will both improve procedural efficiency as well as create institutional knowledge for future Robomaster teams to reference. 
+\section{Priorities}
+While a smooth system bringup is both not impossible and ideal, shortcomings in design and in procedure can force tradeoffs to be made. Following is a list of the priorities to be made when following the instructions in this document:
+\begin{enumerate}
+	\item \textbf{Safety.} This item is trivial. The supercapacitor system can store a maximum of 2 kJ of energy at full charge, sufficient to cause serious injury in the case of a failure. Furthermore, supercapacitor failures in particular carry the risk of hydrogen explosions in both overheating and overvoltage scenarios \cite{MAZLOOMIAN2025104115}. Utmost care should be taken to protect Robomaster team members from harm in every circumstance. 
+	\item \textbf{Overall Robot Functionality.} The supercapacitor system should not impede the functionality of the other system functions within the robot, including during failure modes. Given that the supercapacitor converter PCB routes chassis power from the PMM to the rest of the robot, this concern is particularly salient. 
+	\item \textbf{Discharging Behavior.} The supercapacitor system is designed first and foremost to supplement battery power in situations where battery power alone is not sufficient to meet the energy demands of the chassis. A supercapacitor system capable of charging but not discharging functionality is no better than no supercapacitor system at all. 
+	\item \textbf{Full Supercapacitor System Functionality.} The importance of this priority is obvious, notable only in its relative position in this list. 
+	\item \textbf{Efficiency.} Further improvements to aspects of the design can be considered at this point. 
+\end{enumerate}
+This prioritization should serve as a guide for handling situations in which this guide does not provide a clear answer. Great care should be taken to ensure that a lower priority does not take precedence over a higher priority. 
+\section{Requirements for Testing}
+At the time of this writing, system fabrication and characterization is expected to occur during 2026 summer, with the solar power labs in the EER being closed to students. The Texas Inventionworks Center in the same building will still be open, but its facilities may yet be limited. Following is a list of required equipment for fabrication and testing: 
+\begin{itemize}
+	\item 2 channels of 24VDC power to simulate +24V and MiniPC from the PMM
+	\item A 2-channel oscilloscope with \textbf{either:} 
+	\begin{itemize}
+		\item 1 set of differential probes
+		\item 2 oscilloscope channels with a "Math" functionality
+	\end{itemize}
+	\item Hot air soldering station
+	\item Soldering iron
+	\item Supplemental soldering equipment (wire cutters/strippers, tweezers)
+\end{itemize}
+Each Chapter of this work will include a list of required parts to be used for that specific Chapter, allowing fabrication and testing to begin even without all parts arriving. \par
+The following equipment is not required, but its presence will greatly ease the fabrication process:
+\begin{itemize}
+	\item A multimeter
+	\item A 4-channel oscilloscope instead of a 2-channel oscilloscope
+	\item A current measurement oscilloscope probe
+	\item Passive oscilloscope probes
+	\item A 3V3-capable signal generator (2 synchronized channels even better)
+\end{itemize}
+\chapter{Voltage Regulators}
+Being the components that power the rest of the system, the voltage regulators' proper function must be confirmed before other components can be connected to their outputs. It should be noted that this Chapter can be completed second instead of first in the case of shipping delays for the voltage regulator. Refer to Section \ref{voltageiwthpcb} for testing before gate drivers and Section \ref{voltagenopcb} for if testing and integration must occur after the steps of Chapter \ref{drivers} are completed. 
+\section{Required Components}
+\begin{itemize}
+	\item 2 horizontal XT30 input connectors
+	\item 1 12V voltage regulator
+	\item 1 3V3 voltage regulator
+\end{itemize}
+\section {Bringup With PCB Connection} \label{voltagewithpcb}
+\begin{enumerate}
+	\item Solder horizontal XT30 connectors to MiniPC and Vin
+	\item Solder regulators to board
+	\item Supply +24V to MiniPC and Vin, confirm 12V and 3V3 voltage regulator output
+\end{enumerate}
+\section{Bringup Without PCB Connection}\label{voltagenopcb}
+\begin{enumerate}
+	\item Attach power supply to voltage regulators via alligator clips or other solderless attachment
+	\item Confirm 12V and 3V3 voltage regulator output
+	\item Solder regulators to PCB
+	\item Solder horizontal XT30 connectors to PCB
+\end{enumerate}
+\chapter{Gate Driver Functionality} \label{drivers}
+The next most common cause of failure in a power converter comes from shoot-through, which occurs when both switches in a half-bridge are on simultaneously, resulting in a short between input voltage and ground. (Not good!) This Chapter will focus on ensuring proper gate driver functionality to prevent switch failures. 
+\section{Required Components}
+\begin{tabular}{|c|c|c|}
+	\hline
+	Component Name & Component Number & Quantity \\
+	\hline
+	Gate Driver & NCP5109ADR2G & 2 \\
+	\hline
+	Bootstrap Diode & V1P22HM3_A/H & 2 \\
+	\hline
+	Bootstrap Capacitor & MAJCT168BB7105KTEA01 & 2 \\
+	\hline
+	Decoupling Capacitor & CL10A475KO8NNNC & 2 \\
+	\hline
+	MOSFET & IQDH35N03LM5CGSC  & 4 \\
+	\hline
+	2x10 Pin Header & TODO: add part number & 1 \\
+	\hline
+\end{tabular}
+\section{Procedure: Fabrication Without Switches}
+Gate drivers are fickle creatures. Some devices will work with incomplete bootstrap circuitry, some don't, and some require the MOSFETs to be installed too. Expect to be chained to the oscilloscope.
+\begin{enumerate}
+	\item Solder gate drivers, bootstrap capacitors/diodes, and decoupling capacitors to PCB. (Make sure bootstrap diodes are installed in the correct direction!)
+	\item \textbf{Depending on regulator status:}
+	\begin{enumerate}
+		\item \textbf{If regulators are not installed,} jumper +12V to DC power supply set to 12VDC output.
+		\item \textbf{If regulators are installed,} connect Vin to DC power supply set to 24VDC output.
+	\end{enumerate}
+	\item \textbf{Depending on MCU status:}
+	\begin{enumerate}
+		\item \textbf{If MCU is available,} solder 2x10 header pin to top side of board and connect MCU.
+		\item \textbf{If MCU is unavailable,} temporarily connect signal generator to Lin and Hin nets. 
+	\end{enumerate}
+	\item Configure the signal output (MCU or signal generator) to output a 50\% duty cycle square wave at 120kHz. (If possible, make Hin and Lin complementary square waves.) 
+\end{enumerate}
+Measure the output of each gate driver. 
+\section{Gate Driver Bringup: Debugging}
+It is quite likely that the gate driver does not operate properly. Unfortunately, it is not feasible to include specific instructions for every possible issue that could arise during gate driver debugging. Consider the following: 
+\begin{itemize}
+	\item \textbf{Read the datasheet!}
+	\item Some gate drivers are "too smart for their own good" and do not function unless connected to a MOSFET to drive. Try attaching the MOSFETs as a first resort. 
+	\item Make sure the bootstrap diodes are oriented correctly!
+	\item Check part numbers and ensure that all component values match. 
+	\item Check if input signals are staying consistent. 
+	\item Gate drivers can take suprising amounts of current. Ensure the DC power supply isn't current-limited. 
+\end{itemize}
+Anything beyond this will have to be improvised. Make hypotheses, read datasheets, and devise experiments to make progress towards successful gate driver function. It would be particularly helpful to understand gate driver loops and the inner workings of gate drivers, especially the level shifters that allow high-side operation. 
+\chapter{Open-Loop Power Stage Testing}
+Time to test the power stage. 
+\section{Required Components}
+\begin{tabular}{|c|c|c|}
+	\hline
+	Component Name & Component Number & Quantity \\
+	\hline
+	Power Inductor & - & 1 \\
+	\hline
+	Filter Inductor & - & 1 \\
+	\hline
+	Current Sensor & ACS71240KEXBLT-010B3  & 1 \\
+	\hline
+\end{tabular}
+\chapter{Closed-Loop Control}
+Closed-loop control brings it all together. 
+\vspace{1cm}
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+\end{document}

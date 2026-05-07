@@ -497,6 +497,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 97.79 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "41a52b2a-893a-409b-a41e-b276a5c9d8cc")
 		)
@@ -504,6 +513,12 @@
 			(uuid "a439d0ee-4f76-4242-989d-f96f7b8773c6")
 		)
 		(instances
+			(project "Supercap"
+				(path "/9616a728-958f-46be-9b23-7f91632a992a/c4c58492-09b0-47dd-a7f6-99bc88243ff5"
+					(reference "C2")
+					(unit 1)
+				)
+			)
 			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/79ba0ad0-1263-4d7e-82bc-d7cd5a71cdbf"
 					(reference "C2")
@@ -594,6 +609,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 86.36 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ae174428-bb5e-4d5e-9db2-2f0fd614b2e3")
 		)
@@ -601,6 +625,12 @@
 			(uuid "68554219-41f5-4600-9f92-56091c178257")
 		)
 		(instances
+			(project "Supercap"
+				(path "/9616a728-958f-46be-9b23-7f91632a992a/c4c58492-09b0-47dd-a7f6-99bc88243ff5"
+					(reference "C1")
+					(unit 1)
+				)
+			)
 			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/79ba0ad0-1263-4d7e-82bc-d7cd5a71cdbf"
 					(reference "C1")
@@ -691,6 +721,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 109.22 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "34428d66-cada-4368-a2be-d19972eeff2f")
 		)
@@ -701,6 +740,12 @@
 			(project "SupercapHost 1B"
 				(path "/2a3f3601-51b7-41b9-b22b-93a593876f3f/2537d381-6dd1-4912-a8cc-ff3890783762"
 					(reference "C74")
+					(unit 1)
+				)
+			)
+			(project "SupercapHost 1B"
+				(path "/9616a728-958f-46be-9b23-7f91632a992a/c4c58492-09b0-47dd-a7f6-99bc88243ff5"
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -794,6 +839,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 120.65 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ded5d6ee-30d2-4909-b2cc-7801e08998ae")
 		)
@@ -804,6 +858,12 @@
 			(project "SupercapHost 1B"
 				(path "/2a3f3601-51b7-41b9-b22b-93a593876f3f/2537d381-6dd1-4912-a8cc-ff3890783762"
 					(reference "C75")
+					(unit 1)
+				)
+			)
+			(project "SupercapHost 1B"
+				(path "/9616a728-958f-46be-9b23-7f91632a992a/c4c58492-09b0-47dd-a7f6-99bc88243ff5"
+					(reference "C4")
 					(unit 1)
 				)
 			)

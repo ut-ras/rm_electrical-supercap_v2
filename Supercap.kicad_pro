@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -534,7 +534,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "Gerbers_Drills/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -545,7 +545,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "${PROJECTNAME}.csv",
+    "bom_export_filename": "bom\\Supercap from schematic.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -582,7 +582,7 @@
           "group_by": true,
           "label": "DNP",
           "name": "${DNP}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
@@ -709,14 +709,20 @@
           "label": "Distributor",
           "name": "Distributor",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Digi-Key Part Number",
+          "name": "Digi-Key Part Number",
+          "show": true
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
       "name": "",
-      "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_asc": false,
+      "sort_field": "${EXCLUDE_FROM_BOM}"
     },
     "connection_grid_size": 50.0,
     "drawing": {
@@ -782,10 +788,6 @@
     [
       "66de8ce3-68f9-4d35-858c-1420192a373c",
       "Voltage Converter"
-    ],
-    [
-      "79ba0ad0-1263-4d7e-82bc-d7cd5a71cdbf",
-      "Supercap Board"
     ]
   ],
   "text_variables": {}

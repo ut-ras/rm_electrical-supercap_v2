@@ -460,18 +460,6 @@
 		)
 		(uuid 0194a188-c5ca-4056-97a9-14f0a4f9e6ca)
 	)
-	(rectangle
-		(start 215.9 81.28)
-		(end 233.68 99.06)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 438631e8-d236-4ee7-afe5-8bbeb9f1845b)
-	)
 	(arc
 		(start 130.81 93.98)
 		(mid 130.0661 95.7761)
@@ -545,15 +533,15 @@
 		)
 		(uuid "88cb5a9c-087a-4a64-913d-4c2656b69c3e")
 	)
-	(text "4P\nCapacitors"
+	(text "12V Gate Driver\n3V3 Signals"
 		(exclude_from_sim no)
-		(at 241.3 89.916 0)
+		(at 72.136 90.043 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1.905 1.905)
 			)
 		)
-		(uuid "f49d5371-c37e-4bde-9cb5-1b595da736a5")
+		(uuid "dd157a63-5a94-406e-af3c-664e0a3893a2")
 	)
 	(junction
 		(at 67.31 60.96)
@@ -562,10 +550,10 @@
 		(uuid "01093ecf-0c1b-43db-9687-7af601a8b0a9")
 	)
 	(junction
-		(at 205.74 97.79)
+		(at 201.93 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "44bfd890-55ba-4963-834d-c0ea07085f98")
+		(uuid "388f7171-309a-464d-8043-eae344c59549")
 	)
 	(junction
 		(at 177.8 60.96)
@@ -573,15 +561,11 @@
 		(color 0 0 0 0)
 		(uuid "91f1507c-2d48-494e-bf0c-c0cd86c249c4")
 	)
-	(polyline
-		(pts
-			(xy 224.79 91.44) (xy 224.79 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "051ec93e-7ed4-4ee8-87a9-12e4ee71feba")
+	(junction
+		(at 205.74 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d14cd980-c197-4396-8a38-54f2a164a4ca")
 	)
 	(polyline
 		(pts
@@ -602,6 +586,16 @@
 			(type default)
 		)
 		(uuid "0db1334a-1e92-4d1d-989d-7dd32c783529")
+	)
+	(wire
+		(pts
+			(xy 152.4 97.79) (xy 152.4 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e1d2fe9-2a5a-4dc5-8d84-2f2edb6e3e76")
 	)
 	(wire
 		(pts
@@ -662,26 +656,6 @@
 			(type default)
 		)
 		(uuid "2149721d-b8e8-4642-a8e5-9e341bcffbc9")
-	)
-	(polyline
-		(pts
-			(xy 218.44 91.44) (xy 231.14 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2286779c-e719-4058-a5ec-6a586f6e3572")
-	)
-	(wire
-		(pts
-			(xy 153.67 106.68) (xy 153.67 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "22b6a116-60f1-498b-9704-62096fbd02c6")
 	)
 	(wire
 		(pts
@@ -755,16 +729,6 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 97.79) (xy 151.13 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4839b1f7-d953-4fed-9fff-6d874c06170e")
-	)
-	(wire
-		(pts
 			(xy 92.71 82.55) (xy 102.87 82.55)
 		)
 		(stroke
@@ -772,6 +736,16 @@
 			(type default)
 		)
 		(uuid "4c0f419a-6c02-4312-b507-a67fb98520f2")
+	)
+	(wire
+		(pts
+			(xy 198.12 82.55) (xy 201.93 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4cd47894-afa8-4654-9462-4857a97fba97")
 	)
 	(wire
 		(pts
@@ -843,16 +817,6 @@
 		)
 		(uuid "5b0c3dc2-2b0c-4833-aa9c-a015474734e7")
 	)
-	(wire
-		(pts
-			(xy 151.13 109.22) (xy 203.2 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "63f6860b-d19f-4d6b-9bdd-70be6209d491")
-	)
 	(polyline
 		(pts
 			(xy 129.54 87.63) (xy 132.08 87.63)
@@ -862,6 +826,16 @@
 			(type solid)
 		)
 		(uuid "6407c53e-bb3e-4898-921a-524d504b3d18")
+	)
+	(wire
+		(pts
+			(xy 201.93 82.55) (xy 201.93 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "670eae05-9616-4a2b-a7dd-e26ad72a6df7")
 	)
 	(polyline
 		(pts
@@ -882,16 +856,6 @@
 			(type solid)
 		)
 		(uuid "6823e25c-ab6a-4b8f-8e72-a0e17316e3d7")
-	)
-	(polyline
-		(pts
-			(xy 218.44 88.9) (xy 231.14 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "685a9f7b-f93c-4d41-845e-ac164efc0a92")
 	)
 	(polyline
 		(pts
@@ -923,15 +887,15 @@
 		)
 		(uuid "6e34c7eb-99d1-41db-aabd-eedeed5791c5")
 	)
-	(polyline
+	(wire
 		(pts
-			(xy 224.79 85.09) (xy 224.79 88.9)
+			(xy 201.93 82.55) (xy 210.82 82.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6ed79eaa-d599-405a-be7e-f6cfddc20016")
+		(uuid "75100730-1bee-47ab-af1c-eb4060019bc4")
 	)
 	(polyline
 		(pts
@@ -965,7 +929,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 97.79) (xy 205.74 97.79)
+			(xy 198.12 85.09) (xy 205.74 85.09)
 		)
 		(stroke
 			(width 0)
@@ -983,6 +947,16 @@
 		)
 		(uuid "86b25ea9-84ea-43f4-9169-1171ef1e05b4")
 	)
+	(wire
+		(pts
+			(xy 144.78 97.79) (xy 152.4 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86f370b0-0399-425e-be63-a5580e32b7ab")
+	)
 	(polyline
 		(pts
 			(xy 115.57 93.98) (xy 118.11 93.98)
@@ -993,16 +967,6 @@
 		)
 		(uuid "87810788-1494-47d8-93e1-173931c11177")
 	)
-	(wire
-		(pts
-			(xy 153.67 95.25) (xy 144.78 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8b7325c4-f6d0-40ba-8576-f752550380d4")
-	)
 	(polyline
 		(pts
 			(xy 123.19 97.79) (xy 123.19 95.25)
@@ -1012,16 +976,6 @@
 			(type solid)
 		)
 		(uuid "8ceba1ff-30c1-400b-903f-4996f10fecde")
-	)
-	(wire
-		(pts
-			(xy 151.13 97.79) (xy 151.13 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8e7a8eca-f3cd-46a5-ba0b-bd0f2c648914")
 	)
 	(wire
 		(pts
@@ -1043,16 +997,6 @@
 		)
 		(uuid "93c4fd3c-2993-4973-9a68-89ae8150b4b7")
 	)
-	(wire
-		(pts
-			(xy 198.12 82.55) (xy 200.66 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "95759545-6599-4014-a8b6-2c76ffc0c551")
-	)
 	(polyline
 		(pts
 			(xy 129.54 93.98) (xy 132.08 93.98)
@@ -1062,26 +1006,6 @@
 			(type solid)
 		)
 		(uuid "9c0492a1-7578-4e0b-a2ca-ce4781e42db8")
-	)
-	(wire
-		(pts
-			(xy 200.66 106.68) (xy 153.67 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d7fe55d-c742-4898-bae2-b10933209dbe")
-	)
-	(wire
-		(pts
-			(xy 203.2 109.22) (xy 203.2 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9e232060-9192-4b36-865a-60035e70cc0c")
 	)
 	(polyline
 		(pts
@@ -1145,7 +1069,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 97.79) (xy 205.74 111.76)
+			(xy 205.74 85.09) (xy 205.74 111.76)
 		)
 		(stroke
 			(width 0)
@@ -1195,13 +1119,13 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 97.79) (xy 208.28 97.79)
+			(xy 205.74 85.09) (xy 210.82 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b1e6c30a-68ea-459a-8bb7-b5495e076f00")
+		(uuid "b7cc7d6d-af63-4c56-9b1e-469036f4de70")
 	)
 	(wire
 		(pts
@@ -1235,13 +1159,13 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 82.55) (xy 208.28 82.55)
+			(xy 152.4 107.95) (xy 201.93 107.95)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bb61c172-bbfc-4752-99db-d27c6d7a196b")
+		(uuid "bffebd16-dc5c-4655-b2d3-b220c018a9d7")
 	)
 	(polyline
 		(pts
@@ -1252,16 +1176,6 @@
 			(type solid)
 		)
 		(uuid "c1eb1cc5-dfc2-46f8-abeb-05b7465cb635")
-	)
-	(wire
-		(pts
-			(xy 200.66 82.55) (xy 200.66 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c6fc7146-5c1c-4f8f-89f1-5c0c9cc8eca3")
 	)
 	(wire
 		(pts
@@ -1514,7 +1428,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_AMASS:AMASS_XT30PW-F_1x02_P2.50mm_Horizontal"
+		(property "Footprint" "Robomaster_Conn:AMASS_XT30PW-F_1x02_P2.50mm_Horizontal"
 			(at 38.1 82.55 0)
 			(effects
 				(font
@@ -1533,6 +1447,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 38.1 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
 			(at 38.1 82.55 0)
 			(effects
 				(font
@@ -1582,7 +1505,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_AMASS:AMASS_XT30PW-F_1x02_P2.50mm_Horizontal"
+		(property "Footprint" "Robomaster_Conn:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal"
 			(at 54.61 63.5 0)
 			(effects
 				(font
@@ -1609,6 +1532,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Part Number" ""
+			(at 54.61 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "72335da9-1d7b-42fd-9a58-770bdf8165b7")
 		)
@@ -1619,6 +1551,82 @@
 			(project ""
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f"
 					(reference "V_{in}1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 215.9 85.09 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "7528eb07-75a2-4384-b1b3-4bd29ab8adb5")
+		(property "Reference" "V_{sc}1"
+			(at 224.155 85.344 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02_Pin"
+			(at 224.155 82.804 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Robomaster_Conn:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal"
+			(at 215.9 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 215.9 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 215.9 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3c5201c8-6a38-42c8-b902-91ecce3bd9e6")
+		)
+		(pin "1"
+			(uuid "4f9f843e-ef71-4d62-9683-3c3c8b69ac8f")
+		)
+		(instances
+			(project "Supercap"
+				(path "/98ee8313-37ab-4329-91ab-b5710476f82f"
+					(reference "V_{sc}1")
 					(unit 1)
 				)
 			)
@@ -1715,7 +1723,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_AMASS:AMASS_XT30PW-F_1x02_P2.50mm_Horizontal"
+		(property "Footprint" "Robomaster_Conn:AMASS_XT30PW-F_1x02_P2.50mm_Horizontal"
 			(at 237.49 63.5 0)
 			(effects
 				(font
@@ -1734,6 +1742,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 237.49 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Part Number" ""
 			(at 237.49 63.5 0)
 			(effects
 				(font
@@ -2010,7 +2027,7 @@
 			)
 		)
 		(pin "V_{cap-}" bidirectional
-			(at 198.12 97.79 0)
+			(at 198.12 85.09 0)
 			(uuid "ae36639c-949f-401d-997b-22d41b5daa44")
 			(effects
 				(font
@@ -2023,68 +2040,6 @@
 			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f"
 					(page "4")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 208.28 77.47)
-		(size 41.91 25.4)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "79ba0ad0-1263-4d7e-82bc-d7cd5a71cdbf")
-		(property "Sheetname" "Supercap Board"
-			(at 208.28 76.7584 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Supercap_Board/supercap_board.kicad_sch"
-			(at 208.28 103.4546 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "V_{cap+}" bidirectional
-			(at 208.28 82.55 180)
-			(uuid "3a6bb0a0-1eba-47fa-b919-597e70522433")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "V_{cap-}" bidirectional
-			(at 208.28 97.79 180)
-			(uuid "d81a5055-0619-4998-83b1-0351b1ff516e")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(instances
-			(project "Supercap"
-				(path "/98ee8313-37ab-4329-91ab-b5710476f82f"
-					(page "5")
 				)
 			)
 		)
@@ -2191,16 +2146,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-			)
-		)
-		(pin "I_{L,out+}" bidirectional
-			(at 144.78 95.25 0)
-			(uuid "4a993b8f-22ae-4ef0-8c8f-3b08c4be602d")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 		(pin "V_{sc,+}" bidirectional
