@@ -46,13 +46,19 @@ The following equipment is not required, but its presence will greatly ease the 
 	\item A 3V3-capable signal generator (2 synchronized channels even better)
 \end{itemize}
 \chapter{Voltage Regulators}
-Being the components that power the rest of the system, the voltage regulators' proper function must be confirmed before other components can be connected to their outputs. It should be noted that this Chapter can be completed second instead of first in the case of shipping delays for the voltage regulator. Refer to Section \ref{voltageiwthpcb} for testing before gate drivers and Section \ref{voltagenopcb} for if testing and integration must occur after the steps of Chapter \ref{drivers} are completed. 
+Being the components that power the rest of the system, the voltage regulators' proper function must be confirmed before other components can be connected to their outputs. It should be noted that this Chapter can be completed second instead of first in the case of shipping delays for the voltage regulator. Refer to Section \ref{voltagewithpcb} for testing before gate drivers and Section \ref{voltagenopcb} for if testing and integration must occur after the steps of Chapter \ref{drivers} are completed. 
 \section{Required Components}
-\begin{itemize}
-	\item 2 horizontal XT30 input connectors
-	\item 1 12V voltage regulator
-	\item 1 3V3 voltage regulator
-\end{itemize}
+\begin{tabular}{|c|c|c|}
+	\hline
+	\textbf{Component Name} & \textbf{Component Number} & \textbf{Quantity} \\
+	\hline
+	Horizontal XT30 input connector& - & 2 \\
+	\hline
+	12V voltage regulator & P7812B-1000 & 1 \\
+	\hline
+	3V3 voltage regulator & P7803B-1000  & 1 \\
+	\hline
+\end{tabular}
 \section {Bringup With PCB Connection} \label{voltagewithpcb}
 \begin{enumerate}
 	\item Solder horizontal XT30 connectors to MiniPC and Vin
@@ -71,11 +77,11 @@ The next most common cause of failure in a power converter comes from shoot-thro
 \section{Required Components}
 \begin{tabular}{|c|c|c|}
 	\hline
-	Component Name & Component Number & Quantity \\
+	\textbf{Component Name} & \textbf{Component Number} & \textbf{Quantity} \\
 	\hline
 	Gate Driver & NCP5109ADR2G & 2 \\
 	\hline
-	Bootstrap Diode & V1P22HM3_A/H & 2 \\
+	Bootstrap Diode & V1P22HM3\_A/H & 2 \\
 	\hline
 	Bootstrap Capacitor & MAJCT168BB7105KTEA01 & 2 \\
 	\hline
@@ -119,15 +125,20 @@ Time to test the power stage.
 \section{Required Components}
 \begin{tabular}{|c|c|c|}
 	\hline
-	Component Name & Component Number & Quantity \\
+	\textbf{Component Name} & \textbf{Component Number} & \textbf{Quantity} \\
 	\hline
-	Power Inductor & - & 1 \\
+	Power Inductor (ETD44 Core) & - & 1 \\
 	\hline
-	Filter Inductor & - & 1 \\
+	Filter Inductor (ETD29 Core) & - & 1 \\
+	\hline
+	Filter Capacitor & GRM188R6YA106MA73D  & 4 \\
+	\hline
+	Filter Resistor & ERJ-H3QD3R30V & 1 \\
 	\hline
 	Current Sensor & ACS71240KEXBLT-010B3  & 1 \\
 	\hline
 \end{tabular}
+\section{Separate DC Load}
 \chapter{Closed-Loop Control}
 Closed-loop control brings it all together. 
 \vspace{1cm}

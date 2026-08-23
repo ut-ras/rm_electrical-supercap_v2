@@ -1,14 +1,14 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.3.19)  5 MAY 2026 01:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.3.23)  8 MAY 2026 22:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./template_Report.tex
-(template_Report.tex
+**./Bringup_Guide.tex
+(Bringup_Guide.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
-(C:\Users\eganw\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
+(C:\Users\dhakk\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
 Document Class: report 2025/01/22 v1.4n Standard LaTeX document class
-(C:\Users\eganw\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+(C:\Users\dhakk\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
 File: size10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count275
@@ -24,12 +24,12 @@ File: size10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 \belowcaptionskip=\skip50
 \bibindent=\dimen148
 )
-(C:\Users\eganw\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+(C:\Users\dhakk\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count284
-) (template_Report.aux)
-\openout1 = `template_Report.aux'.
+) (Bringup_Guide.aux)
+\openout1 = `Bringup_Guide.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
@@ -53,15 +53,15 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 10.
  [1
 
-{C:/Users/eganw/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (template_Re
-port.toc
+{C:/Users/dhakk/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (Bringup_Gui
+de.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 2.
 )
 \tf@toc=\write3
-\openout3 = `template_Report.toc'.
+\openout3 = `Bringup_Guide.toc'.
 
  [1
 
@@ -71,47 +71,47 @@ Chapter 1.
 
 ] [3]
 Chapter 2.
-
-LaTeX Warning: Reference `voltageiwthpcb' on page 4 undefined on input line 49.
-
-
 [4
 
-]
+] [5]
 Chapter 3.
-(template_Report.bbl [5
+[6
 
-]) [6
+] [7]
+Chapter 4.
+[8
 
-] (template_Report.aux)
+]
+Chapter 5.
+(Bringup_Guide.bbl [9
+
+]) [10
+
+] (Bringup_Guide.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
  522 strings out of 467871
- 10012 string characters out of 5418376
+ 9968 string characters out of 5418376
  441733 words of memory out of 5000000
  29464 multiletter control sequences out of 15000+600000
  633562 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 35i,6n,38p,805b,214s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\eganw\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
-1000.pk><C:/Users/eganw/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmbx10.pfb><C:/Users/eganw/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmbx12.pfb><C:/Users/eganw/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb><C:/Users/eganw/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/eganw/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/eganw/AppData/Local
+ 35i,7n,38p,803b,285s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\dhakk\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
+1000.pk><C:/Users/dhakk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmbx10.pfb><C:/Users/dhakk/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmbx12.pfb><C:/Users/dhakk/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb><C:/Users/dhakk/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/dhakk/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/dhakk/AppData/Local
 /Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on template_Report.pdf (7 pages, 102949 bytes).
+Output written on Bringup_Guide.pdf (11 pages, 114262 bytes).
 PDF statistics:
- 61 PDF objects out of 1000 (max. 8388607)
+ 73 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
