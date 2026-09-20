@@ -16,7 +16,7 @@ The goal of this paper is to provide a summary of the procedures required to fab
 \section{Priorities}
 While a smooth system bringup is both not impossible and ideal, shortcomings in design and in procedure can force tradeoffs to be made. Following is a list of the priorities to be made when following the instructions in this document:
 \begin{enumerate}
-	\item \textbf{Safety.} This item is trivial. The supercapacitor system can store a maximum of 2 kJ of energy at full charge, sufficient to cause serious injury in the case of a failure. Furthermore, supercapacitor failures in particular carry the risk of hydrogen explosions in both overheating and overvoltage scenarios \cite{MAZLOOMIAN2025104115}. Utmost care should be taken to protect Robomaster team members from harm in every circumstance. 
+	\item \textbf{Safety.} This item is trivially obvious. The supercapacitor system can store a maximum of 2 kJ of energy at full charge, sufficient to cause serious injury in the case of a failure. Furthermore, supercapacitor failures in particular carry the risk of hydrogen explosions in both overheating and overvoltage scenarios \cite{MAZLOOMIAN2025104115}. Utmost care should be taken to protect Robomaster team members from harm in every circumstance. 
 	\item \textbf{Overall Robot Functionality.} The supercapacitor system should not impede the functionality of the other system functions within the robot, including during failure modes. Given that the supercapacitor converter PCB routes chassis power from the PMM to the rest of the robot, this concern is particularly salient. 
 	\item \textbf{Discharging Behavior.} The supercapacitor system is designed first and foremost to supplement battery power in situations where battery power alone is not sufficient to meet the energy demands of the chassis. A supercapacitor system capable of charging but not discharging functionality is no better than no supercapacitor system at all. 
 	\item \textbf{Full Supercapacitor System Functionality.} The importance of this priority is obvious, notable only in its relative position in this list. 
@@ -139,6 +139,7 @@ Time to test the power stage.
 	\hline
 \end{tabular}
 \section{Separate DC Load}
+If possible, try to gain access to an adjustable DC load (available in the EER 1.808 power lab). 
 \chapter{Closed-Loop Control}
 Closed-loop control brings it all together. 
 \vspace{1cm}
