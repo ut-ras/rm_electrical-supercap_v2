@@ -1,0 +1,5 @@
+XT30 Footprint are wrong
++ - labels on minipc XT30 are swapped
+Both voltage regulators works as expected
+No test point for voltage regulators
+Better clarity on Launchpad orientation
