@@ -3,3 +3,4 @@ XT30 Footprint are wrong
 Both voltage regulators works as expected
 No test point for voltage regulators
 Better clarity on Launchpad orientation
+Gate drivers are working
