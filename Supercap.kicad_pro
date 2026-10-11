@@ -822,16 +822,16 @@
       {
         "filename": "Supercap.kicad_sch",
         "name": "Supercap",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "uuid": "98ee8313-37ab-4329-91ab-b5710476f82f"
       }
     ],
-    "used_designators": "",
+    "used_designators": "U5",
     "variants": []
   },
   "sheets": [
     [
       "98ee8313-37ab-4329-91ab-b5710476f82f",
-      "Root"
+      "Supercap"
     ],
     [
       "ee005c00-ec4f-437e-b20a-795d960ff7e7",
