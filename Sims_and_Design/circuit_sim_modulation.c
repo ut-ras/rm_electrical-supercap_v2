@@ -33,8 +33,9 @@ int main(void) {
     double mt_n = m_n * m_n - (vc_n / Vg) * m_n;
     double ibat_n = 0.0;
     double error_prev = 0.0;
+    double feedforward_prev = 0.0;
 
-    const double controller_bandwidth_Hz = 1200.0;
+    const double controller_bandwidth_Hz = 600.0;
     const double tau_i = 1.0 / (2.0 * PI * controller_bandwidth_Hz);
     const double kp_pi = L / (Vg * tau_i);
     const double ki_pi = R / (Vg * tau_i);
@@ -51,20 +52,28 @@ int main(void) {
     for (int n = 0; n <= steps; n++) {
         double current_time = n * timestep;
 
-        double i_ref = current_amplitude
-            * sin(2.0 * PI * freq_HZ * current_time);
+        double i_ref = current_amplitude * sin(2.0 * PI * freq_HZ * current_time);
 
         ibat_n = m_n * i_n;
 
         if (n % controller_steps == 0) {
             double error = i_ref - ibat_n;
 
+            double i_ref_derivative = current_amplitude
+                * 2.0 * PI * freq_HZ
+                * cos(2.0 * PI * freq_HZ * current_time);
+
+            double feedforward = (L / Vg) * i_ref_derivative
+                + (R / Vg) * i_ref;
+
             mt_n = mt_n
                 + kp_pi * (error - error_prev)
                 + (controller_period * ki_pi / 2.0)
-                * (error + error_prev);
+                * (error + error_prev)
+                + feedforward - feedforward_prev;
 
             error_prev = error;
+            feedforward_prev = feedforward;
         }
 
         if (n % modulation_steps == 0) {
