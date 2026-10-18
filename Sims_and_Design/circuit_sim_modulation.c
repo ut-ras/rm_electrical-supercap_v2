@@ -5,7 +5,23 @@
 
 #define PI 3.14159265358979323846
 
+double generate_gaussian(double mean, double stddev) {
+    // Ensure we don't pass 0 to log() by shifting 0 to a tiny non-zero value
+    double u1 = (double)rand() / RAND_MAX;
+    if (u1 == 0.0) u1 = 1e-9; 
+    
+    double u2 = (double)rand() / RAND_MAX;
+
+    // Box-Muller Transform math formula
+    double z0 = sqrt(-2.0 * log(u1)) * cos(2.0 * M_PI * u2);
+
+    // Scale and shift to the desired mean and standard deviation
+    return z0 * stddev + mean;
+}
+
 int main(void) {
+    srand((unsigned int)time(NULL));
+
     const double controller_update_Hz = 12000.0;
     const int controller_steps = 10;
     const int modulation_controller_cycles = 2;
@@ -54,17 +70,19 @@ int main(void) {
 
         double i_ref = current_amplitude * sin(2.0 * PI * freq_HZ * current_time);
 
-        ibat_n = m_n * i_n;
+        double Vgsense = Vg + generate_gaussian(0.0, 0.0903);
 
         if (n % controller_steps == 0) {
-            double error = i_ref - ibat_n;
+            double i_nsense = i_n + generate_gaussian(0.0, 0.141);
+            double ibat_nsense = m_n * i_nsense;
+            double error = i_ref - ibat_nsense;
 
             double i_ref_derivative = current_amplitude
                 * 2.0 * PI * freq_HZ
                 * cos(2.0 * PI * freq_HZ * current_time);
 
-            double feedforward = (L / Vg) * i_ref_derivative
-                + (R / Vg) * i_ref;
+            double feedforward = (L / Vgsense) * i_ref_derivative
+                + (R / Vgsense) * i_ref;
 
             mt_n = mt_n
                 + kp_pi * (error - error_prev)
@@ -77,7 +95,9 @@ int main(void) {
         }
 
         if (n % modulation_steps == 0) {
-            double kt_n = vc_n / (2.0 * Vg);
+            double Vcsense = vc_n + generate_gaussian(0.0, 0.0103);
+            // fprintf(stderr, "Vcsense: %.6f, Vgsense: %.6f\n", Vcsense, Vgsense);
+            double kt_n = Vcsense / (2.0 * Vgsense);
             double sqrt_term = fmax(0.0, mt_n + kt_n * kt_n);
 
             double m_n1 = kt_n + sqrt(sqrt_term);
@@ -91,22 +111,22 @@ int main(void) {
         double tracking_error = i_ref - ibat_n;
         double battery_power = Vg * ibat_n;
 
-        if (n % save_int == 0 || n == steps) {
-            fprintf(
-                output,
-                "%.9f,%.9f,%.9f,%.9f,%.9f,"
-                "%.9f,%.9f,%.9f,%.9f\n",
-                current_time,
-                vc_n,
-                i_n,
-                i_ref,
-                ibat_n,
-                tracking_error,
-                battery_power,
-                m_n,
-                mt_n
-            );
-        }
+        // if (n % save_int == 0 || n == steps) {
+        //     fprintf(
+        //         output,
+        //         "%.9f,%.9f,%.9f,%.9f,%.9f,"
+        //         "%.9f,%.9f,%.9f,%.9f\n",
+        //         current_time,
+        //         vc_n,
+        //         i_n,
+        //         i_ref,
+        //         ibat_n,
+        //         tracking_error,
+        //         battery_power,
+        //         m_n,
+        //         mt_n
+        //     );
+        // }
 
         if (n == steps) {
             break;
@@ -136,7 +156,7 @@ int main(void) {
     printf("Opening plots...\n");
     fflush(stdout);
 
-    if (system("python plot_circuit.py") != 0) {
+    if (system("py -3.13 plot_circuit.py") != 0) {
         fprintf(
             stderr,
             "Plotting failed. Run python plot_circuit.py "
