@@ -127,7 +127,7 @@ int main(void) {
     printf("Opening plots...\n");
     fflush(stdout);
 
-    if (system("py -3.13 plot_circuit.py") != 0) {
+    if (system("python plot_circuit.py") != 0) {
         fprintf(
             stderr,
             "Plotting failed. Run python plot_circuit.py "
@@ -135,8 +135,6 @@ int main(void) {
         );
         return 1;
     }
-
-    //if issues with python, cd the folder into Sims_and_design, the run these two lines: 1) py -3.13 -m pip install matplotlib and 2) py -3.13 plot_circuit.py
 
     return 0;
 }
