@@ -111,22 +111,22 @@ int main(void) {
         double tracking_error = i_ref - ibat_n;
         double battery_power = Vg * ibat_n;
 
-        // if (n % save_int == 0 || n == steps) {
-        //     fprintf(
-        //         output,
-        //         "%.9f,%.9f,%.9f,%.9f,%.9f,"
-        //         "%.9f,%.9f,%.9f,%.9f\n",
-        //         current_time,
-        //         vc_n,
-        //         i_n,
-        //         i_ref,
-        //         ibat_n,
-        //         tracking_error,
-        //         battery_power,
-        //         m_n,
-        //         mt_n
-        //     );
-        // }
+        if (n % save_int == 0 || n == steps) {
+            fprintf(
+                output,
+                "%.9f,%.9f,%.9f,%.9f,%.9f,"
+                "%.9f,%.9f,%.9f,%.9f\n",
+                current_time,
+                vc_n,
+                i_n,
+                i_ref,
+                ibat_n,
+                tracking_error,
+                battery_power,
+                m_n,
+                mt_n
+            );
+        }
 
         if (n == steps) {
             break;
