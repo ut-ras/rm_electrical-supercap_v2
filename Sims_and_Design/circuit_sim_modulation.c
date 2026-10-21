@@ -7,6 +7,7 @@
 #include <errno.h>
 
 #define PI 3.14159265358979323846
+#define DELAY_AMOUNT 30; // for the delays
 
 uint32_t random_state[3];
 int have_extra_noise[3] = { 0, 0, 0 };
@@ -84,7 +85,6 @@ int main(int argc, char* argv[]) {
     int noise_enabled = 1; // Make 0 if don't want noise
     int plot_enabled = 1; // Make 0 if don't want plots
     const char* output_name = "circuit_data.csv";
-
 
     //Function to read command-line arguments, not that importan tto understand
     for (int a = 1; a < argc; a++) {
@@ -227,7 +227,18 @@ int main(int argc, char* argv[]) {
 
     //Use success in case error happens where success is set to 0
     int success = 1;
+    double delay_line[DELAY_AMOUNT]; // for the delay
+
     for (long long n = 0; n <= steps; n++) {
+
+        // in controller, delay Vg, i_n, delay vc_n - make new variable
+        double current_Vc_delay = vc_n;
+        double current_Vc_delay = delay_line[DELAY_AMOUNT - 1];
+        for (int i = DELAY_AMOUNT - 1; i > 0; i--) { // Shift the delay line to the right
+            delay_line[i] = delay_line[i - 1];
+        }
+        double delayed_vc_n = delay_line[0];
+
         double current_time = (double)n * timestep;
         double i_ref = current_amplitude * sin(2.0 * PI * freq_HZ * current_time);
 
@@ -273,7 +284,7 @@ int main(int argc, char* argv[]) {
         if (n % modulation_steps == 0) {
             double vc_noise = 0.0;
             if (noise_enabled) vc_noise = 0.0103 * generate_gaussian(2);
-            Vcsense = vc_n + vc_noise;
+            Vcsense = delayed_vc_n + vc_noise;
             // Let kt = Vc(2*Vg), completing square gives MT + kt^2 = (m-kt)^2
             double kt_n = Vcsense / (2.0 * Vgsense);
             //Check domain of the chosen model (NOT the 3V rating)
@@ -350,6 +361,16 @@ int main(int argc, char* argv[]) {
         //ibat_n is the converter bus branch, external load total battery current becomes
         // load current + ibat_n
         double ibat_n = m_n * i_n;
+
+        // for the low pass LC filter
+        // double Fcutoff = 1/(2* PI * sqrt(L * C));
+        // double ratio = freq_HZ / Fcutoff;
+        // double Z0 = sqrt(L/C);
+        // ibat_n = ibat_n * (1.0 / sqrt(
+        //     ((1.0-ratio*ratio)*(1.0-ratio*ratio)) +
+        //     (((1.0/R)* Z0 * ratio)*((1.0/R)* Z0 * ratio) ) 
+        // ));
+
         double tracking_error = i_ref - ibat_n;
         //Positive is charging, negative is returning energy
         double battery_power = Vg * ibat_n;
