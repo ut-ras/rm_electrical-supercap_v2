@@ -7,7 +7,7 @@
 #include <errno.h>
 
 #define PI 3.14159265358979323846
-#define DELAY_AMOUNT 30; // for the delays
+#define DELAY_AMOUNT 30 // for the delays
 
 uint32_t random_state[3];
 int have_extra_noise[3] = { 0, 0, 0 };
@@ -229,12 +229,13 @@ int main(int argc, char* argv[]) {
     int success = 1;
     double delay_line_Vc[DELAY_AMOUNT]; // for the delay Vc
     double delay_line_I_n[DELAY_AMOUNT]; // for the delay I_n
+    double delay_line_i_ref[DELAY_AMOUNT]; // for the delay i_ref
 
     for (long long n = 0; n <= steps; n++) {
 
         // in controller delay
         double current_Vc_delay = vc_n;
-        double current_I_n_delay = i_n;
+        double current_i_n_delay = i_n;
 
         delay_line_Vc[DELAY_AMOUNT - 1] = current_Vc_delay;
         for (int i = DELAY_AMOUNT - 1; i > 0; i--) { // Shift the delay line to the right
@@ -242,11 +243,11 @@ int main(int argc, char* argv[]) {
         }
         double delayed_vc_n = delay_line_Vc[0];
 
-        delay_line_I_n[DELAY_AMOUNT - 1] = current_I_n_delay;
+        delay_line_i_n[DELAY_AMOUNT - 1] = current_i_n_delay;
         for (int i = DELAY_AMOUNT - 1; i > 0; i--) { // Shift the delay line to the right
-            delay_line_I_n[i] = delay_line_I_n[i - 1];
+            delay_line_i_n[i] = delay_line_i_n[i - 1];
         }
-        double delayed_i_n = delay_line_I_n[0];
+        double delayed_i_n = delay_line_i_n[0];
 
         double current_time = (double)n * timestep;
         double current_i_ref = current_amplitude * sin(2.0 * PI * freq_HZ * current_time);
@@ -511,7 +512,7 @@ int main(int argc, char* argv[]) {
     if (plot_enabled) {
         printf("Opening plots...\n");
         fflush(stdout);
-        if (system("py -3.13 plot_circuit.py") != 0) {
+        if (system("py -3.15 plot_circuit.py") != 0) {
             fprintf(stderr, "CSV saved successfully, but plotting failed. "
                 "Run python plot_circuit.py to inspect the error.\n");
             return 1;
