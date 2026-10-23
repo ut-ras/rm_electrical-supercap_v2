@@ -173,8 +173,7 @@ int main(int argc, char* argv[]) {
 
     //Create separate nonzero states for each sensor
     // Hex tags distinguish the three startin gstates
-    uint32_t sensor_tags[3] = { UINT32_C(0xa341316c), UINT32_C(0xc8013ea4),
-                               UINT32_C(0xad90777d) };
+    uint32_t sensor_tags[3] = { UINT32_C(0xa341316c), UINT32_C(0xc8013ea4), UINT32_C(0xad90777d) };
     for (int sensor = 0; sensor < 3; sensor++) {
         random_state[sensor] = seed ^ sensor_tags[sensor];
         if (random_state[sensor] == 0) random_state[sensor] = UINT32_C(0x6d2b79f5);
@@ -185,8 +184,8 @@ int main(int argc, char* argv[]) {
     double i_n = i_initial;
     double m_n = fmax(0.0, fmin(1.0, vc_n / Vg));
     double Vgsense = Vg, Vcsense = vc_n, i_nsense = i_n;
-    double ibat_nsense = m_n * i_nsense;
     double error_sense = 0.0;
+    double ibat_n = m_n * i_nsense;
     //MT = m^2 - (Vc/Vg)*m is the modulation command
     //pi_integral stores the integral contribution in MT units, not a physical current
     double mt_n = m_n * m_n - (Vcsense / Vgsense) * m_n;
@@ -281,7 +280,10 @@ int main(int argc, char* argv[]) {
 
 
             ibat_nsense = m_n * i_nsense;
-            error_sense = i_ref_sense - ibat_nsense;
+            // for the low pass pi filter
+            double filtered_ibat_nsense = ibat_nsense / (1 - 4 * PI * PI * freq_HZ * freq_HZ * L * C);
+
+            error_sense = i_ref_sense - filtered_ibat_nsense;
             delayed_time = current_time - controller_period * DELAY_AMOUNT;
             //Use feedforward with derivatives, omits the term L*i_n*dm/dt
             double i_ref_derivative = current_amplitude * 2.0 * PI * freq_HZ
@@ -382,18 +384,13 @@ int main(int argc, char* argv[]) {
         // load current + ibat_n
         double ibat_n = m_n * i_n;
 
-        // for the low pass LC filter
-        // double Fcutoff = 1/(2* PI * sqrt(L * C));
-        // double ratio = freq_HZ / Fcutoff;
-        // double Z0 = sqrt(L/C);
-        // ibat_n = ibat_n * (1.0 / sqrt(
-        //     ((1.0-ratio*ratio)*(1.0-ratio*ratio)) +
-        //     (((1.0/R)* Z0 * ratio)*((1.0/R)* Z0 * ratio) ) 
-        // ));
+        // for the low pass pi filter
+        filtered_ibat_n = ibat_n / (1 - 4 * PI * PI * freq_HZ * freq_HZ * L * C);
 
-        double tracking_error = i_ref - ibat_n;
+
+        double tracking_error = i_ref - filtered_ibat_n;
         //Positive is charging, negative is returning energy
-        double battery_power = Vg * ibat_n;
+        double battery_power = Vg * filtered_ibat_n;
         double energy = 0.5 * C * vc_n * vc_n + 0.5 * L * i_n * i_n;
         //Energy identity is input_energy - loss_energy
         double energy_residual = energy - initial_energy - input_energy + loss_energy;
@@ -407,7 +404,7 @@ int main(int argc, char* argv[]) {
             metric_count++;
             error_squared_sum += tracking_error * tracking_error;
             error_sum += tracking_error;
-            ibat_sum += ibat_n;
+            ibat_sum += filtered_ibat_n;
             i_squared_sum += i_n * i_n;
             max_error = fmax(max_error, fabs(tracking_error));
         }
@@ -416,8 +413,8 @@ int main(int argc, char* argv[]) {
                 "%.9f,%.9f,%.9f,%.9f,%.9f,%.9f,%.9f,%.9f,%.9f,"
                 "%.9f,%.9f,%.9f,%.9f,%.9f,%.9f,%.9f,%.9f,"
                 "%lld,%lld,%.12f,%.12f,%.12f,%.12g\n",
-                current_time, vc_n, i_n, i_ref, ibat_n, tracking_error, battery_power,
-                m_n, mt_n, mt_requested, i_nsense, ibat_nsense, Vgsense, Vcsense,
+                current_time, vc_n, i_n, i_ref, filtered_ibat_n, tracking_error, battery_power,
+                m_n, mt_n, mt_requested, i_nsense, filtered_ibat_nsense, Vgsense, Vcsense,
                 error_sense, mt_min, mt_max, sqrt_limit_count, duty_limit_count,
                 energy, input_energy, loss_energy, energy_residual);
         }
