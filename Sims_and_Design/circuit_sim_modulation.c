@@ -227,7 +227,7 @@ int main(int argc, char* argv[]) {
     //Use success in case error happens where success is set to 0
     int success = 1;
     double delay_line_Vc[DELAY_AMOUNT]; // for the delay Vc
-    double delay_line_I_n[DELAY_AMOUNT]; // for the delay I_n
+    double delay_line_i_n[DELAY_AMOUNT]; // for the delay si_n
     double delay_line_i_ref[DELAY_AMOUNT]; // for the delay i_ref
 
     for (long long n = 0; n <= steps; n++) {
