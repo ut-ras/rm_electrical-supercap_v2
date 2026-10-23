@@ -227,32 +227,49 @@ int main(int argc, char* argv[]) {
 
     //Use success in case error happens where success is set to 0
     int success = 1;
-    double delay_line[DELAY_AMOUNT]; // for the delay
+    double delay_line_Vc[DELAY_AMOUNT]; // for the delay Vc
+    double delay_line_I_n[DELAY_AMOUNT]; // for the delay I_n
 
     for (long long n = 0; n <= steps; n++) {
 
-        // in controller, delay Vg, i_n, delay vc_n - make new variable
+        // in controller delay
         double current_Vc_delay = vc_n;
-        double current_Vc_delay = delay_line[DELAY_AMOUNT - 1];
+        double current_I_n_delay = i_n;
+
+        delay_line_Vc[DELAY_AMOUNT - 1] = current_Vc_delay;
         for (int i = DELAY_AMOUNT - 1; i > 0; i--) { // Shift the delay line to the right
-            delay_line[i] = delay_line[i - 1];
+            delay_line_Vc[i] = delay_line_Vc[i - 1];
         }
-        double delayed_vc_n = delay_line[0];
+        double delayed_vc_n = delay_line_Vc[0];
+
+        delay_line_I_n[DELAY_AMOUNT - 1] = current_I_n_delay;
+        for (int i = DELAY_AMOUNT - 1; i > 0; i--) { // Shift the delay line to the right
+            delay_line_I_n[i] = delay_line_I_n[i - 1];
+        }
+        double delayed_i_n = delay_line_I_n[0];
 
         double current_time = (double)n * timestep;
-        double i_ref = current_amplitude * sin(2.0 * PI * freq_HZ * current_time);
+        double current_i_ref = current_amplitude * sin(2.0 * PI * freq_HZ * current_time);
+
+        delay_line_i_ref[DELAY_AMOUNT - 1] = current_i_ref;
+        for (int i = DELAY_AMOUNT - 1; i > 0; i--) { // Shift the delay line to the right
+            delay_line_i_ref[i] = delay_line_i_ref[i - 1];
+        }
+        double delayed_i_ref = delay_line_i_ref[0];
 
         if (n % controller_steps == 0) {
-            double vg_noise = 0.0, i_noise = 0.0;
+            double vg_noise = 0.0, i_noise = 0.0; i_ref_noise = 0.0;
 
             //Standard-normal sample has std dev 1 so we scale it to the sensor noise in V or A
 
             if (noise_enabled) {
                 vg_noise = 0.0903 * generate_gaussian(0);
                 i_noise = 0.141 * generate_gaussian(1);
+                i_ref_noise = 0.0855 * generate_gaussian(1);
             }
             Vgsense = Vg + vg_noise;
-            i_nsense = i_n + i_noise;
+            i_nsense = delayed_i_n + i_noise;
+            i_ref_sense = delayed_i_ref + i_ref_noise;
 
             //Controller divides by Vgsense so just check it before
             if (!isfinite(Vgsense) || Vgsense <= 0.0) {
@@ -263,11 +280,12 @@ int main(int argc, char* argv[]) {
 
 
             ibat_nsense = m_n * i_nsense;
-            error_sense = i_ref - ibat_nsense;
+            error_sense = i_ref_sense - ibat_nsense;
+            delayed_time = current_time - controller_period * DELAY_AMOUNT;
             //Use feedforward with derivatives, omits the term L*i_n*dm/dt
             double i_ref_derivative = current_amplitude * 2.0 * PI * freq_HZ
-                * cos(2.0 * PI * freq_HZ * current_time);
-            double feedforward = (L * i_ref_derivative + R * i_ref) / Vgsense;
+                * cos(2.0 * PI * freq_HZ * delayed_time); // FYI, this line may to be updated as it doesn't account for any of the noise and only does for the time with delayed_time ***
+            double feedforward = (L * i_ref_derivative + R * i_ref_sense) / Vgsense;
             //Integrate the error using average of this sample and previous
             //Use controller period here not the timestep
             pi_integral += 0.5 * controller_period * ki_pi * (error_sense + error_prev);
@@ -284,6 +302,7 @@ int main(int argc, char* argv[]) {
         if (n % modulation_steps == 0) {
             double vc_noise = 0.0;
             if (noise_enabled) vc_noise = 0.0103 * generate_gaussian(2);
+            
             Vcsense = delayed_vc_n + vc_noise;
             // Let kt = Vc(2*Vg), completing square gives MT + kt^2 = (m-kt)^2
             double kt_n = Vcsense / (2.0 * Vgsense);
@@ -492,7 +511,7 @@ int main(int argc, char* argv[]) {
     if (plot_enabled) {
         printf("Opening plots...\n");
         fflush(stdout);
-        if (system("python plot_circuit.py") != 0) {
+        if (system("py -3.13 plot_circuit.py") != 0) {
             fprintf(stderr, "CSV saved successfully, but plotting failed. "
                 "Run python plot_circuit.py to inspect the error.\n");
             return 1;
