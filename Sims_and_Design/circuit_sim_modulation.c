@@ -11,6 +11,13 @@
 uint32_t random_state[3];
 int have_extra_noise[3] = { 0, 0, 0 };
 double extra_noise[3];
+const double C = 440.0;
+const double R = 0.0095;
+const double L = 28.3e-6;
+
+// values for filter implementation of ibat, _x = x timesteps ago
+double ibat_in_2 = 0.0, ibat_in_1 = 0.0, ibat_in = 0.0;
+double ibat_out_2 = 0.0, ibat_out_1 = 0.0;
 
 //Return a Gaussian sample with apprx 0 mean and std dev of 1
 double generate_gaussian(int sensor) {
@@ -59,12 +66,22 @@ int read_unsigned_number(const char* text, uint32_t* number) {
     return 1;
 }
 
+double return_filtered_ibat(double timestep, double ibat_input) {
+    ibat_in = ibat_input; // Update the current input
+    double numerator = (timestep * timestep) * (ibat_in_2 + 2.0 * ibat_in_1 + ibat_in)
+        + (8*L*C - 2*timestep*timestep) * ibat_out_1;
+    double denominator = (4*L*C + timestep*timestep);
+
+    ibat_in_2 = ibat_in_1;
+    ibat_in_1 = ibat_in;
+    ibat_out_2 = ibat_out_1;
+    ibat_out_1 = numerator / denominator - ibat_out_2;
+    return numerator / denominator - ibat_out_2;
+}
+
 int main(int argc, char* argv[]) {
 
     //Circuit parameters and sstuff
-    const double C = 440.0;
-    const double R = 0.0095;
-    const double L = 28.3e-6;
     const double Vg = 24.0;
     const double vc_initial = 2.5;
     const double i_initial = 0.0;
@@ -252,6 +269,7 @@ int main(int argc, char* argv[]) {
 
 
             ibat_nsense = m_n * i_nsense;
+            ibat_nsense = return_filtered_ibat(timestep, ibat_nsense); 
             error_sense = i_ref - ibat_nsense;
             //Use feedforward with derivatives, omits the term L*i_n*dm/dt
             double i_ref_derivative = current_amplitude * 2.0 * PI * freq_HZ
