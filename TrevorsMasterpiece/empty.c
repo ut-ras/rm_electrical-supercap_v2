@@ -85,9 +85,9 @@ void PWM_0_INST_IRQHandler(void)
 // Sets the exact timer ticks (0 to 133) where the pins drop LOW
 void set_PWM_Edges(uint32_t ch1_up_tick, uint32_t ch0_down_tick)
 {
-    // Max timer count is 133 for 120kHz at 32MHz (32MHz / 120kHz / 2 - 1 for center, but 133 here)
-    if (ch1_up_tick > 133) ch1_up_tick = 133;
-    if (ch0_down_tick > 133) ch0_down_tick = 133;
+    // Max timer count is 332 for 120kHz at 80MHz (80MHz / 120kHz / 2 - 1 for center, but 332 here)
+    if (ch1_up_tick > 332) ch1_up_tick = 332;
+    if (ch0_down_tick > 332) ch0_down_tick = 332;
 
     // Calculate the midpoint between the two falling edges for ADC trigger
     uint32_t midpoint_tick = (ch1_up_tick + ch0_down_tick) / 2;

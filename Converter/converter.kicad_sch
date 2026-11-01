@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20250114)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(uuid "7cc641fc-3b52-4589-9025-24f7c658124f")
 	(paper "A4")
 	(title_block
@@ -20,8 +20,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "J"
 				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -30,6 +34,8 @@
 			)
 			(property "Value" "Conn_01x02_Pin"
 				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -38,33 +44,41 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Generic connector, single row, 01x02, script generated"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_locked" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -73,20 +87,24 @@
 			)
 			(property "ki_keywords" "connector"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "Connector*:*_1x??_*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "Conn_01x02_Pin_1_1"
@@ -186,8 +204,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "TP"
 				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -196,6 +218,8 @@
 			)
 			(property "Value" "TestPoint"
 				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -204,47 +228,57 @@
 			)
 			(property "Footprint" ""
 				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "test point"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "test point tp"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "Pin* Test*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "TestPoint_0_1"
@@ -292,8 +326,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "C"
 				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -303,6 +341,8 @@
 			)
 			(property "Value" "C"
 				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -312,47 +352,57 @@
 			)
 			(property "Footprint" ""
 				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Unpolarized capacitor"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "cap capacitor"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "C_*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "C_0_1"
@@ -385,7 +435,7 @@
 				(pin passive line
 					(at 0 3.81 270)
 					(length 2.794)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -403,7 +453,7 @@
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 2.794)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -432,8 +482,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "D"
 				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -442,6 +496,8 @@
 			)
 			(property "Value" "D"
 				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -450,65 +506,79 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Diode"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Sim.Device" "D"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Sim.Pins" "1=K 2=A"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "diode"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "D_0_1"
@@ -600,8 +670,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "L"
 				(at -1.27 0 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -610,6 +684,8 @@
 			)
 			(property "Value" "L"
 				(at 1.905 0 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -618,47 +694,57 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Inductor"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "inductor choke coil reactor magnetic"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "L_0_1"
@@ -761,8 +847,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "R"
 				(at 2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -771,6 +861,8 @@
 			)
 			(property "Value" "R_US"
 				(at -2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -779,47 +871,57 @@
 			)
 			(property "Footprint" ""
 				(at 1.016 -0.254 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Resistor, US symbol"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "R res resistor"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "R_*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "R_US_0_1"
@@ -888,7 +990,7 @@
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -906,7 +1008,7 @@
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 1.27)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -931,8 +1033,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "HS"
 				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -941,6 +1047,8 @@
 			)
 			(property "Value" "Heatsink"
 				(at 0 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -949,47 +1057,57 @@
 			)
 			(property "Footprint" ""
 				(at 0.3048 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0.3048 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Heatsink"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "thermal heat temperature"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "Heatsink_*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "Heatsink_0_1"
@@ -1030,8 +1148,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "IC"
 				(at 29.21 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1041,6 +1163,8 @@
 			)
 			(property "Value" "NCP5109ADR2G"
 				(at 29.21 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1050,91 +1174,109 @@
 			)
 			(property "Footprint" "SOIC127P600X175-8N"
 				(at 29.21 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NCP5109-D.PDF"
 				(at 29.21 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left)
-					(hide yes)
 				)
 			)
 			(property "Description" "High Voltage Range: Up to 200 V; dV/dt Immunity 50 V/nsec; Gate Drive Supply Range from 10 V to 20 V; High and Low Drive Outputs; Output Source / Sink Current Capability 250 mA / 500 mA; 3.3 V and 5 V Input Logic Compatible; Up to Vcc Swing on Input Pins; Matched Propagation Delays Between Both Channels; Outputs in Phase with the Inputs; Independent Logic Inputs to Accommodate All Topologies (Version A); Cross Conduction Protection with 100 ns Internal Fixed Dead Time (Version B ); Under Vcc LockOut (UVLO)"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description_1" "High Voltage Range: Up to 200 V; dV/dt Immunity 50 V/nsec; Gate Drive Supply Range from 10 V to 20 V; High and Low Drive Outputs; Output Source / Sink Current Capability 250 mA / 500 mA; 3.3 V and 5 V Input Logic Compatible; Up to Vcc Swing on Input Pins; Matched Propagation Delays Between Both Channels; Outputs in Phase with the Inputs; Independent Logic Inputs to Accommodate All Topologies (Version A); Cross Conduction Protection with 100 ns Internal Fixed Dead Time (Version B ); Under Vcc LockOut (UVLO) "
 				(at 29.21 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left)
-					(hide yes)
 				)
 			)
 			(property "Height" "1.75"
 				(at 29.21 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left)
-					(hide yes)
 				)
 			)
 			(property "Mouser Part Number" ""
 				(at 29.21 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left)
-					(hide yes)
 				)
 			)
 			(property "Mouser Price/Stock" ""
 				(at 29.21 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left)
-					(hide yes)
 				)
 			)
 			(property "Manufacturer_Name" "onsemi"
 				(at 29.21 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left)
-					(hide yes)
 				)
 			)
 			(property "Manufacturer_Part_Number" "NCP5109ADR2G"
 				(at 29.21 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left)
-					(hide yes)
 				)
 			)
 			(symbol "NCP5109ADR2G_0_0"
@@ -1211,34 +1353,16 @@
 					)
 				)
 				(pin passive line
-					(at 33.02 0 180)
+					(at 33.02 -7.62 180)
 					(length 5.08)
-					(name "VBOOT"
+					(name "DRV_LO"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 33.02 -2.54 180)
-					(length 5.08)
-					(name "DRV_HI"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1265,16 +1389,34 @@
 					)
 				)
 				(pin passive line
-					(at 33.02 -7.62 180)
+					(at 33.02 -2.54 180)
 					(length 5.08)
-					(name "DRV_LO"
+					(name "DRV_HI"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "5"
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 33.02 0 180)
+					(length 5.08)
+					(name "VBOOT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1306,8 +1448,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "Q"
 				(at 5.08 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1317,6 +1463,8 @@
 			)
 			(property "Value" "BSB013NE2LXI"
 				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1326,50 +1474,60 @@
 			)
 			(property "Footprint" "Package_DirectFET:DirectFET_MX"
 				(at 5.08 -1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 						(italic yes)
 					)
 					(justify left)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-BSB013NE2LXI-DS-v02_04-en.pdf?fileId=db3a30432e398416012e47a158802577"
 				(at 5.08 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left)
-					(hide yes)
 				)
 			)
 			(property "Description" "163A Id, 25V Vds, 1.3mOhm Rds, N-Channel MOSFET, DirectFET MX"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "N-Channel MOSFET"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "DirectFET*MX*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "BSB013NE2LXI_0_1"
@@ -1540,24 +1698,6 @@
 				)
 			)
 			(symbol "BSB013NE2LXI_1_1"
-				(pin input line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "G"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin passive line
 					(at 2.54 5.08 270)
 					(length 2.54)
@@ -1569,6 +1709,24 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1598,7 +1756,7 @@
 			(embedded_fonts no)
 		)
 		(symbol "power:GNDPWR"
-			(power)
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -1609,17 +1767,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "GNDPWR"
 				(at 0 -3.302 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1628,38 +1792,46 @@
 			)
 			(property "Footprint" ""
 				(at 0 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "global ground"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "GNDPWR_0_1"
@@ -1752,7 +1924,7 @@
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1781,7 +1953,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 4ff2a466-d3a7-46fe-a3d4-12b6f4fbefb7)
+		(uuid "4ff2a466-d3a7-46fe-a3d4-12b6f4fbefb7")
 	)
 	(rectangle
 		(start 175.26 129.54)
@@ -1793,7 +1965,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 9becbd23-f365-4cfa-836b-3adb543ee734)
+		(uuid "9becbd23-f365-4cfa-836b-3adb543ee734")
 	)
 	(rectangle
 		(start 72.39 91.44)
@@ -1805,7 +1977,7 @@
 		(fill
 			(type none)
 		)
-		(uuid a194fa5f-186c-40f1-9f38-29dd5d5a79be)
+		(uuid "a194fa5f-186c-40f1-9f38-29dd5d5a79be")
 	)
 	(rectangle
 		(start 42.545 40.64)
@@ -1817,7 +1989,7 @@
 		(fill
 			(type none)
 		)
-		(uuid cee53d07-8021-4731-ba33-cfcf9964bab4)
+		(uuid "cee53d07-8021-4731-ba33-cfcf9964bab4")
 	)
 	(rectangle
 		(start 42.545 91.44)
@@ -1829,7 +2001,7 @@
 		(fill
 			(type none)
 		)
-		(uuid ded2818d-654e-4923-9bdc-607afe96eb2f)
+		(uuid "ded2818d-654e-4923-9bdc-607afe96eb2f")
 	)
 	(rectangle
 		(start 165.735 43.18)
@@ -1842,7 +2014,7 @@
 		(fill
 			(type none)
 		)
-		(uuid dfdbab8b-1018-4b35-bb99-5f1f4aa00ed5)
+		(uuid "dfdbab8b-1018-4b35-bb99-5f1f4aa00ed5")
 	)
 	(rectangle
 		(start 51.435 43.18)
@@ -1855,7 +2027,7 @@
 		(fill
 			(type none)
 		)
-		(uuid f16474c6-3234-43de-ac65-81dc9d35b57e)
+		(uuid "f16474c6-3234-43de-ac65-81dc9d35b57e")
 	)
 	(text "Heat Sinks"
 		(exclude_from_sim no)
@@ -3719,14 +3891,18 @@
 		(lib_id "Connector:Conn_01x02_Pin")
 		(at 123.825 64.77 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "066479a5-5a08-4b63-b4eb-997352801850")
 		(property "Reference" "J3"
 			(at 125.095 62.2299 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3736,6 +3912,8 @@
 		)
 		(property "Value" "XT30"
 			(at 125.095 64.7699 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3745,38 +3923,46 @@
 		)
 		(property "Footprint" "Connector_AMASS:AMASS_XT30UPB-F_1x02_P5.0mm_Vertical"
 			(at 123.825 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 123.825 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
 			(at 123.825 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Digi-Key Part Number" ""
 			(at 123.825 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -3786,7 +3972,7 @@
 			(uuid "d14c61c8-afd5-456d-afd7-7a2ebdae6d35")
 		)
 		(instances
-			(project ""
+			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/66de8ce3-68f9-4d35-858c-1420192a373c"
 					(reference "J3")
 					(unit 1)
@@ -3798,23 +3984,29 @@
 		(lib_id "power:GNDPWR")
 		(at 85.09 138.43 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "12791005-6b72-4026-a32e-71d33c910723")
 		(property "Reference" "#PWR029"
 			(at 85.09 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GNDPWR"
 			(at 84.963 142.24 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3823,29 +4015,35 @@
 		)
 		(property "Footprint" ""
 			(at 85.09 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 85.09 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
 			(at 85.09 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -3864,14 +4062,18 @@
 		(lib_id "Mechanical:Heatsink")
 		(at 52.07 129.54 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "17258b5d-76ca-4de4-aabe-94ee6d8b1539")
 		(property "Reference" "HS3"
 			(at 55.88 126.3649 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3881,6 +4083,8 @@
 		)
 		(property "Value" "Heatsink"
 			(at 55.88 128.9049 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3890,47 +4094,57 @@
 		)
 		(property "Footprint" ""
 			(at 52.3748 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.mouser.com/datasheet/3/6118/1/hsb01_080808.pdf"
 			(at 52.3748 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Heatsink"
 			(at 52.07 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "HSB01-080808 "
 			(at 52.07 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser Part Number" "490-HSB01-080808 "
 			(at 52.07 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(instances
@@ -3946,14 +4160,18 @@
 		(lib_id "Transistor_FET:BSB013NE2LXI")
 		(at 100.965 71.12 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "25c8b7db-9f6a-4439-9a85-f2c17fde47db")
 		(property "Reference" "Q_{bottom,1}1"
 			(at 107.315 70.4849 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3961,8 +4179,10 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 107.315 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3972,59 +4192,71 @@
 		)
 		(property "Footprint" "Robomaster_ICs:IQDH45N04LM6CGSCATMA1"
 			(at 106.045 73.025 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/Infineon_09-04-2024_DS_IQDH35N03LM5CGSC_2_0.pdf"
 			(at 106.045 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 100.965 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "IQDH35N03LM5CGSCATMA1"
 			(at 100.965 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser Part Number" "726-IQDH35N03LM5CGSC"
 			(at 100.965 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Digi-Key Part Number" ""
 			(at 100.965 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4049,14 +4281,18 @@
 		(lib_id "Device:C")
 		(at 85.09 133.35 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2868f202-86f1-4cde-a49c-54bdf9cb208d")
 		(property "Reference" "C_{smooth}7"
 			(at 88.9 132.0799 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4066,6 +4302,8 @@
 		)
 		(property "Value" "4.7u"
 			(at 88.9 134.6199 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4075,65 +4313,79 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 86.0552 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10A475KO8NNN"
 			(at 85.09 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 85.09 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser#" ""
 			(at 85.09 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "CL10A475KO8NNNC"
 			(at 85.09 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser Part Number" "187-CL10A475KO8NNNC"
 			(at 85.09 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Digi-Key Part Number" ""
 			(at 85.09 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4155,13 +4407,17 @@
 		(lib_id "Device:C")
 		(at 79.375 52.07 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "2adb81ba-4424-4794-b875-7976f35b2782")
 		(property "Reference" "C_{d}5"
 			(at 83.185 50.7999 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4171,6 +4427,8 @@
 		)
 		(property "Value" "10u"
 			(at 83.185 53.3399 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4180,93 +4438,113 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
 			(at 80.3402 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2124/CL32B106KMVNNWE_Spec.pdf"
 			(at 79.375 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 79.375 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser Part Number" "187-CL32B106KMVNNWE "
 			(at 79.375 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Height" ""
 			(at 79.375 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer_Name" ""
 			(at 79.375 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "CL32B106KMVNNWE "
 			(at 79.375 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser Price/Stock" ""
 			(at 79.375 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Voltage Rating" "50V"
 			(at 83.185 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Digi-Key Part Number" ""
 			(at 79.375 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4288,13 +4566,17 @@
 		(lib_id "Device:C")
 		(at 210.82 138.43 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "2f7f7070-265b-46b4-9e3f-d359af05df69")
 		(property "Reference" "C_{bulk,out}3"
 			(at 206.248 135.636 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4302,8 +4584,10 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 214.63 139.6999 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4313,42 +4597,52 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 211.7852 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 210.82 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 210.82 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser Part Number" ""
 			(at 210.82 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Height" ""
 			(at 210.82 138.43 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4357,6 +4651,8 @@
 		)
 		(property "Manufacturer_Name" ""
 			(at 210.82 138.43 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4365,6 +4661,8 @@
 		)
 		(property "Manufacturer_Part_Number" ""
 			(at 210.82 138.43 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4373,6 +4671,8 @@
 		)
 		(property "Mouser Price/Stock" ""
 			(at 210.82 138.43 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4381,21 +4681,25 @@
 		)
 		(property "Voltage Rating" "50V"
 			(at 214.63 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Digi-Key Part Number" ""
 			(at 210.82 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4417,14 +4721,18 @@
 		(lib_id "Mechanical:Heatsink")
 		(at 52.07 140.97 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "32dba38d-754a-43bf-bd59-8783e87367cd")
 		(property "Reference" "HS4"
 			(at 55.88 137.7949 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4434,6 +4742,8 @@
 		)
 		(property "Value" "Heatsink"
 			(at 55.88 140.3349 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4443,47 +4753,57 @@
 		)
 		(property "Footprint" ""
 			(at 52.3748 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.mouser.com/datasheet/3/6118/1/hsb01_080808.pdf"
 			(at 52.3748 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Heatsink"
 			(at 52.07 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "HSB01-080808 "
 			(at 52.07 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser Part Number" "490-HSB01-080808 "
 			(at 52.07 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(instances
@@ -4500,13 +4820,17 @@
 		(at 140.97 64.77 0)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "33139abe-8acd-4502-a899-ba106ff77d6e")
 		(property "Reference" "J4"
 			(at 138.176 64.516 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4515,6 +4839,8 @@
 		)
 		(property "Value" "XT30"
 			(at 138.176 61.976 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4523,38 +4849,46 @@
 		)
 		(property "Footprint" "Connector_AMASS:AMASS_XT30UPB-F_1x02_P5.0mm_Vertical"
 			(at 140.97 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 140.97 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
 			(at 140.97 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Digi-Key Part Number" ""
 			(at 140.97 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4564,7 +4898,7 @@
 			(uuid "69b4e745-41d4-4999-9357-e90cb55a3322")
 		)
 		(instances
-			(project ""
+			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/66de8ce3-68f9-4d35-858c-1420192a373c"
 					(reference "J4")
 					(unit 1)
@@ -4576,14 +4910,18 @@
 		(lib_id "Transistor_FET:BSB013NE2LXI")
 		(at 100.965 54.61 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "35a4442e-2d96-4f41-a281-f8343e47b040")
 		(property "Reference" "Q_{top,1}1"
 			(at 107.315 53.9749 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4591,8 +4929,10 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 107.315 55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4602,59 +4942,71 @@
 		)
 		(property "Footprint" "Robomaster_ICs:IQDH45N04LM6CGSCATMA1"
 			(at 106.045 56.515 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/Infineon_09-04-2024_DS_IQDH35N03LM5CGSC_2_0.pdf"
 			(at 106.045 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 100.965 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "IQDH35N03LM5CGSCATMA1"
 			(at 100.965 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser Part Number" "726-IQDH35N03LM5CGSC"
 			(at 100.965 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Digi-Key Part Number" ""
 			(at 100.965 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4673,7 +5025,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/66de8ce3-68f9-4d35-858c-1420192a373c"
 					(reference "Q_{top,1}1")
 					(unit 1)
@@ -4685,14 +5037,18 @@
 		(lib_id "Mechanical:Heatsink")
 		(at 52.07 118.11 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "38715046-f1f6-4031-a493-fa4052a48b7f")
 		(property "Reference" "HS2"
 			(at 55.88 114.9349 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4702,6 +5058,8 @@
 		)
 		(property "Value" "Heatsink"
 			(at 55.88 117.4749 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4711,47 +5069,57 @@
 		)
 		(property "Footprint" ""
 			(at 52.3748 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.mouser.com/datasheet/3/6118/1/hsb01_080808.pdf"
 			(at 52.3748 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Heatsink"
 			(at 52.07 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "HSB01-080808 "
 			(at 52.07 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser Part Number" "490-HSB01-080808 "
 			(at 52.07 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(instances
@@ -4767,23 +5135,29 @@
 		(lib_id "power:GNDPWR")
 		(at 56.515 58.42 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "38c0eb3f-43f9-4e7b-bff9-a76c9b0bcd3a")
 		(property "Reference" "#PWR027"
 			(at 56.515 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GNDPWR"
 			(at 56.388 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4792,29 +5166,35 @@
 		)
 		(property "Footprint" ""
 			(at 56.515 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 56.515 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
 			(at 56.515 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4833,23 +5213,29 @@
 		(lib_id "power:GNDPWR")
 		(at 193.04 146.05 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3e20df8b-b493-4c6f-8eec-6782246aa590")
 		(property "Reference" "#PWR034"
 			(at 193.04 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GNDPWR"
 			(at 192.913 149.86 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4858,29 +5244,35 @@
 		)
 		(property "Footprint" ""
 			(at 193.04 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 193.04 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
 			(at 193.04 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4899,14 +5291,18 @@
 		(lib_id "Connector:TestPoint")
 		(at 189.23 120.65 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "44c9d1a3-4698-40df-8c60-1e48165750f0")
 		(property "Reference" "V_{sw}1"
 			(at 191.77 116.0779 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4916,6 +5312,8 @@
 		)
 		(property "Value" "TestPoint"
 			(at 191.77 118.6179 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4925,38 +5323,46 @@
 		)
 		(property "Footprint" "TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm"
 			(at 194.31 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 194.31 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "test point"
 			(at 189.23 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Digi-Key Part Number" ""
 			(at 189.23 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4975,13 +5381,17 @@
 		(lib_id "Device:C")
 		(at 196.215 50.8 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "4d36630f-7b01-40ab-82e2-874bdfc45062")
 		(property "Reference" "C_{d}6"
 			(at 200.025 49.5299 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4991,6 +5401,8 @@
 		)
 		(property "Value" "10u"
 			(at 200.025 52.0699 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5000,93 +5412,113 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
 			(at 197.1802 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2124/CL32B106KMVNNWE_Spec.pdf"
 			(at 196.215 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 196.215 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser Part Number" "187-CL32B106KMVNNWE "
 			(at 196.215 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Height" ""
 			(at 196.215 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer_Name" ""
 			(at 196.215 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "CL32B106KMVNNWE "
 			(at 196.215 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser Price/Stock" ""
 			(at 196.215 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Voltage Rating" "50V"
 			(at 200.025 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Digi-Key Part Number" ""
 			(at 196.215 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5108,23 +5540,29 @@
 		(lib_id "power:GNDPWR")
 		(at 219.075 57.15 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4dfc11c9-888a-4557-a13f-fa5b59582057")
 		(property "Reference" "#PWR035"
 			(at 219.075 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GNDPWR"
 			(at 218.948 60.96 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5133,29 +5571,35 @@
 		)
 		(property "Footprint" ""
 			(at 219.075 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 219.075 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
 			(at 219.075 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5174,23 +5618,29 @@
 		(lib_id "power:GNDPWR")
 		(at 182.245 76.2 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4f778c65-02ed-4a15-916c-160a213f3219")
 		(property "Reference" "#PWR033"
 			(at 182.245 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GNDPWR"
 			(at 182.118 80.01 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5199,29 +5649,35 @@
 		)
 		(property "Footprint" ""
 			(at 182.245 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 182.245 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
 			(at 182.245 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5240,13 +5696,17 @@
 		(lib_id "Device:C")
 		(at 219.71 138.43 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "565d5e51-a2f1-43f0-b023-d4c3057caae9")
 		(property "Reference" "C_{bulk,out}4"
 			(at 215.392 135.636 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5254,8 +5714,10 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 223.52 139.6999 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5265,42 +5727,52 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 220.6752 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 219.71 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 219.71 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser Part Number" ""
 			(at 219.71 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Height" ""
 			(at 219.71 138.43 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5309,6 +5781,8 @@
 		)
 		(property "Manufacturer_Name" ""
 			(at 219.71 138.43 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5317,6 +5791,8 @@
 		)
 		(property "Manufacturer_Part_Number" ""
 			(at 219.71 138.43 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5325,6 +5801,8 @@
 		)
 		(property "Mouser Price/Stock" ""
 			(at 219.71 138.43 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5333,21 +5811,25 @@
 		)
 		(property "Voltage Rating" "50V"
 			(at 223.52 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Digi-Key Part Number" ""
 			(at 219.71 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5369,14 +5851,18 @@
 		(lib_id "Device:L")
 		(at 132.08 59.69 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5e4e3e8d-61e7-4828-9fec-9b897e960bdb")
 		(property "Reference" "L2"
 			(at 132.08 54.61 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5385,6 +5871,8 @@
 		)
 		(property "Value" "24.52u"
 			(at 132.08 57.15 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5393,38 +5881,46 @@
 		)
 		(property "Footprint" ""
 			(at 132.08 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.tdk-electronics.tdk.com/inf/80/db/fer/etd_44_22_15.pdf"
 			(at 132.08 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Inductor"
 			(at 132.08 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Digi-Key Part Number" ""
 			(at 132.08 59.69 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5446,13 +5942,17 @@
 		(lib_id "Device:R_US")
 		(at 143.51 104.14 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "679d77cf-a280-4417-80df-2a0d0767f17d")
 		(property "Reference" "R_{small,top}1"
 			(at 143.51 101.6 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5461,6 +5961,8 @@
 		)
 		(property "Value" "0.75"
 			(at 143.51 106.172 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5469,56 +5971,68 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 143.764 103.124 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.mouser.com/datasheet/3/508/1/PYU_RL_GROUP_521_ROHS_L.pdf"
 			(at 143.51 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 143.51 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "RL0603FR-070R75L"
 			(at 143.51 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser Part Number" "603-RL0603FR-070R75L"
 			(at 143.51 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Digi-Key Part Number" ""
 			(at 143.51 104.14 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5540,13 +6054,17 @@
 		(lib_id "Device:D")
 		(at 123.19 127 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "73385302-d1c5-40a8-80ea-644046f7ab13")
 		(property "Reference" "D_{b}2"
 			(at 123.19 124.206 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5555,6 +6073,8 @@
 		)
 		(property "Value" "D"
 			(at 123.19 129.794 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5563,74 +6083,90 @@
 		)
 		(property "Footprint" "Diode_SMD:D_MicroSMP_AK"
 			(at 123.19 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/86535/v1p22.pdf"
 			(at 123.19 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Diode"
 			(at 123.19 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
 			(at 123.19 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 123.19 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "V1P22HM3_A/H"
 			(at 123.19 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser Part Number" "78-V1P22HM3_A/H"
 			(at 123.19 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Digi-Key Part Number" ""
 			(at 123.19 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -5652,23 +6188,29 @@
 		(lib_id "power:GNDPWR")
 		(at 95.25 148.59 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7b65ed04-f3e4-41c0-aee2-8863ee337a4e")
 		(property "Reference" "#PWR031"
 			(at 95.25 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GNDPWR"
 			(at 95.123 152.4 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5677,29 +6219,35 @@
 		)
 		(property "Footprint" ""
 			(at 95.25 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 95.25 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
 			(at 95.25 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5718,13 +6266,17 @@
 		(lib_id "Device:D")
 		(at 123.19 97.79 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "7c2ef11c-051d-4ab2-a624-afa62971e9d7")
 		(property "Reference" "D_{b}1"
 			(at 123.19 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5733,6 +6285,8 @@
 		)
 		(property "Value" "D"
 			(at 123.19 100.584 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5741,74 +6295,90 @@
 		)
 		(property "Footprint" "Diode_SMD:D_MicroSMP_AK"
 			(at 123.19 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/86535/v1p22.pdf"
 			(at 123.19 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Diode"
 			(at 123.19 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
 			(at 123.19 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 123.19 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "V1P22HM3_A/H"
 			(at 123.19 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser Part Number" "78-V1P22HM3_A/H"
 			(at 123.19 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Digi-Key Part Number" ""
 			(at 123.19 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -5830,14 +6400,18 @@
 		(lib_id "Device:C")
 		(at 85.09 104.14 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7d4e3bb9-ee46-4406-ba83-9291541b9182")
 		(property "Reference" "C_{smooth}6"
 			(at 88.9 102.8699 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5847,6 +6421,8 @@
 		)
 		(property "Value" "4.7u"
 			(at 88.9 105.4099 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5856,65 +6432,79 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 86.0552 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10A475KO8NNN"
 			(at 85.09 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 85.09 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser#" ""
 			(at 85.09 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "CL10A475KO8NNNC"
 			(at 85.09 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser Part Number" "187-CL10A475KO8NNNC"
 			(at 85.09 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Digi-Key Part Number" ""
 			(at 85.09 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5936,14 +6526,18 @@
 		(lib_id "Device:C")
 		(at 160.02 132.08 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "820ea396-35df-425b-a924-97dc8b51e212")
 		(property "Reference" "C_{b}2"
 			(at 163.83 130.8099 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5953,6 +6547,8 @@
 		)
 		(property "Value" "1u"
 			(at 163.83 133.3499 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5962,56 +6558,68 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 160.9852 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/TAIYO_YUDEN_03-08-2024_MAJCT168BB7105KTEA01_SS.pdf"
 			(at 160.02 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 160.02 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "963-MAJCT168BB7105KT"
 			(at 160.02 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser Part Number" "963-MAJCT168BB7105KT"
 			(at 160.02 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Digi-Key Part Number" ""
 			(at 160.02 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6033,13 +6641,17 @@
 		(lib_id "Device:C")
 		(at 193.04 138.43 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "86991031-bfe1-481f-a2eb-93cbbb6e0179")
 		(property "Reference" "C_{bulk,out}1"
 			(at 188.468 135.636 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6047,8 +6659,10 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 196.85 139.6999 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6058,42 +6672,52 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 194.0052 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 193.04 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 193.04 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser Part Number" ""
 			(at 193.04 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Height" ""
 			(at 193.04 138.43 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6102,6 +6726,8 @@
 		)
 		(property "Manufacturer_Name" ""
 			(at 193.04 138.43 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6110,6 +6736,8 @@
 		)
 		(property "Manufacturer_Part_Number" ""
 			(at 193.04 138.43 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6118,6 +6746,8 @@
 		)
 		(property "Mouser Price/Stock" ""
 			(at 193.04 138.43 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6126,21 +6756,25 @@
 		)
 		(property "Voltage Rating" "50V"
 			(at 196.85 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Digi-Key Part Number" ""
 			(at 193.04 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6162,14 +6796,18 @@
 		(lib_id "Transistor_FET:BSB013NE2LXI")
 		(at 179.705 54.61 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8aea9356-80ab-4932-926d-a49379e05359")
 		(property "Reference" "Q_{top,1}2"
 			(at 186.055 53.9749 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6177,8 +6815,10 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 186.055 55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6188,59 +6828,71 @@
 		)
 		(property "Footprint" "Robomaster_ICs:IQDH45N04LM6CGSCATMA1"
 			(at 184.785 56.515 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/Infineon_09-04-2024_DS_IQDH35N03LM5CGSC_2_0.pdf"
 			(at 184.785 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 179.705 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "IQDH35N03LM5CGSCATMA1"
 			(at 179.705 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser Part Number" "726-IQDH35N03LM5CGSC"
 			(at 179.705 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Digi-Key Part Number" ""
 			(at 179.705 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6265,13 +6917,17 @@
 		(lib_id "Device:C")
 		(at 56.515 52.07 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "90ca3942-5c08-4e1e-a8ce-a0a90278498c")
 		(property "Reference" "C_{d}3"
 			(at 60.325 50.7999 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6281,6 +6937,8 @@
 		)
 		(property "Value" "10u"
 			(at 60.325 53.3399 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6290,93 +6948,113 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
 			(at 57.4802 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2124/CL32B106KMVNNWE_Spec.pdf"
 			(at 56.515 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 56.515 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser Part Number" "187-CL32B106KMVNNWE "
 			(at 56.515 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Height" ""
 			(at 56.515 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer_Name" ""
 			(at 56.515 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "CL32B106KMVNNWE "
 			(at 56.515 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser Price/Stock" ""
 			(at 56.515 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Voltage Rating" "50V"
 			(at 60.325 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Digi-Key Part Number" ""
 			(at 56.515 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6398,13 +7076,17 @@
 		(lib_id "Device:R_US")
 		(at 143.51 133.35 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "937aee53-0855-4c55-b80f-71db1ac1aa62")
 		(property "Reference" "R_{small,top}2"
 			(at 143.51 130.81 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6413,6 +7095,8 @@
 		)
 		(property "Value" "0.75"
 			(at 143.51 135.636 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6421,56 +7105,68 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 143.764 132.334 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.mouser.com/datasheet/3/508/1/PYU_RL_GROUP_521_ROHS_L.pdf"
 			(at 143.51 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 143.51 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "RL0603FR-070R75L"
 			(at 143.51 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser Part Number" "603-RL0603FR-070R75L"
 			(at 143.51 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Digi-Key Part Number" ""
 			(at 143.51 133.35 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6492,13 +7188,17 @@
 		(lib_id "Device:R_US")
 		(at 151.13 146.05 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "940f1f0e-41de-4e4c-b9af-ea94968ef685")
 		(property "Reference" "R_{small,bottom}2"
 			(at 151.13 143.764 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6507,6 +7207,8 @@
 		)
 		(property "Value" "0.75"
 			(at 151.13 148.844 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6515,56 +7217,68 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 151.384 145.034 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.mouser.com/datasheet/3/508/1/PYU_RL_GROUP_521_ROHS_L.pdf"
 			(at 151.13 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 151.13 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "RL0603FR-070R75L"
 			(at 151.13 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser Part Number" "603-RL0603FR-070R75L"
 			(at 151.13 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Digi-Key Part Number" ""
 			(at 151.13 146.05 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6586,13 +7300,17 @@
 		(lib_id "Device:C")
 		(at 67.945 52.07 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "9c7426b8-e67f-40d3-a923-09a4c5f775cb")
 		(property "Reference" "C_{d}4"
 			(at 71.755 50.7999 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6602,6 +7320,8 @@
 		)
 		(property "Value" "10u"
 			(at 71.755 53.3399 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6611,93 +7331,113 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
 			(at 68.9102 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2124/CL32B106KMVNNWE_Spec.pdf"
 			(at 67.945 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 67.945 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser Part Number" "187-CL32B106KMVNNWE "
 			(at 67.945 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Height" ""
 			(at 67.945 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer_Name" ""
 			(at 67.945 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "CL32B106KMVNNWE "
 			(at 67.945 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser Price/Stock" ""
 			(at 67.945 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Voltage Rating" "50V"
 			(at 71.755 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Digi-Key Part Number" ""
 			(at 67.945 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6719,14 +7459,18 @@
 		(lib_id "Device:C")
 		(at 160.02 102.87 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a59e6192-563c-4a7e-8f5f-d7c70fa8f42d")
 		(property "Reference" "C_{b}1"
 			(at 163.83 101.5999 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6736,6 +7480,8 @@
 		)
 		(property "Value" "1u"
 			(at 163.83 104.1399 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6745,56 +7491,68 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 160.9852 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/TAIYO_YUDEN_03-08-2024_MAJCT168BB7105KTEA01_SS.pdf"
 			(at 160.02 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 160.02 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "963-MAJCT168BB7105KT"
 			(at 160.02 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser Part Number" "963-MAJCT168BB7105KT"
 			(at 160.02 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Digi-Key Part Number" ""
 			(at 160.02 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6816,14 +7574,18 @@
 		(lib_id "Connector:TestPoint")
 		(at 214.63 120.65 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b5544479-308b-45c2-89bc-468b3a042c2e")
 		(property "Reference" "V_{sw}2"
 			(at 217.17 116.0779 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6833,6 +7595,8 @@
 		)
 		(property "Value" "TestPoint"
 			(at 217.17 118.6179 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6842,38 +7606,46 @@
 		)
 		(property "Footprint" "TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm"
 			(at 219.71 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 219.71 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "test point"
 			(at 214.63 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Digi-Key Part Number" ""
 			(at 214.63 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6892,14 +7664,18 @@
 		(lib_id "Transistor_FET:BSB013NE2LXI")
 		(at 179.705 71.12 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bfefd3ab-ebed-4481-920f-b9d7c24cb1d9")
 		(property "Reference" "Q_{bottom,1}2"
 			(at 186.055 70.4849 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6907,8 +7683,10 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 186.055 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6918,59 +7696,71 @@
 		)
 		(property "Footprint" "Robomaster_ICs:IQDH45N04LM6CGSCATMA1"
 			(at 184.785 73.025 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/Infineon_09-04-2024_DS_IQDH35N03LM5CGSC_2_0.pdf"
 			(at 184.785 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 179.705 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "IQDH35N03LM5CGSCATMA1"
 			(at 179.705 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser Part Number" "726-IQDH35N03LM5CGSC"
 			(at 179.705 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Digi-Key Part Number" ""
 			(at 179.705 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6995,14 +7785,18 @@
 		(lib_id "NCP5109ADR2G:NCP5109ADR2G")
 		(at 99.06 109.22 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c544aa91-4cf9-4b0a-a068-542146977a18")
 		(property "Reference" "IC1"
 			(at 115.57 101.6 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7011,6 +7805,8 @@
 		)
 		(property "Value" "NCP5109ADR2G"
 			(at 115.57 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7019,100 +7815,120 @@
 		)
 		(property "Footprint" "Robomaster_ICs:SOIC127P600X175-8N"
 			(at 128.27 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NCP5109-D.PDF"
 			(at 128.27 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Description" "High Voltage Range: Up to 200 V; dV/dt Immunity 50 V/nsec; Gate Drive Supply Range from 10 V to 20 V; High and Low Drive Outputs; Output Source / Sink Current Capability 250 mA / 500 mA; 3.3 V and 5 V Input Logic Compatible; Up to Vcc Swing on Input Pins; Matched Propagation Delays Between Both Channels; Outputs in Phase with the Inputs; Independent Logic Inputs to Accommodate All Topologies (Version A); Cross Conduction Protection with 100 ns Internal Fixed Dead Time (Version B ); Under Vcc LockOut (UVLO)"
 			(at 99.06 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description_1" "High Voltage Range: Up to 200 V; dV/dt Immunity 50 V/nsec; Gate Drive Supply Range from 10 V to 20 V; High and Low Drive Outputs; Output Source / Sink Current Capability 250 mA / 500 mA; 3.3 V and 5 V Input Logic Compatible; Up to Vcc Swing on Input Pins; Matched Propagation Delays Between Both Channels; Outputs in Phase with the Inputs; Independent Logic Inputs to Accommodate All Topologies (Version A); Cross Conduction Protection with 100 ns Internal Fixed Dead Time (Version B ); Under Vcc LockOut (UVLO) "
 			(at 128.27 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Height" "1.75"
 			(at 128.27 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Mouser Part Number" "863-NCP5109ADR2G"
 			(at 128.27 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Mouser Price/Stock" ""
 			(at 128.27 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer_Name" "onsemi"
 			(at 128.27 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "NCP5109ADR2G"
 			(at 128.27 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Digi-Key Part Number" ""
 			(at 99.06 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -7152,14 +7968,18 @@
 		(lib_id "Connector:TestPoint")
 		(at 189.23 110.49 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cce0df81-f08e-4955-a8c8-0a86ad906d14")
 		(property "Reference" "HI_{DRV}1"
 			(at 191.77 105.9179 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7169,6 +7989,8 @@
 		)
 		(property "Value" "TestPoint"
 			(at 191.77 108.4579 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7178,38 +8000,46 @@
 		)
 		(property "Footprint" "TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm"
 			(at 194.31 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 194.31 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "test point"
 			(at 189.23 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Digi-Key Part Number" ""
 			(at 189.23 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7228,14 +8058,18 @@
 		(lib_id "Mechanical:Heatsink")
 		(at 52.07 106.68 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ce3424ee-b29d-4ce2-811a-52dac7fc4992")
 		(property "Reference" "HS1"
 			(at 55.88 103.5049 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7245,6 +8079,8 @@
 		)
 		(property "Value" "Heatsink"
 			(at 55.88 106.0449 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7254,51 +8090,61 @@
 		)
 		(property "Footprint" ""
 			(at 52.3748 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.mouser.com/datasheet/3/6118/1/hsb01_080808.pdf"
 			(at 52.3748 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Heatsink"
 			(at 52.07 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "HSB01-080808 "
 			(at 52.07 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser Part Number" "490-HSB01-080808 "
 			(at 52.07 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(instances
-			(project ""
+			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/66de8ce3-68f9-4d35-858c-1420192a373c"
 					(reference "HS1")
 					(unit 1)
@@ -7310,14 +8156,18 @@
 		(lib_id "Connector:TestPoint")
 		(at 214.63 110.49 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d0615261-67fc-466e-9525-b5da13cb4689")
 		(property "Reference" "HI_{DRV}2"
 			(at 217.17 105.9179 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7327,6 +8177,8 @@
 		)
 		(property "Value" "TestPoint"
 			(at 217.17 108.4579 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7336,38 +8188,46 @@
 		)
 		(property "Footprint" "TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm"
 			(at 219.71 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 219.71 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "test point"
 			(at 214.63 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Digi-Key Part Number" ""
 			(at 214.63 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7386,13 +8246,17 @@
 		(lib_id "Device:R_US")
 		(at 151.13 116.84 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "d1fe84cd-8dc1-4419-a8c5-b35c37bf9c9e")
 		(property "Reference" "R_{small,bottom}1"
 			(at 151.13 114.3 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7401,6 +8265,8 @@
 		)
 		(property "Value" "0.75"
 			(at 151.13 119.126 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7409,56 +8275,68 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 151.384 115.824 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.mouser.com/datasheet/3/508/1/PYU_RL_GROUP_521_ROHS_L.pdf"
 			(at 151.13 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 151.13 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "RL0603FR-070R75L"
 			(at 151.13 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser Part Number" "603-RL0603FR-070R75L"
 			(at 151.13 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Digi-Key Part Number" ""
 			(at 151.13 116.84 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7474,7 +8352,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/66de8ce3-68f9-4d35-858c-1420192a373c"
 					(reference "R_{small,bottom}1")
 					(unit 1)
@@ -7486,13 +8364,17 @@
 		(lib_id "Device:C")
 		(at 219.075 50.8 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "d410528e-7ccd-49d8-86a3-cafede7b9f38")
 		(property "Reference" "C_{d}8"
 			(at 222.885 49.5299 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7502,6 +8384,8 @@
 		)
 		(property "Value" "10u"
 			(at 222.885 52.0699 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7511,93 +8395,113 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
 			(at 220.0402 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2124/CL32B106KMVNNWE_Spec.pdf"
 			(at 219.075 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 219.075 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser Part Number" "187-CL32B106KMVNNWE "
 			(at 219.075 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Height" ""
 			(at 219.075 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer_Name" ""
 			(at 219.075 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "CL32B106KMVNNWE "
 			(at 219.075 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser Price/Stock" ""
 			(at 219.075 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Voltage Rating" "50V"
 			(at 222.885 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Digi-Key Part Number" ""
 			(at 219.075 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7619,13 +8523,17 @@
 		(lib_id "Device:C")
 		(at 207.645 50.8 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "e1e247a7-0a8c-44a6-a100-4909598a5959")
 		(property "Reference" "C_{d}7"
 			(at 211.455 49.5299 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7635,6 +8543,8 @@
 		)
 		(property "Value" "10u"
 			(at 211.455 52.0699 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7644,93 +8554,113 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
 			(at 208.6102 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2124/CL32B106KMVNNWE_Spec.pdf"
 			(at 207.645 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 207.645 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser Part Number" "187-CL32B106KMVNNWE "
 			(at 207.645 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Height" ""
 			(at 207.645 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer_Name" ""
 			(at 207.645 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "CL32B106KMVNNWE "
 			(at 207.645 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser Price/Stock" ""
 			(at 207.645 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Voltage Rating" "50V"
 			(at 211.455 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Digi-Key Part Number" ""
 			(at 207.645 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7752,13 +8682,17 @@
 		(lib_id "Device:C")
 		(at 201.93 138.43 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "e564aa8f-91c9-4fc4-bc22-1b5a92e66913")
 		(property "Reference" "C_{bulk,out}2"
 			(at 197.612 135.636 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7766,8 +8700,10 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 205.74 139.6999 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7777,42 +8713,52 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 202.8952 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 201.93 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 201.93 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser Part Number" ""
 			(at 201.93 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Height" ""
 			(at 201.93 138.43 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7821,6 +8767,8 @@
 		)
 		(property "Manufacturer_Name" ""
 			(at 201.93 138.43 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7829,6 +8777,8 @@
 		)
 		(property "Manufacturer_Part_Number" ""
 			(at 201.93 138.43 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7837,6 +8787,8 @@
 		)
 		(property "Mouser Price/Stock" ""
 			(at 201.93 138.43 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7845,21 +8797,25 @@
 		)
 		(property "Voltage Rating" "50V"
 			(at 205.74 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Digi-Key Part Number" ""
 			(at 201.93 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7881,23 +8837,29 @@
 		(lib_id "power:GNDPWR")
 		(at 103.505 76.2 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "edc88061-0cd7-4534-88f1-c38a88585f5f")
 		(property "Reference" "#PWR032"
 			(at 103.505 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GNDPWR"
 			(at 103.378 80.01 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7906,29 +8868,35 @@
 		)
 		(property "Footprint" ""
 			(at 103.505 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 103.505 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
 			(at 103.505 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7941,7 +8909,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/66de8ce3-68f9-4d35-858c-1420192a373c"
 					(reference "#PWR032")
 					(unit 1)
@@ -7953,13 +8921,17 @@
 		(lib_id "NCP5109ADR2G:NCP5109ADR2G")
 		(at 99.06 138.43 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "eee6d51e-d6fa-4be4-a754-5169dd6e9633")
 		(property "Reference" "IC2"
 			(at 115.57 130.81 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7968,6 +8940,8 @@
 		)
 		(property "Value" "NCP5109ADR2G"
 			(at 115.57 133.35 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7976,100 +8950,120 @@
 		)
 		(property "Footprint" "Robomaster_ICs:SOIC127P600X175-8N"
 			(at 128.27 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NCP5109-D.PDF"
 			(at 128.27 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Description" "High Voltage Range: Up to 200 V; dV/dt Immunity 50 V/nsec; Gate Drive Supply Range from 10 V to 20 V; High and Low Drive Outputs; Output Source / Sink Current Capability 250 mA / 500 mA; 3.3 V and 5 V Input Logic Compatible; Up to Vcc Swing on Input Pins; Matched Propagation Delays Between Both Channels; Outputs in Phase with the Inputs; Independent Logic Inputs to Accommodate All Topologies (Version A); Cross Conduction Protection with 100 ns Internal Fixed Dead Time (Version B ); Under Vcc LockOut (UVLO)"
 			(at 99.06 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description_1" "High Voltage Range: Up to 200 V; dV/dt Immunity 50 V/nsec; Gate Drive Supply Range from 10 V to 20 V; High and Low Drive Outputs; Output Source / Sink Current Capability 250 mA / 500 mA; 3.3 V and 5 V Input Logic Compatible; Up to Vcc Swing on Input Pins; Matched Propagation Delays Between Both Channels; Outputs in Phase with the Inputs; Independent Logic Inputs to Accommodate All Topologies (Version A); Cross Conduction Protection with 100 ns Internal Fixed Dead Time (Version B ); Under Vcc LockOut (UVLO) "
 			(at 128.27 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Height" "1.75"
 			(at 128.27 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Mouser Part Number" "863-NCP5109ADR2G"
 			(at 128.27 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Mouser Price/Stock" ""
 			(at 128.27 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer_Name" "onsemi"
 			(at 128.27 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "NCP5109ADR2G"
 			(at 128.27 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Digi-Key Part Number" ""
 			(at 99.06 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -8109,14 +9103,18 @@
 		(lib_id "Connector:TestPoint")
 		(at 214.63 100.33 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f4300c42-47c3-4ef8-9ec2-718e1c15fccf")
 		(property "Reference" "LO_{DRV}2"
 			(at 217.17 95.7579 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8126,6 +9124,8 @@
 		)
 		(property "Value" "TestPoint"
 			(at 217.17 98.2979 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8135,38 +9135,46 @@
 		)
 		(property "Footprint" "TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm"
 			(at 219.71 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 219.71 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "test point"
 			(at 214.63 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Digi-Key Part Number" ""
 			(at 214.63 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8185,23 +9193,29 @@
 		(lib_id "power:GNDPWR")
 		(at 95.25 119.38 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f8a75653-e38b-4abe-a2b9-725bb8f58b2b")
 		(property "Reference" "#PWR030"
 			(at 95.25 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GNDPWR"
 			(at 95.123 123.19 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8210,29 +9224,35 @@
 		)
 		(property "Footprint" ""
 			(at 95.25 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 95.25 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
 			(at 95.25 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8251,23 +9271,29 @@
 		(lib_id "power:GNDPWR")
 		(at 85.09 109.22 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f8e6722a-ee09-4e92-abe3-fe7a8bf4a1e6")
 		(property "Reference" "#PWR028"
 			(at 85.09 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GNDPWR"
 			(at 84.963 113.03 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8276,29 +9302,35 @@
 		)
 		(property "Footprint" ""
 			(at 85.09 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 85.09 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
 			(at 85.09 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8317,14 +9349,18 @@
 		(lib_id "Connector:TestPoint")
 		(at 189.23 100.33 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fe3295be-74a6-4132-9fc8-679c9b8fae0c")
 		(property "Reference" "LO_{DRV}1"
 			(at 191.77 95.7579 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8334,6 +9370,8 @@
 		)
 		(property "Value" "TestPoint"
 			(at 191.77 98.2979 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8343,45 +9381,53 @@
 		)
 		(property "Footprint" "TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm"
 			(at 194.31 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 194.31 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "test point"
 			(at 189.23 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Digi-Key Part Number" ""
 			(at 189.23 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "ba7556bc-0448-4323-9ba3-d234a1cf8c82")
 		)
 		(instances
-			(project ""
+			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/66de8ce3-68f9-4d35-858c-1420192a373c"
 					(reference "LO_{DRV}1")
 					(unit 1)
