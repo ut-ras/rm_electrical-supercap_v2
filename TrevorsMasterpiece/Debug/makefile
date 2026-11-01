@@ -2,25 +2,19 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
-SHELL = cmd.exe
-
-CG_TOOL_ROOT := C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS
-
-GEN_OPTS__FLAG := @"./device.opt" 
-GEN_CMDS__FLAG := -Wl,-l"./device_linker.cmd" 
+GEN_OPTS__FLAG := 
+GEN_CMDS__FLAG := 
 
 ORDERED_OBJS += \
 "./empty.o" \
-"./ti_msp_dl_config.o" \
-"./startup_mspm0g350x_ticlang.o" \
 $(GEN_CMDS__FLAG) \
 -Wl,-ldevice.cmd.genlibs \
 -Wl,-llibc.a \
 
 -include ../makefile.init
 
-RM := DEL /F
-RMDIR := RMDIR /S/Q
+RM := rm -rf
+RMDIR := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
@@ -128,18 +122,16 @@ all: $(OBJS) $(GEN_CMDS)
 
 # Tool invocations
 Robomaster.out: $(OBJS) $(GEN_CMDS)
-	@echo 'Building target: "$@"'
-	@echo 'Invoking: Arm Linker'
-	"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/bin/tiarmclang.exe" @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -gdwarf-3 -Wall -Wl,-m"Robomaster.map" -Wl,-i"C:/ti/mspm0_sdk_2_10_00_04/source" -Wl,-i"C:/Users/wtrev/Desktop/Robomaster/rm_electrical-supercap_v2/TrevorsMasterpiece" -Wl,-i"C:/Users/wtrev/Desktop/Robomaster/rm_electrical-supercap_v2/TrevorsMasterpiece/Debug/syscfg" -Wl,-i"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="Robomaster_linkInfo.xml" -Wl,--rom_model -o "Robomaster.out" $(ORDERED_OBJS)
+	@echo 'Arm Linker - building target: "$@"'
+	"" -Wl,-m"Robomaster.map" -Wl,-i"/source" -Wl,-i"/Users/pulunzhou/Documents/KiCad/rm_electrical-supercap_v2/TrevorsMasterpiece" -Wl,-i"/Users/pulunzhou/Documents/KiCad/rm_electrical-supercap_v2/TrevorsMasterpiece/Debug/syscfg" -Wl,-i"/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="Robomaster_linkInfo.xml" -Wl,--rom_model -o "Robomaster.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(GEN_MISC_FILES__QUOTED)$(GEN_FILES__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "empty.o" "ti_msp_dl_config.o" "startup_mspm0g350x_ticlang.o" 
-	-$(RM) "empty.d" "ti_msp_dl_config.d" "startup_mspm0g350x_ticlang.d" 
-	-@echo 'Finished clean'
+	-$(RM) $(GEN_MISC_FILES__QUOTED)$(EXE_OUTPUTS__QUOTED)
+	-$(RM) "empty.o" 
+	-$(RM) "empty.d" 
 	-@echo ' '
 
 .PHONY: all clean dependents
