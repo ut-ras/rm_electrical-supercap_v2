@@ -4,14 +4,14 @@ clc
 % We must first calculate our optimum switching frequency before optimizing
 % magnetics design. We make the assumption that at optimal frequency,
 % switching and conduction loss are equal. 
-R_on = 0.36e-3;
-I = 30;
-RR = 0.2;
+R_on = 0.36e-3;  %drain-source on state resistance
+I = 30;          %continuous drain current
+RR = 0.2;        %
 I_ms = I^2 + (RR*I)^2 / 3;
 cond_loss = 2 * R_on * I_ms
 % switching loss
-Coss = 3300e-12;
-v_l = 26;
+Coss = 3300e-12; %output capacitance 
+v_l = 26; 
 f_sw = 120e3;
 sw_loss = @(f_s) 2 * Coss * v_l^2 * f_s;
 sw_loss(f_sw)

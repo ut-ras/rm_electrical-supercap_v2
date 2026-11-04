@@ -6,6 +6,7 @@ volatile uint16_t current1 = 0;
 volatile uint16_t voltage2 = 0;
 volatile uint16_t current2 = 0;
 volatile uint16_t inductorVoltage = 0;
+volatile uint16_t Mt = 0;
 
 // Function prototypes
 void set_PWM_Edges(uint32_t ch1_up_tick, uint32_t ch0_down_tick);
@@ -27,8 +28,8 @@ int main(void)
     DL_ADC12_enableConversions(ADC12_1_INST);
     //TEMP code for setting initil PWM output
     test_PWM_Output();
-    //fuck
-    DL_TimerA_enableFaultInput(PWM_0_INST);
+    //fuck --the case scenario this is called would be fucked (line is good)
+   DL_TimerA_enableFaultInput(PWM_0_INST);
     // Furn on timer for PWM and ADCs
     DL_TimerA_startCounter(PWM_0_INST);
     while (1) {
@@ -50,7 +51,12 @@ void ADC12_0_INST_IRQHandler(void)
             current2 = DL_ADC12_getMemResult(ADC12_1_INST, DL_ADC12_MEM_IDX_1);
             
             // PUT THE FF PI CONTROLER HERE
-            
+            //NEED TO FIX THIS
+            double Kt = voltage1/(2*voltage2); //voltage1 = Vc and voltage2 = Vg
+            double MTt = 0; //????
+            double Mt = Kt + sqrt(MTt + (Kt*Kt));
+            double Doff = Mt/2;
+            set_PWM_Edges((uint32_t)((0.5-Doff)*133), (uint32_t)((0.5+Doff)*133));
             break;
             
         default:

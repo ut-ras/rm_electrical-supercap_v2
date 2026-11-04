@@ -39,3 +39,20 @@ MSPM0 LaunchPad, please visit the [LP-MSPM0G3507 User's Guide](https://www.ti.co
 ## Example Usage
 
 Compile, load and run the example.
+
+### SysConfig package selection on Windows
+
+This project selects MSPM0 SDK **2.11.00.07** and SysConfig **1.28.2**.
+SysConfig 1.26.2 does not include `VSSOP-32(DGS32)` for MSPM0G3507;
+installing a newer CCS alone does not override a project's selected SysConfig version.
+
+After updating the project, close its SysConfig editor tabs and reopen the project
+in CCS so it reloads the product selections. In **Project Properties → General →
+Products**, verify the versions above. If a product is missing, add its installation
+directory under **Preferences → Code Composer Studio → Products** and rediscover it.
+Open the new `empty1.syscfg` and select **MSPM0G3507 → VSSOP-32(DGS32)**.
+
+The existing `empty.syscfg` uses the LaunchPad's 64-pin package and assigns pins
+including PB24, which are unavailable on VSSOP-32. Start with an empty configuration
+for that package. Keep only the intended `.syscfg` file enabled for the build,
+because both files otherwise generate the same configuration outputs.

@@ -6,12 +6,14 @@ SHELL = cmd.exe
 
 # Add inputs and outputs from these tool invocations to the build variables 
 SYSCFG_SRCS += \
-../empty.syscfg 
+../empty.syscfg \
+../empty1.syscfg 
 
 C_SRCS += \
 ../empty.c \
 ./ti_msp_dl_config.c \
-C:/ti/mspm0_sdk_2_10_00_04/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c 
+C:/TI/mspm0_sdk_2_11_00_07/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c \
+../empty1.c 
 
 GEN_CMDS += \
 ./device_linker.cmd 
@@ -24,6 +26,9 @@ GEN_FILES += \
 C_DEPS += \
 ./empty.d \
 ./ti_msp_dl_config.d \
+./startup_mspm0g350x_ticlang.d \
+./empty1.d \
+./ti_msp_dl_config.d \
 ./startup_mspm0g350x_ticlang.d 
 
 GEN_OPTS += \
@@ -32,9 +37,13 @@ GEN_OPTS += \
 OBJS += \
 ./empty.o \
 ./ti_msp_dl_config.o \
-./startup_mspm0g350x_ticlang.o 
+./startup_mspm0g350x_ticlang.o \
+./empty1.o 
 
 GEN_MISC_FILES += \
+./device.cmd.genlibs \
+./ti_msp_dl_config.h \
+./Event.dot \
 ./device.cmd.genlibs \
 ./ti_msp_dl_config.h \
 ./Event.dot 
@@ -42,15 +51,22 @@ GEN_MISC_FILES += \
 OBJS__QUOTED += \
 "empty.o" \
 "ti_msp_dl_config.o" \
-"startup_mspm0g350x_ticlang.o" 
+"startup_mspm0g350x_ticlang.o" \
+"empty1.o" 
 
 GEN_MISC_FILES__QUOTED += \
+"device.cmd.genlibs" \
+"ti_msp_dl_config.h" \
+"Event.dot" \
 "device.cmd.genlibs" \
 "ti_msp_dl_config.h" \
 "Event.dot" 
 
 C_DEPS__QUOTED += \
 "empty.d" \
+"ti_msp_dl_config.d" \
+"startup_mspm0g350x_ticlang.d" \
+"empty1.d" \
 "ti_msp_dl_config.d" \
 "startup_mspm0g350x_ticlang.d" 
 
@@ -62,9 +78,11 @@ GEN_FILES__QUOTED += \
 C_SRCS__QUOTED += \
 "../empty.c" \
 "./ti_msp_dl_config.c" \
-"C:/ti/mspm0_sdk_2_10_00_04/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c" 
+"C:/TI/mspm0_sdk_2_11_00_07/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c" \
+"../empty1.c" 
 
 SYSCFG_SRCS__QUOTED += \
-"../empty.syscfg" 
+"../empty.syscfg" \
+"../empty1.syscfg" 
 
 
