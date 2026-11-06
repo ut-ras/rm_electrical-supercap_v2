@@ -1,0 +1,333 @@
+Run Loss_Analysis.m in MATLAB (R2021a or newer recommended).
+Run test_loss_analysis to verify import and numerical regressions.
+
+The attached Coilcraft workbook is copied into Loss_Data/Power_Inductor.xlsx.
+It is read directly, including its metadata and row-4 headers. Add MOSFET
+rows to Loss_Data/MOSFET_candidates.csv, or point mosfetFile to an XLSX.
+All inductors are crossed with all MOSFET rows and operating points.
+The same MOSFET is assumed in every switch position. Different HS/LS parts
+require extending the model. Per-point outputs go to
+Loss_Results/component_comparison.csv. component_summary.csv aggregates the
+worst screen-failure count and largest known-loss subtotal across sampled
+points for each component pair. No favorable single point constitutes a
+pass across the range. The subtotal still excludes unknown losses.
+
+The installed FET is confirmed as IQDH35N03LM5CGSC by the supplied PDF;
+its parameters agree with the previously entered schematic reference.
+It is a 30 V part, NOT a proposed replacement. A 40 V candidate must be
+added using its own datasheet. The user confirmed a 0.75 ohm external gate
+resistor and a low-side gate-to-source measurement. Shorting that resistor
+reportedly left the waveform essentially unchanged. The user reports VCC
+is believed to be 12 V, matching the supplied gate-driver schematic.
+The model now uses 12 V nominal; actual local VCC during switching remains
+unmeasured. The MCU outputs connect directly to the respective IN_LO nets.
+That makes them the same schematic nets, but does not establish identical
+waveforms relative to the local driver ground at both physical locations.
+
+Qg/Rds data in the reference CSV remain specified at 10 V. At 12 V drive,
+the script retains those values as flagged estimates rather than inventing
+new charge values. Pgate=2*Qg(10V)*12*f is not a validated 12 V gate-loss
+prediction. Actual Qg at 12 V must be obtained from suitable characterization;
+the script does not scale Qg linearly with voltage. Driver resistance/current
+data are specified at 15 V and are likewise only screening estimates here.
+
+CONFIRMED OPERATING RANGE AND NEW SWEEP
+
+The user confirmed a four-switch bidirectional buck-boost stage and four
+parallel 110 F / 18 mOhm cells, operated from 0 to 3 V with a stated 3.1 V
+ceiling. capEachRated_V=3.1 records that user-stated ceiling, not an independently
+checked capacitor datasheet rating. The bank is 440 F and 4.5 mOhm.
+
+Loss_Analysis.m now samples 0.25:0.25:3 V with an assumed 30 A current limit.
+The requested 0 V endpoint is explicitly excluded from this steady-state
+CCM calculation. From an initially discharged bank, a current-regulated
+startup transient must establish current and account for resistive drops,
+minimum pulse width and bootstrap supply. At zero open-circuit voltage the
+bank has no stored energy to deliver in boost. A constant 90 W command must
+not be extrapolated to zero voltage. With a 30 A limit, terminal charging
+power is only 30 W at 1 V and 90 W at 3 V, before converter losses.
+
+The script selects frequencyMode="envelope": one frequency for each
+inductor, equal to the largest required frequency over sampled V/I points.
+Ripple and RMS losses are then recomputed at that fixed frequency. For
+30 A over 0<Vcap<=3 V, the maximum ideal ripple occurs at 3 V, so the
+original 3 V sizing frequency still sets the bound. Minimum pulse and
+gate timing become more restrictive at lower voltage. The default helper
+loss_defaults uses "per_point" for individual calculations; either mode
+is selectable. Lower-current operation needs its own current sweep.
+
+Vcap remains LOADED TERMINAL voltage. The estimated internal mean voltage
+is Vcap-IL*ESR during charge and Vcap+IL*ESR during discharge. At 30 A the
+bank ESR shift is 0.135 V; zero internal voltage therefore does not mean
+zero terminal voltage while charging. Interpret the user's 0-3 V range
+accordingly when constructing operating points and charge termination.
+The capacitor voltage screen checks both terminal and estimated internal
+mean voltages, but does not predict switching ripple peaks or overshoot.
+
+IdealDutyApproximationOK checks that the converter's estimated DC conduction
+drop is <=10% of Vcap and that the inferred internal voltage is nonnegative.
+This is a configurable heuristic, not a model of low-voltage startup.
+Failed rows retain their ideal calculations for inspection but must not
+be treated as reliable duty/frequency/loss predictions. The sweep is a
+component screen, not a complete controller or startup validation.
+
+WHAT WAS CORRECTED OR CHANGED
+
+1. Ripple ratio means DeltaI_peak_to_peak / average IL. For ideal CCM buck:
+   D = Vcap/Vbus
+   fsw = Vcap*(Vbus-Vcap)/(Vbus*IL*L*rippleRatio)
+   With 24 V, 3 V, 30 A and r=0.2: fsw=0.4375/L_H.
+   33e-5 H = 330 uH -> 1.32576 kHz.
+   33e-6 H = 33 uH -> 13.2576 kHz.
+   At 120 kHz the same target requires 3.64583 uH.
+   Twenty percent is a design choice, not a mandatory standard or optimum.
+   This gives the minimum frequency for <=20% ripple at that point, not
+   an efficiency optimum. Higher frequency reduces ripple and increases
+   many switching losses. Fixed frequency must satisfy the full operating
+   envelope, including inductance droop with DC bias and tolerance.
+
+2. 90/24=3.75 A on the bus and 90/3=30 A at the capacitor are the same ideal
+   power. Multiplying by eight is the conversion ratio, not extra margin.
+   Actual available charging power is 90 W minus the robot's other loads.
+   At lower capacitor voltage, constant power would demand more current;
+   impose a current limit. During peak discharge, define peak power and
+   minimum capacitor voltage separately. A single 30 A point is insufficient.
+
+3. DeltaIpp=6 A; peak=33 A; RMS^2=30^2+6^2/12=903 A^2.
+   Magnetics_Design.m uses /3 and (1+RR)*I, which treat RR as HALF ripple.
+   Its RR=0.2 therefore means 40% peak-to-peak, unlike the supplied equation.
+   Existing magnetics/Simulink scripts are retained; the new workflow is
+   independent and does not silently retune the control model.
+   Additional legacy magnetics issues to resolve before winding a core:
+   total magnetic reluctance for a chosen L and N is N^2/L. A flux margin
+   should lower the allowed B, e.g. Ballow=Blimit/safety_factor; putting the
+   factor in the denominator of the existing reluctance expression instead
+   permits higher flux. Part 3 reuses the ETD44 core_reluctance for an ETD29,
+   then computes gap length from total rather than gap reluctance. Recompute
+   core geometry/material reluctance and subtract it before calculating gap.
+   If f_sw/10 is intended as a filter frequency in Hz, convert to angular
+   frequency omega=2*pi*f before using L=1/(C*omega^2). These are separate
+   magnetics/filter design issues; the loss tool does not validate those cores.
+
+4. Inductor copper loss is Irms^2*DCR(T). Copper's assumed coefficient is
+   0.00393/K relative to 25 C. DCR typical is not a guaranteed maximum.
+   Core and AC winding losses cannot be inferred from L and DCR alone.
+   Enter CoreLoss_W and ACWindingLoss_W for each actual f/ripple/DC bias.
+   These values are only valid at the point they were obtained; a sweep
+   requires updated vendor data or a frequency/flux-dependent model.
+   Isat definitions, temperature derating, L droop and Irms test conditions
+   vary by vendor. The workbook's Irms is at 40 C rise / 25 C ambient.
+
+5. Two identical synchronous switches contribute one Rds weighted over a
+   cycle: D*Rds+(1-D)*Rds=Rds. A four-switch converter with another held-on
+   series FET contributes a second Rds. Thus 2*Ron is plausible for this
+   topology, but not for every buck. Both PWM legs switching simultaneously
+   need a different model. In boost discharge the same ripple expression
+   applies for low-side inductor current, with low-side on-duty 1-D.
+   A bootstrap-only high-side cannot remain on indefinitely: verify refresh
+   behavior or provide an independent floating supply for the held switch.
+
+6. Four identical parallel 110 F / 18 mOhm cells give 440 F and 4.5 mOhm.
+   Their bank heating at this point is 903*0.0045 = 4.0635 W.
+   Series/parallel counts are configurable: C=Np*Ccell/Ns, ESR=Ns*ESRcell/Np.
+   Verify cell voltage rating, equal current sharing and RMS capability.
+   Vcap is TERMINAL voltage. Charging terminal power is 90 W at 3 V, 30 A;
+   stored power is ~85.9365 W after this ESR heating. Input bus power is
+   terminal power plus converter loss (exclude bank ESR to avoid counting
+   it twice). ModelledTotal includes bank ESR for end-to-end efficiency.
+   At 25 C, using the original resistances, total conduction=8.5785 W.
+   High-voltage bus buffer current RMS^2=IL^2*D*(1-D)+D*DeltaIpp^2/12.
+   Buffer ESR is unknown until supplied. The bank is assumed to carry all
+   inductor ripple; parallel ceramic/filter capacitors can redistribute it.
+
+7. MOSFET on-resistance is not the gate-path resistance. Use Rds(on) at the
+   actual gate voltage and temperature for conduction. A slow gate waveform
+   cannot show that the datasheet's Rds is wrong. Ciss is gate input
+   capacitance; Coss is drain output capacitance. Neither is constant over
+   voltage. Qg/Qsw/Qgd and actual Vds/Id switching measurements are better
+   gate-drive/switching predictors than a single Ciss threshold.
+
+8. The NCP5109 is not an unknowable black box. The model uses its output
+   resistance and peak-current figures and calculates Pgate=2*Qg*Vdrive*f
+   for two toggling gates. This is gate-drive SUPPLY energy, distributed
+   among the driver and gate resistances, not all MOSFET junction heating.
+   Driver overhead and supply losses require separate data. The loaded
+   datasheet ICC includes a specified gate load; adding it wholesale to
+   Qg*V*f double counts load energy. No thermal pass is inferred here.
+   Timing uses maximum output resistance (60/20 ohms) and typical peak
+   currents (0.25/0.5 A), specified at 15 V; default 12 V extrapolation
+   is explicitly only a screen. Typical resistance is 30/10 ohms.
+   NCP5109A has independent inputs and NO built-in deadtime. The B version
+   adds interlock/deadtime. The model's 100 ns is a firmware assumption,
+   not proof that the A variant prevents shoot-through.
+
+9. Gate timing compares Qg/Iplateau and ln(9)*Rgate*Ciss against a user
+   fraction (default 25%) of the shortest pulse after delay/deadtime.
+   It is a configurable heuristic, not a guaranteed driver limit. CissLimit
+   is reported as requested, alongside the charge check. The overlap model
+   uses Qsw/Iplateau or Qgd/Iplateau if Qsw is absent. The Qgd-only fallback
+   misses current-rise charge. Ideal conduction plus deadtime slightly
+   overcounts conduction during deadtime; this small approximation is kept
+   explicit. Large transition times invalidate this first-order model.
+
+10. Switching loss includes voltage/current overlap, reverse recovery and
+    output-capacitance commutation. For identical FETs the fallback pair
+    estimate is Vbus*Qoss*f, or Coss*Vbus^2*f if only constant Coss is given.
+    These are estimates: charge/energy must be evaluated at actual Vbus and
+    commutation conditions. Prefer Ecomm_J for the whole half bridge per
+    cycle, excluding overlap/recovery, or measured whole-leg Eon_J/Eoff_J
+    INCLUDING them. Eon+Eoff overrides the other switching terms to avoid
+    double counting. Do not blindly enter switching times/energies measured
+    with a different gate driver, current, temperature, or test circuit.
+    The old 2*Coss*V^2*f alone omits overlap/recovery; its factor also depends
+    on how many legs are hard switched and how capacitance is defined.
+    Equal conduction and switching losses is not a general optimum rule.
+
+11. 40 V is only a candidate rating. The default screen requires
+    1.2*(26 V maximum bus + 6 V overshoot)=38.4 V. Both 26 and 6 are explicit
+    assumptions, not measured limits. Check actual maximum bus, Vds ringing,
+    SOA, transient/avalanche conditions, junction temperature and layout.
+    The included 30 V reference intentionally fails this voltage screen.
+
+SCOPE INTERPRETATION
+
+tek00001.webp: displayed rise=2.087 us, fall=777.1 ns, period=4.180 us
+(239.23 kHz), logic high width=1.787 us (~42.8% duty, not the buck's 12.5%).
+For a single-pole settled 10-90% transition, t10-90=ln(9)*tau:
+tau_rise=0.949835 us; tau_fall=0.353674 us (approximate).
+The confirmed part's typical 14 nF Ciss would give apparent TOTAL gate-path
+Rrise~67.85 ohm, Rfall~25.26 ohm, conditional on the RC/probing assumptions.
+These are conditional RC equivalents, not extracted driver resistance or
+Rds(on). Subtract external/internal gate resistance only if the simple RC
+assumptions hold. Do not use 3.3 nF Coss for this calculation.
+
+The supplied Yageo PDF describes the RL low-ohmic thick-film resistor family;
+the user confirmed 0.75 ohm fitted, agreeing with the schematic's 0R75 code.
+The observation that bypassing it barely changes the waveform is consistent
+with a driver/gate-load limitation. In a simple RC model, bypassing 0.75 ohm
+removes ln(9)*0.75*C from the 10-90% edge: only 23.1 ns at 14 nF or 29.7 ns
+at 18 nF, versus the observed 2087 ns rise and 777.1 ns fall. The driver's
+specified 30/10 ohm typical source/sink resistances (60/20 ohm max, at 15 V)
+dominate 0.75 ohm. Nonlinear capacitance/current limiting means these are
+illustrative sensitivities, not guaranteed timing improvements. The bypass
+experiment does not by itself establish excessive Ciss as the sole cause.
+
+The NCP5109 low-side output is referenced to its GND pin, not bootstrap-
+floating. The high-side output is referenced to BRIDGE. Vgate-to-ground
+equals Vgs only if the source is at that same ground potential; source
+inductance or a different ground point can invalidate the equivalence.
+A floating driver output does not make an ordinary scope probe isolated.
+The user-confirmed Vgs measurement is the appropriate quantity to inspect.
+
+The supplied schematic shows the following matching channels:
+IC1: D1' -> IN_LO pin 3 -> DRV_LO pin 5 -> 0.75 ohm -> LO_DRV1.
+IC2: D2' -> IN_LO pin 3 -> DRV_LO pin 5 -> 0.75 ohm -> LO_DRV2.
+Use the matching primed low-side input for blue; D1/D2 are separate high-side
+inputs. Pin 1 is supplied by +12 V; pin 4 is GNDPWR. Each low-side input and
+its directly connected MCU output are one net, not separate logic stages.
+The two different MCU outputs must not be confused with one shared net.
+Probing at pin 3 relative to pin 4 checks the signal actually seen by the IC,
+including any ground displacement, ringing or connection problem. This is
+a diagnostic check, not a claim that normal trace delay explains the
+microsecond-scale behavior. A clean 3.3 V input meets the driver's stated
+2.3 V high-level threshold; 12 V VCC does not require a 12 V logic signal.
+
+The yellow trace continues rising after the blue input falls; the first
+capture also appears offset from ground. Even with Vgs confirmed, channel
+identity and timing at the actual driver input need checking before
+attributing everything to Ciss. Low-side debugging should first measure
+VCC-to-GND at the IC pins, the same IC's IN_LO and DRV_LO, and source-to-driver
+GND. The bootstrap is not the primary supply for this low-side output.
+With the power stage disabled, a lower PWM frequency can help establish
+settled gate high/low levels and whether the anomalous timing persists.
+Measure Vds and drain current for switching-energy validation. A screenshot
+does not establish settled levels, Miller behavior, propagation delay or
+switching energy.
+The numeric diagnostics are not used to silently calibrate all candidate
+FETs. The waveform does establish that a clean, fast gate drive has not
+yet been demonstrated at this frequency with the shown setup.
+
+IMPORT FORMAT
+
+Canonical columns use SI, as spelled in import_loss_parts.m. For inductors:
+PartNumber,L_H,DCR_Ohm,Isat_A,Irms_A,CoreLoss_W,ACWindingLoss_W.
+Only part number, inductance, and DCR are required. MOSFET columns are shown
+in the supplied CSV; only PartNumber,Vds_V,Rds_Ohm are required. Missing
+dynamic parameters produce unknown loss/timing fields, not a false pass.
+Numeric vendor columns need units in headers, or cells such as '33 uH',
+'4.3 mOhms', '262 nC'. Common vendor headers are recognized automatically.
+Unknown/ambiguous headers or units should be renamed to canonical names.
+Test-condition strings like '0.35 mOhm @ 10 V' and ranges must be split
+into separate fields; they are deliberately rejected instead of guessed.
+Do not mix typical/max or gate-voltage conditions without noting them.
+DataVds_V, RdsVgs_V and QgVgs_V record key test conditions.
+
+INTERPRETING RESULTS
+
+FAIL = at least one screen failed. INCOMPLETE = no known failure but required
+rating data is missing. SCREEN_ONLY = checked thresholds satisfied, NOT
+thermal/safety validation. KnownLossSubtotal excludes unknown terms and
+can include approximations; do not rank final designs by it alone.
+ModelledTotal is NaN until every modeled loss term has data. Even a complete
+model excludes PCB/cable/connector/control and leakage losses unless added.
+No closed-loop temperature calculation, SOA check, EMI check, bootstrap
+refresh simulation, cell balancing or DCM simulation is performed.
+
+SOURCES (manufacturer primary documents; checked October 18, 2026)
+
+Local attachment: /Users/pulunzhou/Downloads/NCP5109-D.PDF, electrical table p5.
+Confirmed FET attachment: /Users/pulunzhou/Downloads/infineon_iqdh35n03lm5cgsc_datasheet_en.pdf, pp4-5.
+Gate resistor attachment: /Users/pulunzhou/Downloads/PYU_RL_GROUP_521_ROHS_L.pdf, Yageo RL series, April 7 2023 v3.
+Gate-driver schematic screenshot: /Users/pulunzhou/Screenshots/screenshot-2026-10-18-17h05m00s.png.
+https://www.onsemi.com/download/data-sheet/pdf/ncp5109-d.pdf
+https://www.infineon.com/assets/row/public/documents/24/49/infineon-iqdh35n03lm5cgsc-datasheet-en.pdf
+https://www.ti.com/lit/an/slvaeq9/slvaeq9.pdf
+User's Power Inductor.xlsx; existing Simulink_Params.m and Converter schematic.
+
+OCTOBER 23 2026 UPDATE: WURTH INDUCTORS AND MOUSER MOSFET
+
+New vendor files were copied (originals untouched) into Loss_Data:
+Wurth_Power_Inductors.xlsx <- "Power Inductors2.xlsx" (16 Wurth parts)
+Mouser_MOSFETs.csv <- "MouserSearchDownload (1).csv" (IQE020N04LM6CGSCATMA1)
+The folder's "Power Inductor.xlsx" is byte-identical to the Coilcraft file.
+Loss_Analysis.m now takes lists: inductorFiles and mosfetVendorFiles.
+
+Wurth catalog exports have unit-free SI cells (L0 in H, RDC,typ in Ohm,
+IR/Isat in A) and an "Order Code" part column. The importer auto-enables
+unit-free SI only for that signature (Order Code + L0). Other vendors'
+unit-free cells are still rejected. A magnitude guard (L 1nH..100mH,
+DCR/Rds 10uOhm..10Ohm, Vds 1..2000V) now catches unit mistakes in any file.
+Wurth IR is mapped to Irms_A (rated-current, temperature-rise based).
+Wurth exports RDC TYPICAL only; the datasheet max is higher. Isat roll-off
+definitions differ between Wurth series and Coilcraft; check each datasheet.
+MnZn ferrite parts (WE-HCF, WE-HCFT 3540) saturate abruptly; metal-alloy
+parts (WE-HCFT 3635/3231) roll off softly. Treat ferrite Isat as a hard limit.
+
+Mouser exports only Vds, Rds and Qg (Qg there is TYPICAL, 25 nC).
+merge_mosfet_data.m overlays MOSFET_candidates.csv datasheet rows onto
+Mouser rows when the datasheet part number is a prefix of the Mouser part
+(Mouser appends packaging, e.g. ATMA1). Datasheet values win; Vds/Rds
+disagreements above 1% print a warning. Add a datasheet row for every
+new Mouser part, or its dynamic losses and gate timing remain unknown.
+
+IQE020N04LM6CGSC entries (Infineon datasheet Rev 1.0, 2025-12-17, pp4-5):
+Vds 40 V; Rds 2.05 mOhm max at 10 V/20 A; Qg 33 nC max 0-10 V; Qgd 4.7 nC
+max; Qsw 4.9 nC typ; plateau 2.6 V typ; Ciss 2.2 nF max, Coss 0.74 nF max,
+Qoss 36 nC max at 20 V; Qrr 119 nC max at 500 A/us (38 nC at 100 A/us);
+Vf 1.0 V max; Rg 1.3 Ohm typ. Dynamic data measured at Vds=20 V, not 24 V.
+
+fswFloor_Hz (default 0 = off) raises f above the 20%-ripple minimum.
+The ripple-minimum frequencies of the candidates are 8-30 kHz, much of it
+audible. Raising f lowers ripple and raises switching/gate loss roughly
+in proportion to f. Core loss data is still missing either way.
+
+Results at 30 A, 24 V, envelope frequency, 1.5x Rds temperature factor:
+IQE020 passes gate timing for Vcap>=0.75 V (fails 0.25/0.5 V, where the
+high-side pulse is under 1.3 us). The installed IQDH35N03 fails gate timing
+at every voltage (2.4 us gate charge vs 2.6-7.7 us pulses), matching the scope.
+IQE020 Rds (2.05 mOhm) is ~6x the IQDH35 (0.35 mOhm): FET conduction is
+5.55 W vs 0.95 W at 30 A. Its switching is 0.5 W vs 2.6 W. The ideal-duty
+screen fails below 2.5 V because 30 A x ~8 mOhm path is >10% of Vcap.
+Best screened inductor: 74437636352702 (WE-HCFT 3635, 27 uH, 1.48 mOhm typ,
+Isat 52.1 A, IR 49.3 A, THT, 36x36x34 mm): 11.85 W known subtotal at 3 V,
+of which 4.06 W is supercap ESR (identical for every part pair).
