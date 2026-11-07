@@ -2005,7 +2005,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Housekeeping/housekeeping.kicad_sch"
+		(property "Sheetfile" "housekeeping.kicad_sch"
 			(at 50.8 103.4546 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2091,7 +2091,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Converter/converter.kicad_sch"
+		(property "Sheetfile" "converter.kicad_sch"
 			(at 156.21 103.4546 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2217,7 +2217,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Control/control.kicad_sch"
+		(property "Sheetfile" "control.kicad_sch"
 			(at 102.87 103.4546 0)
 			(show_name no)
 			(do_not_autoplace no)
