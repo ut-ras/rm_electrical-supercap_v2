@@ -2056,6 +2056,26 @@
 				(justify left)
 			)
 		)
+		(pin "+27V3" output
+			(at 92.71 95.25 0)
+			(uuid "588a7ec3-8669-47b8-ac80-aedb9beae7f6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "+1V65" output
+			(at 92.71 97.79 0)
+			(uuid "a7f8c013-5bd3-4893-a940-ca7bf497e90a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f"
