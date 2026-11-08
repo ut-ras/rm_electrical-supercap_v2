@@ -826,7 +826,7 @@
         "uuid": "98ee8313-37ab-4329-91ab-b5710476f82f"
       }
     ],
-    "used_designators": "C_{D4}1,#PWR4-8,#PWR11-15,#PWR36-52,C_{byp}2-3,C_{BYP}2,C_{D3}1,C_{d}2,C_{filter}1,C_{smooth}3,C_{smooth}8-9,C_{smooth}11-12,IC1-6,J5,R_{PU}2,R_{RC}3-4,U1,U4-5,Y1,PS1,R1,R_{ref}2,TP1,V_{3.3}2,V_{12}2-3,V_{GND}2,C1,C_{FB}2-3",
+    "used_designators": "C_{D4}1,#PWR4-8,#PWR11-15,#PWR18,#PWR36-52,C_{RC}2,C_{byp}2-3,C_{BYP}2,C_{D3}1,C_{d}2,C_{filter}1,C_{smooth}3,C_{smooth}8-9,C_{smooth}11-12,IC1-6,J5,R_{PU}2,R_{RC}2-4,U1,U4-5,Y1,PS1,R1-2,R_{ref}2,TP1,V_{3.3}2,V_{12}2-3,V_{GND}2,C1,C_{FB}2-3,L_{bulk}2",
     "variants": []
   },
   "sheets": [

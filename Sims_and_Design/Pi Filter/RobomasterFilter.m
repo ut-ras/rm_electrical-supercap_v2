@@ -53,3 +53,18 @@ subplot(1, 2, 2);
 pzmap(H_ideal, 'b');
 grid on;
 title('Pole-Zero Map');
+
+%% Section 2: Egan's Design
+% We begin with our inductor and expected noise frequencies. Our switching
+% frequency should be approximately 150kHz, so we should expect harmonics
+% at 150KHz and the associated higher harmonics. We also have already
+% chosen an inductor to use with the converter. The previous design used a
+% 47uH inductor, but that inductor value was chosen simply by winding a
+% core with a wire as much as possible and seeing what the resultant
+% inductance is. Now, we will buy two of the converter inductor and simply
+% design our capacitance and resistance to match. 
+L = 47e-6;
+f_sw = 150e3;
+%%
+% Let's set the attenuation of the zeroth harmonic of the switching
+% frequency at -60dB. 

@@ -579,9 +579,9 @@
 		)
 		(uuid "88cb5a9c-087a-4a64-913d-4c2656b69c3e")
 	)
-	(text "12V Gate Driver\n3V3 Signals"
+	(text "12V Gate Driver\n3V3 Signals\nV_{g} + 3V3 Op-Amp Rail"
 		(exclude_from_sim no)
-		(at 72.136 90.043 0)
+		(at 72.136 90.17 0)
 		(effects
 			(font
 				(size 1.905 1.905)
@@ -605,7 +605,7 @@
 		(at 177.8 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "91f1507c-2d48-494e-bf0c-c0cd86c249c4")
+		(uuid "65652228-8d69-406a-9251-65cf9e7d20bb")
 	)
 	(junction
 		(at 205.74 85.09)
@@ -685,7 +685,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 63.5) (xy 228.6 63.5)
+			(xy 210.185 63.5) (xy 206.375 63.5)
 		)
 		(stroke
 			(width 0)
@@ -835,7 +835,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 63.5) (xy 228.6 67.31)
+			(xy 206.375 63.5) (xy 206.375 67.31)
 		)
 		(stroke
 			(width 0)
@@ -1085,6 +1085,16 @@
 	)
 	(wire
 		(pts
+			(xy 92.71 96.52) (xy 102.87 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a09251ec-1100-48aa-a538-0c7d82986509")
+	)
+	(wire
+		(pts
 			(xy 48.26 73.66) (xy 67.31 73.66)
 		)
 		(stroke
@@ -1325,7 +1335,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 60.96) (xy 232.41 60.96)
+			(xy 177.8 60.96) (xy 210.185 60.96)
 		)
 		(stroke
 			(width 0)
@@ -1352,6 +1362,16 @@
 			(type default)
 		)
 		(uuid "ef18c2b9-1b75-44ca-bb65-3f1ff737be6c")
+	)
+	(wire
+		(pts
+			(xy 92.71 99.06) (xy 102.87 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efb5a8e8-7fed-46cb-bce1-19156d96e142")
 	)
 	(polyline
 		(pts
@@ -1734,7 +1754,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 228.6 67.31 0)
+		(at 206.375 67.31 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1745,7 +1765,7 @@
 		(fields_autoplaced yes)
 		(uuid "82928df4-b997-47de-ab2b-a61e0bde98d6")
 		(property "Reference" "#PWR03"
-			(at 228.6 72.39 0)
+			(at 206.375 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1756,7 +1776,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 228.473 71.12 0)
+			(at 206.248 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1766,7 +1786,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 228.6 68.58 0)
+			(at 206.375 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1777,7 +1797,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 228.6 68.58 0)
+			(at 206.375 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1788,7 +1808,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 228.6 67.31 0)
+			(at 206.375 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1812,7 +1832,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
-		(at 237.49 63.5 180)
+		(at 215.265 63.5 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1822,7 +1842,7 @@
 		(dnp no)
 		(uuid "a08541d3-7de0-4a0c-983a-a4cf815cb783")
 		(property "Reference" "V_{out}1"
-			(at 245.745 63.754 0)
+			(at 223.52 63.754 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1832,7 +1852,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Pin"
-			(at 245.745 61.214 0)
+			(at 223.52 61.214 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1842,7 +1862,7 @@
 			)
 		)
 		(property "Footprint" "Robomaster_Conn:AMASS_XT30PW-F_1x02_P2.50mm_Horizontal"
-			(at 237.49 63.5 0)
+			(at 215.265 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1853,7 +1873,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 237.49 63.5 0)
+			(at 215.265 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1864,7 +1884,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 237.49 63.5 0)
+			(at 215.265 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1875,7 +1895,7 @@
 			)
 		)
 		(property "Digi-Key Part Number" ""
-			(at 237.49 63.5 0)
+			(at 215.265 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2057,7 +2077,7 @@
 			)
 		)
 		(pin "+27V3" output
-			(at 92.71 95.25 0)
+			(at 92.71 96.52 0)
 			(uuid "588a7ec3-8669-47b8-ac80-aedb9beae7f6")
 			(effects
 				(font
@@ -2067,7 +2087,7 @@
 			)
 		)
 		(pin "+1V65" output
-			(at 92.71 97.79 0)
+			(at 92.71 99.06 0)
 			(uuid "a7f8c013-5bd3-4893-a940-ca7bf497e90a")
 			(effects
 				(font
@@ -2336,6 +2356,26 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "+1V65" input
+			(at 102.87 99.06 180)
+			(uuid "e9822995-438f-48c4-a4c5-b3c6e0188051")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "+27V3" input
+			(at 102.87 96.52 180)
+			(uuid "b8a073c9-350b-4235-b6c9-1c034cd4343e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
