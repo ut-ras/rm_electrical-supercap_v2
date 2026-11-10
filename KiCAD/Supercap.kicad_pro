@@ -590,7 +590,7 @@
       "method": 0,
       "sort_order": 0
     },
-    "bom_export_filename": "bom\\Supercap from schematic.csv",
+    "bom_export_filename": "",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -735,7 +735,7 @@
           "group_by": false,
           "label": "Manufacturer",
           "name": "Manufacturer",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -826,7 +826,7 @@
         "uuid": "98ee8313-37ab-4329-91ab-b5710476f82f"
       }
     ],
-    "used_designators": "C_{D4}1,#PWR4-8,#PWR11-15,#PWR18,#PWR36-54,C_{RC}2,C_{byp}2-3,C_{BYP}2,C_{D3}1,C_{d}2,C_{filter}1,C_{smooth}3,C_{smooth}8-9,C_{smooth}11-12,IC1-6,J5,C_{l}2,R_{PU}2,R_{RC}2-4,U1,U4-5,Y1,PS1,R1-2,R_{ref}2,TP1,V_{3.3}2,V_{12}2-3,V_{GND}2,C1,C_{FB}2-3,L_{bulk}2",
+    "used_designators": "C_{D4}1,#PWR4-8,#PWR11-15,#PWR18,#PWR20,#PWR36-57,C_{RC}2,C_{byp}2-3,C_{BYP}2,C_{D3}1,C_{d}2,C_{filter}1,C_{filter}3,C_{smooth}3,C_{smooth}8-9,C_{smooth}11-12,IC1-6,J1,J5,C_{l}2,R_{PU}2,R_{RC}2-4,U1,U4-5,Y1,PS1,R1-2,R_{ref}2,TP1,V_{3.3}2,V_{12}2-3,V_{GND}2,C1,C_{FB}2-3,L_{bulk}2,R_{IA}1,J_{flash}2,J_{UART}2,J_{SPI}1,R_{filter}4",
     "variants": []
   },
   "sheets": [

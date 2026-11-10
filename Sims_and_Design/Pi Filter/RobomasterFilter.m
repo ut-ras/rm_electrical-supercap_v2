@@ -78,13 +78,14 @@ C = 1/((2*pi*f_c)^2*L)
 % We can now design the RLC filter. Let's find a suitable capacitor and 
 % add the ESRs of the components.
 C = 1200e-6; % Part # ESK477M050AH4KA
+C = 12000e-6;
 R_L = 1.33e-3 + 1.2e-3;
-R_C = 0.1/(120*2*pi*C) % part # ESK477M050AH4KA
+R_C = 11e-3; % part # ESK477M050AH4KA
 %%
 % Now we can sweep for a resistance (there's an analytical way to do it,
 % but it's a pain in the ass).
 s = tf("s");
-R_s = 0; % sweep this value
+R_s = 0.5; % sweep this value
 h_filter = (R_C + R_s + 1/(s*C)) / (R_C + R_s + R_L + (s * L) + 1/(s*C));
 Z_1 = R_L + s*L;
 Z_2 = R_s + R_C + 1/(s * C);
