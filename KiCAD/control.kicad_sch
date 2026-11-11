@@ -5840,12 +5840,12 @@
 		(uuid "69d60399-35b7-4532-be4d-2bb77b7319b2")
 	)
 	(label "HFXOUT"
-		(at 170.18 130.175 0)
+		(at 162.56 130.175 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "6f538264-16c2-405f-80ab-1903ba3c0d3d")
 	)
@@ -5960,12 +5960,12 @@
 		(uuid "e046aded-6c62-4e8b-954a-cb2abbfdb3cf")
 	)
 	(label "HFXIN"
-		(at 162.56 130.175 180)
+		(at 170.18 130.175 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "eaa69c42-8cd6-4e3d-9020-ee1915fc6b08")
 	)
