@@ -14065,7 +14065,7 @@
 		(dnp no)
 		(uuid "cf2ff7e1-a85f-4247-b26f-5bdde5185ec1")
 		(property "Reference" "L_{filter}1"
-			(at 190.5 27.178 90)
+			(at 190.5 26.67 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14075,7 +14075,7 @@
 			)
 		)
 		(property "Value" "33u"
-			(at 190.5 29.718 90)
+			(at 190.5 29.21 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
