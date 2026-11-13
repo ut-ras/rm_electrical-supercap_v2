@@ -2800,7 +2800,7 @@
 				(justify left)
 			)
 		)
-		(pin "+27V3" input
+		(pin "+29V" input
 			(at 120.65 106.045 180)
 			(uuid "b8a073c9-350b-4235-b6c9-1c034cd4343e")
 			(effects

@@ -6076,7 +6076,7 @@
 		)
 		(uuid "6996588e-c467-46c5-99e1-8dfd6dc9e10e")
 	)
-	(hierarchical_label "+27V3"
+	(hierarchical_label "+29V"
 		(shape input)
 		(at 132.715 80.01 180)
 		(effects
@@ -6109,7 +6109,7 @@
 		)
 		(uuid "bf861449-6509-465d-aa29-4ed77489ad49")
 	)
-	(hierarchical_label "+27V3"
+	(hierarchical_label "+29V"
 		(shape input)
 		(at 43.815 27.94 180)
 		(effects
@@ -8774,7 +8774,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 67.945 95.25 0)
 			(hide yes)
 			(show_name no)
