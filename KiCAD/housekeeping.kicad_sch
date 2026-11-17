@@ -3538,7 +3538,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "LM4041LP-ADJ"
+		(property "Value" "LM4041C12IDBZR"
 			(at 68.58 90.8049 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3549,7 +3549,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
 			(at 70.485 89.535 0)
 			(hide yes)
 			(show_name no)
@@ -3628,7 +3628,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Texas Instruments"
 			(at 65.405 89.535 90)
 			(hide yes)
 			(show_name no)
@@ -3662,6 +3662,28 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 65.405 89.535 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "595-LM4041C12IDBZR"
+			(at 65.405 89.535 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" "LM4041C12IDBZR"
 			(at 65.405 89.535 90)
 			(hide yes)
 			(show_name no)

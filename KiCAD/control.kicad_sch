@@ -4426,6 +4426,12 @@
 		(uuid "926e4994-dc48-4d58-b923-e0afb9b3204c")
 	)
 	(junction
+		(at 43.815 141.605)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "94cb51ab-7d17-408a-bd96-e191086ad228")
+	)
+	(junction
 		(at 62.865 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4460,12 +4466,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e2f3d6ac-5218-4e56-aba8-5b5e4a0821ea")
-	)
-	(junction
-		(at 43.815 141.605)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e79fe50e-5619-4179-8cfc-26e39e9306a9")
 	)
 	(junction
 		(at 31.115 95.25)
@@ -4821,7 +4821,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.195 141.605) (xy 59.055 141.605)
+			(xy 36.195 141.605) (xy 43.815 141.605)
 		)
 		(stroke
 			(width 0)
@@ -5271,6 +5271,16 @@
 	)
 	(wire
 		(pts
+			(xy 43.815 142.875) (xy 43.815 141.605)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2333edc-918c-4f3e-93a9-8d4f1c37bd31")
+	)
+	(wire
+		(pts
 			(xy 31.115 96.52) (xy 31.115 95.25)
 		)
 		(stroke
@@ -5468,6 +5478,16 @@
 			(type default)
 		)
 		(uuid "cd080e27-5566-467a-a55e-d6b8c8df88ee")
+	)
+	(wire
+		(pts
+			(xy 43.815 141.605) (xy 59.055 141.605)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1c3531f-06a7-4bf0-83c0-0e0a0a6b28d9")
 	)
 	(wire
 		(pts
@@ -8215,7 +8235,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 43.815 145.415 0)
+		(at 43.815 146.685 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8225,7 +8245,7 @@
 		(dnp no)
 		(uuid "3f21abc2-b678-4c5b-ac99-124e91b78cdd")
 		(property "Reference" "C_{D4}1"
-			(at 44.577 142.113 0)
+			(at 44.577 143.383 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8236,7 +8256,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 45.085 147.701 0)
+			(at 45.085 148.971 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8247,7 +8267,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 44.7802 149.225 0)
+			(at 44.7802 150.495 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8258,7 +8278,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.com/datasheet/3/76/1/GRM155R60G106ME01-01A.pdf"
-			(at 43.815 145.415 0)
+			(at 43.815 146.685 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8269,7 +8289,7 @@
 			)
 		)
 		(property "Description" "Multilayer Ceramic Capacitors MLCC - SMD/SMT 10 uF 4 VDC 20% 0402 X5R"
-			(at 43.815 145.415 0)
+			(at 43.815 146.685 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8280,7 +8300,7 @@
 			)
 		)
 		(property "Mouser#" "81-GRM155R60G106ME1D "
-			(at 43.815 145.415 0)
+			(at 43.815 146.685 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8291,7 +8311,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "GRM155R60G106ME01D "
-			(at 43.815 145.415 0)
+			(at 43.815 146.685 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8302,7 +8322,7 @@
 			)
 		)
 		(property "Mouser Part Number" "81-GRM155R60G106ME1D "
-			(at 43.815 145.415 0)
+			(at 43.815 146.685 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8313,7 +8333,7 @@
 			)
 		)
 		(property "Digi-Key Part Number" ""
-			(at 43.815 145.415 0)
+			(at 43.815 146.685 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8324,7 +8344,7 @@
 			)
 		)
 		(property "Cost" ""
-			(at 43.815 145.415 0)
+			(at 43.815 146.685 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8335,7 +8355,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 43.815 145.415 0)
+			(at 43.815 146.685 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8346,7 +8366,7 @@
 			)
 		)
 		(property "Distributor" ""
-			(at 43.815 145.415 0)
+			(at 43.815 146.685 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8357,7 +8377,7 @@
 			)
 		)
 		(property "LCSC Part #" ""
-			(at 43.815 145.415 0)
+			(at 43.815 146.685 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8368,7 +8388,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 43.815 145.415 0)
+			(at 43.815 146.685 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8379,7 +8399,7 @@
 			)
 		)
 		(property "P/N" ""
-			(at 43.815 145.415 0)
+			(at 43.815 146.685 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8390,7 +8410,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 43.815 145.415 0)
+			(at 43.815 146.685 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8401,7 +8421,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 43.815 145.415 0)
+			(at 43.815 146.685 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10916,7 +10936,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 43.815 149.225 0)
+		(at 43.815 150.495 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10927,7 +10947,7 @@
 		(fields_autoplaced yes)
 		(uuid "81eaaa5c-68d9-4183-adc2-5be8e4bd83e3")
 		(property "Reference" "#PWR044"
-			(at 43.815 155.575 0)
+			(at 43.815 156.845 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10938,7 +10958,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 43.815 154.305 0)
+			(at 43.815 155.575 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10948,7 +10968,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 43.815 149.225 0)
+			(at 43.815 150.495 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10959,7 +10979,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 43.815 149.225 0)
+			(at 43.815 150.495 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10970,7 +10990,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 43.815 149.225 0)
+			(at 43.815 150.495 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
