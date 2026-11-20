@@ -782,7 +782,7 @@
           "group_by": false,
           "label": "Height",
           "name": "Height",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,

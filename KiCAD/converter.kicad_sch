@@ -4242,7 +4242,7 @@
 				)
 			)
 		)
-		(property "Height" ""
+		(property "Height" "2.8"
 			(at 79.375 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -5653,7 +5653,7 @@
 				)
 			)
 		)
-		(property "Height" ""
+		(property "Height" "2.8"
 			(at 175.26 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -7524,7 +7524,7 @@
 				)
 			)
 		)
-		(property "Height" ""
+		(property "Height" "2.8"
 			(at 56.515 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -7771,7 +7771,7 @@
 				)
 			)
 		)
-		(property "Height" ""
+		(property "Height" "2.8"
 			(at 67.945 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -9399,7 +9399,7 @@
 				)
 			)
 		)
-		(property "Height" ""
+		(property "Height" "2.8"
 			(at 198.12 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -9894,7 +9894,7 @@
 				)
 			)
 		)
-		(property "Height" ""
+		(property "Height" "2.8"
 			(at 186.69 50.8 0)
 			(hide yes)
 			(show_name no)
