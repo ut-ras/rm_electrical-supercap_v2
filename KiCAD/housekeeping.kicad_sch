@@ -3722,7 +3722,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TEA1-xxxx_THT"
+		(property "Footprint" "Robomaster_ICs:Converter_DCDC_TRACO_TEA1-xxxx_THT"
 			(at 147.955 223.19 0)
 			(hide yes)
 			(show_name no)
@@ -4276,7 +4276,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TSR0.5-24xx_TSR0.5-24xxx_THT"
+		(property "Footprint" "Robomaster_ICs:Converter_DCDC_TRACO_TSR0.5-24xx_TSR0.5-24xxx_THT"
 			(at 117.475 105.791 0)
 			(hide yes)
 			(show_name no)
@@ -5525,7 +5525,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TSR0.5-24xx_TSR0.5-24xxx_THT"
+		(property "Footprint" "Robomaster_ICs:Converter_DCDC_TRACO_TSR0.5-24xx_TSR0.5-24xxx_THT"
 			(at 119.38 77.216 0)
 			(hide yes)
 			(show_name no)

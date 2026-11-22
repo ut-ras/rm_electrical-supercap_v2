@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 1.0,
-          "height": 1.7,
-          "width": 1.7
+          "drill": 2.2,
+          "height": 3.8,
+          "width": 3.8
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -78,84 +78,124 @@
       ],
       "drc_exclusions": [
         [
-          "clearance|105418651|73607349|9a55954a-0a79-4a19-9dce-1182b37b4d23|a6d3647c-d99c-45f0-82eb-e2f5e8f49391",
+          "clearance|105543651|89229073|9b6134ca-7c23-4a11-ac7a-2aa37292c3ac|b24b373c-874e-4188-9669-e31e01b84cdc",
           "inherent to footprint"
         ],
         [
-          "clearance|105418651|75657349|b24b373c-874e-4188-9669-e31e01b84cdc|9b6134ca-7c23-4a11-ac7a-2aa37292c3ac",
+          "clearance|105543651|91029073|a6d3647c-d99c-45f0-82eb-e2f5e8f49391|9a55954a-0a79-4a19-9dce-1182b37b4d23",
           "inherent to footprint"
         ],
         [
-          "clearance|130040000|81344000|ef4ef630-50ff-4f8b-8c45-2623322b020f|201dab71-f737-442c-b150-66c025f515e5",
+          "clearance|130040000|85217422|0b0bd51a-f79f-4661-b352-65cc4a2d038a|f0c4cb23-9fda-4e17-8e6c-662db84d3fb0",
           "inherent to footprint"
         ],
         [
-          "clearance|130165000|79419000|f0c4cb23-9fda-4e17-8e6c-662db84d3fb0|0b0bd51a-f79f-4661-b352-65cc4a2d038a",
+          "clearance|130165000|83292422|201dab71-f737-442c-b150-66c025f515e5|ef4ef630-50ff-4f8b-8c45-2623322b020f",
           "inherent to footprint"
         ],
         [
-          "clearance|133348021|61417442|748474b6-5d40-4d10-a0af-d1315b674d11|c24fc7b8-3064-4bc3-b70d-cd6f0dbc9a5f",
+          "clearance|133348021|103043980|748474b6-5d40-4d10-a0af-d1315b674d11|c24fc7b8-3064-4bc3-b70d-cd6f0dbc9a5f",
           "inherent to footprint"
         ],
         [
-          "clearance|133348021|61917442|ccd6bdc0-7880-40fb-b0dd-2232e876535c|c24fc7b8-3064-4bc3-b70d-cd6f0dbc9a5f",
+          "clearance|133528021|101543980|c24fc7b8-3064-4bc3-b70d-cd6f0dbc9a5f|a9441d76-6821-4c0b-9f47-f4fdeac01e9f",
           "inherent to footprint"
         ],
         [
-          "clearance|133348021|62417442|9697f672-62f2-40e2-a5b6-9a314383b1b6|c24fc7b8-3064-4bc3-b70d-cd6f0dbc9a5f",
+          "clearance|133528021|102043980|c24fc7b8-3064-4bc3-b70d-cd6f0dbc9a5f|9697f672-62f2-40e2-a5b6-9a314383b1b6",
           "inherent to footprint"
         ],
         [
-          "clearance|133348021|62917442|a9441d76-6821-4c0b-9f47-f4fdeac01e9f|c24fc7b8-3064-4bc3-b70d-cd6f0dbc9a5f",
+          "clearance|133528021|102543980|c24fc7b8-3064-4bc3-b70d-cd6f0dbc9a5f|ccd6bdc0-7880-40fb-b0dd-2232e876535c",
           "inherent to footprint"
         ],
         [
-          "clearance|133748021|61017442|717e498d-9e5d-464d-a855-8f2ee2856fea|c24fc7b8-3064-4bc3-b70d-cd6f0dbc9a5f",
+          "clearance|133748021|101143980|b6a76e04-22bd-468c-b1b8-d05890dc0d17|c24fc7b8-3064-4bc3-b70d-cd6f0dbc9a5f",
           "inherent to footprint"
         ],
         [
-          "clearance|133748021|63617442|b6a76e04-22bd-468c-b1b8-d05890dc0d17|c24fc7b8-3064-4bc3-b70d-cd6f0dbc9a5f",
+          "clearance|133748021|103563980|c24fc7b8-3064-4bc3-b70d-cd6f0dbc9a5f|717e498d-9e5d-464d-a855-8f2ee2856fea",
           "inherent to footprint"
         ],
         [
-          "clearance|134248021|61017442|78df4a18-c8ca-458d-bd4e-1e53ff9436a0|c24fc7b8-3064-4bc3-b70d-cd6f0dbc9a5f",
+          "clearance|134248021|101143980|7c3a7493-db68-4574-85f8-334774b7b13e|c24fc7b8-3064-4bc3-b70d-cd6f0dbc9a5f",
           "inherent to footprint"
         ],
         [
-          "clearance|134248021|63617442|7c3a7493-db68-4574-85f8-334774b7b13e|c24fc7b8-3064-4bc3-b70d-cd6f0dbc9a5f",
+          "clearance|134248021|103563980|c24fc7b8-3064-4bc3-b70d-cd6f0dbc9a5f|78df4a18-c8ca-458d-bd4e-1e53ff9436a0",
           "inherent to footprint"
         ],
         [
-          "clearance|134748021|63617442|64c8ecde-f30a-45f7-a49a-20929d2b51ae|c24fc7b8-3064-4bc3-b70d-cd6f0dbc9a5f",
+          "clearance|134748021|101143980|64c8ecde-f30a-45f7-a49a-20929d2b51ae|c24fc7b8-3064-4bc3-b70d-cd6f0dbc9a5f",
           "inherent to footprint"
         ],
         [
-          "clearance|135248021|61017442|b550cd5a-1b2f-48b9-af98-90a16247cd73|c24fc7b8-3064-4bc3-b70d-cd6f0dbc9a5f",
+          "clearance|135248021|103563980|c24fc7b8-3064-4bc3-b70d-cd6f0dbc9a5f|b550cd5a-1b2f-48b9-af98-90a16247cd73",
           "inherent to footprint"
         ],
         [
-          "clearance|135948021|61917442|a8fa1731-cef0-490e-a4be-883b95fc8723|c24fc7b8-3064-4bc3-b70d-cd6f0dbc9a5f",
+          "clearance|135768021|102043980|c24fc7b8-3064-4bc3-b70d-cd6f0dbc9a5f|e89acd17-3b5c-4656-8bb8-049d5d8875b3",
           "inherent to footprint"
         ],
         [
-          "clearance|135948021|62417442|e89acd17-3b5c-4656-8bb8-049d5d8875b3|c24fc7b8-3064-4bc3-b70d-cd6f0dbc9a5f",
+          "clearance|135768021|102543980|c24fc7b8-3064-4bc3-b70d-cd6f0dbc9a5f|a8fa1731-cef0-490e-a4be-883b95fc8723",
           "inherent to footprint"
         ],
         [
-          "courtyards_overlap|137017021|59947442|4854239e-20d1-441f-bc19-f0d4df042fad|6bf5b6be-bad0-4809-ad4b-cfe6bfd324a0",
+          "silk_edge_clearance|158750000|104563422|55f04b4c-fcdf-473c-9be3-1d3d01d584a9|571e2d06-feb0-469e-b20e-393cd33a7a91",
+          "hanging port"
+        ],
+        [
+          "silk_edge_clearance|158750000|109393422|55f04b4c-fcdf-473c-9be3-1d3d01d584a9|7a471ca9-77eb-4511-be68-6b6e773beb5f",
+          "hanging port"
+        ],
+        [
+          "silk_edge_clearance|158750000|118453422|55f04b4c-fcdf-473c-9be3-1d3d01d584a9|663ca166-420a-493d-8691-98d146ed68d2",
+          "hanging port"
+        ],
+        [
+          "silk_edge_clearance|158750000|94443422|55f04b4c-fcdf-473c-9be3-1d3d01d584a9|6c8aadb6-04ba-4554-867b-94bfd1dafdbc",
+          "hanging port"
+        ],
+        [
+          "silk_edge_clearance|85475000|57098922|4e6afdf6-66e3-404d-afef-242c5d46af14|7f35ae1e-566c-45f0-afcc-827d7651e07c",
+          "inductor moment"
+        ],
+        [
+          "silk_edge_clearance|86764876|87721422|be838406-d901-4354-ab94-1dff1b7845b9|16e72601-95ef-4ade-ab1c-34055d6c79bc",
+          "inductor moment"
+        ],
+        [
+          "silk_edge_clearance|91440000|106393422|30d138ad-364c-4311-bf7f-a7e35c052a1d|3be3ebb0-da42-4c04-8acf-68f5fc5b88f9",
+          "hanging port"
+        ],
+        [
+          "silk_edge_clearance|91440000|116513422|30d138ad-364c-4311-bf7f-a7e35c052a1d|59c15b62-9efc-4343-9c56-528f4c3135bb",
+          "hanging port"
+        ],
+        [
+          "silk_edge_clearance|91440000|90705422|30d138ad-364c-4311-bf7f-a7e35c052a1d|109085a4-826f-4fca-a9ee-6b223f62e8e0",
+          "hanging port"
+        ],
+        [
+          "silk_edge_clearance|91440000|99765422|30d138ad-364c-4311-bf7f-a7e35c052a1d|60b49574-be2d-4041-9ce3-efa3a443db3b",
+          "hanging port"
+        ],
+        [
+          "silk_over_copper|116637000|114560922|8cd0f0f9-23c5-4aa3-a47d-8a352f9a1f4e|3cab35ee-aeea-4756-8587-a96711eb7aba",
           ""
         ],
         [
-          "courtyards_overlap|137017021|62098442|38ac5389-d7dc-4ae4-ad21-0d1c19e44bd4|6bf5b6be-bad0-4809-ad4b-cfe6bfd324a0",
+          "silk_over_copper|118648107|95413422|4fd8a870-9fdd-4516-b536-2d3de4e6544f|877dd591-9cbf-4493-b5d4-98cb74ebfc7a",
           ""
         ],
         [
-          "silk_over_copper|102186606|94540263|716df86c-a121-4d2c-adaf-c5f59fbffdfa|5ee21c03-1a07-473f-9848-acb573978b67",
-          "gate driver footprint"
+          "silk_over_copper|118772654|95017922|a05fc697-eba4-4475-965b-dad9edc1324b|877dd591-9cbf-4493-b5d4-98cb74ebfc7a",
+          ""
         ],
         [
-          "silk_over_copper|120216606|98998740|2d340187-dba8-4542-b4f0-aa9516172a7c|f31edc76-e094-417a-8992-9ead06bb690c",
-          "gate driver footprint"
+          "silk_overlap|128896021|102864362|64b62d0b-d740-4b8e-a6ff-3c2ca52a6622|7ad82250-e15b-443d-938a-01bf5f1b59d6",
+          ""
         ]
       ],
       "meta": {
@@ -909,7 +949,7 @@
         "uuid": "98ee8313-37ab-4329-91ab-b5710476f82f"
       }
     ],
-    "used_designators": "Y1,C_{d}2,R1-2,IC1-6,C_{smooth}3,C_{smooth}8-9,C_{smooth}11-12,C_{byp}2-3,C_{RC}2,V_{12}2-3,C_{D4}1,J1,J5,C_{BYP}2,C_{filter}1,C_{filter}3,C_{D3}1,C1,U1,U4-5,C_{l}2,R_{PU}2,#PWR4-8,#PWR11-15,#PWR18,#PWR20,#PWR36-57,PS1,R_{ref}2,L_{bulk}2,V_{3.3}2,TP1,C_{FB}2-3,R_{RC}2-4,J_{SPI}1,J_{flash}2,R_{IA}1,J_{UART}2,V_{GND}2,R_{filter}4",
+    "used_designators": "Y1,C_{d}2,R1-2,IC1-6,C_{smooth}3,C_{smooth}8-9,C_{smooth}11-12,C_{byp}2-3,C_{RC}2,V_{12}2-3,C_{D4}1,J1,J5,C_{BYP}2,C_{filter}1,C_{filter}3,C_{D3}1,C1,U1,U4-5,C_{l}2,R_{PU}2,#PWR4-9,#PWR11-15,#PWR18,#PWR20,#PWR36-57,PS1,H1-3,R_{ref}2-3,L_{bulk}2,V_{3.3}2,TP1,C_{FB}2-3,R_{RC}2-4,J_{SPI}1,J_{flash}2,R_{IA}1,J_{UART}2,V_{GND}2,R_{filter}4,SW1",
     "variants": []
   },
   "sheets": [
