@@ -949,7 +949,7 @@
         "uuid": "98ee8313-37ab-4329-91ab-b5710476f82f"
       }
     ],
-    "used_designators": "Y1,C_{d}2,R1-2,IC1-6,C_{smooth}3,C_{smooth}8-9,C_{smooth}11-12,C_{byp}2-3,C_{RC}2,V_{12}2-3,C_{D4}1,J1,J5,C_{BYP}2,C_{filter}1,C_{filter}3,C_{D3}1,C1,U1,U4-5,C_{l}2,R_{PU}2,#PWR4-9,#PWR11-15,#PWR18,#PWR20,#PWR36-58,PS1,H1-3,R_{ref}2-3,L_{bulk}2,V_{3.3}2,TP1,C_{FB}2-3,R_{RC}2-4,J_{SPI}1,J_{flash}2,R_{IA}1-2,J_{UART}2,V_{GND}2,R_{filter}4,SW1",
+    "used_designators": "Y1,C_{d}2,R1-2,IC1-6,C_{smooth}3,C_{smooth}8-9,C_{smooth}11-12,C_{byp}2-3,C_{RC}2,V_{12}2-3,C_{D4}1,J1,J5,C_{BYP}2,C_{filter}1,C_{filter}3,C_{D3}1,C1,U1,U4-5,C_{l}2,R_{PU}2,R_{PU}4-7,#PWR4-15,#PWR18,#PWR20,#PWR36-58,PS1,H1-3,R_{ref}2-3,L_{bulk}2,V_{3.3}2,TP1,C_{FB}2-3,R_{RC}2-4,J_{SPI}1,J_{flash}2,R_{IA}1-2,J_{UART}2,V_{GND}2,R_{filter}4,SW1",
     "variants": []
   },
   "sheets": [
