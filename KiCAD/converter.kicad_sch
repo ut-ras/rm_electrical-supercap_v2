@@ -2343,7 +2343,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 121.92) (xy 171.45 121.92)
+			(xy 164.465 121.92) (xy 167.005 121.92)
 		)
 		(stroke
 			(width 0)
@@ -2583,7 +2583,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 120.65) (xy 171.45 121.92)
+			(xy 167.005 120.65) (xy 167.005 121.92)
 		)
 		(stroke
 			(width 0)
@@ -3162,7 +3162,7 @@
 		(uuid "c5634a89-6e05-4903-a781-aa0c60cb6cd3")
 	)
 	(label "V_{sw,1}"
-		(at 168.91 121.92 180)
+		(at 164.465 121.92 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3566,6 +3566,184 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 181.61 120.65 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "20e5261f-0e7a-4525-80c7-1cbda935e849")
+		(property "Reference" "GND1"
+			(at 184.15 116.0779 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 184.15 118.6179 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose"
+			(at 186.69 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 181.61 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digi-Key Part Number" ""
+			(at 181.61 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Cost" ""
+			(at 181.61 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 181.61 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor" ""
+			(at 181.61 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 181.61 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 181.61 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "P/N" ""
+			(at 181.61 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 181.61 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 181.61 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c36198d6-9fdf-4d85-bd99-d499c6b305ee")
+		)
+		(instances
+			(project "Supercap"
+				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/66de8ce3-68f9-4d35-858c-1420192a373c"
+					(reference "GND1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_FET:BSB013NE2LXI")
 		(at 100.965 71.12 0)
 		(unit 1)
@@ -3612,7 +3790,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/Infineon_09-04-2024_DS_IQDH35N03LM5CGSC_2_0.pdf"
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/70/1/infineon_iqe020n04lm6cgsc_datasheet_en.pdf"
 			(at 106.045 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -3635,7 +3813,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "IQDH35N03LM5CGSCATMA1"
+		(property "Manufacturer_Part_Number" "IQE020N04LM6CGSCATMA1 "
 			(at 100.965 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -3646,7 +3824,7 @@
 				)
 			)
 		)
-		(property "Mouser Part Number" "726-IQDH35N03LM5CGSC"
+		(property "Mouser Part Number" "726-IQE020N04LM6CGSC "
 			(at 100.965 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -4064,7 +4242,7 @@
 				)
 			)
 		)
-		(property "Height" ""
+		(property "Height" "2.8"
 			(at 79.375 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -4267,7 +4445,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
 			(at 194.0052 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -4710,7 +4888,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/Infineon_09-04-2024_DS_IQDH35N03LM5CGSC_2_0.pdf"
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/70/1/infineon_iqe020n04lm6cgsc_datasheet_en.pdf"
 			(at 106.045 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -4733,7 +4911,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "IQDH35N03LM5CGSCATMA1"
+		(property "Manufacturer_Part_Number" "IQE020N04LM6CGSCATMA1 "
 			(at 100.965 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -4744,7 +4922,7 @@
 				)
 			)
 		)
-		(property "Mouser Part Number" "726-IQDH35N03LM5CGSC"
+		(property "Mouser Part Number" "726-IQE020N04LM6CGSC "
 			(at 100.965 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -5222,7 +5400,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 171.45 120.65 0)
+		(at 167.005 120.65 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5233,7 +5411,7 @@
 		(fields_autoplaced yes)
 		(uuid "44c9d1a3-4698-40df-8c60-1e48165750f0")
 		(property "Reference" "V_{sw}1"
-			(at 173.99 116.0779 0)
+			(at 169.545 116.0779 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5244,7 +5422,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 173.99 118.6179 0)
+			(at 169.545 118.6179 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5255,7 +5433,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose"
-			(at 176.53 120.65 0)
+			(at 172.085 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5266,7 +5444,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 176.53 120.65 0)
+			(at 172.085 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5277,7 +5455,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 171.45 120.65 0)
+			(at 167.005 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5288,7 +5466,7 @@
 			)
 		)
 		(property "Digi-Key Part Number" ""
-			(at 171.45 120.65 0)
+			(at 167.005 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5299,7 +5477,7 @@
 			)
 		)
 		(property "Cost" ""
-			(at 171.45 120.65 0)
+			(at 167.005 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5310,7 +5488,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 171.45 120.65 0)
+			(at 167.005 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5321,7 +5499,7 @@
 			)
 		)
 		(property "Distributor" ""
-			(at 171.45 120.65 0)
+			(at 167.005 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5332,7 +5510,7 @@
 			)
 		)
 		(property "LCSC Part #" ""
-			(at 171.45 120.65 0)
+			(at 167.005 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5343,7 +5521,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 171.45 120.65 0)
+			(at 167.005 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5354,7 +5532,7 @@
 			)
 		)
 		(property "P/N" ""
-			(at 171.45 120.65 0)
+			(at 167.005 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5365,7 +5543,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 171.45 120.65 0)
+			(at 167.005 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5376,7 +5554,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 171.45 120.65 0)
+			(at 167.005 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5475,7 +5653,7 @@
 				)
 			)
 		)
-		(property "Height" ""
+		(property "Height" "2.8"
 			(at 175.26 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -5834,7 +6012,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
 			(at 202.8952 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -6772,7 +6950,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
 			(at 176.2252 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -6983,6 +7161,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GNDPWR")
+		(at 181.61 120.65 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "87081fa3-9031-44f9-a1ce-3e5de5cfee2f")
+		(property "Reference" "#PWR036"
+			(at 181.61 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GNDPWR"
+			(at 181.483 124.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 181.61 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 181.61 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
+			(at 181.61 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8c7ae7ba-e85f-4060-a20e-63b3697f3693")
+		)
+		(instances
+			(project "Supercap"
+				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/66de8ce3-68f9-4d35-858c-1420192a373c"
+					(reference "#PWR036")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_FET:BSB013NE2LXI")
 		(at 158.75 54.61 0)
 		(unit 1)
@@ -7029,7 +7285,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/Infineon_09-04-2024_DS_IQDH35N03LM5CGSC_2_0.pdf"
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/70/1/infineon_iqe020n04lm6cgsc_datasheet_en.pdf"
 			(at 163.83 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -7052,7 +7308,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "IQDH35N03LM5CGSCATMA1"
+		(property "Manufacturer_Part_Number" "IQE020N04LM6CGSCATMA1 "
 			(at 158.75 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -7063,7 +7319,7 @@
 				)
 			)
 		)
-		(property "Mouser Part Number" "726-IQDH35N03LM5CGSC"
+		(property "Mouser Part Number" "726-IQE020N04LM6CGSC "
 			(at 158.75 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -7268,7 +7524,7 @@
 				)
 			)
 		)
-		(property "Height" ""
+		(property "Height" "2.8"
 			(at 56.515 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -7515,7 +7771,7 @@
 				)
 			)
 		)
-		(property "Height" ""
+		(property "Height" "2.8"
 			(at 67.945 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -7708,7 +7964,7 @@
 				)
 			)
 		)
-		(property "Value" "MAX15019AASA+"
+		(property "Value" "2EDL8124GXUMA1"
 			(at 114.935 97.155 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7718,7 +7974,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Robomaster_ICs:SOIC127P600X175-9N"
+		(property "Footprint" "Robomaster_ICs:SON80P400X400X100-9N-D"
 			(at 126.365 195.885 0)
 			(hide yes)
 			(show_name no)
@@ -7730,7 +7986,7 @@
 				(justify left top)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.in/datasheet/2/256/MAX15018-MAX15019-1515114.pdf"
+		(property "Datasheet" "https://www.infineon.com/assets/row/public/documents/24/49/infineon-2edl8x2x-datasheet-en.pdf"
 			(at 126.365 295.885 0)
 			(hide yes)
 			(show_name no)
@@ -7765,7 +8021,7 @@
 				(justify left top)
 			)
 		)
-		(property "Mouser Part Number" " MAX15019AASA+-ND"
+		(property "Mouser Part Number" "726-2EDL8124GXUMA1 "
 			(at 126.365 595.885 0)
 			(hide yes)
 			(show_name no)
@@ -7801,7 +8057,7 @@
 				(justify left top)
 			)
 		)
-		(property "Manufacturer_Part_Number" "MAX15019AASA+"
+		(property "Manufacturer_Part_Number" "2EDL8124GXUMA1 "
 			(at 126.365 895.885 0)
 			(hide yes)
 			(show_name no)
@@ -8362,7 +8618,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/Infineon_09-04-2024_DS_IQDH35N03LM5CGSC_2_0.pdf"
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/70/1/infineon_iqe020n04lm6cgsc_datasheet_en.pdf"
 			(at 163.83 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -8385,7 +8641,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "IQDH35N03LM5CGSCATMA1"
+		(property "Manufacturer_Part_Number" "IQE020N04LM6CGSCATMA1 "
 			(at 158.75 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -8396,7 +8652,7 @@
 				)
 			)
 		)
-		(property "Mouser Part Number" "726-IQDH35N03LM5CGSC"
+		(property "Mouser Part Number" "726-IQE020N04LM6CGSC "
 			(at 158.75 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -9143,7 +9399,7 @@
 				)
 			)
 		)
-		(property "Height" ""
+		(property "Height" "2.8"
 			(at 198.12 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -9335,7 +9591,7 @@
 				)
 			)
 		)
-		(property "Value" "MAX15019AASA+"
+		(property "Value" "2EDL8124GXUMA1"
 			(at 114.935 117.094 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9345,7 +9601,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Robomaster_ICs:SOIC127P600X175-9N"
+		(property "Footprint" "Robomaster_ICs:SON80P400X400X100-9N-D"
 			(at 126.365 217.475 0)
 			(hide yes)
 			(show_name no)
@@ -9357,7 +9613,7 @@
 				(justify left top)
 			)
 		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/max15018-max15019.pdf"
+		(property "Datasheet" "https://www.infineon.com/assets/row/public/documents/24/49/infineon-2edl8x2x-datasheet-en.pdf"
 			(at 126.365 317.475 0)
 			(hide yes)
 			(show_name no)
@@ -9392,7 +9648,7 @@
 				(justify left top)
 			)
 		)
-		(property "Mouser Part Number" " MAX15019AASA+-ND"
+		(property "Mouser Part Number" "726-2EDL8124GXUMA1 "
 			(at 126.365 617.475 0)
 			(hide yes)
 			(show_name no)
@@ -9404,7 +9660,7 @@
 				(justify left top)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Maxim-Integrated/MAX15019AASA%2b?qs=Jw2w9zrI6w%252BrmPJ1VTN6zA%3D%3D"
+		(property "Mouser Price/Stock" "https://www.mouser.com/en/ProductDetail/Infineon-Technologies/2EDL8124GXUMA1?qs=DPoM0jnrROVAHnXv2K79HA%3D%3D"
 			(at 126.365 717.475 0)
 			(hide yes)
 			(show_name no)
@@ -9428,7 +9684,7 @@
 				(justify left top)
 			)
 		)
-		(property "Manufacturer_Part_Number" "MAX15019AASA+"
+		(property "Manufacturer_Part_Number" "2EDL8124GXUMA1 "
 			(at 126.365 917.475 0)
 			(hide yes)
 			(show_name no)
@@ -9638,7 +9894,7 @@
 				)
 			)
 		)
-		(property "Height" ""
+		(property "Height" "2.8"
 			(at 186.69 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -9841,7 +10097,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
 			(at 185.1152 142.24 0)
 			(hide yes)
 			(show_name no)
