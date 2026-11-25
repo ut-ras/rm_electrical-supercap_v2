@@ -4306,12 +4306,12 @@
 		(uuid "f0790ee5-898e-42fa-9db5-dbc05a0dac81")
 	)
 	(no_connect
-		(at 115.57 127)
-		(uuid "0ad78a51-f9f4-43ea-804c-47b017d6783c")
-	)
-	(no_connect
 		(at 115.57 132.08)
 		(uuid "1c9b77e8-0c09-46b5-a0bd-d0338202ea29")
+	)
+	(no_connect
+		(at 115.57 129.54)
+		(uuid "3b9dbf05-c447-42cb-ae09-af7eac3e1428")
 	)
 	(no_connect
 		(at 115.57 160.02)
@@ -4334,6 +4334,10 @@
 		(uuid "8c3d873f-84b4-438c-a748-cd5592312e63")
 	)
 	(no_connect
+		(at 115.57 154.94)
+		(uuid "8fdbe299-2a08-429e-9010-7d467e119de1")
+	)
+	(no_connect
 		(at 59.69 129.54)
 		(uuid "96f8bb0a-a65a-4b0b-ba50-136c8147e404")
 	)
@@ -4352,10 +4356,6 @@
 	(no_connect
 		(at 115.57 134.62)
 		(uuid "f698dda2-e403-44f0-ae11-c3f4b885398e")
-	)
-	(no_connect
-		(at 115.57 149.86)
-		(uuid "f9983976-0c65-4e87-b683-ca7c950b4b3f")
 	)
 	(wire
 		(pts
@@ -5239,16 +5239,6 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 129.54) (xy 116.84 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a7481936-28ed-44a0-9373-8424ff327eed")
-	)
-	(wire
-		(pts
 			(xy 83.185 52.705) (xy 83.185 53.975)
 		)
 		(stroke
@@ -5489,7 +5479,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 83.82) (xy 251.46 83.82)
+			(xy 246.38 91.44) (xy 251.46 91.44)
 		)
 		(stroke
 			(width 0)
@@ -5737,8 +5727,8 @@
 		)
 		(uuid "0b8d445d-417e-4bc7-8d32-3021da2cf636")
 	)
-	(label "ADC1_12"
-		(at 115.57 154.94 0)
+	(label "ADC1_1"
+		(at 115.57 149.86 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5778,7 +5768,7 @@
 		(uuid "16d18399-29f3-4b06-a58e-58e227e0bba1")
 	)
 	(label "ADC0_2"
-		(at 116.84 129.54 0)
+		(at 115.57 127 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5866,6 +5856,16 @@
 			(justify right bottom)
 		)
 		(uuid "43eb343e-79b6-4210-b0a0-00ca290409f1")
+	)
+	(label "ADC1_1"
+		(at 226.695 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "470b9a2d-3454-4253-89c8-8ed5b4def909")
 	)
 	(label "ADC0_1"
 		(at 59.69 127 180)
@@ -6048,7 +6048,7 @@
 		(uuid "a12297f6-edfd-4c48-aaf4-53295b68e49a")
 	)
 	(label "ADC1_0"
-		(at 226.695 86.36 0)
+		(at 226.06 106.045 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6087,18 +6087,8 @@
 		)
 		(uuid "b6b787d6-a4fb-4570-9059-31e48b10bfd7")
 	)
-	(label "ADC1_12"
-		(at 226.06 106.045 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "be22e160-8464-4728-9bfc-47877a127dad")
-	)
 	(label "ADC0_1"
-		(at 246.38 83.82 180)
+		(at 246.38 91.44 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6198,7 +6188,7 @@
 		(uuid "f0279c42-7b0f-4a62-b7bf-b7348fbba267")
 	)
 	(label "I_bat"
-		(at 251.46 83.82 0)
+		(at 251.46 91.44 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -15155,7 +15145,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Vertical"
 			(at 134.62 139.7 0)
 			(hide yes)
 			(show_name no)
