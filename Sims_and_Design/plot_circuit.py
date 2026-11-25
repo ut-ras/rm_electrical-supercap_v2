@@ -1,10 +1,42 @@
 import csv
 import math
+import shutil
+import subprocess
+import sys
 from pathlib import Path
 
 import matplotlib.pyplot as plt
 
-with Path("circuit_data.csv").open(newline="") as file:
+# ---------------- Build and run the C simulation ----------------
+HERE = Path(__file__).resolve().parent
+C_SOURCE = HERE / "circuit_sim_modulation.c"
+EXECUTABLE = HERE / ("circuit_sim_modulation.exe" if sys.platform == "win32" else "circuit_sim_modulation")
+CSV_PATH = HERE / "circuit_data.csv"  # Must match OUTPUT_NAME in the C file
+
+
+def find_compiler():
+    for name in ("gcc", "clang", "cc"):
+        path = shutil.which(name)
+        if path:
+            return path
+    raise RuntimeError("No C compiler found (looked for gcc, clang, cc). "
+                       "Install one or add it to your PATH.")
+
+
+def build_and_run():
+    compiler = find_compiler()
+    subprocess.run(
+        [compiler, "-O2", str(C_SOURCE), "-o", str(EXECUTABLE), "-lm"],
+        check=True,
+    )
+    # Run in HERE so the CSV is written next to this script.
+    subprocess.run([str(EXECUTABLE)], cwd=HERE, check=True)
+
+
+build_and_run()
+
+# ---------------- Load the CSV ----------------
+with CSV_PATH.open(newline="") as file:
     reader = csv.DictReader(file)
     data = {name: [] for name in reader.fieldnames}
 
@@ -12,6 +44,10 @@ with Path("circuit_data.csv").open(newline="") as file:
         for name in data:
             data[name].append(float(row[name]))
 
+# The minimal C build does not log the tracking error, so compute it here.
+data["Error"] = [ref - bat for ref, bat in zip(data["Iref"], data["Ibat"])]
+
+# ---------------- Plot ----------------
 start_time = 1.0
 end_time = 1.03
 
@@ -29,8 +65,10 @@ time_ms = [
     for index in indices
 ]
 
+
 def selected(name):
     return [data[name][index] for index in indices]
+
 
 steady_indices = [
     index
@@ -102,5 +140,5 @@ fig.suptitle(
     fontsize=14,
 )
 
-fig.savefig("circuit_plots.png", dpi=200)
+fig.savefig(HERE / "circuit_plots.png", dpi=200)
 plt.show()
