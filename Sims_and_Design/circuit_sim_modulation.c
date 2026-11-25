@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdint.h>
+#include <time.h>
 
 /* ---------------- Simulation settings ---------------- */
 #define PI                  3.14159265358979323846
@@ -23,8 +24,9 @@
 #define CONTROLLER_STEPS            10   /* Circuit steps per controller update */
 #define MODULATION_CONTROLLER_CYCLES 2
 #define TOTAL_TIME          20.9      /* s */
-#define SEED                1u
+#define SEED                0u        /* 0 = new random seed every run; nonzero = repeatable */
 #define NOISE_ENABLED       1
+#define SEED_TIME_SHIFT     20        /* Spreads clock ticks below the time bits */
 #define OUTPUT_NAME         "circuit_data.csv"
 
 /* ---------------- Sensor noise ---------------- */
@@ -39,11 +41,15 @@
 #define SENSOR_TAG_0        UINT32_C(0xa341316c)
 #define SENSOR_TAG_1        UINT32_C(0xc8013ea4)
 #define SENSOR_TAG_2        UINT32_C(0xad90777d)
-#define FALLBACK_RNG_STATE  UINT32_C(0x6d2b79f5)
-#define XORSHIFT_A          13
-#define XORSHIFT_B          17
-#define XORSHIFT_C          5
-#define UINT32_RANGE        4294967296.0
+#define SPLITMIX_INCREMENT  UINT64_C(0x9e3779b97f4a7c15)
+#define SPLITMIX_MULT_1     UINT64_C(0xbf58476d1ce4e5b9)
+#define SPLITMIX_MULT_2     UINT64_C(0x94d049bb133111eb)
+#define SPLITMIX_SHIFT_1    30
+#define SPLITMIX_SHIFT_2    27
+#define SPLITMIX_SHIFT_3    31
+#define UNIFORM_SHIFT       11                      /* keep the top 53 bits */
+#define TWO_POW_NEG_53      1.1102230246251565e-16  /* 2^-53 */
+#define PROB_LOW_TAIL       0.02425                 /* Acklam region split */
 
 /* ---------------- Derived quantities ---------------- */
 #define CONTROLLER_PERIOD   (1.0 / CONTROLLER_UPDATE_HZ)
@@ -76,29 +82,55 @@ typedef struct {
     double in1, in2, out1, out2;  /* Battery-current filter history */
 } Controller;
 
-static uint32_t random_state[NUM_SENSORS];
-static int have_extra[NUM_SENSORS];
-static double extra_noise[NUM_SENSORS];
+static uint64_t random_state[NUM_SENSORS];
 
+/* Uniform in the open interval (0, 1), 53-bit resolution (splitmix64). */
+static double uniform_open(int sensor) {
+    uint64_t z = (random_state[sensor] += SPLITMIX_INCREMENT);
+    z = (z ^ (z >> SPLITMIX_SHIFT_1)) * SPLITMIX_MULT_1;
+    z = (z ^ (z >> SPLITMIX_SHIFT_2)) * SPLITMIX_MULT_2;
+    z ^= z >> SPLITMIX_SHIFT_3;
+    return ((double)(z >> UNIFORM_SHIFT) + 0.5) * TWO_POW_NEG_53;
+}
+
+/* Inverse normal CDF (Acklam's rational approximation + one Halley step). */
+static double inverse_normal_cdf(double p) {
+    static const double a[] = { -3.969683028665376e+01,  2.209460984245205e+02,
+        -2.759285104469687e+02,  1.383577518672690e+02,
+        -3.066479806614716e+01,  2.506628277459239e+00 };
+    static const double b[] = { -5.447609879822406e+01,  1.615858368580409e+02,
+        -1.556989798598866e+02,  6.680131188771972e+01,
+        -1.328068155288572e+01 };
+    static const double c[] = { -7.784894002430293e-03, -3.223964580411365e-01,
+        -2.400758277161838e+00, -2.549732539343734e+00,
+         4.374664141464968e+00,  2.938163982698783e+00 };
+    static const double d[] = {  7.784695709041462e-03,  3.224671290700398e-01,
+         2.445134137142996e+00,  3.754408661907416e+00 };
+
+    double x;
+    if (p < PROB_LOW_TAIL) {
+        double q = sqrt(-2.0 * log(p));
+        x = (((((c[0]*q + c[1])*q + c[2])*q + c[3])*q + c[4])*q + c[5])
+          / ((((d[0]*q + d[1])*q + d[2])*q + d[3])*q + 1.0);
+    } else if (p > 1.0 - PROB_LOW_TAIL) {
+        double q = sqrt(-2.0 * log(1.0 - p));
+        x = -(((((c[0]*q + c[1])*q + c[2])*q + c[3])*q + c[4])*q + c[5])
+          / ((((d[0]*q + d[1])*q + d[2])*q + d[3])*q + 1.0);
+    } else {
+        double q = p - 0.5, r = q * q;
+        x = (((((a[0]*r + a[1])*r + a[2])*r + a[3])*r + a[4])*r + a[5]) * q
+          / (((((b[0]*r + b[1])*r + b[2])*r + b[3])*r + b[4])*r + 1.0);
+    }
+
+    /* One Halley refinement brings the error to near machine precision. */
+    double e = 0.5 * erfc(-x / sqrt(2.0)) - p;
+    double u = e * sqrt(TWO_PI) * exp(0.5 * x * x);
+    return x - u / (1.0 + 0.5 * x * u);
+}
+
+/* One independent standard-normal sample per call. */
 static double gaussian(int sensor) {
-    if (have_extra[sensor]) {
-        have_extra[sensor] = 0;
-        return extra_noise[sensor];
-    }
-    double u[2];
-    for (int j = 0; j < 2; j++) {
-        uint32_t v = random_state[sensor];
-        v ^= v << XORSHIFT_A;
-        v ^= v >> XORSHIFT_B;
-        v ^= v << XORSHIFT_C;
-        random_state[sensor] = v;
-        u[j] = ((double)v + 0.5) / UINT32_RANGE;
-    }
-    double radius = sqrt(-2.0 * log(u[0]));
-    double angle = TWO_PI * u[1];
-    extra_noise[sensor] = radius * sin(angle);
-    have_extra[sensor] = 1;
-    return radius * cos(angle);
+    return inverse_normal_cdf(uniform_open(sensor));
 }
 
 static double clamp(double x, double lo, double hi) {
@@ -210,10 +242,13 @@ static int update_modulation(Circuit* c, Controller* k, double delayed_vc, doubl
 
 int main(void) {
     const uint32_t tags[NUM_SENSORS] = { SENSOR_TAG_0, SENSOR_TAG_1, SENSOR_TAG_2 };
-    for (int s = 0; s < NUM_SENSORS; s++) {
-        random_state[s] = SEED ^ tags[s];
-        if (random_state[s] == 0) random_state[s] = FALLBACK_RNG_STATE;
-    }
+    uint64_t seed = SEED;
+    if (seed == 0)  /* Different noise every run */
+        seed = ((uint64_t)time(NULL) << SEED_TIME_SHIFT) ^ (uint64_t)clock();
+    printf("Noise seed: %llu (set SEED to this value to repeat the run)\n",
+        (unsigned long long)seed);
+    for (int s = 0; s < NUM_SENSORS; s++)
+        random_state[s] = seed ^ tags[s];
 
     Circuit c = { VC_INITIAL, I_INITIAL, 0.0 };
     c.m = clamp(c.vc / VG, 0.0, 1.0);
