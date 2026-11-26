@@ -49,7 +49,7 @@ data["Error"] = [ref - bat for ref, bat in zip(data["Iref"], data["Ibat"])]
 
 # ---------------- Plot ----------------
 start_time = 1.0
-end_time = 1.03
+end_time = 1.10
 
 indices = [
     index

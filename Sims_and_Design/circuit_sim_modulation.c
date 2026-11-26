@@ -4,15 +4,23 @@
 #include <stdint.h>
 #include <time.h>
 
-/* ---------------- Simulation settings ---------------- */
 #define PI                  3.14159265358979323846
 #define TWO_PI              (2.0 * PI)
-#define DELAY_AMOUNT        30        /* Sensor delay in circuit timesteps */
+#define DELAY_AMOUNT        30       /* Sensor delay in circuit timesteps (must be >= 1) */
+#if DELAY_AMOUNT < 1
+#error DELAY_AMOUNT must be at least 1 (the delay buffers and duty history use % DELAY_AMOUNT)
+#endif
 
-#define CAPACITANCE         440.0     /* F */
-#define RESISTANCE          0.0095    /* ohms */
-#define INDUCTANCE          28.3e-6   /* H */
-#define VG                  24.0      /* Source voltage (V) */
+/* 0 = controller sees the true battery current m*i (use this).
+   1 = pass it through the LC filter model below. That filter is built from the converter L and
+   the supercap C (1.4 Hz resonance), which wipes out the 100 Hz signal, so leave it at 0
+   unless you rebuild it with the battery-side input-filter values (L_EMI, C_shunt). */
+#define USE_BATTERY_FILTER  0
+
+#define CAPACITANCE         440.0
+#define RESISTANCE          0.0095
+#define INDUCTANCE          28.3e-6
+#define VG                  24.0
 #define VC_INITIAL          2.5
 #define I_INITIAL           0.0
 #define FREQ_HZ             100.0
@@ -20,19 +28,18 @@
 #define I_LIMIT             30.0
 #define CURRENT_MARGIN      1.0
 #define CONTROLLER_UPDATE_HZ        12000.0
-#define CONTROLLER_BANDWIDTH_HZ     300.0
-#define CONTROLLER_STEPS            10   /* Circuit steps per controller update */
+#define CONTROLLER_BANDWIDTH_HZ     150.0   /* was 300; lower = calmer with sensor delay and noise */
+#define CONTROLLER_STEPS            10
 #define MODULATION_CONTROLLER_CYCLES 2
-#define TOTAL_TIME          20.9      /* s */
-#define SEED                0u        /* 0 = new random seed every run; nonzero = repeatable */
+#define TOTAL_TIME          100
+#define SEED                0u
 #define NOISE_ENABLED       1
-#define SEED_TIME_SHIFT     20        /* Spreads clock ticks below the time bits */
+#define SEED_TIME_SHIFT     20
 #define OUTPUT_NAME         "circuit_data.csv"
 
-/* ---------------- Sensor noise ---------------- */
 #define NUM_SENSORS         3
 #define SENSOR_VG           0
-#define SENSOR_I            1         /* Shared by I and Iref sensors */
+#define SENSOR_I            1
 #define SENSOR_VC           2
 #define SIGMA_VG            0.0903
 #define SIGMA_I             0.141
@@ -47,11 +54,10 @@
 #define SPLITMIX_SHIFT_1    30
 #define SPLITMIX_SHIFT_2    27
 #define SPLITMIX_SHIFT_3    31
-#define UNIFORM_SHIFT       11                      /* keep the top 53 bits */
-#define TWO_POW_NEG_53      1.1102230246251565e-16  /* 2^-53 */
-#define PROB_LOW_TAIL       0.02425                 /* Acklam region split */
+#define UNIFORM_SHIFT       11
+#define TWO_POW_NEG_53      1.1102230246251565e-16
+#define PROB_LOW_TAIL       0.02425
 
-/* ---------------- Derived quantities ---------------- */
 #define CONTROLLER_PERIOD   (1.0 / CONTROLLER_UPDATE_HZ)
 #define TIMESTEP            (CONTROLLER_PERIOD / CONTROLLER_STEPS)
 #define MODULATION_STEPS    (CONTROLLER_STEPS * MODULATION_CONTROLLER_CYCLES)
@@ -61,30 +67,26 @@
 #define KP                  (INDUCTANCE / (VG * TAU_I))
 #define KI                  (RESISTANCE / (VG * TAU_I))
 
-/* Discrete form of H(s) = 1 / (L*C*s^2 + 1) (bilinear transform) */
 #define FILTER_T2           (CONTROLLER_PERIOD * CONTROLLER_PERIOD)
 #define FILTER_DENOM        (4.0 * INDUCTANCE * CAPACITANCE + FILTER_T2)
 #define FILTER_INPUT_GAIN   (FILTER_T2 / FILTER_DENOM)
 #define FILTER_OUTPUT_GAIN  ((8.0 * INDUCTANCE * CAPACITANCE - 2.0 * FILTER_T2) / FILTER_DENOM)
 
-/* Current-limit duty bounds */
 #define LIMIT_H             (CONTROLLER_PERIOD * MODULATION_CONTROLLER_CYCLES)
 #define LIMIT_BETA          (RESISTANCE / 2.0 + LIMIT_H / (4.0 * CAPACITANCE))
 #define CONTROL_LIMIT       (I_LIMIT - CURRENT_MARGIN)
 
-/* ---------------- State ---------------- */
 typedef struct { double vc, i, m; } Circuit;
 
 typedef struct {
     double vg_sense, vc_sense, i_sense;
     double error, previous_error;
     double mt_requested, integral;
-    double in1, in2, out1, out2;  /* Battery-current filter history */
+    double in1, in2, out1, out2;
 } Controller;
 
 static uint64_t random_state[NUM_SENSORS];
 
-/* Uniform in the open interval (0, 1), 53-bit resolution (splitmix64). */
 static double uniform_open(int sensor) {
     uint64_t z = (random_state[sensor] += SPLITMIX_INCREMENT);
     z = (z ^ (z >> SPLITMIX_SHIFT_1)) * SPLITMIX_MULT_1;
@@ -93,7 +95,6 @@ static double uniform_open(int sensor) {
     return ((double)(z >> UNIFORM_SHIFT) + 0.5) * TWO_POW_NEG_53;
 }
 
-/* Inverse normal CDF (Acklam's rational approximation + one Halley step). */
 static double inverse_normal_cdf(double p) {
     static const double a[] = { -3.969683028665376e+01,  2.209460984245205e+02,
         -2.759285104469687e+02,  1.383577518672690e+02,
@@ -122,13 +123,11 @@ static double inverse_normal_cdf(double p) {
           / (((((b[0]*r + b[1])*r + b[2])*r + b[3])*r + b[4])*r + 1.0);
     }
 
-    /* One Halley refinement brings the error to near machine precision. */
     double e = 0.5 * erfc(-x / sqrt(2.0)) - p;
     double u = e * sqrt(TWO_PI) * exp(0.5 * x * x);
     return x - u / (1.0 + 0.5 * x * u);
 }
 
-/* One independent standard-normal sample per call. */
 static double gaussian(int sensor) {
     return inverse_normal_cdf(uniform_open(sensor));
 }
@@ -137,7 +136,6 @@ static double clamp(double x, double lo, double hi) {
     return fmax(lo, fmin(hi, x));
 }
 
-/* One RK4 step of: dVc/dt = I/C, dI/dt = (m*Vg - R*I - Vc)/L */
 static void step_circuit(Circuit* c, double dt, double vg) {
     double vc = c->vc, i = c->i, m = c->m;
     double k1v = i / CAPACITANCE;
@@ -155,6 +153,7 @@ static void step_circuit(Circuit* c, double dt, double vg) {
     c->i += dt * (k1i + 2.0 * k2i + 2.0 * k3i + k4i) / 6.0;
 }
 
+#if USE_BATTERY_FILTER
 static double filter_battery_current(Controller* k, double input) {
     double out = FILTER_INPUT_GAIN * (input + 2.0 * k->in1 + k->in2)
         + FILTER_OUTPUT_GAIN * k->out1 - k->out2;
@@ -162,6 +161,7 @@ static double filter_battery_current(Controller* k, double input) {
     k->out2 = k->out1; k->out1 = out;
     return out;
 }
+#endif
 
 static int update_controller(const Circuit* c, Controller* k,
     double delayed_i, double delayed_i_ref, double t) {
@@ -179,7 +179,11 @@ static int update_controller(const Circuit* c, Controller* k,
         return 0;
     }
 
+#if USE_BATTERY_FILTER
     double ibat = filter_battery_current(k, c->m * k->i_sense);
+#else
+    double ibat = c->m * k->i_sense;   /* battery-side current = duty * delayed inductor current */
+#endif
     k->error = i_ref_sense - ibat;
 
     double delayed_time = t - TIMESTEP * DELAY_AMOUNT;
@@ -193,7 +197,6 @@ static int update_controller(const Circuit* c, Controller* k,
     return 1;
 }
 
-/* Replay duties applied since the delayed sample to estimate the present state. */
 static void predict_present_state(const Controller* k, const double duty_history[DELAY_AMOUNT],
     long long n, double* vc, double* i) {
     Circuit p = { k->vc_sense, k->i_sense, 0.0 };
@@ -217,7 +220,6 @@ static int update_modulation(Circuit* c, Controller* k, double delayed_vc, doubl
         return 0;
     }
 
-    /* Solve MT = m^2 - 2*kt*m for m (upper root) */
     double proposed_m = kt + sqrt(fmax(0.0, k->mt_requested + kt * kt));
 
     double pvc, pi;
@@ -234,7 +236,6 @@ static int update_modulation(Circuit* c, Controller* k, double delayed_vc, doubl
     }
     c->m = clamp(clamp(proposed_m, 0.0, 1.0), m_min, m_max);
 
-    /* Anti-windup: remove the part of the command that limits cut off */
     double mt = c->m * c->m - 2.0 * kt * c->m;
     k->integral += mt - k->mt_requested;
     return 1;
@@ -243,7 +244,7 @@ static int update_modulation(Circuit* c, Controller* k, double delayed_vc, doubl
 int main(void) {
     const uint32_t tags[NUM_SENSORS] = { SENSOR_TAG_0, SENSOR_TAG_1, SENSOR_TAG_2 };
     uint64_t seed = SEED;
-    if (seed == 0)  /* Different noise every run */
+    if (seed == 0)
         seed = ((uint64_t)time(NULL) << SEED_TIME_SHIFT) ^ (uint64_t)clock();
     printf("Noise seed: %llu (set SEED to this value to repeat the run)\n",
         (unsigned long long)seed);
