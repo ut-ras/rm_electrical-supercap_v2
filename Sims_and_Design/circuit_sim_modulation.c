@@ -180,7 +180,9 @@ static int update_controller(const Circuit* c, Controller* k,
     }
 
 #if USE_BATTERY_FILTER
-    double ibat = filter_battery_current(k, c->m * k->i_sense);
+    
+    //double ibat = filter_battery_current(k, c->m * k->i_sense); // with filter if on
+    double ibat = c->m * k->i_sense; // bypass filter if on
 #else
     double ibat = c->m * k->i_sense;   /* battery-side current = duty * delayed inductor current */
 #endif
