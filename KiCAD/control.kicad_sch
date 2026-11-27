@@ -14771,7 +14771,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Radial_D10.0mm_H16.0mm_P5.00mm"
+		(property "Footprint" "Capacitor_THT:C_Radial_D12.5mm_H25.0mm_P5.00mm"
 			(at 186.3852 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -14837,7 +14837,7 @@
 				)
 			)
 		)
-		(property "Digi-Key Part Number" ""
+		(property "Digi-Key Part Number" "565-4579-ND"
 			(at 185.42 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -15341,7 +15341,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Radial_D10.0mm_H16.0mm_P5.00mm"
+		(property "Footprint" "Capacitor_THT:C_Radial_D12.5mm_H25.0mm_P5.00mm"
 			(at 196.5452 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -15407,7 +15407,7 @@
 				)
 			)
 		)
-		(property "Digi-Key Part Number" ""
+		(property "Digi-Key Part Number" "565-4579-ND"
 			(at 195.58 38.1 0)
 			(hide yes)
 			(show_name no)
