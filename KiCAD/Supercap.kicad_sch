@@ -1213,6 +1213,16 @@
 		)
 		(uuid "93c4fd3c-2993-4973-9a68-89ae8150b4b7")
 	)
+	(wire
+		(pts
+			(xy 110.49 109.22) (xy 120.65 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a609b51-f443-47f5-a2f3-79e8da7c3aac")
+	)
 	(polyline
 		(pts
 			(xy 147.32 103.505) (xy 149.86 103.505)
@@ -1542,16 +1552,6 @@
 			(type default)
 		)
 		(uuid "ef18c2b9-1b75-44ca-bb65-3f1ff737be6c")
-	)
-	(wire
-		(pts
-			(xy 110.49 108.585) (xy 120.65 108.585)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "efb5a8e8-7fed-46cb-bce1-19156d96e142")
 	)
 	(polyline
 		(pts
@@ -2911,9 +2911,9 @@
 				(justify left)
 			)
 		)
-		(pin "+1V65" output
-			(at 110.49 108.585 0)
-			(uuid "a7f8c013-5bd3-4893-a940-ca7bf497e90a")
+		(pin "+29V" output
+			(at 110.49 106.045 0)
+			(uuid "dd75057e-8744-4582-959d-5e331eb9bd5c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2921,9 +2921,9 @@
 				(justify right)
 			)
 		)
-		(pin "+29V" output
-			(at 110.49 106.045 0)
-			(uuid "dd75057e-8744-4582-959d-5e331eb9bd5c")
+		(pin "+2V94" output
+			(at 110.49 109.22 0)
+			(uuid "6e956677-cc5d-4ce3-b6d4-336b79ecfcd2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3193,8 +3193,8 @@
 				(justify right)
 			)
 		)
-		(pin "+1V65" input
-			(at 120.65 108.585 180)
+		(pin "+2V94" input
+			(at 120.65 109.22 180)
 			(uuid "e9822995-438f-48c4-a4c5-b3c6e0188051")
 			(effects
 				(font

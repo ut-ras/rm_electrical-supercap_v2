@@ -378,7 +378,7 @@
 				)
 			)
 			(property "Description" "Unpolarized capacitor, small symbol"
-				(at 0 0 0)
+				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -428,7 +428,7 @@
 						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -2014,7 +2014,7 @@
 		)
 		(uuid "639746ab-6366-45c1-ba0e-980d3eb2acce")
 	)
-	(label "+1V65"
+	(label "+2V94"
 		(at 78.105 81.915 180)
 		(effects
 			(font
@@ -2074,7 +2074,7 @@
 		)
 		(uuid "f6a2b8b3-cab6-4377-b46d-f2d3415306e6")
 	)
-	(hierarchical_label "+1V65"
+	(hierarchical_label "+2V94"
 		(shape output)
 		(at 79.375 81.915 0)
 		(effects
@@ -2479,7 +2479,7 @@
 		(fields_autoplaced yes)
 		(uuid "1cae90ad-6613-43a1-bff7-d7fe364dab1e")
 		(property "Reference" "R_{ref}1"
-			(at 57.785 82.5499 0)
+			(at 58.42 82.5499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2489,8 +2489,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47k"
-			(at 57.785 85.0899 0)
+		(property "Value" "19.1k"
+			(at 58.42 85.0899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2829,7 +2829,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "5.6k"
+		(property "Value" "16.5k"
 			(at 67.31 74.2949 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3549,7 +3549,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
 			(at 70.485 89.535 0)
 			(hide yes)
 			(show_name no)
@@ -4276,7 +4276,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Robomaster_ICs:Converter_DCDC_TRACO_TSR0.5-24xx_TSR0.5-24xxx_THT"
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TSR0.5-24xx_TSR0.5-24xxx_THT"
 			(at 117.475 105.791 0)
 			(hide yes)
 			(show_name no)
@@ -5258,7 +5258,7 @@
 		(fields_autoplaced yes)
 		(uuid "e591148b-a8f2-40f4-a2d2-aa28d9170d8d")
 		(property "Reference" "R_{ref}2"
-			(at 57.785 94.6149 0)
+			(at 58.42 94.6149 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5268,8 +5268,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "16k"
-			(at 57.785 97.1549 0)
+		(property "Value" "127k"
+			(at 58.42 97.1549 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5525,7 +5525,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Robomaster_ICs:Converter_DCDC_TRACO_TSR0.5-24xx_TSR0.5-24xxx_THT"
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TSR0.5-24xx_TSR0.5-24xxx_THT"
 			(at 119.38 77.216 0)
 			(hide yes)
 			(show_name no)

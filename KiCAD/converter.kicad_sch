@@ -348,7 +348,7 @@
 				)
 			)
 			(property "Description" "Unpolarized capacitor, small symbol"
-				(at 0 0 0)
+				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -398,7 +398,7 @@
 						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -3777,7 +3777,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Robomaster_ICs:IQDH45N04LM6CGSCATMA1"
+		(property "Footprint" "Package_DirectFET:DirectFET_MX"
 			(at 106.045 73.025 0)
 			(hide yes)
 			(show_name no)
@@ -3790,7 +3790,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.com/datasheet/3/70/1/infineon_iqe020n04lm6cgsc_datasheet_en.pdf"
+		(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-BSB013NE2LXI-DS-v02_04-en.pdf?fileId=db3a30432e398416012e47a158802577"
 			(at 106.045 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -3802,7 +3802,7 @@
 				(justify left)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "163A Id, 25V Vds, 1.3mOhm Rds, N-Channel MOSFET, DirectFET MX"
 			(at 100.965 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -4875,7 +4875,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Robomaster_ICs:IQDH45N04LM6CGSCATMA1"
+		(property "Footprint" "Package_DirectFET:DirectFET_MX"
 			(at 106.045 56.515 0)
 			(hide yes)
 			(show_name no)
@@ -4888,7 +4888,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.com/datasheet/3/70/1/infineon_iqe020n04lm6cgsc_datasheet_en.pdf"
+		(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-BSB013NE2LXI-DS-v02_04-en.pdf?fileId=db3a30432e398416012e47a158802577"
 			(at 106.045 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -4900,7 +4900,7 @@
 				(justify left)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "163A Id, 25V Vds, 1.3mOhm Rds, N-Channel MOSFET, DirectFET MX"
 			(at 100.965 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -7272,7 +7272,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Robomaster_ICs:IQDH45N04LM6CGSCATMA1"
+		(property "Footprint" "Package_DirectFET:DirectFET_MX"
 			(at 163.83 56.515 0)
 			(hide yes)
 			(show_name no)
@@ -7285,7 +7285,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.com/datasheet/3/70/1/infineon_iqe020n04lm6cgsc_datasheet_en.pdf"
+		(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-BSB013NE2LXI-DS-v02_04-en.pdf?fileId=db3a30432e398416012e47a158802577"
 			(at 163.83 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -7297,7 +7297,7 @@
 				(justify left)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "163A Id, 25V Vds, 1.3mOhm Rds, N-Channel MOSFET, DirectFET MX"
 			(at 158.75 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -8605,7 +8605,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Robomaster_ICs:IQDH45N04LM6CGSCATMA1"
+		(property "Footprint" "Package_DirectFET:DirectFET_MX"
 			(at 163.83 73.025 0)
 			(hide yes)
 			(show_name no)
@@ -8618,7 +8618,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.com/datasheet/3/70/1/infineon_iqe020n04lm6cgsc_datasheet_en.pdf"
+		(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-BSB013NE2LXI-DS-v02_04-en.pdf?fileId=db3a30432e398416012e47a158802577"
 			(at 163.83 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -8630,7 +8630,7 @@
 				(justify left)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "163A Id, 25V Vds, 1.3mOhm Rds, N-Channel MOSFET, DirectFET MX"
 			(at 158.75 71.12 0)
 			(hide yes)
 			(show_name no)
