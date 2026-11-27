@@ -5673,7 +5673,7 @@
 	)
 	(hierarchical_label "I_{bat,in+}"
 		(shape bidirectional)
-		(at 24.765 24.765 180)
+		(at 25.4 25.4 180)
 		(effects
 			(font
 				(size 1.27 1.27)

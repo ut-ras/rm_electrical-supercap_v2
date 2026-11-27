@@ -1984,7 +1984,7 @@
 		)
 		(uuid "35140ba5-6f82-4b75-b67e-196d22f32ca7")
 	)
-	(label "+1V65"
+	(label "+2V94"
 		(at 90.17 121.92 180)
 		(effects
 			(font
@@ -4718,8 +4718,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b706850a-79d5-4823-bdbe-884aa109e456")
-		(property "Reference" "V_{1.65}1"
-			(at 94.615 121.6024 0)
+		(property "Reference" "V_{2.94}1"
+			(at 95.25 121.6024 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4730,7 +4730,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 94.615 124.1424 0)
+			(at 95.25 124.1424 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4870,7 +4870,7 @@
 		(instances
 			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/47f13d7b-df0e-4361-81b8-c133778882c5"
-					(reference "V_{1.65}1")
+					(reference "V_{2.94}1")
 					(unit 1)
 				)
 			)
