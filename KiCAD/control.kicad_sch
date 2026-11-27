@@ -8512,7 +8512,7 @@
 		(fields_autoplaced yes)
 		(uuid "4a2763f2-3418-416f-a018-e12b47b5c965")
 		(property "Reference" "R_{PU}2"
-			(at 70.485 93.9799 0)
+			(at 69.85 93.9799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8522,8 +8522,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1k"
-			(at 70.485 96.5199 0)
+		(property "Value" "16.5k"
+			(at 69.85 96.5199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

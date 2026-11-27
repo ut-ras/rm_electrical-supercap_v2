@@ -94,54 +94,6 @@
           "inherent to footprint"
         ],
         [
-          "clearance|133528021|101543980|c24fc7b8-3064-4bc3-b70d-cd6f0dbc9a5f|a9441d76-6821-4c0b-9f47-f4fdeac01e9f",
-          "inherent to footprint"
-        ],
-        [
-          "clearance|133528021|102043980|c24fc7b8-3064-4bc3-b70d-cd6f0dbc9a5f|9697f672-62f2-40e2-a5b6-9a314383b1b6",
-          "inherent to footprint"
-        ],
-        [
-          "clearance|133528021|102543980|c24fc7b8-3064-4bc3-b70d-cd6f0dbc9a5f|ccd6bdc0-7880-40fb-b0dd-2232e876535c",
-          "inherent to footprint"
-        ],
-        [
-          "clearance|133528021|103043980|c24fc7b8-3064-4bc3-b70d-cd6f0dbc9a5f|748474b6-5d40-4d10-a0af-d1315b674d11",
-          "inherent to footprint"
-        ],
-        [
-          "clearance|133748021|101143980|b6a76e04-22bd-468c-b1b8-d05890dc0d17|c24fc7b8-3064-4bc3-b70d-cd6f0dbc9a5f",
-          "inherent to footprint"
-        ],
-        [
-          "clearance|133748021|103563980|c24fc7b8-3064-4bc3-b70d-cd6f0dbc9a5f|717e498d-9e5d-464d-a855-8f2ee2856fea",
-          "inherent to footprint"
-        ],
-        [
-          "clearance|134248021|101143980|7c3a7493-db68-4574-85f8-334774b7b13e|c24fc7b8-3064-4bc3-b70d-cd6f0dbc9a5f",
-          "inherent to footprint"
-        ],
-        [
-          "clearance|134248021|103743980|78df4a18-c8ca-458d-bd4e-1e53ff9436a0|c24fc7b8-3064-4bc3-b70d-cd6f0dbc9a5f",
-          "inherent to footprint"
-        ],
-        [
-          "clearance|134748021|101143980|64c8ecde-f30a-45f7-a49a-20929d2b51ae|c24fc7b8-3064-4bc3-b70d-cd6f0dbc9a5f",
-          "inherent to footprint"
-        ],
-        [
-          "clearance|135248021|103743980|b550cd5a-1b2f-48b9-af98-90a16247cd73|c24fc7b8-3064-4bc3-b70d-cd6f0dbc9a5f",
-          "inherent to footprint"
-        ],
-        [
-          "clearance|135948021|102043980|e89acd17-3b5c-4656-8bb8-049d5d8875b3|c24fc7b8-3064-4bc3-b70d-cd6f0dbc9a5f",
-          "inherent to footprint"
-        ],
-        [
-          "clearance|135948021|102543980|a8fa1731-cef0-490e-a4be-883b95fc8723|c24fc7b8-3064-4bc3-b70d-cd6f0dbc9a5f",
-          "inherent to footprint"
-        ],
-        [
           "silk_edge_clearance|158750000|104563422|55f04b4c-fcdf-473c-9be3-1d3d01d584a9|571e2d06-feb0-469e-b20e-393cd33a7a91",
           "hanging port"
         ],
