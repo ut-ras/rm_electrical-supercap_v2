@@ -6150,7 +6150,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "15181dac-f916-46b2-837f-0d416970476a")
-		(property "Reference" "R_{opamp}fb1"
+		(property "Reference" "R_{FB}1"
 			(at 69.596 67.056 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6333,7 +6333,7 @@
 		(instances
 			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/ee005c00-ec4f-437e-b20a-795d960ff7e7"
-					(reference "R_{opamp}fb1")
+					(reference "R_{FB}1")
 					(unit 1)
 				)
 			)
@@ -9207,7 +9207,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "54de086a-e919-40fa-af72-62d4e08c5b9a")
-		(property "Reference" "R_{opamp}b1"
+		(property "Reference" "R_{in-}1"
 			(at 44.45 60.96 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9390,7 +9390,7 @@
 		(instances
 			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/ee005c00-ec4f-437e-b20a-795d960ff7e7"
-					(reference "R_{opamp}b1")
+					(reference "R_{in-}1")
 					(unit 1)
 				)
 			)
@@ -9699,7 +9699,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "654a9541-c433-4306-a9d2-c7e15acba9c7")
-		(property "Reference" "R_{opamp}a1"
+		(property "Reference" "R_{in+}1"
 			(at 44.45 27.94 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9882,7 +9882,7 @@
 		(instances
 			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/ee005c00-ec4f-437e-b20a-795d960ff7e7"
-					(reference "R_{opamp}a1")
+					(reference "R_{in+}1")
 					(unit 1)
 				)
 			)
@@ -11904,7 +11904,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "94b64254-7781-4483-9926-893868ba2956")
-		(property "Reference" "R_{opamp}c1"
+		(property "Reference" "R_{ref}3"
 			(at 44.45 49.53 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12087,7 +12087,7 @@
 		(instances
 			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/ee005c00-ec4f-437e-b20a-795d960ff7e7"
-					(reference "R_{opamp}c1")
+					(reference "R_{ref}3")
 					(unit 1)
 				)
 			)
@@ -13591,7 +13591,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c05b54d5-f893-473e-9503-957fc269b55f")
-		(property "Reference" "R_{opamp}d1"
+		(property "Reference" "R_{gnd}1"
 			(at 44.704 41.148 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13774,7 +13774,7 @@
 		(instances
 			(project "Supercap"
 				(path "/98ee8313-37ab-4329-91ab-b5710476f82f/ee005c00-ec4f-437e-b20a-795d960ff7e7"
-					(reference "R_{opamp}d1")
+					(reference "R_{gnd}1")
 					(unit 1)
 				)
 			)
@@ -14014,7 +14014,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Crystal:Crystal_SMD_Abracon_ABM3-2Pin_5.0x3.2mm_HandSoldering"
+		(property "Footprint" "Crystal:Crystal_SMD_Abracon_ABM3-2Pin_5.0x3.2mm"
 			(at 166.37 130.175 0)
 			(hide yes)
 			(show_name no)
@@ -14771,7 +14771,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Radial_D12.5mm_H25.0mm_P5.00mm"
+		(property "Footprint" "Capacitor_THT:C_Radial_D10.0mm_H20.0mm_P5.00mm"
 			(at 186.3852 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -15341,7 +15341,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Radial_D12.5mm_H25.0mm_P5.00mm"
+		(property "Footprint" "Capacitor_THT:C_Radial_D10.0mm_H20.0mm_P5.00mm"
 			(at 196.5452 41.91 0)
 			(hide yes)
 			(show_name no)

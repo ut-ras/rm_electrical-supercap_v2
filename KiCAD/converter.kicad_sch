@@ -3777,7 +3777,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DirectFET:DirectFET_MX"
+		(property "Footprint" "Robomaster_ICs:IQDH45N04LM6CGSCATMA1"
 			(at 106.045 73.025 0)
 			(hide yes)
 			(show_name no)
@@ -4875,7 +4875,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DirectFET:DirectFET_MX"
+		(property "Footprint" "Robomaster_ICs:IQDH45N04LM6CGSCATMA1"
 			(at 106.045 56.515 0)
 			(hide yes)
 			(show_name no)
@@ -7272,7 +7272,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DirectFET:DirectFET_MX"
+		(property "Footprint" "Robomaster_ICs:IQDH45N04LM6CGSCATMA1"
 			(at 163.83 56.515 0)
 			(hide yes)
 			(show_name no)
@@ -8605,7 +8605,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DirectFET:DirectFET_MX"
+		(property "Footprint" "Robomaster_ICs:IQDH45N04LM6CGSCATMA1"
 			(at 163.83 73.025 0)
 			(hide yes)
 			(show_name no)

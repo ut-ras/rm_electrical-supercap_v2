@@ -78,15 +78,7 @@
       ],
       "drc_exclusions": [
         [
-          "clearance|105418651|89104073|b24b373c-874e-4188-9669-e31e01b84cdc|9b6134ca-7c23-4a11-ac7a-2aa37292c3ac",
-          "inherent to footprint"
-        ],
-        [
           "clearance|105418651|91154073|9a55954a-0a79-4a19-9dce-1182b37b4d23|a6d3647c-d99c-45f0-82eb-e2f5e8f49391",
-          "inherent to footprint"
-        ],
-        [
-          "clearance|130040000|83417422|ef4ef630-50ff-4f8b-8c45-2623322b020f|201dab71-f737-442c-b150-66c025f515e5",
           "inherent to footprint"
         ],
         [
@@ -143,10 +135,6 @@
         ],
         [
           "silk_over_copper|118772654|95017922|a05fc697-eba4-4475-965b-dad9edc1324b|877dd591-9cbf-4493-b5d4-98cb74ebfc7a",
-          ""
-        ],
-        [
-          "silk_overlap|128896021|102864362|64b62d0b-d740-4b8e-a6ff-3c2ca52a6622|7ad82250-e15b-443d-938a-01bf5f1b59d6",
           ""
         ]
       ],
@@ -665,7 +653,7 @@
       "method": 0,
       "sort_order": 0
     },
-    "bom_export_filename": "${PROJECTNAME}.csv",
+    "bom_export_filename": "bom\\Supercap from schematic.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
