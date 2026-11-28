@@ -6,7 +6,7 @@
 
 #define PI                  3.14159265358979323846
 #define TWO_PI              (2.0 * PI)
-#define DELAY_AMOUNT        30       /* Sensor delay in circuit timesteps (must be >= 1) */
+#define DELAY_AMOUNT        1       /* Sensor delay in circuit timesteps (must be >= 1) */
 #if DELAY_AMOUNT < 1
 #error DELAY_AMOUNT must be at least 1 (the delay buffers and duty history use % DELAY_AMOUNT)
 #endif
@@ -15,17 +15,17 @@
    1 = pass it through the LC filter model below. That filter is built from the converter L and
    the supercap C (1.4 Hz resonance), which wipes out the 100 Hz signal, so leave it at 0
    unless you rebuild it with the battery-side input-filter values (L_EMI, C_shunt). */
-#define USE_BATTERY_FILTER  0
+#define USE_BATTERY_FILTER  1
 
 #define CAPACITANCE         440.0
 #define RESISTANCE          0.0095
 #define INDUCTANCE          28.3e-6
 #define VG                  24.0
-#define VC_INITIAL          2.5
+#define VC_INITIAL          0.8
 #define I_INITIAL           0.0
 #define FREQ_HZ             100.0
 #define CURRENT_AMPLITUDE   2.5
-#define I_LIMIT             30.0
+#define I_LIMIT             49.3
 #define CURRENT_MARGIN      1.0
 #define CONTROLLER_UPDATE_HZ        12000.0
 #define CONTROLLER_BANDWIDTH_HZ     150.0   /* was 300; lower = calmer with sensor delay and noise */
@@ -33,7 +33,7 @@
 #define MODULATION_CONTROLLER_CYCLES 2
 #define TOTAL_TIME          100
 #define SEED                0u
-#define NOISE_ENABLED       1
+#define NOISE_ENABLED       0
 #define SEED_TIME_SHIFT     20
 #define OUTPUT_NAME         "circuit_data.csv"
 
@@ -181,8 +181,8 @@ static int update_controller(const Circuit* c, Controller* k,
 
 #if USE_BATTERY_FILTER
     
-    //double ibat = filter_battery_current(k, c->m * k->i_sense); // with filter if on
-    double ibat = c->m * k->i_sense; // bypass filter if on
+    double ibat = filter_battery_current(k, c->m * k->i_sense); // with filter on
+    //double ibat = c->m * k->i_sense; // with filter off
 #else
     double ibat = c->m * k->i_sense;   /* battery-side current = duty * delayed inductor current */
 #endif
