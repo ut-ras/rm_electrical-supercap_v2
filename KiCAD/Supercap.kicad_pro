@@ -82,8 +82,16 @@
           "inherent to footprint"
         ],
         [
+          "clearance|105543651|89229073|9b6134ca-7c23-4a11-ac7a-2aa37292c3ac|b24b373c-874e-4188-9669-e31e01b84cdc",
+          ""
+        ],
+        [
           "clearance|130040000|85217422|0b0bd51a-f79f-4661-b352-65cc4a2d038a|f0c4cb23-9fda-4e17-8e6c-662db84d3fb0",
           "inherent to footprint"
+        ],
+        [
+          "clearance|130165000|83292422|201dab71-f737-442c-b150-66c025f515e5|ef4ef630-50ff-4f8b-8c45-2623322b020f",
+          ""
         ],
         [
           "silk_edge_clearance|158750000|104563422|55f04b4c-fcdf-473c-9be3-1d3d01d584a9|571e2d06-feb0-469e-b20e-393cd33a7a91",
