@@ -66,11 +66,11 @@ int main(int argc, char* argv[]) {
     const double R = 0.0095;
     const double L = 28.3e-6;
     const double Vg = 24.0;
-    const double vc_initial = 2.5;
+    const double vc_initial = 2; //2.5
     const double i_initial = 0.0;
     const double freq_HZ = 100.0;
     const double current_amplitude = 2.5;
-    const double i_limit = 30.0;
+    const double i_limit = 49.3;
     const double current_margin = 1.0;
     const double controller_update_Hz = 12000.0;
     const int modulation_controller_cycles = 2;
